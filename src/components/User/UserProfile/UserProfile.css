@@ -1,0 +1,26 @@
+a:hover{
+    color: #FFFFFF !important;
+}
+
+.widget-user__avatar {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.widget-user__link {
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+.widget-user__burger, .widget-user__menu-helper {
+    display: none;
+}
+
+.widget-user__menu a {
+    color: #FFFFFF !important;
+}
+
+.widget-user__user__username {
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+nav , img , div{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.header {
+    background-color: #3b73b9 !important;
+    height: 60px !important;
+}
+
+.header, .header a {
+    color: white;
+}
+
+.header a:hover {
+    text-decoration: none;
+}
+
+.header__wrapper {
+    margin: 0 auto;
+    padding-top: 5px;
+    max-width: 1250px;
+}
+
+.header__logo {
+    width: 40px;
+}
+
+.header__title {
+    margin-left: 20px !important;
+    margin-right: 0 !important;
+    font-size: 23px !important;
+}
+
+.header__subtitle {
+    font-size: 12px;
+}
