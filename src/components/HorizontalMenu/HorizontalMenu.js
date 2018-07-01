@@ -1,5 +1,4 @@
 import React from 'react'
-import { Redirect } from 'react-router-dom';
 
 import { Tab, Tabs } from '@blueprintjs/core';
 
@@ -44,18 +43,7 @@ class HorizontalMenu extends React.Component{
         );
     }
 
-    handleTabChange = (newTabId : TabId) => {
-        // console.log(newTabId);
-        // const {homeRoute , items } = this.state.data;
-        // // TODO : navigate to path
-        // let newTabItem;
-        // if(homeRoute && homeRoute.id === newTabId){
-        //     newTabItem = homeRoute;
-        // } else {
-        //     newTabItem = items.find(item => item.id === newTabId);
-        // }
-        // if(!newTabItem){ return ; }
-        // const path = newTabItem.route.path;
+    handleTabChange = (newTabId) => {
 
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { UserProfile } from '../User/UserProfile/UserProfile';
+import { UserProfile } from '../UserProfile/UserProfile';
 
 import './Header.css';
 
@@ -29,4 +29,4 @@ class Header extends React.Component {
     }
 }
 
-export default ()=> <Header/>;
+export default Header;

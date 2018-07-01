@@ -33,7 +33,7 @@
 }
 
 .menubar__content .pt-tab-indicator-wrapper {
-    height: 45px !important;
+    height: 45px;
     z-index: 1;
 }
 

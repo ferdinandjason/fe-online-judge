@@ -1,5 +1,5 @@
 a:hover{
-    color: #FFFFFF !important;
+    color: #FFFFFF;
 }
 
 .widget-user__avatar {
@@ -18,7 +18,7 @@ a:hover{
 }
 
 .widget-user__menu a {
-    color: #FFFFFF !important;
+    color: #FFFFFF;
 }
 
 .widget-user__user__username {

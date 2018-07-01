@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import './App.css';
+
 import Header from './components/Header/Header';
 import HorizontalMenu from './components/HorizontalMenu/HorizontalMenu';
 import {appRoutes , homeRoute } from './AppRoutes';
-
-import './App.css';
 
 class App extends Component {
   render() {

@@ -8,7 +8,7 @@ nav , img , div{
 }
 
 .header {
-    background-color: #3b73b9 !important;
+    background-color: #3b73b9;
     height: 60px !important;
 }
 
@@ -31,9 +31,9 @@ nav , img , div{
 }
 
 .header__title {
-    margin-left: 20px !important;
-    margin-right: 0 !important;
-    font-size: 23px !important;
+    margin-left: 20px;
+    margin-right: 0;
+    font-size: 23px;
 }
 
 .header__subtitle {
