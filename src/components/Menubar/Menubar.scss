@@ -1,0 +1,18 @@
+@import '../../styles/base';
+
+.menubar{
+  height: 60px;
+  display: flex;
+  font-family: "Ubuntu";
+  font-weight: 700;
+}
+
+.menubar_tabs{
+  color:$small-color !important;
+  height: 60px;
+  padding-top: 10px;
+}
+
+.menubar_tabs[aria-selected="true"], .menubar_tabs[aria-disabled="true"]:hover {
+  color: $active-color !important;
+}

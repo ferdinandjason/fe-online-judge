@@ -2,7 +2,7 @@
 @import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
 @import "~normalize.css/normalize.css";
 
-@import "./styles/_fonts.css";
+@import "styles/_fonts.scss";
 
 body{
   font-family: "Open Sans",sans-serif;
@@ -37,4 +37,9 @@ body{
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.pt-tab-indicator{
+  background-color: #ffffff !important;
+  height: 4px !important;
 }

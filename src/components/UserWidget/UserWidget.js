@@ -1,16 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Menu , MenuItem , MenuDivider } from '@blueprintjs/core';
+import { Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
 
-import './UserProfile.css';
+import './UserWidget.css';
 
-export class UserProfile extends React.Component {
+class UserWidget extends React.Component{
     constructor(props){
         super(props);
-        this.state = {
-            avatarUrl : null,
-        };
     }
 
     userIsAuthenticated(){
@@ -36,7 +33,7 @@ export class UserProfile extends React.Component {
     renderForUser(){
         // TODO : get username from Laravel database storage;
         return (
-            <div className="pt-navbar-group pt-align-right">
+            <div className="pt-navbar-group pt-align-right widget-user">
                 <img src={this.state.avatarUrl} alt="user-avatar" className="widget-user__avatar" />
                 <Menu className="widget-user__menu">
                     <MenuItem className="widget-user__menu-helper" icon="user" text="user.username" disabled />
@@ -50,7 +47,7 @@ export class UserProfile extends React.Component {
 
     renderForGuest(){
         return (
-            <div className="pt-navbar-group pt-align-right">
+            <div className="pt-navbar-group pt-align-right widget-user">
                 <div className="widget-user__link">
                     <Link data-key="login" to="/login">
                         Log in
@@ -64,4 +61,7 @@ export class UserProfile extends React.Component {
             </div>
         );
     }
+
 }
+
+export default UserWidget;

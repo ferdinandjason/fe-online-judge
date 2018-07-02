@@ -1,28 +1,53 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import { UserProfile } from '../UserProfile/UserProfile';
+import Menubar from '../Menubar/Menubar';
+import UserWidget from '../UserWidget/UserWidget';
 
-import './Header.css';
+import styles from './Header.scss';
+const logo = require('../../assets/images/logo.png');
 
-const logo = require('../../assets/images/logo-grayscale.png');
+const routes = [
+    {
+        id: 'home',
+        title: 'Home',
+        route: {
+            path: '/'
+        },
+    },
+    {
+        id: 'competition',
+        title: 'Competition',
+        route: {
+            path: '/competition'
+        },
+    },
+    {
+        id: 'training',
+        title: 'Training',
+        route: {
+            path: '/training'
+        },
+    },
+];
 
 class Header extends React.Component {
     render(){
         return (
-            <nav className="pt-navbar header">
-                <div className="header__wrapper">
-                    <div className="pt-navbar-group pt-align-left">
-                        <div>
-                            <Link to="/">
-                                <img src={logo} alt="logo" className="header__logo" />
-                            </Link>
+            <nav className={"pt-navbar "+styles.header}>
+                <div className={styles.header_wrapper}>
+                    <div className={"pt-navbar-group pt-align-left "+styles.header}>
+                        <div className={styles.header_heading_wrapper}>
+                            <img src={logo} className={styles.header_logo} alt={"logo"}/>
                         </div>
-                        <div className="pt-navbar-heading header__title">MOE</div>
-                        <span className="pt-navbar-divider"/>
-                        <div className="header__subtitle">MOE Online Judge</div>
+
+                        <Menubar items={routes}/>
                     </div>
-                    <UserProfile user={null}/>
+                    <div className="pt-navbar-group pt-align-right">
+                        <input className="pt-input" placeholder="Search..." type="text" style={{marginTop:10+'px'}}/>
+                        <div style={{marginLeft:30+'px'}}>
+                            <UserWidget/>
+                        </div>
+                    </div>
                 </div>
             </nav>
         );

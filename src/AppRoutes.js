@@ -15,11 +15,3 @@ export const appRoutes = [
         },
     },
 ];
-
-export const homeRoute = {
-    id: 'home',
-    title: 'Home',
-    route: {
-        path: '/'
-    },
-};

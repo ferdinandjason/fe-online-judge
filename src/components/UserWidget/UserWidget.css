@@ -1,5 +1,14 @@
-a:hover{
+.widget-user{
+    height: 60px !important;
+}
+
+.widget-user__link a{
+    color: #b7c9cc;
+}
+
+.widget-user__link a:hover{
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .widget-user__avatar {
@@ -10,7 +19,6 @@ a:hover{
 
 .widget-user__link {
     margin-right: 20px;
-    font-size: 13px;
 }
 
 .widget-user__burger, .widget-user__menu-helper {

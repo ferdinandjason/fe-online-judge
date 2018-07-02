@@ -1,3 +1,9 @@
+$primary-font: 'Open Sans', sans-serif;
+$accent-font: 'Roboto', sans-serif;
+$font-size: 14px;
+$font-size-large: 16px;
+$font-size-small: 12px;
+
 @font-face {
     font-family: 'Open Sans';
     font-weight: 400;
@@ -44,4 +50,22 @@
     font-family: 'Roboto';
     font-weight: 900;
     src: url('../assets/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    src: url('../assets/fonts/Ubuntu-R.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    src: url('../assets/fonts/Ubuntu-M.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    src: url('../assets/fonts/Ubuntu-B.ttf') format('truetype');
 }
