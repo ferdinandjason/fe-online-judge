@@ -1,0 +1,28 @@
+@import '../../styles/base';
+
+
+.sidebar{
+  background-color: #f4f8fb !important;
+  max-width : 280px;
+  height: calc(100vh - 60px);
+  font-size: $font-size;
+
+}
+
+.sidebar_button{
+  margin: 10px;
+}
+
+.sidebar_link a{
+  text-decoration: none;
+  color : $primary-color;
+}
+
+.sidebar_link a:hover {
+  text-decoration: none !important;
+  color: $primary-color !important;
+}
+
+.sidebar_none {
+  height: 60px;
+}

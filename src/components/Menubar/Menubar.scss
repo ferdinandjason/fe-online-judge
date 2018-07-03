@@ -13,6 +13,6 @@
   padding-top: 10px;
 }
 
-.menubar_tabs[aria-selected="true"], .menubar_tabs[aria-disabled="true"]:hover {
+.menubar_tabs[aria-selected="true"], .menubar_tabs[aria-disabled="false"]:hover {
   color: $active-color !important;
 }
