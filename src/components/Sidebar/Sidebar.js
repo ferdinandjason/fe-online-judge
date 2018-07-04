@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Menu, MenuItem, MenuDivider, Tree } from '@blueprintjs/core';
+import { Menu, MenuItem, MenuDivider, Tree, Intent } from '@blueprintjs/core';
 
 import style from './Sidebar.scss';
 

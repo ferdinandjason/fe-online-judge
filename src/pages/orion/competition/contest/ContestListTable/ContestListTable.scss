@@ -1,0 +1,51 @@
+.contest_list_container > :first-child {
+  margin-top: -20px;
+}
+
+.contest_list_container > :not(:last-child) {
+  border-bottom: 1px solid rgba(16, 22, 26, 0.15);
+}
+.contest_list_container > :last-child {
+  margin-bottom: -20px;
+}
+
+.contest_list_item_container {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contest_list_item_name {
+  margin-right: 10px;
+}
+
+.contest_list_item_date {
+  margin-top: -4px;
+}
+
+.contest_list_item_container:hover {
+  background-color: #eef2fb;
+}
+
+.contest_list_container_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contest_list_info_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest_list_button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.contest_list_tag {
+  margin: 10px;
+}

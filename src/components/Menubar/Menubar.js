@@ -6,8 +6,9 @@ import styles from './Menubar.scss';
 
 class Menubar extends React.Component{
     render(){
+        const selectedTabId = this.getActiveItemId();
         return (
-            <Tabs id={"menubar"} renderActiveTabPanelOnly large={true} className={styles.menubar}>
+            <Tabs id={"menubar"} renderActiveTabPanelOnly large={true} className={styles.menubar} selectedTabId={selectedTabId}>
                 {
                     this.props.items.map(item => {
                        return (
@@ -21,6 +22,21 @@ class Menubar extends React.Component{
                 }
             </Tabs>
         )
+    }
+
+    getRoutePath = () => {
+        return window.location.pathname.split('/')[1];
+    };
+
+    getActiveItemId = () => {
+        let itemId = '';
+        for(let item of this.props.items){
+            if(this.getRoutePath() === item.route.path.slice(1)){
+                itemId = item.id;
+                return itemId;
+            }
+        }
+        return 'home';
     }
 }
 

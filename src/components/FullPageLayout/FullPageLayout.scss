@@ -1,0 +1,18 @@
+.page_layout_button_wrapper{
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+.page_layout_button_wrapper > button{
+  margin-left: 10px;
+}
+
+.page_layout_header_container{
+  height: 58px;
+  width: calc(100vw - 280px);
+  background-color: #fafafa;
+}
+
+.page_layout_container{
+  display: flex;
+}

@@ -3,32 +3,10 @@ import React from 'react';
 import Menubar from '../Menubar/Menubar';
 import UserWidget from '../UserWidget/UserWidget';
 
+import routes from '../../AppRoutes';
 import styles from './Header.scss';
-const logo = require('../../assets/images/logo.png');
 
-const routes = [
-    {
-        id: 'home',
-        title: 'Home',
-        route: {
-            path: '/'
-        },
-    },
-    {
-        id: 'competition',
-        title: 'Competition',
-        route: {
-            path: '/competition'
-        },
-    },
-    {
-        id: 'training',
-        title: 'Training',
-        route: {
-            path: '/training'
-        },
-    },
-];
+const logo = require('../../assets/images/logo.png');
 
 class Header extends React.Component {
     render(){

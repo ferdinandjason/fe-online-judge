@@ -1,15 +1,16 @@
 import React from 'react';
 import Loadable from 'react-loadable';
+import { Redirect } from 'react-router-dom';
 
 import LoadingState from "../../components/LoadingState/LoadingState";
 
-const LoadableCompetitionRoutes = Loadable({
-    loader : () => import('./competition/CompetitionRoutes'),
+const LoadableTrainingRoutes = Loadable({
+    loader : () => import('./training/TrainingRoutes'),
     loading : () => <LoadingState/>
 });
 
 
-class OrionRoutes extends React.Component{
+class CorvusRoutes extends React.Component{
     constructor(props){
         super(props);
     }
@@ -17,10 +18,10 @@ class OrionRoutes extends React.Component{
     render(){
         return (
             <div>
-                <LoadableCompetitionRoutes/>
+                <LoadableTrainingRoutes/>
             </div>
         );
     }
 }
 
-export default OrionRoutes;
+export default CorvusRoutes;

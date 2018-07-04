@@ -43,3 +43,7 @@ body{
   background-color: #ffffff !important;
   height: 4px !important;
 }
+
+.pt-menu{
+  min-width: 280px;
+}

@@ -1,5 +1,11 @@
-
-export const appRoutes = [
+const routes = [
+    {
+        id: 'home',
+        title: 'Home',
+        route: {
+            path: '/'
+        },
+    },
     {
         id: 'competition',
         title: 'Competition',
@@ -15,3 +21,5 @@ export const appRoutes = [
         },
     },
 ];
+
+export default routes;
