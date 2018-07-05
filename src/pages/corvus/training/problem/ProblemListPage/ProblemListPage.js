@@ -1,6 +1,5 @@
 import React from 'react';
 
-import style from './ProblemListPage.scss';
 import ProblemListTable from "../ProblemListTable/ProblemListTable";
 import LoadingProblemListTable from "../ProblemListTable/LoadingProblemListTable";
 

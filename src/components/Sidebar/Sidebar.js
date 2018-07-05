@@ -1,20 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Menu, MenuItem, MenuDivider, Tree, Intent } from '@blueprintjs/core';
+import { Menu, MenuItem, MenuDivider, Tree } from '@blueprintjs/core';
 
 import style from './Sidebar.scss';
-
-// const contentExample = {
-//     type:'item/divider',
-//     active:false,
-//     className:null,
-//     icon:'icon',
-//     intent:null,
-//     label:'icon',
-//     href:''
-// };
-
 
 class Sidebar extends React.Component{
     constructor(props){
@@ -36,11 +25,11 @@ class Sidebar extends React.Component{
                     this.state.items.map(item=>{
                         if(item.type === 'divider'){
                             return (
-                                <MenuDivider title={item.props.title}/>
+                                <MenuDivider {...item.props}/>
                             )
                         } else {
                             return (
-                                <Link to={item.href} className={style.sidebar_link}>
+                                <Link to={item.href} className={style.sidebar_link} key={item.props.key}>
                                     <MenuItem {...item.props} />
                                 </Link>
                             )

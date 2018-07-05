@@ -6,17 +6,13 @@ import { Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
 import './UserWidget.css';
 
 class UserWidget extends React.Component{
-    constructor(props){
-        super(props);
-    }
-
-    userIsAuthenticated(){
+    static userIsAuthenticated(){
         // TODO: get Session from Laravel
         return false;
     }
 
     render(){
-        if(this.userIsAuthenticated()){
+        if(UserWidget.userIsAuthenticated()){
             this.renderUserAvatar();
             return this.renderForUser();
         } else {
