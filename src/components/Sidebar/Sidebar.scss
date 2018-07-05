@@ -4,8 +4,9 @@
 .sidebar{
   background-color: #f4f8fb !important;
   max-width : 280px;
-  height: calc(100vh - 60px);
+  height: inherit;
   font-size: $font-size;
+  min-height: calc(100vh - 60px);
 
 }
 
