@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 import style from './Breadcrumb.scss';
 
-const Breadcrumb = (props) => {
+export const Breadcrumb = (props) => {
     const items = props.breadcrumbs.map((item,idx) => (
         <li key={item.link}>
             <Link to={item.link} className={classNames("pt-breadcrumb",{"pt-breadcrumb-current":(idx===props.breadcrumbs.length))}}>
@@ -28,5 +28,3 @@ Breadcrumb.propTypes = {
           title : PropTypes.string.isRequired,
       }).isRequired
 };
-
-export default Breadcrumb;

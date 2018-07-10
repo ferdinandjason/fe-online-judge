@@ -3,7 +3,7 @@ import { ProgressBar, Intent } from '@blueprintjs/core';
 
 import style from './LoadingState.scss';
 
-class LoadingState extends React.Component {
+export class LoadingState extends React.Component {
     constructor(props){
         super(props);
         this.timer = null;
@@ -34,5 +34,3 @@ class LoadingState extends React.Component {
         );
     }
 }
-
-export default LoadingState;

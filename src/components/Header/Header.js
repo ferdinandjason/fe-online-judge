@@ -1,15 +1,14 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import Menubar from '../Menubar/Menubar';
-import UserWidget from '../UserWidget/UserWidget';
+import { Menubar , UserWidget } from "../../components";
 
 import routes from '../../AppRoutes';
 import styles from './Header.scss';
 
 const logo = require('../../assets/images/logo.png');
 
-class Header extends React.Component {
+export class Header extends React.Component {
     render(){
         return (
             <nav className={classNames("pt-navbar",styles.header)}>

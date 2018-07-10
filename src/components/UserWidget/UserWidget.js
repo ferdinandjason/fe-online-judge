@@ -5,7 +5,7 @@ import { Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
 
 import './UserWidget.css';
 
-class UserWidget extends React.Component{
+export class UserWidget extends React.Component{
     static userIsAuthenticated(){
         // TODO: get Session from Laravel
         return false;
@@ -57,7 +57,4 @@ class UserWidget extends React.Component{
             </div>
         );
     }
-
 }
-
-export default UserWidget;

@@ -6,7 +6,7 @@ import { Tab, Tabs } from '@blueprintjs/core';
 
 import styles from './Menubar.scss';
 
-class Menubar extends React.Component{
+export class Menubar extends React.Component{
     render(){
         const selectedTabId = this.getActiveItemId();
         return (

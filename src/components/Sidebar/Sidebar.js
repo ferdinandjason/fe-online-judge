@@ -6,7 +6,7 @@ import { Menu, MenuItem, MenuDivider, Tree } from '@blueprintjs/core';
 
 import style from './Sidebar.scss';
 
-class Sidebar extends React.Component{
+export class Sidebar extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -88,5 +88,3 @@ Sidebar.propTypes = {
     nodes : PropTypes.arrayOf(PropTypes.object()),
     nodesTitle : PropTypes.arrayOf(PropTypes.object()),
 };
-
-export default Sidebar;

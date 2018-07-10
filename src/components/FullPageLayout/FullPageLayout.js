@@ -2,14 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import Sidebar from '../Sidebar/Sidebar';
-import Breadcrumb from "../Breadcrumb/Breadcrumb";
-
+import { Sidebar, Breadcrumb } from '../../components';
 import { Button } from '@blueprintjs/core';
 
 import style from './FullPageLayout.scss';
 
-const FullPageLayout = (props)=> {
+export const FullPageLayout = (props)=> {
     return (
         <div className={style.page_layout_container}>
             <Sidebar items={props.sidebarContent}/>
@@ -46,5 +44,3 @@ FullPageLayout.propType = {
     problemTitle : PropTypes.string,
     buttons : PropTypes.arrayOf({props: PropTypes.object()}).isRequired,
 };
-
-export default FullPageLayout;
