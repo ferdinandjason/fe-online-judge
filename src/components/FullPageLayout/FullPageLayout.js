@@ -39,8 +39,8 @@ export const FullPageLayout = (props)=> {
 };
 
 FullPageLayout.propType = {
-    sidebarContent : PropTypes.arrayOf(PropTypes.object()).isRequired,
-    breadcrumbs : PropTypes.arrayOf(PropTypes.object()).isRequired,
-    problemTitle : PropTypes.string,
-    buttons : PropTypes.arrayOf({props: PropTypes.object()}).isRequired,
+    problemTitle : PropTypes.string.isRequired,
+    sidebarContent : PropTypes.arrayOf(PropTypes.object).isRequired,
+    breadcrumbs : PropTypes.arrayOf(PropTypes.object).isRequired,
+    buttons : PropTypes.arrayOf({props: PropTypes.object}).isRequired,
 };

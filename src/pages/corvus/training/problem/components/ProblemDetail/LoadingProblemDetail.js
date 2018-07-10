@@ -1,11 +1,12 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import style from './ProblemDetail.scss';
 
-const LoadingProblemDetail = () => {
+export const LoadingProblemDetail = () => {
     return (
-        <div className={"pt-card "+style.problem_table_wrapper}>
-            <table className={"pt-html-table pt-html-table-striped "+style.problem_table}>
+        <div className={classNames("pt-card",style.problem_table_wrapper)}>
+            <table className={classNames("pt-html-table","pt-html-table-striped",style.problem_table)}>
                 <thead>
                 <tr>
                     <th>Time Limit</th>
@@ -26,5 +27,3 @@ const LoadingProblemDetail = () => {
         </div>
     )
 };
-
-export default LoadingProblemDetail;

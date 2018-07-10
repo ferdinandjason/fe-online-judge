@@ -1,7 +1,8 @@
 import React from 'react';
 
+import { FullPageLayout } from "../../../../components";
+
 import ContestListPage from "./ContestListPage/ContestListPage";
-import FullPageLayout from "../../../../components/FullPageLayout/FullPageLayout";
 import { competitionBreadcrumb, competitionSidebarContent } from '../CompetitionConstant';
 
 const ContestButton = [

@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { Card , Tag, Intent } from '@blueprintjs/core';
 
@@ -8,7 +10,7 @@ class ContestListTable extends React.Component{
     render(){
         const list = this.props.contestList;
         const contestList = list.map(contest => (
-           <div key={contest.id} className={style.contest_list_container_container+' '+style.contest_list_item_container}>
+           <div key={contest.id} className={classNames(style.contest_list_container_container,style.contest_list_item_container)}>
                <div>
                    <h4 className={style.contest_list_item_name}>{contest.name}</h4>
                    <p className={style.contest_list_item_date}>
@@ -39,5 +41,9 @@ class ContestListTable extends React.Component{
         return <Card className={style.contest_list_container}>{contestList}</Card>;
     }
 }
+
+ContestListTable.propTypes = {
+    contestList : PropTypes.arrayOf(PropTypes.object),
+};
 
 export default ContestListTable;

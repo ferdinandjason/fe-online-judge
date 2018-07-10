@@ -83,8 +83,8 @@ Sidebar.propTypes = {
     items : PropTypes.arrayOf({
         type : PropTypes.string.isRequired,
         href : PropTypes.string.isRequired,
-        props : PropTypes.arrayOf(PropTypes.object()).isRequired,
+        props : PropTypes.arrayOf(PropTypes.object).isRequired,
     }),
-    nodes : PropTypes.arrayOf(PropTypes.object()),
-    nodesTitle : PropTypes.arrayOf(PropTypes.object()),
+    nodes : PropTypes.arrayOf(PropTypes.object),
+    nodesTitle : PropTypes.arrayOf(PropTypes.object),
 };

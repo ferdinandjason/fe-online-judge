@@ -1,6 +1,7 @@
 import React from 'react';
 
-import ContestListCard from '../components/ContestListCard/ContestListCard';
+import { ContestListCard } from "../components";
+
 import ContestListTable from "../ContestListTable/ContestListTable";
 import LoadingContestListTable from "../ContestListTable/LoadingContestListTable";
 

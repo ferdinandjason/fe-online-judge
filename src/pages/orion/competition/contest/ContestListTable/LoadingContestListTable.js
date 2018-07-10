@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { Card , Tag, Intent } from '@blueprintjs/core';
 
@@ -6,7 +7,7 @@ import style from './ContestListTable.scss';
 
 const LoadingContestListTable = () => (
     <Card className={style.contest_list_container}>
-        <div className={style.contest_list_container_container+' '+style.contest_list_item_container}>
+        <div className={classNames(style.contest_list_container_container,style.contest_list_item_container)}>
             <div>
                 <h4 className={"pt-skeleton"}>Placeholder for contest name</h4>
                 <p className={"pt-skeleton"}>

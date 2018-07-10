@@ -2,7 +2,8 @@ import React from 'react';
 
 import { Icon } from '@blueprintjs/core';
 
-import FullPageLayout from "../../../../components/FullPageLayout/FullPageLayout";
+import { FullPageLayout } from "../../../../components";
+
 import SingleProblemPage from "./SingleProblemPage/SingleProblemPage";
 import { trainingBreadcrumbs, trainingSidebarContent } from "../TrainingConstant";
 

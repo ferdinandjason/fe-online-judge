@@ -1,9 +1,6 @@
 import React from 'react';
 
-import LoadingProblemDetail from '../components/ProblemDetail/LoadingProblemDetail';
-import LoadingProblemDescription from '../components/ProblemDescription/LoadingProblemDescription';
-import ProblemDetail from '../components/ProblemDetail/ProblemDetail';
-import ProblemDescription from '../components/ProblemDescription/ProblemDescription';
+import { LoadingProblemDetail, ProblemDetail, ProblemDescription, LoadingProblemDescription } from "../components";
 
 class SingleProblemPage extends React.Component {
     constructor(props){

@@ -2,15 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d6d0d1-49a8-4c76-ac3f-20671cce20b1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadingState/LoadingState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingState/LoadingState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menubar/Menubar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menubar/Menubar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/LoadingProblemDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/LoadingProblemDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/LoadingProblemDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/LoadingProblemDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/orion/OrionRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/OrionRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,11 +48,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Breadcrumb.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js">
+      <file leaf-file-name="SingleProblemRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="-631">
+              <caret line="4" column="56" lean-forward="true" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContestListPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -47,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sidebar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Sidebar/Sidebar.js">
+      <file leaf-file-name="ContestListTable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="434">
+              <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -59,23 +81,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserWidget.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
+      <file leaf-file-name="MainContestRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-301">
-              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FullPageLayout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js">
+      <file leaf-file-name="LoadingContestListTable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+              <caret line="9" column="110" lean-forward="true" selection-start-line="9" selection-start-column="110" selection-end-line="9" selection-end-column="110" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -83,29 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/index.js">
+      <file leaf-file-name="OrionRoutes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/orion/OrionRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Header.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadingState.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/LoadingState/LoadingState.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="45">
+              <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -113,14 +114,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menubar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Menubar/Menubar.js">
+      <file leaf-file-name="ContestListCard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="300">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProblemListTable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleProblemPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-106">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainProblemRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -149,30 +180,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/PLoadingContestListTable.js" />
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.scss" />
-        <option value="$PROJECT_DIR$/src/AppRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.scss" />
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.scss" />
         <option value="$PROJECT_DIR$/src/components/LoadingState/LoadingState.scss" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/CompetitionRoutes.js" />
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.scss" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.scss" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.scss" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/LoadingProblemDetail.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/TrainingRoutes.js" />
-        <option value="$PROJECT_DIR$/src/pages/orion/OrionRoutes.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListPage/ProblemListPage.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" />
         <option value="$PROJECT_DIR$/src/modules/breadcrumb/actions.js" />
         <option value="$PROJECT_DIR$/src/modules/breadcrumb/reducer.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
@@ -185,21 +202,35 @@
         <option value="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.scss" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/TrainingConstant.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/CompetitionConstant.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js" />
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js" />
         <option value="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.scss" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/LoadingProblemDescription.js" />
         <option value="$PROJECT_DIR$/src/components/Sidebar/Sidebar.scss" />
         <option value="$PROJECT_DIR$/src/components/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js" />
-        <option value="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js" />
-        <option value="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" />
         <option value="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" />
         <option value="$PROJECT_DIR$/src/components/Menubar/Menubar.js" />
         <option value="$PROJECT_DIR$/src/components/LoadingState/LoadingState.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/LoadingProblemDescription.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/LoadingProblemDetail.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListPage/ProblemListPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js" />
+        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js" />
+        <option value="$PROJECT_DIR$/src/pages/orion/OrionRoutes.js" />
+        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/components/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js" />
+        <option value="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js" />
+        <option value="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.js" />
+        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js" />
+        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" />
       </list>
     </option>
   </component>
@@ -343,6 +374,16 @@
               <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="training" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SingleProblemPage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="orion" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -445,12 +486,12 @@
       <workItem from="1530600255513" duration="12328000" />
       <workItem from="1530682515557" duration="21243000" />
       <workItem from="1530770500298" duration="12784000" />
-      <workItem from="1531217589744" duration="2933000" />
+      <workItem from="1531217589744" duration="5951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84584000" />
+    <option name="totallyTimeSpent" value="87602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,18 +540,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/PLoadingContestListTable.js" />
     <entry file="file://$PROJECT_DIR$/src/components/LoadingState/LoadingState.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -533,24 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="93" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -561,72 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="78" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/LoadingProblemDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/OrionRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListPage/ProblemListPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -676,44 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/CompetitionRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="33" lean-forward="true" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -731,16 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/LoadingProblemDescription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="422" selection-start-line="13" selection-start-column="422" selection-end-line="13" selection-end-column="422" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Sidebar/Sidebar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -748,40 +657,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/build.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js">
+    <entry file="file://$PROJECT_DIR$/src/components/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        <state relative-caret-position="90">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/TrainingRoutes.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+          <caret line="10" column="128" selection-start-line="10" selection-start-column="128" selection-end-line="10" selection-end-column="128" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListPage/ProblemListPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="34" selection-end-line="35" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -798,9 +697,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/TrainingRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/CompetitionConstant.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
+        <state relative-caret-position="-721">
           <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -808,37 +734,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/CompetitionRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="195">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/index.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="45">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/components/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Sidebar/Sidebar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state relative-caret-position="510">
+          <caret line="88" column="51" lean-forward="true" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -855,19 +778,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Sidebar/Sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Menubar/Menubar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="-181">
           <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -887,8 +800,156 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="-1">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/LoadingProblemDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/LoadingProblemDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1441">
+          <caret line="10" column="133" lean-forward="true" selection-start-line="10" selection-start-column="133" selection-end-line="10" selection-end-column="133" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-631">
+          <caret line="4" column="56" lean-forward="true" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="110" lean-forward="true" selection-start-line="9" selection-start-column="110" selection-end-line="9" selection-end-column="110" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/OrionRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

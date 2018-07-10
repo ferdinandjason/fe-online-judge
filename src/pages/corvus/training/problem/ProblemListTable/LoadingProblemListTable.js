@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { Icon, Button } from '@blueprintjs/core';
 
@@ -7,7 +8,7 @@ import style from './ProblemListTable.scss';
 class LoadingProblemListTable extends React.Component {
     render(){
         return (
-            <table className={"pt-html-table pt-html-table-striped pt-interactive "+style.problem_table_list_wrapper}>
+            <table className={classNames("pt-html-table","pt-html-table-striped","pt-interactive",style.problem_table_list_wrapper)}>
                 <thead>
                 <tr>
                     <th>#</th>

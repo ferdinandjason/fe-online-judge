@@ -1,7 +1,8 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
-import FullPageLayout from "../../../../components/FullPageLayout/FullPageLayout";
+import { FullPageLayout } from "../../../../components";
+
 import ProblemListPage from "./ProblemListPage/ProblemListPage";
 import { trainingSidebarContent, trainingBreadcrumbs} from "../TrainingConstant";
 
