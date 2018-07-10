@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
 import { Tab, Tabs } from '@blueprintjs/core';
 
 import styles from './Menubar.scss';
@@ -39,5 +41,13 @@ class Menubar extends React.Component{
         return 'home';
     }
 }
+
+Menubar.propTypes = {
+    items: PropTypes.arrayOf({
+        id: PropTypes.string.isRequired,
+        title : PropTypes.string.isRequired,
+        route : PropTypes.object.isRequired,
+    })
+};
 
 export default Menubar;

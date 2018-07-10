@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { Menu, MenuItem, MenuDivider, Tree } from '@blueprintjs/core';
 
@@ -77,5 +78,15 @@ class Sidebar extends React.Component{
         }
     }
 }
+
+Sidebar.propTypes = {
+    items : PropTypes.arrayOf({
+        type : PropTypes.string.isRequired,
+        href : PropTypes.string.isRequired,
+        props : PropTypes.arrayOf(PropTypes.object()).isRequired,
+    }),
+    nodes : PropTypes.arrayOf(PropTypes.object()),
+    nodesTitle : PropTypes.arrayOf(PropTypes.object()),
+};
 
 export default Sidebar;

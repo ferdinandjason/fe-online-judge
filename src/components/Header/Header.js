@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import Menubar from '../Menubar/Menubar';
 import UserWidget from '../UserWidget/UserWidget';
@@ -11,9 +12,9 @@ const logo = require('../../assets/images/logo.png');
 class Header extends React.Component {
     render(){
         return (
-            <nav className={"pt-navbar "+styles.header}>
+            <nav className={classNames("pt-navbar",styles.header)}>
                 <div className={styles.header_wrapper}>
-                    <div className={"pt-navbar-group pt-align-left "+styles.header}>
+                    <div className={classNames("pt-navbar-group","pt-align-left",styles.header)}>
                         <div className={styles.header_heading_wrapper}>
                             <img src={logo} className={styles.header_logo} alt={"logo"}/>
                         </div>
