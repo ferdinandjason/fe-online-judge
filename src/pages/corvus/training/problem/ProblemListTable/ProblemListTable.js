@@ -9,7 +9,7 @@ import style from './ProblemListTable.scss';
 class ProblemListTable extends React.Component {
     render(){
         return (
-            <table className={classNames("pt-html-table","pt-html-table-striped","pt-interactive",style.problem_table_list_wrapper)}>
+            <table className={classNames("bp3-html-table","bp3-html-table-striped","bp3-interactive",style.problem_table_list_wrapper)}>
                 <thead>
                     <tr>
                         <th>#</th>

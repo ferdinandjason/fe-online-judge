@@ -6,8 +6,8 @@ import style from './ProblemDetail.scss';
 
 export const ProblemDetail = (props) => {
     return (
-        <div className={classNames("pt-card",style.problem_table_wrapper)}>
-            <table className={classNames("pt-html-table","pt-html-table-striped",style.problem_table)}>
+        <div className={classNames("bp3-card",style.problem_table_wrapper)}>
+            <table className={classNames("bp3-html-table","bp3-html-table-striped",style.problem_table)}>
                 <thead>
                 <tr>
                     <th>Time Limit</th>

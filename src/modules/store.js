@@ -1,11 +1,11 @@
-import { combineReducers, createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 
-import sessionReducer from './session/reducer';
+import { reducer as sessionReducer } from './redux/session';
 
-const rootReducer = combineReducers({
-    session : sessionReducer,
+const reducer = combineReducers({
+    session : sessionReducer(),
 });
 
-const store = createStore(rootReducer);
+const store = createStore(reducer);
 
 export default store;

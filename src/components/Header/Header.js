@@ -11,17 +11,17 @@ const logo = require('../../assets/images/logo.png');
 export class Header extends React.Component {
     render(){
         return (
-            <nav className={classNames("pt-navbar",styles.header)}>
+            <nav className={classNames("bp3-navbar",styles.header)}>
                 <div className={styles.header_wrapper}>
-                    <div className={classNames("pt-navbar-group","pt-align-left",styles.header)}>
+                    <div className={classNames("bp3-navbar-group","bp3-align-left",styles.header)}>
                         <div className={styles.header_heading_wrapper}>
                             <img src={logo} className={styles.header_logo} alt={"logo"}/>
                         </div>
 
                         <Menubar items={routes}/>
                     </div>
-                    <div className="pt-navbar-group pt-align-right">
-                        <input className="pt-input" placeholder="Search..." type="text" style={{marginTop:10+'px'}}/>
+                    <div className="bp3-navbar-group bp3-align-right">
+                        <input className="bp3-input" placeholder="Search..." type="text" style={{marginTop:10+'px'}}/>
                         <div style={{marginLeft:30+'px'}}>
                             <UserWidget/>
                         </div>

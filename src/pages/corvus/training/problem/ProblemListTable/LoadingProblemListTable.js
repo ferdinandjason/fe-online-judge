@@ -8,7 +8,7 @@ import style from './ProblemListTable.scss';
 class LoadingProblemListTable extends React.Component {
     render(){
         return (
-            <table className={classNames("pt-html-table","pt-html-table-striped","pt-interactive",style.problem_table_list_wrapper)}>
+            <table className={classNames("bp3-html-table","bp3-html-table-striped","bp3-interactive",style.problem_table_list_wrapper)}>
                 <thead>
                 <tr>
                     <th>#</th>
@@ -21,110 +21,110 @@ class LoadingProblemListTable extends React.Component {
                 <tbody>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>
                     </tr>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>
                     </tr>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>
                     </tr>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>
                     </tr>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>
                     </tr>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>
                     </tr>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>
                     </tr>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>
                     </tr>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>
                     </tr>
                     <tr>
                         <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder for ID</p></td>
-                        <td><p className={"pt-skeleton"}>Placeholder percentage</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
-                            <Link to={"/training/problem/test"} className={"pt-skeleton"} >
+                            <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
                                 <Button icon={"arrow-right"} text={"Go!"}/>
                             </Link>
                         </td>

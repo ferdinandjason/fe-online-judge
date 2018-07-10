@@ -5,8 +5,8 @@ import style from './ProblemDetail.scss';
 
 export const LoadingProblemDetail = () => {
     return (
-        <div className={classNames("pt-card",style.problem_table_wrapper)}>
-            <table className={classNames("pt-html-table","pt-html-table-striped",style.problem_table)}>
+        <div className={classNames("bp3-card",style.problem_table_wrapper)}>
+            <table className={classNames("bp3-html-table","bp3-html-table-striped",style.problem_table)}>
                 <thead>
                 <tr>
                     <th>Time Limit</th>
@@ -17,10 +17,10 @@ export const LoadingProblemDetail = () => {
                 </thead>
                 <tbody>
                 <tr>
-                    <td><p className={"pt-skeleton"}>X s</p></td>
-                    <td><p className={"pt-skeleton"}>X MB</p></td>
-                    <td><p className={"pt-skeleton"}>XXX</p></td>
-                    <td><p className={"pt-skeleton"}>Mr. XXX</p></td>
+                    <td><p className={"bp3-skeleton"}>X s</p></td>
+                    <td><p className={"bp3-skeleton"}>X MB</p></td>
+                    <td><p className={"bp3-skeleton"}>XXX</p></td>
+                    <td><p className={"bp3-skeleton"}>Mr. XXX</p></td>
                 </tr>
                 </tbody>
             </table>

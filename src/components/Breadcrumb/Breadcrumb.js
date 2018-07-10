@@ -8,7 +8,7 @@ import style from './Breadcrumb.scss';
 export const Breadcrumb = (props) => {
     const items = props.breadcrumbs.map((item,idx) => (
         <li key={item.link}>
-            <Link to={item.link} className={classNames("pt-breadcrumb",{"pt-breadcrumb-current":idx===props.breadcrumbs.length})}>
+            <Link to={item.link} className={classNames("bp3-breadcrumb",{"bp3-breadcrumb-current":idx===props.breadcrumbs.length})}>
                 {item.title}
             </Link>
         </li>
@@ -16,7 +16,7 @@ export const Breadcrumb = (props) => {
     return (
         <div className={style.breadcrumbs}>
             <div className={style.breadcrumbs__content}>
-                <ul className="pt-breadcrumbs">{items}</ul>
+                <ul className="bp3-breadcrumbs">{items}</ul>
             </div>
         </div>
     );

@@ -39,11 +39,11 @@ body{
   to { transform: rotate(360deg); }
 }
 
-.pt-tab-indicator{
+.bp3-tab-indicator{
   background-color: #ffffff !important;
   height: 4px !important;
 }
 
-.pt-menu{
+.bp3-menu{
   min-width: 280px;
 }

@@ -2,27 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d6d0d1-49a8-4c76-ac3f-20671cce20b1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/api/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/api/session/session.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/redux/session.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/session/action.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/session/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/session/type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/LoadingProblemDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/LoadingProblemDescription.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/LoadingProblemDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/LoadingProblemDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/OrionRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/OrionRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,89 +53,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SingleProblemRoutes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js">
+      <file leaf-file-name="session.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/api/session/session.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-631">
-              <caret line="4" column="56" lean-forward="true" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContestListPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="75">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContestListTable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js">
+      <file leaf-file-name="request.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/api/request.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainContestRoutes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadingContestListTable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="110" lean-forward="true" selection-start-line="9" selection-start-column="110" selection-end-line="9" selection-end-column="110" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrionRoutes.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/orion/OrionRoutes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContestListCard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProblemListTable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js">
+      <file leaf-file-name="session.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/redux/session.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="449">
-              <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/store.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserWidget.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -138,20 +113,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleProblemPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemPage/SingleProblemPage.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-106">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="60">
+              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainProblemRoutes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js">
+      <file leaf-file-name="LoginForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/LoginForm/LoginForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            <state relative-caret-position="329">
+              <caret line="72" column="45" lean-forward="true" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginForm.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/LoginForm/LoginForm.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/api/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -180,21 +176,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.scss" />
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.scss" />
-        <option value="$PROJECT_DIR$/src/components/LoadingState/LoadingState.scss" />
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestRoutes.js" />
-        <option value="$PROJECT_DIR$/src/pages/orion/competition/CompetitionRoutes.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.scss" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDescription/ProblemDescription.scss" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.scss" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/TrainingRoutes.js" />
         <option value="$PROJECT_DIR$/src/modules/breadcrumb/actions.js" />
         <option value="$PROJECT_DIR$/src/modules/breadcrumb/reducer.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/modules/session/type.js" />
-        <option value="$PROJECT_DIR$/src/modules/store.js" />
         <option value="$PROJECT_DIR$/src/modules/session/reducer.js" />
         <option value="$PROJECT_DIR$/src/modules/session/action.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/CompetitionBreadcrumbs.js" />
@@ -204,8 +190,6 @@
         <option value="$PROJECT_DIR$/src/pages/orion/competition/CompetitionConstant.js" />
         <option value="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.scss" />
         <option value="$PROJECT_DIR$/src/components/Sidebar/Sidebar.scss" />
-        <option value="$PROJECT_DIR$/src/components/index.js" />
-        <option value="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" />
         <option value="$PROJECT_DIR$/src/components/Menubar/Menubar.js" />
         <option value="$PROJECT_DIR$/src/components/LoadingState/LoadingState.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
@@ -231,6 +215,18 @@
         <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" />
+        <option value="$PROJECT_DIR$/node_modules/@blueprintjs/core/lib/esm/components/popover/popover.js" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/index.js" />
+        <option value="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" />
+        <option value="$PROJECT_DIR$/src/components/LoginForm/LoginForm.scss" />
+        <option value="$PROJECT_DIR$/src/modules/api/index.js" />
+        <option value="$PROJECT_DIR$/src/components/LoginForm/LoginForm.js" />
+        <option value="$PROJECT_DIR$/src/modules/store.js" />
+        <option value="$PROJECT_DIR$/src/modules/redux/session.js" />
+        <option value="$PROJECT_DIR$/src/modules/api/session/session.js" />
+        <option value="$PROJECT_DIR$/src/modules/api/request.js" />
       </list>
     </option>
   </component>
@@ -250,7 +246,8 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="961" />
     <option name="y" value="28" />
     <option name="width" value="959" />
     <option name="height" value="1052" />
@@ -291,158 +288,56 @@
               <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
               <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="training" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="training" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="training" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="LoginForm" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
               <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="training" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ProblemDescription" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Menubar" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
               <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="training" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ProblemDetail" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserWidget" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="session" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="redux" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
               <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="training" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ProblemListPage" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="training" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ProblemListTable" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corvus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="training" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SingleProblemPage" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="orion" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="orion" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="competition" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="orion" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="competition" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="contest" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="orion" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="competition" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="contest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="orion" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="competition" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="contest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ContestListCard" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="orion" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="competition" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="contest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ContestListPage" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="orion" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="competition" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="contest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ContestListTable" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -455,6 +350,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RunDashboard">
@@ -486,12 +382,12 @@
       <workItem from="1530600255513" duration="12328000" />
       <workItem from="1530682515557" duration="21243000" />
       <workItem from="1530770500298" duration="12784000" />
-      <workItem from="1531217589744" duration="5951000" />
+      <workItem from="1531217589744" duration="19843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87602000" />
+    <option name="totallyTimeSpent" value="101494000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,17 +399,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
+    <frame x="961" y="28" width="959" height="1052" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3286334" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.15688367" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49945235" visible="true" weight="0.3286334" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.32201535" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32977587" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
@@ -540,81 +436,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/PLoadingContestListTable.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/LoadingState/LoadingState.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="29" lean-forward="true" selection-start-line="34" selection-start-column="2" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/components/ProblemDetail/ProblemDetail.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/breadcrumb/reducer.js" />
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="66" lean-forward="true" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/session/type.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/session/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -659,13 +480,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/build.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -762,16 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="88" column="51" lean-forward="true" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -892,7 +696,7 @@
     <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-631">
-          <caret line="4" column="56" lean-forward="true" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -909,7 +713,7 @@
     <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -919,7 +723,7 @@
     <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
-          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -929,14 +733,14 @@
     <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="110" lean-forward="true" selection-start-line="9" selection-start-column="110" selection-end-line="9" selection-end-column="110" />
+          <caret line="9" column="110" selection-start-line="9" selection-start-column="110" selection-end-line="9" selection-end-column="110" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -946,10 +750,124 @@
     <entry file="file://$PROJECT_DIR$/src/pages/orion/OrionRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@blueprintjs/core/lib/esm/components/popover/popover.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#156#189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LoginForm/LoginForm.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LoginForm/LoginForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="72" column="45" lean-forward="true" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/redux/session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/session/session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

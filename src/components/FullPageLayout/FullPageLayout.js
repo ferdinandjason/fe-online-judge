@@ -13,7 +13,7 @@ export const FullPageLayout = (props)=> {
             <Sidebar items={props.sidebarContent}/>
             <div>
                 <div className={style.page_layout_header_container}>
-                    <div className={"pt-navbar-group pt-align-left "}>
+                    <div className={"bp3-navbar-group bp3-align-left "}>
                         <Breadcrumb breadcrumbs={props.breadcrumbs}/>
                     </div>
                     {
@@ -24,7 +24,7 @@ export const FullPageLayout = (props)=> {
                             :
                             null
                     }
-                    <div className={classNames("pt-navbar-group","pt-align-right",style.page_layout_button_wrapper)}>
+                    <div className={classNames("bp3-navbar-group","bp3-align-right",style.page_layout_button_wrapper)}>
                         {
                             props.buttons.map(button => {
                                 return <Button {...button.props}/>
