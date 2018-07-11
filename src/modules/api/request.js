@@ -1,24 +1,20 @@
 import axios from 'axios';
 
 function request(method, url, token, header, data, callback){
-    const authorization = token ? { 'Authorization' : `Bearer ${token}` } : {};
+    const authorization = token ? { Authorization : `Bearer ${token}` } : {};
 
-    axios({
-        method : method,
-        url : url,
-        headers : {...header , ...authorization },
-        data : data,
-    })
-        .then( function(response) {
-            // handle response
-            console.log(callback);
-            callback(response)
-            console.log(response)
+    return axios
+        .request({
+            method : method,
+            url : 'http://api.github.com',
+            headers : {...header , ...authorization },
+            data : data,
         })
-        .then( (error)=> {
+        .catch( (error)=> {
             // handle error
-            console.log(error)
+            console.log(error);
         });
+
 
 }
 

@@ -10,11 +10,12 @@ export function sessionAPI(){
             _post(`${baseURL}/login`,undefined,{
                 'username':username,
                 'password':password,
-            }, (response)=>{
-                store.dispatch(PutToken(response.access_token));
-                console.log(response);
-                console.log(store.getState());
-            });
+            })
+                .then((response)=>{
+                    store.dispatch(PutToken(response.access_token));
+                    console.log(response);
+                    console.log(store.getState());
+                });
 
             const token = selectToken();
 

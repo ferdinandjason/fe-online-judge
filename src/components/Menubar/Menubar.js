@@ -43,11 +43,7 @@ export class Menubar extends React.Component{
 }
 
 Menubar.propTypes = {
-    items: PropTypes.arrayOf({
-        id: PropTypes.string.isRequired,
-        title : PropTypes.string.isRequired,
-        route : PropTypes.object.isRequired,
-    })
+    items: PropTypes.arrayOf(PropTypes.object)
 };
 
 export default Menubar;

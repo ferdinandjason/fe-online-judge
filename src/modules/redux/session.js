@@ -13,8 +13,12 @@ const INITIAL_STATE = {
     user : null,
 };
 
+const INITIAL_ACTION = {
+    type : 'session',
+};
+
 // Reducer
-export function reducer(state = INITIAL_STATE, action = INITIAL_STATE) {
+export function sessionReducer(state = INITIAL_STATE, action = INITIAL_ACTION) {
     switch (action.type) {
         case PUT_TOKEN :
             return Object.assign({...state},{
