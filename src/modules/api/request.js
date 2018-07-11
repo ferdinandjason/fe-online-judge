@@ -6,7 +6,7 @@ function request(method, url, token, header, data, callback){
     return axios
         .request({
             method : method,
-            url : 'http://api.github.com',
+            url : url,
             headers : {...header , ...authorization },
             data : data,
         })
