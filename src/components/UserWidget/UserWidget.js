@@ -1,21 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { LoginForm } from "..";
+import { Menu, MenuItem, MenuDivider, Popover, Position, Icon } from '@blueprintjs/core';
+import classNames from 'classnames';
 
-import { Menu, MenuItem, MenuDivider, Popover } from '@blueprintjs/core';
+import store from "../../modules/store";
 
-import './UserWidget.css';
+import style from './UserWidget.scss';
 
 export class UserWidget extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            avatarUrl: null,
+        }
+    }
+
     static userIsAuthenticated(){
-        // TODO: get Session from Laravel
-        return false;
+        return store.getState().session.isAuthenticated;
+    }
+
+    static getUsername(){
+        try {
+            return store.getState().session.user.email;
+        }
+        catch (e) {
+            return '...';
+        }
     }
 
     render(){
         if(UserWidget.userIsAuthenticated()){
-            this.renderUserAvatar();
             return this.renderForUser();
         } else {
             return this.renderForGuest();
@@ -29,30 +44,52 @@ export class UserWidget extends React.Component{
     }
 
     renderForUser(){
-        // TODO : get username from Laravel database storage;
-        return (
-            <div className="bp3-navbar-group bp3-align-right widget-user">
-                <img src={this.state.avatarUrl} alt="user-avatar" className="widget-user__avatar" />
-                <Menu className="widget-user__menu">
-                    <MenuItem className="widget-user__menu-helper" icon="user" text="user.username" disabled />
-                    <MenuDivider className="widget-user__menu-helper" />
+        const menu = (
+            <div className={classNames("bp3-navbar-group","bp3-align-right",style.widget_user,"bp3-dark")}>
+                {/*<img src={this.state.avatarUrl} alt="user-avatar" className="widget-user__avatar" />*/}
+                <Menu className={style.widget_user__menu}>
+                    <MenuItem className={style.widget_user__menu_helper} icon="user" text={UserWidget.getUsername()} disabled />
+                    <MenuDivider className={style.widget_user__menu_helper} />
                     <MenuItem text="My account" href="/account" />
                     <MenuItem text="Log out" href="/logout" />
                 </Menu>
             </div>
         );
+
+        const popover = (
+            <Popover className={style.widget_user__avatar_menu} content={menu} position={Position.BOTTOM_RIGHT} usePortal={false}>
+                <div>
+                    <span data-key="username" className={style.widget_user__user__username}>
+                        {UserWidget.getUsername()}
+                    </span>{' '}
+                    <Icon icon="chevron-down" />
+                </div>
+            </Popover>
+        );
+
+        const responsivePopover = (
+            <Popover className={style.widget_user__burger} content={menu} position={Position.BOTTOM_RIGHT} usePortal={false}>
+                <Icon icon="menu" iconSize={Icon.SIZE_LARGE} />
+            </Popover>
+        );
+
+        return (
+            <div className={style.widget_user_wrapper}>
+                {popover}
+                {responsivePopover}
+            </div>
+        )
     }
 
     renderForGuest(){
         return (
             <div className="bp3-navbar-group bp3-align-right widget-user">
-                <div className="widget-user__link">
-                    <Popover>
-                        <a>LogIn</a>
-                        <LoginForm/>
-                    </Popover>
+                <div className={style.widget_user__link}>
+                    <Link data-key="login" to="/login">
+                        Log In
+                    </Link>
                 </div>
-                <div className="widget-user__link">
+                <div className={style.widget_user__link}>
                     <Link data-key="register" to="/register">
                         Register
                     </Link>

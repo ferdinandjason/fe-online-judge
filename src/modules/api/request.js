@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-function request(method, url, token, header, data, callback){
+function request(method, url, token, header, data){
     const authorization = token ? { Authorization : `Bearer ${token}` } : {};
+    console.log(method,url,token);
 
     return axios
         .request({
@@ -18,18 +19,18 @@ function request(method, url, token, header, data, callback){
 
 }
 
-export function _get(url,token=null,callback){
-    return request('GET',url,token,null,null,callback);
+export function _get(url,token=null){
+    return request('GET',url,token,null);
 }
 
-export function _post(url, token=null, data=null, callback){
-    return request('POST',url,token,{'Content-Type':'application/json'},JSON.stringify(data),callback);
+export function _post(url, token=null, data=null){
+    return request('POST',url,token,{'Content-Type':'application/json'},JSON.stringify(data));
 }
 
-export function _delete(url, token=null,callback){
-    return request('DELETE',url,token,null,null,callback);
+export function _delete(url, token=null){
+    return request('DELETE',url,token,null);
 }
 
-export function _put(url, token=null, data=null,callback){
-    return request('PUT',url,token,{'Content-Type':'application/json'},JSON.stringify(data),callback);
+export function _put(url, token=null, data=null){
+    return request('PUT',url,token,{'Content-Type':'application/json'},JSON.stringify(data));
 }

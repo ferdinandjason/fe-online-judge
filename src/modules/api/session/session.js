@@ -1,31 +1,40 @@
 import store from '../../store';
 import { _post,_get } from '../request';
-import {PutToken, selectToken} from "../../redux/session";
+import {PutToken, LogInSucces, selectToken, AddUser, LogOut} from "../../redux/session";
 
 export function sessionAPI(){
     const baseURL = 'http://localhost:8000/api/auth';
 
     return {
-        logIn : (username,password) => {
-            _post(`${baseURL}/login`,undefined,{
-                'username':username,
+        logIn : (email,password) => {
+            return _post(`${baseURL}/login`,undefined,{
+                'email':email,
                 'password':password,
             })
                 .then((response)=>{
-                    store.dispatch(PutToken(response.access_token));
                     console.log(response);
-                    console.log(store.getState());
-                });
-
-            const token = selectToken();
-
-            _get(`${baseURL}/me`,token, (response)=>{
-                console.log(response);
-            });
+                    store.dispatch(PutToken(response.data.access_token));
+                    store.dispatch(LogInSucces());
+                })
+                .then(()=>{
+                    const token = selectToken();
+                    _get(`${baseURL}/me`,token)
+                        .then((response)=>{
+                            store.dispatch(AddUser({
+                                id:response.data.id,
+                                name:response.data.name,
+                                email:response.data.email,
+                            }));
+                            console.log(store.getState());
+                        })
+                })
         },
 
         logOut : (token)=>{
-            _post(`${baseURL}/logout`,token);
+            _post(`${baseURL}/logout`,token)
+                .then((response)=>{
+                    store.dispatch(LogOut());
+                });
         },
 
         refreshToken : (token)=> {

@@ -1,0 +1,60 @@
+.widget_user{
+    height: 60px !important;
+}
+
+.widget_user_wrapper{
+    color: white;
+    margin-top: 10px;
+}
+
+.widget_user__link a{
+    color: #b7c9cc;
+}
+
+.widget_user__link a:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.widget_user__avatar {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.widget_user__avatar_menu {
+
+}
+
+.widget_user__link {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.widget_user__burger, .widget_user__menu_helper {
+    display: none;
+}
+
+.widget_user__menu a {
+    color: #FFFFFF;
+}
+
+.widget_user__user__username {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .widget_user__avatar, .widget_user__avatar_menu, .widget_user__link {
+        display: none;
+    }
+
+    .widget_user__burger, .widget_user__menu_helper {
+        display: block;
+        cursor: pointer;
+
+        svg {
+            float: left;
+        }
+    }
+}

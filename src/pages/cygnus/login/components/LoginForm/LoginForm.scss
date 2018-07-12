@@ -1,0 +1,29 @@
+@import '../../../../../styles/base';
+
+.form_login_wrapper {
+  display: flex;
+}
+
+.form_login_register {
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  font-size: $font-size-small;
+}
+
+.form_login_forgot_password {
+  font-size: $font-size-small;
+}
+
+.form_login_input {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+input{
+  height: 37px !important;
+}
+
+.form_login_button_lock {
+  margin-top: 6px !important;
+}

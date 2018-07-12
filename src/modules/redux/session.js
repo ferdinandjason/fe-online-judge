@@ -81,5 +81,5 @@ export function LogOut(){
 
 // Selector
 export function selectToken(){
-    return store.getState().token;
+    return store.getState().session.token;
 }
