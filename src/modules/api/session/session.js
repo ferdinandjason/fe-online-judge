@@ -30,9 +30,10 @@ export function sessionAPI(){
                 })
         },
 
-        logOut : (token)=>{
+        logOut : ()=>{
+            const token = selectToken();
             _post(`${baseURL}/logout`,token)
-                .then((response)=>{
+                .then(()=>{
                     store.dispatch(LogOut());
                 });
         },

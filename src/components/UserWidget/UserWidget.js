@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 import { Menu, MenuItem, MenuDivider, Popover, Position, Icon } from '@blueprintjs/core';
 import classNames from 'classnames';
@@ -13,7 +13,13 @@ export class UserWidget extends React.Component{
         super(props);
         this.state = {
             avatarUrl: null,
-        }
+        };
+    }
+
+    static redirectToHome(){
+        return (
+            <Redirect to={"/"}/>
+        )
     }
 
     static userIsAuthenticated(){
@@ -51,7 +57,7 @@ export class UserWidget extends React.Component{
                     <MenuItem className={style.widget_user__menu_helper} icon="user" text={UserWidget.getUsername()} disabled />
                     <MenuDivider className={style.widget_user__menu_helper} />
                     <MenuItem text="My account" href="/account" />
-                    <MenuItem text="Log out" href="/logout" />
+                    <MenuItem text="Log out" href="/logout"/>
                 </Menu>
             </div>
         );
@@ -97,4 +103,5 @@ export class UserWidget extends React.Component{
             </div>
         );
     }
+
 }

@@ -23,7 +23,7 @@ export class Header extends React.Component {
                     <div className="bp3-navbar-group bp3-align-right">
                         <input className="bp3-input" placeholder="Search..." type="text" style={{marginTop:10+'px'}}/>
                         <div style={{marginLeft:30+'px'}}>
-                            <UserWidget/>
+                            <UserWidget history={this.props.history}/>
                         </div>
                     </div>
                 </div>

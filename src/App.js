@@ -14,9 +14,9 @@ class App extends Component {
        <div>
           <Header/>
           <Switch>
-              <Route path={"/"} component={CygnusRoutes}/>
               <Route path={"/competition"} component={OrionRoutes}/>
               <Route path={"/training"} component={CorvusRoutes}/>
+              <Route path={"/"} component={CygnusRoutes}/>
           </Switch>
        </div>
     );

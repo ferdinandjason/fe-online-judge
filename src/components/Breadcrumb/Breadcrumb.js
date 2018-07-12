@@ -23,8 +23,8 @@ export const Breadcrumb = (props) => {
 };
 
 Breadcrumb.propTypes = {
-      breadcrumbs : PropTypes.arrayOf({
+      breadcrumbs : PropTypes.arrayOf(PropTypes.shape({
           link : PropTypes.string.isRequired,
           title : PropTypes.string.isRequired,
-      }).isRequired
+      })).isRequired
 };

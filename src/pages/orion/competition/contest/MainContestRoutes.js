@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Redirect } from 'react-router-dom';
 import { FullPageLayout } from "../../../../components";
 
 import ContestListPage from "./ContestListPage/ContestListPage";
@@ -25,9 +25,12 @@ const contestBreadcrumbs = competitionBreadcrumb.concat([]);
 
 const MainContestRoutes = () => {
     return (
-        <FullPageLayout buttons={ContestButton} sidebarContent={competitionSidebarContent} breadcrumbs={contestBreadcrumbs}>
-            <ContestListPage/>
-        </FullPageLayout>
+        <div>
+            <Redirect to={'/competition/contest'}/>
+            <FullPageLayout buttons={ContestButton} sidebarContent={competitionSidebarContent} breadcrumbs={contestBreadcrumbs}>
+                <ContestListPage/>
+            </FullPageLayout>
+        </div>
     )
 };
 

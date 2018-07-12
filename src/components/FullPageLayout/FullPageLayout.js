@@ -27,7 +27,7 @@ export const FullPageLayout = (props)=> {
                     <div className={classNames("bp3-navbar-group","bp3-align-right",style.page_layout_button_wrapper)}>
                         {
                             props.buttons.map(button => {
-                                return <Button {...button.props}/>
+                                return <Button {...button.props} key={button.props.text}/>
                             })
                         }
                     </div>
