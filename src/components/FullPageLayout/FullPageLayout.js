@@ -11,9 +11,9 @@ export const FullPageLayout = (props)=> {
     return (
         <div className={style.page_layout_container}>
             <Sidebar items={props.sidebarContent}/>
-            <div>
+            <div className={style.page_layout_container_right}>
                 <div className={style.page_layout_header_container}>
-                    <div className={"bp3-navbar-group bp3-align-left "}>
+                    <div className={"bp3-navbar-group bp3-align-left"}>
                         <Breadcrumb breadcrumbs={props.breadcrumbs}/>
                     </div>
                     {

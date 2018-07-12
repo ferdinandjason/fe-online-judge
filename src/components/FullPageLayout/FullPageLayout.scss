@@ -7,9 +7,13 @@
   margin-left: 10px;
 }
 
+.page_layout_container_right{
+  overflow-y: hidden;
+  width: 100%; 
+}
+
 .page_layout_header_container{
   height: 58px;
-  width: calc(100vw - 280px);
   background-color: #fafafa;
 }
 
