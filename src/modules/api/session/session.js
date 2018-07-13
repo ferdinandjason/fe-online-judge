@@ -1,9 +1,10 @@
 import store from '../../store';
+import {APP_CONFIG} from '../../../config';
 import { _post,_get } from '../request';
 import {PutToken, LogInSucces, selectToken, AddUser, LogOut} from "../../redux/session";
 
 export function sessionAPI(){
-    const baseURL = 'http://localhost:8000/api/auth';
+    const baseURL = APP_CONFIG.apiURL.auth;
 
     return {
         logIn : (email,password) => {
@@ -12,12 +13,11 @@ export function sessionAPI(){
                 'password':password,
             })
                 .then((response)=>{
-                    console.log(response);
-                    store.dispatch(PutToken(response.data.access_token));
+                    const token = response.data.access_token;
+                    store.dispatch(PutToken(token));
                     store.dispatch(LogInSucces());
-                })
-                .then(()=>{
-                    const token = selectToken();
+
+                    // Get current User
                     _get(`${baseURL}/me`,token)
                         .then((response)=>{
                             store.dispatch(AddUser({
@@ -25,9 +25,11 @@ export function sessionAPI(){
                                 name:response.data.name,
                                 email:response.data.email,
                             }));
-                            console.log(store.getState());
-                        })
-                })
+                            return Promise.resolve();
+                        });
+
+                    return Promise.resolve();
+                });
         },
 
         logOut : ()=>{
