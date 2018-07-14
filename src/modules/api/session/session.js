@@ -2,6 +2,9 @@ import {store} from '../../store';
 import {APP_CONFIG} from '../../../config';
 import { _post,_get } from '../request';
 import {PutToken, LogInSucces, selectToken, AddUser, LogOut} from "../../redux/session";
+import {Toast} from "../../redux/toast";
+
+import {errorAPI} from "../error/error";
 
 export function sessionAPI(){
     const baseURL = APP_CONFIG.apiURL.auth;
@@ -21,10 +24,12 @@ export function sessionAPI(){
                     _get(`${baseURL}/me`,token)
                         .then((response)=>{
                             store.dispatch(AddUser({
-                                id:response.data.id,
-                                name:response.data.name,
-                                email:response.data.email,
+                                id:response.data.data.id,
+                                name:response.data.data.name,
+                                email:response.data.data.email,
+                                roles:response.data.data.roles,
                             }));
+                            console.log(store.getState().session);
                             return null;
                         });
                     return Promise.resolve(response);
@@ -33,9 +38,15 @@ export function sessionAPI(){
 
         logOut : ()=>{
             const token = selectToken();
-            _post(`${baseURL}/logout`,token)
-                .then(()=>{
+            return _post(`${baseURL}/logout`,token)
+                .then((response)=>{
+                    if(response.status !== 200){
+                        errorAPI().showToast(response.status,response.data.message);
+                        return Promise.resolve(response);
+                    }
                     store.dispatch(LogOut());
+                    store.dispatch(Toast.alert(response.data.message,'user'));
+                    return Promise.resolve(response);
                 });
         },
 

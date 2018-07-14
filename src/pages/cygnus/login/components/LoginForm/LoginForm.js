@@ -7,6 +7,8 @@ import { HorizontalDivider } from '../../../../../components';
 import style from './LoginForm.scss';
 
 import {API} from "../../../../../modules/api";
+import {Toast} from "../../../../../modules/redux/toast";
+import {store} from "../../../../../modules/store";
 
 export class LoginForm extends React.Component {
     constructor(props){
@@ -27,7 +29,8 @@ export class LoginForm extends React.Component {
     redirectToHome(){
         setTimeout(()=>{
             this.props.history.push('/');
-        },200);
+            store.dispatch(Toast.show_('Welcome aboard , '+store.getState().session.user.name+' !','user'));
+        },500);
     }
 
     render(){
@@ -76,9 +79,7 @@ export class LoginForm extends React.Component {
         console.log(_);
         API.session.logIn(email,password)
             .then((response)=>{
-                console.log(response);
                 this.redirectToHome();
-                console.log('b');
             });
 
     };

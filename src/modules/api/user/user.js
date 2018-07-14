@@ -1,5 +1,8 @@
 import {_post} from "../request";
 import {APP_CONFIG} from '../../../config';
+import {store} from "../../store";
+import {Toast} from "../../redux/toast";
+import {errorAPI} from "../error/error";
 
 export function userAPI(){
     const baseURL = APP_CONFIG.apiURL.auth;
@@ -12,11 +15,12 @@ export function userAPI(){
                 'password':password,
             })
                 .then((response)=>{
-                    console.log(response);
-                    if(response === undefined){
-                        // success ?? TODO : cek
+                    if(response.status === 201){
+                        store.dispatch(Toast.success('Register Success! \ User '+response.statusText));
                     }
-                    console.log(response.data);
+                    else {
+                        errorAPI().showToast(response.status,'Error ! '+response.statusText);
+                    }
                     return Promise.resolve();
                 })
         }

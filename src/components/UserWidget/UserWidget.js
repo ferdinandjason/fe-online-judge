@@ -63,7 +63,7 @@ export class UserWidget extends React.Component{
         );
 
         const popover = (
-            <Popover className={style.widget_user__avatar_menu} cgitontent={menu} position={Position.BOTTOM_RIGHT} usePortal={false}>
+            <Popover className={style.widget_user__avatar_menu} content={menu} position={Position.BOTTOM_RIGHT} usePortal={false}>
                 <div>
                     <span data-key="username" className={style.widget_user__user__username}>
                         {UserWidget.getUserName()}
