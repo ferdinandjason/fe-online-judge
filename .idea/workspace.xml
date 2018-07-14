@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d6d0d1-49a8-4c76-ac3f-20671cce20b1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CardContainer/CardContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardContainer/CardContainer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/api/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/api/user/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListPage/ProblemListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListPage/ProblemListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListPage/ProblemListPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListPage/ProblemListPage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cygnus/login/LoginPage/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/login/LoginPage/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/api/session/session.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/api/session/session.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cygnus/register/components/RegisterForm/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/register/components/RegisterForm/RegisterForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/components/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,14 +29,35 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48908857">
+    <splitter split-orientation="horizontal" split-proportion="0.762516">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="LoginForm.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="344">
-                  <caret line="57" selection-start-line="57" selection-end-line="57" />
+                <state relative-caret-position="420">
+                  <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="26" selection-start-column="26" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserWidget.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -61,17 +68,11 @@
           <file leaf-file-name="session.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/modules/api/session/session.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/config.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+                <state relative-caret-position="420">
+                  <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#32#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -127,23 +128,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/modules/api/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#0#45#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RegisterForm.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="RegisterForm.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/cygnus/register/components/RegisterForm/RegisterForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="359">
-                  <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+                <state relative-caret-position="-106">
+                  <caret line="83" selection-start-line="83" selection-end-line="83" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -308,7 +297,6 @@
         <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
-        <option value="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" />
         <option value="$PROJECT_DIR$/src/pages/cygnus/logout/LogoutPage/LogoutPage.js" />
         <option value="$PROJECT_DIR$/src/pages/cygnus/welcome/WelcomePage/WelcomePage.js" />
         <option value="$PROJECT_DIR$/src/styles/_base.scss" />
@@ -318,7 +306,6 @@
         <option value="$PROJECT_DIR$/src/components/HorizontalDivider/HorizontalDivider.js" />
         <option value="$PROJECT_DIR$/src/pages/cygnus/register/components/index.js" />
         <option value="$PROJECT_DIR$/src/pages/cygnus/CygnusRoutes.js" />
-        <option value="$PROJECT_DIR$/src/modules/api/session/session.js" />
         <option value="$PROJECT_DIR$/src/components/HorizontalDivider/HorizontalDivider.scss" />
         <option value="$PROJECT_DIR$/src/modules/api/user/user.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/components/ContestListCard/ContestListCard.scss" />
@@ -334,8 +321,10 @@
         <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.scss" />
-        <option value="$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js" />
         <option value="$PROJECT_DIR$/src/pages/cygnus/register/components/RegisterForm/RegisterForm.js" />
+        <option value="$PROJECT_DIR$/src/modules/api/session/session.js" />
+        <option value="$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js" />
+        <option value="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" />
       </list>
     </option>
   </component>
@@ -406,6 +395,20 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="CardContainer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Header" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserWidget" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
@@ -705,12 +708,12 @@
       <workItem from="1531388339134" duration="17511000" />
       <workItem from="1531481090363" duration="621000" />
       <workItem from="1531495381287" duration="2546000" />
-      <workItem from="1531536473758" duration="3585000" />
+      <workItem from="1531536473758" duration="5103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133878000" />
+    <option name="totallyTimeSpent" value="135396000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -858,20 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/cygnus/logout/LogoutPage/LogoutPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -934,13 +923,6 @@
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/api/session/session.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1108,6 +1090,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/cygnus/register/components/RegisterForm/RegisterForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1115,20 +1107,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/session/session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="420">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/cygnus/register/components/RegisterForm/RegisterForm.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

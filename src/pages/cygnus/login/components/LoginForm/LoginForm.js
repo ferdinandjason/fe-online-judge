@@ -25,7 +25,9 @@ export class LoginForm extends React.Component {
     };
 
     redirectToHome(){
-        this.props.history.push('/');
+        setTimeout(()=>{
+            this.props.history.push('/');
+        },200);
     }
 
     render(){
@@ -73,9 +75,11 @@ export class LoginForm extends React.Component {
         const { _ , email, password } = this.state;
         console.log(_);
         API.session.logIn(email,password)
-            .then(()=>{
+            .then((response)=>{
+                console.log(response);
                 this.redirectToHome();
-            })
+                console.log('b');
+            });
 
     };
 

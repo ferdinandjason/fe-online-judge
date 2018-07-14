@@ -25,10 +25,9 @@ export function sessionAPI(){
                                 name:response.data.name,
                                 email:response.data.email,
                             }));
-                            return Promise.resolve();
+                            return null;
                         });
-
-                    return Promise.resolve();
+                    return Promise.resolve(response);
                 });
         },
 

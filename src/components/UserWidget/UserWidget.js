@@ -26,9 +26,9 @@ export class UserWidget extends React.Component{
         return store.getState().session.isAuthenticated;
     }
 
-    static getUsername(){
+    static getUserName(){
         try {
-            return store.getState().session.user.email;
+            return store.getState().session.user.name;
         }
         catch (e) {
             return '...';
@@ -54,7 +54,7 @@ export class UserWidget extends React.Component{
             <div className={classNames("bp3-navbar-group","bp3-align-right",style.widget_user,"bp3-dark")}>
                 {/*<img src={this.state.avatarUrl} alt="user-avatar" className="widget-user__avatar" />*/}
                 <Menu className={style.widget_user__menu}>
-                    <MenuItem className={style.widget_user__menu_helper} icon="user" text={UserWidget.getUsername()} disabled />
+                    <MenuItem className={style.widget_user__menu_helper} icon="user" text={UserWidget.getUserName()} disabled />
                     <MenuDivider className={style.widget_user__menu_helper} />
                     <MenuItem text="My account" href="/account" />
                     <MenuItem text="Log out" href="/logout"/>
@@ -63,10 +63,10 @@ export class UserWidget extends React.Component{
         );
 
         const popover = (
-            <Popover className={style.widget_user__avatar_menu} content={menu} position={Position.BOTTOM_RIGHT} usePortal={false}>
+            <Popover className={style.widget_user__avatar_menu} cgitontent={menu} position={Position.BOTTOM_RIGHT} usePortal={false}>
                 <div>
                     <span data-key="username" className={style.widget_user__user__username}>
-                        {UserWidget.getUsername()}
+                        {UserWidget.getUserName()}
                     </span>{' '}
                     <Icon icon="chevron-down" />
                 </div>
