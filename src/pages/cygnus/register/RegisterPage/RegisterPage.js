@@ -1,12 +1,12 @@
 import React from 'react';
-import {SinglePageLayout} from "../../../../components";
-import {ContestListCard} from "../../../orion/competition/contest/components";
+import {CardContainer, SinglePageLayout} from "../../../../components";
+
 import {RegisterForm} from "../components";
 
 export const RegisterPage = (props) => (
     <SinglePageLayout>
-        <ContestListCard title={"Register"}>
+        <CardContainer title={"Register"}>
             <RegisterForm history={props.history}/>
-        </ContestListCard>
+        </CardContainer>
     </SinglePageLayout>
 );

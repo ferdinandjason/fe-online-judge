@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import { Icon, Button } from '@blueprintjs/core';
+import { Button } from '@blueprintjs/core';
 
 import style from './ProblemListTable.scss';
 
@@ -11,18 +11,18 @@ class LoadingProblemListTable extends React.Component {
             <table className={classNames("bp3-html-table","bp3-html-table-striped","bp3-interactive",style.problem_table_list_wrapper)}>
                 <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Problem</th>
-                    <th>Problem ID</th>
-                    <th>Statistic</th>
-                    <th>Ready</th>
+                    <th className={style.problem_table_title}>ID</th>
+                    <th className={style.problem_table_title}>Slug</th>
+                    <th className={style.problem_table_title}>Problem</th>
+                    <th className={style.problem_table_title}>Statistic</th>
+                    <th className={style.problem_table_title}>Ready</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -31,9 +31,9 @@ class LoadingProblemListTable extends React.Component {
                         </td>
                     </tr>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -42,9 +42,9 @@ class LoadingProblemListTable extends React.Component {
                         </td>
                     </tr>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -53,9 +53,9 @@ class LoadingProblemListTable extends React.Component {
                         </td>
                     </tr>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -64,9 +64,9 @@ class LoadingProblemListTable extends React.Component {
                         </td>
                     </tr>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -75,9 +75,9 @@ class LoadingProblemListTable extends React.Component {
                         </td>
                     </tr>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -86,9 +86,9 @@ class LoadingProblemListTable extends React.Component {
                         </td>
                     </tr>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -97,9 +97,9 @@ class LoadingProblemListTable extends React.Component {
                         </td>
                     </tr>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -108,9 +108,9 @@ class LoadingProblemListTable extends React.Component {
                         </td>
                     </tr>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -119,9 +119,9 @@ class LoadingProblemListTable extends React.Component {
                         </td>
                     </tr>
                     <tr>
-                        <td><Icon icon={"unresolve"}/></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for Long Title</p></td>
-                        <td><p className={"bp3-skeleton"}>Placeholder for ID</p></td>
+                        <td><p className={"bp3-skeleton"}>ID</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Slug</p></td>
+                        <td><p className={"bp3-skeleton"}>Placeholder for Title</p></td>
                         <td><p className={"bp3-skeleton"}>Placeholder percentage</p></td>
                         <td>
                             <Link to={"/training/problem/test"} className={"bp3-skeleton"} >
@@ -129,6 +129,7 @@ class LoadingProblemListTable extends React.Component {
                             </Link>
                         </td>
                     </tr>
+
 
                 </tbody>
             </table>

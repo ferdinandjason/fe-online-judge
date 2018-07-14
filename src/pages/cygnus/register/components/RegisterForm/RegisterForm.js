@@ -82,9 +82,6 @@ export class RegisterForm extends React.Component {
 
                 <HorizontalDivider />
 
-                <p className={style.form_login_forgot_password}>
-                    <Link to="/forgot-password">Forgot your password?</Link>
-                </p>
                 <div className={style.form_login_wrapper}>
                     <Button type="submit" text="Log in" intent={Intent.PRIMARY} />
                     <p className={style.form_login_register}>

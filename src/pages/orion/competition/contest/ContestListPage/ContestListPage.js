@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ContestListCard } from "../components";
+import { CardContainer } from "../../../../../components";
 
 import ContestListTable from "../ContestListTable/ContestListTable";
 import LoadingContestListTable from "../ContestListTable/LoadingContestListTable";
@@ -23,19 +23,19 @@ class ContestListPage extends React.Component {
     renderContestList = (contestList) => {
         if(!contestList || contestList.length === 0 ){
             return (
-                <ContestListCard title={"Contests"}>
+                <CardContainer title={"Contests"}>
                     <LoadingContestListTable/>
                     <LoadingContestListTable/>
                     <LoadingContestListTable/>
                     <LoadingContestListTable/>
                     <LoadingContestListTable/>
-                </ContestListCard>
+                </CardContainer>
             );
         }
         return (
-            <ContestListCard title={"Contests"}>
+            <CardContainer title={"Contests"}>
                 <ContestListTable contestList={contestList}/>
-            </ContestListCard>
+            </CardContainer>
         );
     };
 

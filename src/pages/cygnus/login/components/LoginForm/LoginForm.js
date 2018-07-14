@@ -52,12 +52,12 @@ export class LoginForm extends React.Component {
                     className={style.form_login_input}
                     onChange={this.handlePasswordFieldChange}
                     type={this.state.showPassword? "text":"password"}/>
-
-                <HorizontalDivider />
-
                 <p className={style.form_login_forgot_password}>
                     <Link to="/forgot-password">Forgot your password?</Link>
                 </p>
+
+                <HorizontalDivider />
+
                 <div className={style.form_login_wrapper}>
                     <Button type="submit" text="Log in" intent={Intent.PRIMARY} />
                     <p className={style.form_login_register}>

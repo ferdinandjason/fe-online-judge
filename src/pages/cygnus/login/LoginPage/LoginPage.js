@@ -1,12 +1,12 @@
 import React from 'react';
-import {SinglePageLayout} from "../../../../components";
-import {ContestListCard} from "../../../orion/competition/contest/components";
+import {CardContainer, SinglePageLayout} from "../../../../components";
+
 import {LoginForm} from "../components";
 
 export const LoginPage = (props) => (
     <SinglePageLayout>
-        <ContestListCard title={"Log In"}>
+        <CardContainer title={"Log In"}>
             <LoginForm history={props.history}/>
-        </ContestListCard>
+        </CardContainer>
     </SinglePageLayout>
 );

@@ -1,4 +1,5 @@
 export * from './Breadcrumb/Breadcrumb';
+export * from './CardContainer/CardContainer';
 export * from './FullPageLayout/FullPageLayout';
 export * from './Header/Header';
 export * from './LoadingState/LoadingState';

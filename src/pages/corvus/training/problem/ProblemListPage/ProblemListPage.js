@@ -2,6 +2,9 @@ import React from 'react';
 
 import ProblemListTable from "../ProblemListTable/ProblemListTable";
 import LoadingProblemListTable from "../ProblemListTable/LoadingProblemListTable";
+import {CardContainer} from "../../../../../components";
+
+import style from './ProblemListPage.scss';
 
 class ProblemListPage extends React.Component {
     constructor(props){
@@ -18,17 +21,25 @@ class ProblemListPage extends React.Component {
 
     renderProblemList = (problemList) => {
         if(!problemList || problemList.length === 0){
-            return <LoadingProblemListTable/>
+            return (
+                <CardContainer title={"Problem"} strict={true}>
+                    <LoadingProblemListTable/>
+                </CardContainer>
+            )
         }
         return (
-            <div>
+            <CardContainer title={"Problem"} strict={true}>
                 <ProblemListTable problemList={problemList}/>
-            </div>
+            </CardContainer>
         )
     };
 
     render(){
-        return this.renderProblemList();
+        return (
+            <div className={style.problem__page__container}>
+                {this.renderProblemList()}
+            </div>
+        )
     }
 
 }

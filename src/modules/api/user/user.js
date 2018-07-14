@@ -12,6 +12,7 @@ export function userAPI(){
                 'password':password,
             })
                 .then((response)=>{
+                    console.log(response);
                     if(response === undefined){
                         // success ?? TODO : cek
                     }
