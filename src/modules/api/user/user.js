@@ -16,7 +16,7 @@ export function userAPI(){
             })
                 .then((response)=>{
                     if(response.status === 201){
-                        store.dispatch(Toast.success('Register Success! \ User '+response.statusText));
+                        store.dispatch(Toast.success('Register Success! User '+response.statusText));
                     }
                     else {
                         errorAPI().showToast(response.status,'Error ! '+response.statusText);

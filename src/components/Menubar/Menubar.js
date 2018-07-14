@@ -7,10 +7,17 @@ import { Tab, Tabs } from '@blueprintjs/core';
 import styles from './Menubar.scss';
 
 export class Menubar extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            code : 1,
+        }
+    }
+
     render(){
         const selectedTabId = this.getActiveItemId();
         return (
-            <Tabs id={"menubar"} renderActiveTabPanelOnly large={true} className={styles.menubar} selectedTabId={selectedTabId}>
+            <Tabs id={"menubar"} renderActiveTabPanelOnly large={true} className={styles.menubar+' '+styles[`menubar_color-${this.getSpecialClassName()}`]} selectedTabId={selectedTabId} onChange={this.handleOnChange}>
                 {
                     this.props.items.map(item => {
                        return (
@@ -20,6 +27,17 @@ export class Menubar extends React.Component{
                                </Link>
                            </Tab>
                        );
+                    })
+                }
+                {
+                    this.props.specials.map(special => {
+                        return (
+                            <Tab key={special.id} id={special.id} className={styles.menubar_tabs}>
+                                <Link to={special.route.path}>
+                                    {special.title}
+                                </Link>
+                            </Tab>
+                        )
                     })
                 }
             </Tabs>
@@ -38,12 +56,33 @@ export class Menubar extends React.Component{
                 return itemId;
             }
         }
+        for(let item of this.props.specials){
+            if(this.getRoutePath() === item.route.path.slice(1)){
+                itemId = item.id;
+                return itemId;
+            }
+        }
         return 'home';
+    };
+
+    getSpecialClassName = () => {
+        const activeItemId = this.getActiveItemId();
+        for(let item of this.props.specials){
+            if(item.id === activeItemId){
+                return item.className;
+            }
+        }
+        return '1';
+    };
+
+    handleOnChange = (event) => {
+        this.props.onSpesialRoutesClicked(this.getSpecialClassName());
     }
 }
 
 Menubar.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.object)
+    items: PropTypes.arrayOf(PropTypes.object),
+    specials: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default Menubar;

@@ -1,4 +1,4 @@
-const routes = [
+export const routes = [
     {
         id: 'home',
         title: 'Home',
@@ -22,4 +22,23 @@ const routes = [
     },
 ];
 
-export default routes;
+export const spesialRoutes = [
+    {
+        id : 'repository',
+        title : 'Repository',
+        type : 'problem_setter',
+        route : {
+            path : '/repository',
+        },
+        className : '2',
+    },
+    {
+        id : 'contest',
+        title : 'Contest Admin',
+        type : 'contest_maker',
+        route : {
+            path : '/contest',
+        },
+        className : '3',
+    },
+];

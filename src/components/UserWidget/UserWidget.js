@@ -91,17 +91,21 @@ export class UserWidget extends React.Component{
         return (
             <div className="bp3-navbar-group bp3-align-right widget-user">
                 <div className={style.widget_user__link}>
-                    <Link data-key="login" to="/login">
+                    <Link data-key="login" to="/login" onClick={this.onClick}>
                         Log In
                     </Link>
                 </div>
                 <div className={style.widget_user__link}>
-                    <Link data-key="register" to="/register">
+                    <Link data-key="register" to="/register" onClick={this.onClick}>
                         Register
                     </Link>
                 </div>
             </div>
         );
+    }
+
+    onClick = () => {
+        this.props.onSpesialRoutesClicked(1);
     }
 
 }
