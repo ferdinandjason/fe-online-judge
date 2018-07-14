@@ -83,7 +83,7 @@ export class RegisterForm extends React.Component {
                 <HorizontalDivider />
 
                 <div className={style.form_login_wrapper}>
-                    <Button type="submit" text="Log in" intent={Intent.PRIMARY} />
+                    <Button type="submit" text="Register" intent={Intent.PRIMARY} />
                     <p className={style.form_login_register}>
                         Don't have account? <Link to="/register">Register now</Link>
                     </p>
