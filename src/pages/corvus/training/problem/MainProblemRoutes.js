@@ -22,7 +22,7 @@ const ProblemButton = [
 
 const problemBreadcrumbs = trainingBreadcrumbs.concat([]);
 
-const MainContestRoutes = () => {
+const MainProblemRoutes = () => {
     return (
         <div>
             <Redirect to={'/training/problem'}/>
@@ -34,4 +34,4 @@ const MainContestRoutes = () => {
 };
 
 
-export default MainContestRoutes;
+export default MainProblemRoutes;

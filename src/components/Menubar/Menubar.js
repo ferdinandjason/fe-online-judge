@@ -12,6 +12,7 @@ export class Menubar extends React.Component{
         this.state = {
             code : 1,
         }
+        this.props.onSpesialRoutesClicked(this.getSpecialClassName());
     }
 
     render(){

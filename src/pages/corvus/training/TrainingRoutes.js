@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import MainProblemRoutes from './problem/MainProblemRoutes';
 import SingleProblemRoutes from './problem/SingleProblemRoutes';
 
-const CompetitionRoutes = () => (
+const TrainingRoutes = () => (
     <div>
         <Switch>
             <Route path={"/training/problem/:problemId"} component={SingleProblemRoutes}/>
@@ -13,4 +13,4 @@ const CompetitionRoutes = () => (
     </div>
 );
 
-export default CompetitionRoutes;
+export default TrainingRoutes;
