@@ -4,7 +4,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { Menu, MenuItem, MenuDivider, Popover, Position, Icon } from '@blueprintjs/core';
 import classNames from 'classnames';
 
-import store from "../../modules/store";
+import { store } from "../../modules/store";
 
 import style from './UserWidget.scss';
 

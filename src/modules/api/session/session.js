@@ -1,4 +1,4 @@
-import store from '../../store';
+import {store} from '../../store';
 import {APP_CONFIG} from '../../../config';
 import { _post,_get } from '../request';
 import {PutToken, LogInSucces, selectToken, AddUser, LogOut} from "../../redux/session";

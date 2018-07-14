@@ -1,4 +1,4 @@
-import store from '../store'
+import { store } from '../store'
 
 // Actions
 export const PUT_TOKEN = 'session/PUT_TOKEN';

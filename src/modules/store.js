@@ -1,15 +1,17 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { persistStore, persistReducer } from 'redux-persist';
 import thunk from 'redux-thunk';
+import storage from 'redux-persist/es/storage';
+
 import { sessionReducer } from "./redux/session";
 
 const reducer = combineReducers({
-    session : sessionReducer,
+    session : persistReducer({key:'session',storage},sessionReducer),
 });
 
-const store = createStore(
+export const store = createStore(
     reducer,
     applyMiddleware(thunk)
 );
 
-
-export default store;
+export const persistor = persistStore(store);
