@@ -13,17 +13,16 @@ class LogoutPage extends React.Component{
     }
 
     setLogoutState(){
-        setTimeout(()=>{
-            this.setState({
-                logout : true,
-            })
-        },500);
+        this.setState({
+            logout : true,
+        });
     }
 
     async componentDidMount(){
         API.session.logOut()
             .then(()=>{
                 this.setLogoutState();
+                return Promise.resolve();
             })
     }
 

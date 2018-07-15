@@ -27,10 +27,8 @@ export class LoginForm extends React.Component {
     };
 
     redirectToHome(){
-        setTimeout(()=>{
-            this.props.history.push('/');
-            store.dispatch(Toast.show_('Welcome aboard , '+store.getState().session.user.name+' !','user'));
-        },500);
+        this.props.history.push('/');
+        store.dispatch(Toast.show_('Welcome aboard , '+store.getState().session.user.name+' !','user'));
     }
 
     render(){
@@ -80,6 +78,7 @@ export class LoginForm extends React.Component {
         API.session.logIn(email,password)
             .then((response)=>{
                 this.redirectToHome();
+                return Promise.resolve();
             });
 
     };

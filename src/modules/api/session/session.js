@@ -19,9 +19,11 @@ export function sessionAPI(){
                     const token = response.data.access_token;
                     store.dispatch(PutToken(token));
                     store.dispatch(LogInSucces());
-
+                    return token;
+                })
+                .then((token)=>{
                     // Get current User
-                    _get(`${baseURL}/me`,token)
+                    return _get(`${baseURL}/me`,token)
                         .then((response)=>{
                             store.dispatch(AddUser({
                                 id:response.data.data.id,
@@ -30,10 +32,9 @@ export function sessionAPI(){
                                 roles:response.data.data.roles,
                             }));
                             console.log(store.getState().session);
-                            return null;
+                            return Promise.resolve();
                         });
-                    return Promise.resolve(response);
-                });
+                })
         },
 
         logOut : ()=>{
