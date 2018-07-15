@@ -16,14 +16,6 @@ export const FullPageLayout = (props)=> {
                     <div className={"bp3-navbar-group bp3-align-left"}>
                         <Breadcrumb breadcrumbs={props.breadcrumbs}/>
                     </div>
-                    {
-                        (props.problemTitle)?
-                            <div className={style.page_layout_title}>
-                                {props.problemTitle}
-                            </div>
-                            :
-                            null
-                    }
                     <div className={classNames("bp3-navbar-group","bp3-align-right",style.page_layout_button_wrapper)}>
                         {
                             props.buttons.map(button => {

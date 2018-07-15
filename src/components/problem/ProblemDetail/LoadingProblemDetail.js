@@ -2,10 +2,12 @@ import React from 'react';
 import classNames from 'classnames';
 
 import style from './ProblemDetail.scss';
+import {CardContainer} from "../..";
 
 export const LoadingProblemDetail = () => {
+    const title = (<div style={{display:'flex'}}><p className={"bp3-skeleton"}>KODE</p>&nbsp;-&nbsp;<p className={"bp3-skeleton"}>JUDUL SOAL</p></div>);
     return (
-        <div className={classNames("bp3-card",style.problem_table_wrapper)}>
+        <CardContainer title={title} strict={true}>
             <table className={classNames("bp3-html-table","bp3-html-table-striped",style.problem_table)}>
                 <thead>
                 <tr>
@@ -24,6 +26,6 @@ export const LoadingProblemDetail = () => {
                 </tr>
                 </tbody>
             </table>
-        </div>
+        </CardContainer>
     )
 };

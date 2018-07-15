@@ -20,12 +20,3 @@
 .page_layout_container{
   display: flex;
 }
-
-.page_layout_title{
-  position: absolute;
-  width: calc(100% - 280px);
-  z-index: 2;
-  text-align: center;
-  margin: 15px;
-  font-size: 25px;
-}

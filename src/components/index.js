@@ -9,3 +9,5 @@ export * from './Sidebar/Sidebar';
 export * from './UserWidget/UserWidget';
 export * from './SinglePageLayout/SinglePageLayout';
 export * from './HorizontalDivider/HorizontalDivider';
+
+export * from './problem';

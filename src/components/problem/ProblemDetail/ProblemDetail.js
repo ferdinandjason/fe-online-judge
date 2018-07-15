@@ -3,10 +3,12 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import style from './ProblemDetail.scss';
+import {CardContainer} from "../..";
 
 export const ProblemDetail = (props) => {
+    const title = (<div style={{display:'flex'}}><p>{props.problem.slug}</p>&nbsp;-&nbsp;<p>{props.problem.title}</p></div>);
     return (
-        <div className={classNames("bp3-card",style.problem_table_wrapper)}>
+        <CardContainer title={title} strict={true}>
             <table className={classNames("bp3-html-table","bp3-html-table-striped",style.problem_table)}>
                 <thead>
                 <tr>
@@ -25,7 +27,7 @@ export const ProblemDetail = (props) => {
                 </tr>
                 </tbody>
             </table>
-        </div>
+        </CardContainer>
     )
 };
 

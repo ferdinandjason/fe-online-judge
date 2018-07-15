@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { LoadingProblemDetail, ProblemDetail, ProblemDescription, LoadingProblemDescription } from "../../../../../components/problem";
+import { LoadingProblemDetail, ProblemDetail, ProblemDescription, LoadingProblemDescription } from "../../../../../../../components/problem";
 
-class SingleProblemPage extends React.Component {
+export class ViewSingleProblemPage extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            problem : null
+            problem : null,
         }
     }
 
     async componentDidMount(){
-        const problem = null; // await TODO: function to fetch Problem based on id
+        const problem = null; // await TODO : function to fetch Problem based on id
         this.setState({problem:problem});
     }
 
@@ -31,11 +31,9 @@ class SingleProblemPage extends React.Component {
                 </div>
             )
         }
-    };
+    }
 
     render(){
         return this.renderProblem(this.state.problem);
     }
 }
-
-export default SingleProblemPage;
