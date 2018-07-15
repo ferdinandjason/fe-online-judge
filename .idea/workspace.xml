@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d6d0d1-49a8-4c76-ac3f-20671cce20b1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/api/session/session.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/api/session/session.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cygnus/logout/LogoutPage/LogoutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/logout/LogoutPage/LogoutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,18 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RegisterPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -106,10 +89,20 @@
       <file leaf-file-name="ContestListPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="495">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -126,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadingContestListTable.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoadingContestListTable.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="63" lean-forward="true" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+            <state relative-caret-position="345">
+              <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -177,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/cygnus/welcome/WelcomePage/WelcomePage.js" />
         <option value="$PROJECT_DIR$/src/config.js" />
         <option value="$PROJECT_DIR$/src/components/HorizontalDivider/HorizontalDivider.js" />
         <option value="$PROJECT_DIR$/src/pages/cygnus/register/components/index.js" />
@@ -228,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.js" />
         <option value="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -713,12 +706,12 @@
       <workItem from="1531481090363" duration="621000" />
       <workItem from="1531495381287" duration="2546000" />
       <workItem from="1531536473758" duration="21510000" />
-      <workItem from="1531627272048" duration="1779000" />
+      <workItem from="1531627272048" duration="3111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153582000" />
+    <option name="totallyTimeSpent" value="154914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -767,16 +760,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" lean-forward="true" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1121,19 +1104,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="345">
+          <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1147,13 +1124,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/LoadingContestListTable.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListTable/ContestListTable.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="63" lean-forward="true" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+        <state relative-caret-position="258">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/contest/ContestListPage/ContestListPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
