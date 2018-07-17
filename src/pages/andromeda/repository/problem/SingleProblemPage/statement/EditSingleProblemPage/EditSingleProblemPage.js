@@ -6,59 +6,63 @@ import {CardContainer} from "../../../../../../../components";
 const LoadingEditSingleProblem = () => {
     const title = 'Edit';
     return (
-        <CardContainer title={title}>
-            <div>
-                <FormGroup
-                    label={"Title"}
-                    labelFor={"title"}
-                    labelInfo={"(required)"}
-                >
-                    <InputGroup id={"title"}/>
-                </FormGroup>
+        <div className={"page__container"}>
+            <CardContainer title={title}>
+                <div>
+                    <FormGroup
+                        label={"Title"}
+                        labelFor={"title"}
+                        labelInfo={"(required)"}
+                    >
+                        <InputGroup id={"title"}/>
+                    </FormGroup>
 
-                <FormGroup
-                    label={"Description"}
-                    labelFor={"description"}
-                    labelInfo={"(required)"}
-                >
-                    <TextArea
-                        large={true}
-                        intent={Intent.PRIMARY}
-                    />
-                </FormGroup>
-            </div>
-        </CardContainer>
+                    <FormGroup
+                        label={"Description"}
+                        labelFor={"description"}
+                        labelInfo={"(required)"}
+                    >
+                        <TextArea
+                            large={true}
+                            intent={Intent.PRIMARY}
+                        />
+                    </FormGroup>
+                </div>
+            </CardContainer>
+        </div>
     )
 };
 
 const EditSingleProblem = (props) => {
     const title = 'Edit';
     return (
-        <CardContainer title={title}>
-            <div>
-                <FormGroup
-                    label={"Title"}
-                    labelFor={"title"}
-                    labelInfo={"(required)"}
-                >
-                    <InputGroup id={"title"}/>
-                </FormGroup>
+        <div className={"page__container"}>
+            <CardContainer title={title}>
+                <div>
+                    <FormGroup
+                        label={"Title"}
+                        labelFor={"title"}
+                        labelInfo={"(required)"}
+                    >
+                        <InputGroup id={"title"}/>
+                    </FormGroup>
 
-                <FormGroup
-                    label={"Description"}
-                    labelFor={"description"}
-                    labelInfo={"(required)"}
-                >
+                    <FormGroup
+                        label={"Description"}
+                        labelFor={"description"}
+                        labelInfo={"(required)"}
+                    >
                     <TextArea
                         large={true}
                         intent={Intent.PRIMARY}
                         value={this.state.value}
                     />
-                </FormGroup>
-            </div>
-        </CardContainer>
+                    </FormGroup>
+                </div>
+            </CardContainer>
+        </div>
     )
-}
+};
 
 
 export class EditSingleProblemPage extends React.Component {
