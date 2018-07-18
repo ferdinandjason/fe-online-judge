@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from '@blueprintjs/core';
+
 import { SinglePageLayout } from "../../../../components";
 
 import WelcomeHead from "./WelcomeHead/WelcomeHead";

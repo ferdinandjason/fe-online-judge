@@ -1,15 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import { Button } from '@blueprintjs/core';
 
 import style from './SubmissionTable.scss';
 
 class SubmissionTable extends React.Component {
     render(){
         return (
-            <table className={classNames("bp3-html-table","bp3-html-table-striped","bp3-interactive",style.submission_list_wrapper)}>
+            <table className={classNames("bp3-html-table","bp3-interactive",style.submission_list_wrapper)}>
                 <tbody>
                 {
                     this.props.submissionList.map( submission => {

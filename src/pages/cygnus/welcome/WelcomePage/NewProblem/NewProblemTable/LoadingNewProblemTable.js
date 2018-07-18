@@ -8,7 +8,7 @@ import style from './NewProblemTable.scss';
 class LoadingNewProblemTable extends React.Component {
     render(){
         return (
-            <table className={classNames("bp3-html-table","bp3-html-table-striped","bp3-interactive",style.problem_table_list_wrapper)}>
+            <table className={classNames("bp3-html-table","bp3-interactive",style.problem_table_list_wrapper)}>
                 <tbody>
                     <tr>
                         <td><p className={"bp3-skeleton"}>ID</p></td>
