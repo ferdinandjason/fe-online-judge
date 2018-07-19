@@ -1,111 +1,159 @@
 import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Icon, Menu, MenuItem, MenuDivider, Popover, Position } from '@blueprintjs/core';
 
-import { Menu, MenuItem, MenuDivider, Popover, Position, Icon } from '@blueprintjs/core';
-import classNames from 'classnames';
+import { MenuItemLink } from '..';
+import { routes } from '../../AppRoutes';
+import Styles from './UserWidget.scss';
 
-import { store } from "../../modules/store";
 
-import style from './UserWidget.scss';
-
-export class UserWidget extends React.Component{
+export class UserWidget extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            avatarUrl: null,
-        };
-    }
-
-    static redirectToHome(){
-        return (
-            <Redirect to={"/"}/>
-        )
-    }
-
-    static userIsAuthenticated(){
-        return store.getState().session.isAuthenticated;
-    }
-
-    static getUserName(){
-        try {
-            return store.getState().session.user.name;
+            avatar : undefined,
         }
-        catch (e) {
-            return '...';
+    }
+
+    renderAvatar = () => {
+        return (
+            <img src={'../../assets/images/user.png'} alt="user"/>
+        )
+    };
+
+    async componentDidMount(){
+        if(this.props.user) {
+            const avatar = await this.renderAvatar();
+            this.setState({avatar})
+        }
+    }
+
+    async componentDidUpdate(prevProps) {
+        if(this.props.user !== prevProps.user){
+            await this.componentDidMount();
         }
     }
 
     render(){
-        if(UserWidget.userIsAuthenticated()){
-            return this.renderForUser();
+        if(this.props.user) {
+            return this.renderForUser(this.props.user);
         } else {
             return this.renderForGuest();
         }
     }
 
-    renderUserAvatar(){
-        // TODO : get avatarUrl from Laravel database strorage;
-        const avatarUrl = '../../../assets/images/user.png';
-        this.setState({avatarUrl});
-    }
 
-    renderForUser(){
+
+    renderForUser = (user) => {
         const menu = (
-            <div className={classNames("bp3-navbar-group","bp3-align-right",style.widget_user,"bp3-dark")}>
-                {/*<img src={this.state.avatarUrl} alt="user-avatar" className="widget-user__avatar" />*/}
-                <Menu className={style.widget_user__menu}>
-                    <MenuItem className={style.widget_user__menu_helper} icon="user" text={UserWidget.getUserName()} disabled />
-                    <MenuDivider className={style.widget_user__menu_helper} />
-                    <MenuItem text="My account" href="/account" />
-                    <MenuItem text="Log out" href="/logout"/>
-                </Menu>
-            </div>
+            <Menu className={Styles.USER_WIDGET_MENU}>
+                <MenuItem className={Styles.USER_WIDGET_MENU_HELPER}
+                          icon="user"
+                          text={user.username}
+                          disabled
+                />
+                <MenuDivider className={Styles.USER_WIDGET_MENU_HELPER}/>
+                {this.renderResponsiveAppRoutes().map(routes => {return routes})}
+                <MenuItemLink text="My account" to={`/profile/${user.id}`}/>
+                <MenuItemLink text="Log out" to="/logout"/>
+            </Menu>
         );
 
         const popover = (
-            <Popover className={style.widget_user__avatar_menu} content={menu} position={Position.BOTTOM_RIGHT} usePortal={false}>
+            <Popover className={Styles.USER_WIDGET_AVATAR_MENU}
+                     content={menu}
+                     position={Position.BOTTOM_RIGHT}
+                     usePortal={false}
+            >
                 <div>
-                    <span data-key="username" className={style.widget_user__user__username}>
-                        {UserWidget.getUserName()}
+                    <span className={Styles.USER_WIDGET_USERNAME}>
+                        {user.username}
                     </span>{' '}
-                    <Icon icon="chevron-down" />
+                    <Icon icon="chevron-down"/>
                 </div>
             </Popover>
         );
 
         const responsivePopover = (
-            <Popover className={style.widget_user__burger} content={menu} position={Position.BOTTOM_RIGHT} usePortal={false}>
-                <Icon icon="menu" iconSize={Icon.SIZE_LARGE} />
+            <Popover className={Styles.USER_WIDGET_BURGER}
+                     content={menu}
+                     position={Position.BOTTOM_RIGHT}
+                     usePortal={false}
+            >
+                <Icon icon="menu" iconSize={Icon.SIZE_LARGE}/>
             </Popover>
         );
 
         return (
-            <div className={style.widget_user_wrapper}>
+            <div>
+                {this.renderAppRoutes().map(routes => {return routes})}
+                {this.state.avatar}
                 {popover}
                 {responsivePopover}
             </div>
         )
-    }
+    };
 
-    renderForGuest(){
-        return (
-            <div className="bp3-navbar-group bp3-align-right widget-user">
-                <div className={style.widget_user__link}>
-                    <Link data-key="login" to="/login" onClick={this.onClick}>
+    renderForGuest = () => {
+        const menu = (
+            <Menu className={Styles.USER_WIDGET_MENU}>
+                {this.renderResponsiveAppRoutes().map(routes => {return routes})}
+                <MenuItemLink text="Log In" to="/login"/>
+                <MenuItemLink text="Register" to="/register"/>
+            </Menu>
+        );
+
+        const responsivePopover =  (
+            <Popover className={Styles.USER_WIDGET_BURGER}
+                     content={menu}
+                     position={Position.BOTTOM_RIGHT}
+                     usePortal={false}
+            >
+                <Icon icon="menu" iconSize={Icon.SIZE_LARGE}/>
+            </Popover>
+        );
+
+        const completeMenu = (
+            <div className={Styles.USER_WIDGET_LINK_WRAPPER}>
+                {this.renderAppRoutes().map(routes => {return routes})}
+                <div className={Styles.USER_WIDGET_LINK}>
+                    <Link to="/login">
                         Log In
                     </Link>
                 </div>
-                <div className={style.widget_user__link}>
-                    <Link data-key="register" to="/register" onClick={this.onClick}>
+                <div className={Styles.USER_WIDGET_LINK}>
+                    <Link to="/register">
                         Register
                     </Link>
                 </div>
             </div>
         );
+
+        return (
+            <div>
+                {completeMenu}
+                {responsivePopover}
+            </div>
+        );
+    };
+
+    renderAppRoutes = () => {
+        return routes.map(route => {
+            return (
+                <div className={Styles.USER_WIDGET_NAVBAR_LINK}>
+                    <Link to={route.to} key={route.id}>
+                        {route.title}
+                    </Link>
+                </div>
+            )
+        })
+    };
+
+    renderResponsiveAppRoutes = () => {
+        return routes.map(route => (
+            <MenuItemLink text={route.title} to={route.to}/>
+        ))
     }
 
-    onClick = () => {
-        this.props.onSpesialRoutesClicked(1);
-    }
 
 }

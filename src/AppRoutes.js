@@ -1,30 +1,18 @@
 export const routes = [
     {
-        id: 'home',
-        title: 'Home',
-        route: {
-            path: '/'
-        },
-    },
-    {
         id: 'training',
         title: 'Training',
-        route: {
-            path: '/training'
-        },
+        to : '/training',
+    },
+    {
+        id : 'competition',
+        title : 'Competition',
+        to : '/competition',
     },
 ];
 
 export const spesialRoutes = [
-    {
-        id : 'competition',
-        title : 'Competition',
-        type : 'contest_maker',
-        route : {
-            path : '/competition',
-        },
-        className : '3',
-    },
+
     {
         id : 'repository',
         title : 'Repository',

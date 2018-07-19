@@ -1,42 +1,46 @@
 @import '../../styles/base';
 
-.header{
-  background-color: $primary-color !important;
-  height: 60px !important;
+.HEADER_NAVBAR {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  height: 64px !important;
+  position: absolute !important;
+  background-color: transparent !important;
 }
 
-.header_color-1{
-  background-color: $primary-color !important;
-}
-
-.header_color-2{
-  background-color: $secondary_color !important;
-}
-
-.header_color-3{
-  background-color: $tertiary_color !important;
-}
-
-.header_wrapper{
-  padding-left: 20px;
-  padding-right: 20px;
+.HEADER_WRAPPER {
+  background-color: transparent;
   margin: 0 auto;
+  padding: 0 3.4%;
+  min-width: 280px;
+  max-width: 1685px;
 }
 
-.header_logo {
-  height: 40px;
-  display: inline-block;
-
+.HEADER_HEADING {
+  font-weight: 900;
+  font-size: 20px !important;
+  font-family: Ubuntu !important;
 }
 
-.header_logo_text{
-  color: $active-color;
-  font-family: "Ubuntu";
-  font-weight: 700;
+.HEADER_GROUP {
+  height: 64px !important;
 }
 
-.header_heading_wrapper{
-  margin-left: 0;
-  margin-right: 200px;
-  vertical-align: baseline;
+.HEADER_SEARCH_WRAPPER {
+  > svg {
+    margin: 10px !important;
+  }
+  > span {
+    margin: 3px !important;
+  }
+}
+
+.HEADER_SEARCH {
+  display: block;
+}
+
+@media only screen and (max-width: 650px) {
+  .HEADER_SEARCH {
+    display: none;
+  }
 }

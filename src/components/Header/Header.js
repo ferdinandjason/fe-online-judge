@@ -1,53 +1,37 @@
 import React from 'react';
-import classNames from 'classnames';
+import { Link } from 'react-router-dom';
+import { Alignment, InputGroup, Navbar, NavbarGroup, NavbarHeading } from '@blueprintjs/core';
 
-import { Menubar , UserWidget } from "../../components";
+import { APP_CONFIG } from '../../config';
+import { UserWidget } from "..";
 
-import { routes , spesialRoutes } from '../../AppRoutes';
-import styles from './Header.scss';
-
-const logo = require('../../assets/images/logo.png');
+import Styles from './Header.scss';
 
 export class Header extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            className : '',
-        }
-    }
-
     render(){
         return (
-            <nav className={classNames("bp3-navbar",styles.header,this.getSpesialRoutesClassName())}>
-                <div className={styles.header_wrapper}>
-                    <div className={classNames("bp3-navbar-group","bp3-align-left",styles.header,this.getSpesialRoutesClassName())}>
-                        <div className={styles.header_heading_wrapper}>
-                            <img src={logo} className={styles.header_logo} alt={"logo"}/>
+            <Navbar className={Styles.HEADER_NAVBAR}>
+                <div className={Styles.HEADER_WRAPPER}>
+                    <NavbarGroup align={Alignment.LEFT} className={Styles.HEADER_GROUP}>
+                        <NavbarHeading className={Styles.HEADER_HEADING}>
+                            <Link to={"/"}>
+                                { APP_CONFIG.name }
+                            </Link>
+                        </NavbarHeading>
+                        <div className={Styles.HEADER_SEARCH}>
+                            <InputGroup
+                                type="search"
+                                leftIcon="search"
+                                placeholder="Search"
+                                className={Styles.HEADER_SEARCH_WRAPPER}
+                            />
                         </div>
-
-                        <Menubar items={routes} specials={spesialRoutes} onSpesialRoutesClicked={this.onSpesialRoutesClicked}/>
-                    </div>
-                    <div className="bp3-navbar-group bp3-align-right">
-                        <input className="bp3-input" placeholder="Search..." type="text" style={{marginTop:10+'px'}}/>
-                        <div style={{marginLeft:30+'px'}}>
-                            <UserWidget history={this.props.history} onSpesialRoutesClicked={this.onSpesialRoutesClicked}/>
-                        </div>
-                    </div>
+                    </NavbarGroup>
+                    <NavbarGroup align={Alignment.RIGHT} className={Styles.HEADER_GROUP}>
+                        <UserWidget/>
+                    </NavbarGroup>
                 </div>
-            </nav>
-        );
+            </Navbar>
+        )
     }
-
-    getSpesialRoutesClassName(){
-        return styles[`header_color-${this.state.className}`];
-    }
-
-    onSpesialRoutesClicked = (val) => {
-        console.log('asd');
-        this.setState({
-            className : val,
-        });
-    }
-}
-
-export default Header;
+};

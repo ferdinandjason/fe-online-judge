@@ -14,13 +14,13 @@ class App extends Component {
         return (
             <div>
                 <Header/>
-                <AppToaster/>
-                <Switch>
-                    <Route path={"/repository"} component={AndromedaRoutes}/>
-                    <Route path={"/competition"} component={OrionRoutes}/>
-                    <Route path={"/training"} component={CorvusRoutes}/>
-                    <Route path={"/"} component={CygnusRoutes}/>
-                </Switch>
+                {/*<AppToaster/>*/}
+                {/*<Switch>*/}
+                    {/*<Route path={"/repository"} component={AndromedaRoutes}/>*/}
+                    {/*<Route path={"/competition"} component={OrionRoutes}/>*/}
+                    {/*<Route path={"/training"} component={CorvusRoutes}/>*/}
+                    {/*<Route path={"/"} component={CygnusRoutes}/>*/}
+                {/*</Switch>*/}
             </div>
         );
     }

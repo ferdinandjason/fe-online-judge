@@ -1,58 +1,50 @@
-.widget_user{
-    height: 60px !important;
+@import '../../styles/base';
+
+.USER_WIDGET_LINK_WRAPPER {
+    display: flex;
 }
 
-.widget_user_wrapper{
-    color: white;
-    margin-top: 10px;
-}
-
-.widget_user__link a{
-    color: #b7c9cc;
-}
-
-.widget_user__link a:hover{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.widget_user__avatar {
+.USER_WIDGET_AVATAR{
     height: 40px;
+    width: 40px;
     margin-right: 10px;
     border-radius: 50%;
 }
 
-.widget_user__avatar_menu {
+.USER_WIDGET_AVATAR_MENU {
 
 }
 
-.widget_user__link {
-    margin-top: 10px;
+.USER_WIDGET_NAVBAR_LINK {
     margin-right: 20px;
+    font-size: $font-size;
 }
 
-.widget_user__burger, .widget_user__menu_helper {
+.USER_WIDGET_LINK {
+    margin-right: 20px;
+    font-size: 0.9 * $font-size;
+}
+
+.USER_WIDGET_BURGER , .USER_WIDGET_MENU_HELPER {
     display: none;
 }
 
-.widget_user__menu a {
-    color: #FFFFFF;
+.USER_WIDGET_MENU a {
+    color: #000 !important;
 }
 
-.widget_user__user__username {
+.USER_WIDGET_USERNAME {
     cursor: pointer;
 }
 
-
-@media only screen and (max-width: 600px) {
-    .widget_user__avatar, .widget_user__avatar_menu, .widget_user__link {
+@media only screen and (max-width: 650px) {
+    .USER_WIDGET_AVATAR, .USER_WIDGET_AVATAR_MENU, .USER_WIDGET_LINK, .USER_WIDGET_NAVBAR_LINK {
         display: none;
     }
 
-    .widget_user__burger, .widget_user__menu_helper {
+    .USER_WIDGET_BURGER, .USER_WIDGET_MENU_HELPER {
         display: block;
         cursor: pointer;
-
         svg {
             float: left;
         }
