@@ -1,0 +1,82 @@
+@import '../../styles/base';
+
+.FOOTER {
+  display: flex;
+  height: 60px;
+  background-color: $primary-color;
+  width: 100%;
+}
+
+.FOOTER_HEADING {
+  font-weight: 900;
+  font-size: 20px !important;
+  font-family: Ubuntu !important;
+  a {
+    color: white !important;
+  }
+}
+
+.FOOTER_WRAPPER {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  width: inherit;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.FOOTER_FOOTER {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 3.4%;
+  min-width: 270px;
+  max-width: $base-width;
+}
+
+.FOOTER_SOSMED {
+  display: flex;
+  margin-left: 16px;
+  a {
+    margin-right: 8px;
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.FOOTER_LEFT {
+  margin-bottom: 4.2px;
+}
+
+.FOOTER_LINK {
+  font-size: $font-size;
+  margin: 0 8px 3px 8px;
+  color: white;
+}
+
+.FOOTER_RIGHT {
+  margin-right: -8px;
+  margin-left: -8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.FOOTER_RIGHT_TEXT {
+  font-size: $font-size-small;
+  font-weight: 400;
+  color: white;
+  margin-bottom: -2px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+  .FOOTER {
+    height: 120px;
+  }
+}

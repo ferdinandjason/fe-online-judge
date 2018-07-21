@@ -1,9 +1,9 @@
 import React from 'react';
 import { ProgressBar, Intent } from '@blueprintjs/core';
 
-import style from './LoadingState.scss';
+import Styles from './LoadingState.scss';
 
-export class LoadingState extends React.Component {
+class LoadingState extends React.Component {
     constructor(props){
         super(props);
         this.timer = null;
@@ -28,9 +28,11 @@ export class LoadingState extends React.Component {
 
     render(){
         return (
-            <div className={style.loading_wrapper}>
+            <div className={Styles.LOADING_WRAPPER}>
                 <ProgressBar className={"loading-state"} intent={Intent.PRIMARY}/>
             </div>
         );
     }
 }
+
+export default LoadingState;

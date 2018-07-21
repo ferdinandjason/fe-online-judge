@@ -1,6 +1,12 @@
-body {
-  margin: 0;
-  padding: 0;
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 .page__container{
@@ -9,11 +15,82 @@ body {
   width: 100%;
 }
 
-a{
-  color: #000 !important;
+/* Menubar */
+
+._1qh4O .bp3-tab-indicator-wrapper .bp3-tab-indicator {
+  background-color: #39424e !important;
+  top: 50px;
 }
 
-a:hover{
-  text-decoration: none !important;
-  color: #000 !important;
+@media only screen and (max-width: 450px){
+  ._1qh4O .bp3-tab-indicator-wrapper .bp3-tab-indicator {
+    background-color: #39424e !important;
+    top: 61px;
+    position: inherit !important;
+  }
 }
+
+/* Sidebar */
+
+._ru_4w .bp3-tab-list {
+    left: -20px !important;
+    width: 270px !important;
+}
+
+._ru_4w .bp3-tab-indicator {
+    background-color: #eef2fb !important;
+    border-radius: 0 !important;
+    border-left: 3px solid #39424e !important;
+}
+
+._ru_4w .bp3-tab {
+    padding-left: 20px !important;
+    line-height: 50px;
+    height: 50px;
+}
+
+._ru_4w .bp3-tab[aria-selected="true"] {
+    font-weight: bold;
+    color: #252527;
+}
+
+._ru_4w .bp3-tab[aria-selected="false"] {
+    color: #39424e;
+}
+
+._ru_4w ._qgrZw {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+._ru_4w ._24rUc {
+    background-color: white !important;
+}
+
+._qgrZw .bp3-tab-indicator {
+    height: auto !important;
+    width: 260px;
+}
+
+@media only screen and (max-width: 750px) {
+    ._YrNmg .pt-tab-list {
+        left: 0;
+    }
+
+    .pt-overlay-content {
+        top: -10px !important;
+    }
+
+    .bp3-tabs.bp3-vertical {
+        width: 270px !important;
+    }
+
+    .bp3-tab-indicator-wrapper .bp3-tab-indicator {
+        height: auto !important;
+    }
+
+    .bp3-tab-list {
+        margin-left: 20px !important;
+    }
+}
+

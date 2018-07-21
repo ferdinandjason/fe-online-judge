@@ -1,0 +1,11 @@
+.LOGIN_PAGE {
+  width: 650px !important;
+  margin: 0 auto !important;
+  margin-top: -85px !important;
+}
+
+@media only screen and (max-width: 650px) {
+  .LOGIN_PAGE {
+    width: inherit !important;
+  }
+}

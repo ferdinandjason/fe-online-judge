@@ -1,29 +1,54 @@
 @import '../../styles/base';
 
+.CARD_SIDEBAR {
+  *:focus {
+    outline: none !important;
+  }
 
-.sidebar{
-  background-color: #f4f8fb !important;
-  max-width : 280px;
-  height: inherit;
-  font-size: $font-size;
-  min-height: calc(100vh - 60px);
+  svg {
+    height: 50px !important;
+  }
 
+  .CARD_CONTENT {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
-.sidebar_button{
-  margin: 10px;
-}
-
-.sidebar_link a{
-  text-decoration: none;
-  color : $primary-color;
-}
-
-.sidebar_link a:hover {
-  text-decoration: none !important;
+.CARD_SIDEBAR_ARROW {
+  line-height: 50px !important;
   color: $primary-color !important;
+  float: right;
 }
 
-.sidebar_none {
-  height: 50px;
+.CARD_SIDEBAR_FULL {
+  margin: 10px 0 0 10px !important;
+  display: block;
+
+}
+
+.CARD_SIDEBAR_RESPONSIVE {
+  display: none;
+}
+
+.CARD_SIDEBAR_RESPONSIVE_MENU {
+
+}
+
+@media only screen and (max-width: 750px) {
+  .CARD_SIDEBAR_FULL {
+    display: none;
+  }
+
+  .CARD_SIDEBAR_RESPONSIVE {
+    display: block;
+    width: 200px;
+    top: -15px;
+    height: 30px;
+    margin-top: -20px;
+  }
+
+  .CARD_SIDEBAR_RESPONSIVE_MENU {
+    line-height: 50px;
+  }
 }

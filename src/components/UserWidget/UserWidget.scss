@@ -15,14 +15,13 @@
 
 }
 
-.USER_WIDGET_NAVBAR_LINK {
-    margin-right: 20px;
-    font-size: $font-size;
-}
-
 .USER_WIDGET_LINK {
     margin-right: 20px;
     font-size: 0.9 * $font-size;
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .USER_WIDGET_BURGER , .USER_WIDGET_MENU_HELPER {
@@ -30,14 +29,14 @@
 }
 
 .USER_WIDGET_MENU a {
-    color: #000 !important;
+    color: black !important;
 }
 
 .USER_WIDGET_USERNAME {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 450px) {
     .USER_WIDGET_AVATAR, .USER_WIDGET_AVATAR_MENU, .USER_WIDGET_LINK, .USER_WIDGET_NAVBAR_LINK {
         display: none;
     }
@@ -45,6 +44,7 @@
     .USER_WIDGET_BURGER, .USER_WIDGET_MENU_HELPER {
         display: block;
         cursor: pointer;
+        color: white;
         svg {
             float: left;
         }

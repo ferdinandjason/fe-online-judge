@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import { Icon, Menu, MenuItem, MenuDivider, Popover, Position } from '@blueprintjs/core';
 
 import { MenuItemLink } from '..';
-import { routes } from '../../AppRoutes';
 import Styles from './UserWidget.scss';
 
 
-export class UserWidget extends React.Component {
+class UserWidget extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -53,7 +52,6 @@ export class UserWidget extends React.Component {
                           disabled
                 />
                 <MenuDivider className={Styles.USER_WIDGET_MENU_HELPER}/>
-                {this.renderResponsiveAppRoutes().map(routes => {return routes})}
                 <MenuItemLink text="My account" to={`/profile/${user.id}`}/>
                 <MenuItemLink text="Log out" to="/logout"/>
             </Menu>
@@ -86,7 +84,6 @@ export class UserWidget extends React.Component {
 
         return (
             <div>
-                {this.renderAppRoutes().map(routes => {return routes})}
                 {this.state.avatar}
                 {popover}
                 {responsivePopover}
@@ -97,7 +94,6 @@ export class UserWidget extends React.Component {
     renderForGuest = () => {
         const menu = (
             <Menu className={Styles.USER_WIDGET_MENU}>
-                {this.renderResponsiveAppRoutes().map(routes => {return routes})}
                 <MenuItemLink text="Log In" to="/login"/>
                 <MenuItemLink text="Register" to="/register"/>
             </Menu>
@@ -115,7 +111,6 @@ export class UserWidget extends React.Component {
 
         const completeMenu = (
             <div className={Styles.USER_WIDGET_LINK_WRAPPER}>
-                {this.renderAppRoutes().map(routes => {return routes})}
                 <div className={Styles.USER_WIDGET_LINK}>
                     <Link to="/login">
                         Log In
@@ -136,24 +131,6 @@ export class UserWidget extends React.Component {
             </div>
         );
     };
-
-    renderAppRoutes = () => {
-        return routes.map(route => {
-            return (
-                <div className={Styles.USER_WIDGET_NAVBAR_LINK}>
-                    <Link to={route.to} key={route.id}>
-                        {route.title}
-                    </Link>
-                </div>
-            )
-        })
-    };
-
-    renderResponsiveAppRoutes = () => {
-        return routes.map(route => (
-            <MenuItemLink text={route.title} to={route.to}/>
-        ))
-    }
-
-
 }
+
+export default UserWidget;

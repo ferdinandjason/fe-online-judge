@@ -1,0 +1,12 @@
+.REGISTER_PAGE {
+  width: 650px !important;
+  margin: 0 auto !important;
+  margin-top: -85px !important;
+}
+
+@media only screen and (max-width: 650px) {
+  .REGISTER_PAGE {
+    margin-top: -40px !important;
+    width: inherit !important;
+  }
+}

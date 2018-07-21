@@ -1,22 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Classes } from '@blueprintjs/core';
 import classNames from 'classnames';
 
-import style from './Breadcrumb.scss';
+import { getBreadcrumbs } from "../../modules/redux/breadcrumb";
 
-export const Breadcrumb = (props) => {
+import Styles from './Breadcrumb.scss';
+
+const Breadcrumb = (props) => {
     const items = props.breadcrumbs.map((item,idx) => (
         <li key={item.link}>
-            <Link to={item.link} className={classNames("bp3-breadcrumb",{"bp3-breadcrumb-current":idx===props.breadcrumbs.length})}>
+            <Link to={item.link} className={classNames(Classes.BREADCRUMB,{"bp3-breadcrumb-current":idx===props.breadcrumbs.length})}>
                 {item.title}
             </Link>
         </li>
     ));
     return (
-        <div className={style.breadcrumbs}>
-            <div className={style.breadcrumbs__content}>
-                <ul className="bp3-breadcrumbs">{items}</ul>
+        <div className={Styles.BREADCRUMBS}>
+            <div className={Styles.BREADCRUMBS_CONTENT}>
+                <ul className={Classes.BREADCRUMBS}>{items}</ul>
             </div>
         </div>
     );
@@ -28,3 +32,12 @@ Breadcrumb.propTypes = {
           title : PropTypes.string.isRequired,
       })).isRequired
 };
+
+function createBreadcrumb() {
+    const mapStateToProps = (store) => ({
+            breadcrumbs : getBreadcrumbs(store),
+        });
+    return connect(mapStateToProps)(Breadcrumb)
+}
+
+export default createBreadcrumb();

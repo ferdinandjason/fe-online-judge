@@ -3,12 +3,12 @@ import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import { MenuItem } from '@blueprintjs/core';
 
-const MenuItemLink_ = (props) => (
-    <MenuItem text={props.text} onClick={props.onClick}/>
+const MenuItemLink = (props) => (
+    <MenuItem text={props.text} onClick={props.onClick(props.to)}/>
 );
 
 const mapDispatchToProps = {
     onClick : push,
 };
 
-export const MenuItemLink = connect(undefined,mapDispatchToProps)(MenuItemLink_);
+export default connect(undefined,mapDispatchToProps)(MenuItemLink);

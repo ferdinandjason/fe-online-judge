@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { SinglePageLayout } from "../../../../components";
-
+import {SinglePageLayout} from "../../../../components/layouts/SinglePageLayout";
 import WelcomeHead from "./WelcomeHead/WelcomeHead";
 import NewProblemList from "./NewProblem/NewProblemList/NewProblemList";
 import SubmissionList from "./Submissions/SubmissionList/SubmissionList";
 
 import style from './WelcomePage.scss';
+
 
 export class WelcomePage extends React.Component{
     render(){

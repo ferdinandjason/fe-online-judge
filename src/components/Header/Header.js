@@ -7,7 +7,7 @@ import { UserWidget } from "..";
 
 import Styles from './Header.scss';
 
-export class Header extends React.Component {
+class Header extends React.Component {
     render(){
         return (
             <Navbar className={Styles.HEADER_NAVBAR}>
@@ -34,4 +34,6 @@ export class Header extends React.Component {
             </Navbar>
         )
     }
-};
+}
+
+export default Header;

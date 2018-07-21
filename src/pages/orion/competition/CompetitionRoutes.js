@@ -1,14 +1,15 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import MainContestRoutes from "./contest/MainContestRoutes";
+
+import { withBreadcrumb } from "../../../components";
+import { MainCompetitionRoutes } from "./MainCompetitionRoutes";
 
 const CompetitionRoutes = () => (
     <div>
         <Switch>
-            <Route path={"/competition/contest"} component={MainContestRoutes}/>
-            <Route path={"/competition"} component={MainContestRoutes}/>
+            <Route path={"/competition"} component={MainCompetitionRoutes}/>
         </Switch>
     </div>
 );
 
-export default CompetitionRoutes;
+export default withBreadcrumb('Competition')(CompetitionRoutes);

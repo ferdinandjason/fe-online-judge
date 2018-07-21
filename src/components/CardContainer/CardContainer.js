@@ -1,19 +1,21 @@
 import React from 'react';
+import { Classes } from '@blueprintjs/core';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-import style from './CardContainer.scss';
+import Styles from './CardContainer.scss';
 
-export const CardContainer = (props) => {
+const CardContainer = (props) => {
+    console.log(classNames(Styles.CARD_CONTAINER,props.className));
     return (
-        <div className={style.card__container}>
-            <div className={classNames("bp3-card",style.card__title)}>
-                <h3 className={style.card__title__text}>
+        <div className={classNames(Styles.CARD_CONTAINER,props.className)}>
+            <div className={classNames(Classes.CARD,Styles.CARD_TITLE)}>
+                <h3 className={Styles.CARD_TITLE_TEXT}>
                     {props.title}
                 </h3>
-                <div className={style.card__title__action}>{props.action}</div>
+                <div className={Styles.CARD_TITLE_ACTION}>{props.action}</div>
             </div>
-            <div className={"bp3-card "+style.card__content+' '+((props.strict)?style.card__content_strict:'')}>{props.children}</div>
+            <div className={Classes.CARD+' '+Styles.CARD_CONTENT+' '+((props.strict)?Styles.CARD_CONTENT_STRICT:'')}>{props.children}</div>
         </div>
     )
 };
@@ -21,4 +23,7 @@ export const CardContainer = (props) => {
 CardContainer.propTypes = {
     title : PropTypes.string.isRequired,
     action : PropTypes.func,
+    className : PropTypes.string,
 };
+
+export default CardContainer;

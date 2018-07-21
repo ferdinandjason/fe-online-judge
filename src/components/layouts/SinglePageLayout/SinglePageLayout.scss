@@ -1,0 +1,17 @@
+@import '../../../styles/base';
+
+.SINGLE_PAGE_LAYOUT {
+  width: inherit;
+  max-width: $base-width;
+  margin: auto;
+  min-height: calc(100vh - 248px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .SINGLE_PAGE_LAYOUT {
+    min-height: 300px;
+  }
+}

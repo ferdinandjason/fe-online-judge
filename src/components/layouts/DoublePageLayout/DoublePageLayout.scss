@@ -1,0 +1,16 @@
+@import '../../../styles/base';
+
+.DOUBLE_PAGE_LAYOUT {
+  max-width: $base-width;
+  min-height: calc(100vh - 248px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .DOUBLE_PAGE_LAYOUT {
+    min-height: 300px;
+  }
+}

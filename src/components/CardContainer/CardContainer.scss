@@ -1,42 +1,38 @@
 @import '../../styles/base';
 
-.card__container {
+.CARD_CONTAINER {
   width: inherit;
   margin: 10px;
 }
 
-.card__title {
+.CARD_TITLE {
   background-color: #fbfbfc !important;
   height: 45px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
   margin-bottom: 1px;
 }
 
-.card__title__text {
+.CARD_TITLE_TEXT {
   float: left;
   margin-top: -10px;
   font-size: $font-size-large !important;
+  font-weight: 500;
+  font-family: Roboto;
 }
 
-.card__title__action {
-  float: left;
-  margin-left: 15px;
-  margin-top: -8px;
-}
-
-.card__title__action_right {
+.CARD_TITLE_ACTION {
   float: right;
-  margin-left: 15px;
-  margin-top: -8px;
+  margin-left: 15px !important;
+  margin-top: -8px !important;
 }
 
-.card__content {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.CARD_CONTENT {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
   margin-bottom: 10px;
 }
 
-.card__content_strict {
+.CARD_CONTENT_STRICT {
   padding : 0 !important;
 }

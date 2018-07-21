@@ -1,30 +1,52 @@
 @import '../../styles/base';
 
-.menubar{
-  height: 60px;
-  display: flex;
-  font-family: "Ubuntu";
-  font-weight: 700;
+.MENUBAR {
+  display: inline-table;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.03);
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.03);
+  margin-top: -16px;
 }
 
-.menubar_tabs{
-  color:$small-color !important;
-  height: 60px;
-  padding-top: 10px;
+.MENUBAR_WRAPPER {
+  text-align: center;
+  padding: 0 10px;
+  max-width: 1535px;
+  margin: 0 auto;
 }
 
-.menubar_tabs[aria-selected="true"], .menubar_tabs[aria-disabled="false"]:hover {
-  color: $active-color !important;
+.MENUBAR_TABS {
+  width: 7%;
+  min-width: 90px;
 }
 
-.menubar_color-1{
-  background-color: #39424e !important;
+.MENUBAR_TABS[aria-selected="true"], .MENUBAR_TABS[aria-selected="false"]:hover {
+  color: $primary-color !important;
 }
 
-.menubar_color-2{
-  background-color: #43a047 !important;
+.MENUBAR_TABS[aria-selected="false"]{
+  color: $non-active-color !important;
 }
 
-.menubar_color-3{
-  background-color: #3b73b9 !important;
+@media only screen and (max-width: 450px) {
+  .MENUBAR {
+    height: 75px;
+  }
+
+  .MENUBAR_WRAPPER {
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: -20px;
+    height: 65px;
+  }
+
+  .MENUBAR_TABS {
+    width: unset;
+    svg {
+      display: none;
+    }
+  }
 }
