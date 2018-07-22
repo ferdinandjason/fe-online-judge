@@ -1,5 +1,13 @@
 @import '../../styles/base';
 
+img {
+    width: 25px;
+    height: 25px;
+    margin: -5px !important;
+    margin-right: 10px !important;
+    border-radius: 50%;
+}
+
 .USER_WIDGET_LINK_WRAPPER {
     display: flex;
 }
@@ -22,6 +30,10 @@
         text-decoration: none;
         color: white;
     }
+    a:hover {
+        text-decoration: none !important;
+        color: white !important;
+    }
 }
 
 .USER_WIDGET_BURGER , .USER_WIDGET_MENU_HELPER {
@@ -34,6 +46,7 @@
 
 .USER_WIDGET_USERNAME {
     cursor: pointer;
+    color: white;
 }
 
 @media only screen and (max-width: 450px) {

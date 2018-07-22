@@ -2,91 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d6d0d1-49a8-4c76-ac3f-20671cce20b1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Breadcrumb/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BreadcrumbContainer/BreadcrumbContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardContainer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithSidebar/ContentWithSidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithSidebar/ContentWithSidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithSidebar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithSidebarContainer/ContentWithSidebarContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithSidebarContainer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HorizontalDivider/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LoadingState/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MenuItemLink/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Menubar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UserWidget/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/DoublePageLayout/DoublePageLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/DoublePageLayout/DoublePageLayout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/DoublePageLayout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/SinglePageLayout/SinglePageLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/SinglePageLayout/SinglePageLayout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/SinglePageLayout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/redux/breadcrumb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/redux/platform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/corvus/training/MainTrainingRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cygnus/login/LoginPage/LoginPage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/orion/competition/MainCompetitionRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/orion/competition/contest/ContestRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardContainer/CardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardContainer/CardContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardContainer/CardContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardContainer/CardContainer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FullPageLayout/FullPageLayout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HorizontalDivider/HorizontalDivider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HorizontalDivider/HorizontalDivider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HorizontalDivider/HorizontalDivider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HorizontalDivider/HorizontalDivider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadingState/LoadingState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingState/LoadingState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadingState/LoadingState.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingState/LoadingState.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MenuItemLink/MenuItemLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuItemLink/MenuItemLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menubar/Menubar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menubar/Menubar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menubar/Menubar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menubar/Menubar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SinglePageLayout/SinglePageLayout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SinglePageLayout/SinglePageLayout.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserWidget/UserWidget.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/MainProblemRepoRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/LoadingProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/LoadingProblemListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/ProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/ProblemListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/ProblemListTable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/ProblemListTable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/SingleProblemRepoRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/TrainingConstant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/TrainingRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/TrainingRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/MainProblemRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/ProblemListTable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/problem/SingleProblemRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cygnus/CygnusRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/CygnusRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cygnus/login/LoginPage/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/login/LoginPage/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cygnus/welcome/WelcomePage/WelcomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cygnus/welcome/WelcomePage/WelcomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/OrionRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/OrionRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/CompetitionConstant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/CompetitionRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orion/competition/CompetitionRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/orion/competition/contest/MainContestRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_base.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -109,59 +28,13 @@
     <expand />
     <select />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="TrainingRoutes.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/TrainingRoutes.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="135">
-                    <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="70" />
-                    <folding>
-                      <element signature="e#0#26#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="MainTrainingRoutes.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/MainTrainingRoutes.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="315">
-                    <caret line="21" column="12" lean-forward="true" selection-end-line="26" selection-end-column="2" />
-                    <folding>
-                      <element signature="e#0#26#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="ProblemRoutes.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemRoutes.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="165">
-                    <caret line="11" column="21" selection-end-line="15" selection-end-column="73" />
-                    <folding>
-                      <element signature="e#0#31#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="UserWidget.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-900">
-              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="328">
+              <caret line="73" column="71" lean-forward="true" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -169,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuItemLink.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MenuItemLink.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/MenuItemLink/MenuItemLink.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -184,7 +57,7 @@
       <file leaf-file-name="LoginPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/cygnus/login/LoginPage/LoginPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="60">
               <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -202,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterPage.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegisterPage.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="165">
+              <caret line="11" column="1" selection-start-line="11" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -214,7 +87,7 @@
       <file leaf-file-name="LoginForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-540">
+            <state>
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -245,7 +118,7 @@
       <file leaf-file-name="LoadingProblemListTable.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/LoadingProblemListTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2010">
+            <state relative-caret-position="1935">
               <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -257,8 +130,8 @@
       <file leaf-file-name="UserWidget.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+            <state relative-caret-position="270">
+              <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -296,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/layouts/SinglePageLayout/SinglePageLayout.js" />
         <option value="$PROJECT_DIR$/src/components/layouts/SinglePageLayout/index.js" />
         <option value="$PROJECT_DIR$/src/components/layouts/index.js" />
         <option value="$PROJECT_DIR$/src/components/ContentWithSidebarContainer/index.js" />
@@ -342,11 +214,12 @@
         <option value="$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemListTable/LoadingProblemListTable.js" />
         <option value="$PROJECT_DIR$/src/components/Sidebar/Sidebar.scss" />
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/LoadingProblemListTable.js" />
-        <option value="$PROJECT_DIR$/src/components/UserWidget/UserWidget.scss" />
-        <option value="$PROJECT_DIR$/src/components/MenuItemLink/MenuItemLink.js" />
         <option value="$PROJECT_DIR$/src/components/layouts/SinglePageLayout/SinglePageLayout.scss" />
         <option value="$PROJECT_DIR$/src/pages/cygnus/login/LoginPage/LoginPage.scss" />
         <option value="$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.scss" />
+        <option value="$PROJECT_DIR$/src/components/UserWidget/UserWidget.scss" />
+        <option value="$PROJECT_DIR$/src/components/UserWidget/UserWidget.js" />
+        <option value="$PROJECT_DIR$/src/components/MenuItemLink/MenuItemLink.js" />
       </list>
     </option>
   </component>
@@ -379,7 +252,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -731,6 +603,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -782,12 +655,13 @@
       <workItem from="1531913734663" duration="1146000" />
       <workItem from="1531979098585" duration="16000000" />
       <workItem from="1532084624095" duration="1067000" />
-      <workItem from="1532139226632" duration="31923000" />
+      <workItem from="1532139226632" duration="32046000" />
+      <workItem from="1532246347690" duration="2408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218660000" />
+    <option name="totallyTimeSpent" value="221191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,16 +679,16 @@
       <window_info anchor="bottom" id="TODO" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49945235" visible="true" weight="0.329718" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18623266" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18836713" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32977587" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -836,6 +710,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/cygnus/welcome/WelcomePage/WelcomePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -864,16 +752,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/redux/session.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,9 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -897,9 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppRoutes.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Footer/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -911,9 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,9 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,50 +805,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layouts/DoublePageLayout/DoublePageLayout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/orion/OrionRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/CompetitionConstant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/orion/competition/CompetitionConstant.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/MainTrainingRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" lean-forward="true" selection-end-line="26" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -986,9 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -996,9 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,19 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" selection-end-line="15" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,23 +857,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/TrainingRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1060,9 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1077,9 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="75" lean-forward="true" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,9 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,21 +921,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListPage/ProblemListPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/ProblemListTable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="48" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1158,9 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="32" column="83" lean-forward="true" selection-start-line="32" selection-start-column="83" selection-end-line="32" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1175,43 +962,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="134" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/LoadingProblemListTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
+        <state relative-caret-position="1935">
           <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MenuItemLink/MenuItemLink.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1220,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/cygnus/login/components/LoginForm/LoginForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
+        <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1245,7 +1002,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/cygnus/login/LoginPage/LoginPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="60">
           <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1260,10 +1017,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/TrainingRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/MainTrainingRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="21" column="12" lean-forward="true" selection-end-line="26" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/problem/ProblemRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-end-line="15" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/cygnus/register/RegisterPage/RegisterPage.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UserWidget/UserWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="73" column="71" lean-forward="true" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MenuItemLink/MenuItemLink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

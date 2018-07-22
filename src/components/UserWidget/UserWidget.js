@@ -1,8 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Icon, Menu, MenuItem, MenuDivider, Popover, Position } from '@blueprintjs/core';
 
 import { MenuItemLink } from '..';
+
+import defaultUser from '../../assets/images/user.png';
+
 import Styles from './UserWidget.scss';
 
 
@@ -16,7 +20,7 @@ class UserWidget extends React.Component {
 
     renderAvatar = () => {
         return (
-            <img src={'../../assets/images/user.png'} alt="user"/>
+            <img src={defaultUser} alt="user"/>
         )
     };
 
@@ -44,12 +48,12 @@ class UserWidget extends React.Component {
 
 
     renderForUser = (user) => {
+        console.log(user);
         const menu = (
             <Menu className={Styles.USER_WIDGET_MENU}>
                 <MenuItem className={Styles.USER_WIDGET_MENU_HELPER}
                           icon="user"
-                          text={user.username}
-                          disabled
+                          text={user.name}
                 />
                 <MenuDivider className={Styles.USER_WIDGET_MENU_HELPER}/>
                 <MenuItemLink text="My account" to={`/profile/${user.id}`}/>
@@ -65,9 +69,9 @@ class UserWidget extends React.Component {
             >
                 <div>
                     <span className={Styles.USER_WIDGET_USERNAME}>
-                        {user.username}
+                        {user.name}
                     </span>{' '}
-                    <Icon icon="chevron-down"/>
+                    <Icon icon="chevron-down" style={{color:'white'}}/>
                 </div>
             </Popover>
         );
@@ -133,4 +137,8 @@ class UserWidget extends React.Component {
     };
 }
 
-export default UserWidget;
+const mapStateToProps = (state) => ({
+    user : state.session.user,
+});
+
+export default connect(mapStateToProps)(UserWidget);
