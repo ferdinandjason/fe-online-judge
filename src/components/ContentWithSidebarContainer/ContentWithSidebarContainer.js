@@ -9,6 +9,7 @@ const SLASH = '/';
 
 function resolveURL(parentPath,childPath) {
     const actualChildPath = childPath === '~' ? '':childPath;
+    console.log(parentPath+SLASH+actualChildPath);
     return (parentPath+SLASH+actualChildPath);
 }
 
@@ -86,10 +87,16 @@ class ContentWithSidebarContainer extends React.Component {
 }
 
 function createContentWithSidebarContainer() {
-    const mapDispatchToProps = {
-        onItemClick : (parentPath,itemId) => push(resolveURL(parentPath,itemId)),
-    };
-    return connect(undefined,mapDispatchToProps)(ContentWithSidebarContainer);
+    const mapDispatchToProps = (dispatch) => ({
+        onItemClick : (parentPath,itemId) => dispatch(push(resolveURL(parentPath,itemId))),
+    });
+    const mergeProps = (stateProps, dispatchProps, ownProps) => ({
+        onItemClick: (event) => {
+            event.preventDefault();
+            ownProps.history.push(ownProps.to);
+        },
+    });
+    return connect(undefined,mapDispatchToProps,mergeProps)(ContentWithSidebarContainer);
 }
 
 export default withRouter(createContentWithSidebarContainer());

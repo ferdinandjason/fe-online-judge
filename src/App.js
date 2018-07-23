@@ -3,7 +3,7 @@ import './App.css';
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { Header, AppToaster, Menubar, Breadcrumb, Footer } from './components';
+import { Header, AppToaster, Menubar, Footer } from './components';
 import OrionRoutes from './pages/orion/OrionRoutes';
 import CorvusRoutes from "./pages/corvus/CorvusRoutes";
 import CygnusRoutes from './pages/cygnus/CygnusRoutes';
@@ -18,7 +18,6 @@ class App extends Component {
                 <AppToaster/>
                 <Header/>
                 <Menubar items={routes}/>
-                <Breadcrumb/>
                 <Switch>
                     {/*<Route path={"/repository"} component={AndromedaRoutes}/>*/}
                     <Route path={"/competition"} component={OrionRoutes}/>
