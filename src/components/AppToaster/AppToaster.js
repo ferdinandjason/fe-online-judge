@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Toast, Toaster, Position } from '@blueprintjs/core';
 
-class MyToaster extends Component {
+class AppToaster extends Component {
     constructor(props){
         super(props);
         this.toaster = null;
@@ -35,10 +35,8 @@ class MyToaster extends Component {
     }
 }
 
-function mapStateToProps(state){
-    return {
-        toast : state.toast,
-    }
-}
+const mapStateToProps = (state) => ({
+    toast : state.toast,
+});
 
-export const AppToaster = connect(mapStateToProps)(MyToaster);
+export default connect(mapStateToProps)(AppToaster);

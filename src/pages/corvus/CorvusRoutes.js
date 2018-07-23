@@ -6,7 +6,7 @@ import { store } from "../../modules/store";
 import { ChangePlatform } from "../../modules/redux/platform";
 
 const LoadableTrainingRoutes = Loadable({
-    loader : () => import('./training/TrainingRoutes'),
+    loader : () => import('./training/routes/TrainingRoutes'),
     loading : () => <LoadingState/>
 });
 
