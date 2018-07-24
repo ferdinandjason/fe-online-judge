@@ -5,7 +5,7 @@ import { Classes, Intent } from '@blueprintjs/core';
 
 import Styles from './ButtonLink.scss';
 
-export const ButtonLink = (props) => {
+const ButtonLink = (props) => {
     const { intent, ...restProps } = props;
     const classIntent =
         (intent === Intent.PRIMARY) ? Classes.INTENT_PRIMARY :
@@ -15,3 +15,5 @@ export const ButtonLink = (props) => {
     const className = classNames(Classes.BUTTON, props.className,classIntent,Styles.BUTTON_LINK);
     return <Link {...restProps} as="button" className={className}/>
 };
+
+export default ButtonLink;

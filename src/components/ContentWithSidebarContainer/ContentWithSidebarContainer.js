@@ -71,7 +71,6 @@ class ContentWithSidebarContainer extends React.Component {
     };
 
     onItemClick = (itemId) => {
-
         return this.props.history.push(resolveURL(this.props.match.url, itemId));
     };
 

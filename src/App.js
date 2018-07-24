@@ -19,7 +19,7 @@ class App extends Component {
                 <Header/>
                 <Menubar items={routes}/>
                 <Switch>
-                    {/*<Route path={"/repository"} component={AndromedaRoutes}/>*/}
+                    <Route path={"/repository"} component={AndromedaRoutes}/>
                     <Route path={"/competition"} component={OrionRoutes}/>
                     <Route path={"/training"} component={CorvusRoutes}/>
                     <Route path={"/"} component={CygnusRoutes}/>

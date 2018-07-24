@@ -1,0 +1,27 @@
+@import '../../styles/base';
+
+.CONTENT_WITH_MULTIPLE_SIDEBAR {
+  display: flex !important;
+}
+
+.CONTENT_WITH_MULTIPLE_SIDEBAR__SIDEBAR {
+  width: 270px !important;
+  margin-right: 25px !important;
+  margin-bottom: 15px !important;
+  margin-left: 15px !important;
+}
+
+.CONTENT_WITH_MULTIPLE_SIDEBAR__CONTENT {
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.CONTENT_WITH_MULTIPLE_SIDEBAR__CONTENT__SMALL {
+  max-width: 705px;
+}
+
+@media only screen and (max-width: 750px) {
+  .CONTENT_WITH_MULTIPLE_SIDEBAR {
+    display: block !important;
+  }
+}

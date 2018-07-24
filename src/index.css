@@ -15,6 +15,13 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   width: 100%;
 }
 
+.page__container h4{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 /* Menubar */
 
 ._1qh4O .bp3-tab-indicator-wrapper .bp3-tab-indicator {

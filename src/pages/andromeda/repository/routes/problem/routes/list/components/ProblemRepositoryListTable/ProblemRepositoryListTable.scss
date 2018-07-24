@@ -1,0 +1,17 @@
+.PROBLEM_REPO_LIST_TABLE_WRAPPER{
+  width: 100%;
+}
+
+.PROBLEM_REPO_LIST_TABLE_TITLE{
+  text-align: center !important;
+}
+
+.PROBLEM_REPO_LIST_TABLE_RESPONSIVE {
+
+}
+
+@media only screen and (max-width: 450px) {
+  .PROBLEM_REPO_LIST_TABLE_RESPONSIVE {
+    display: none;
+  }
+}

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import ProblemListTable from "../ProblemListTable/ProblemListTable";
 import LoadingProblemListTable from "../ProblemListTable/LoadingProblemListTable";
-import {CardContainer, withBreadcrumb} from "../../../../../../../../../components";
+import { CardContainer } from "../../../../../../../../../components";
 import { problemListActions } from "../../modules/problem";
 
 class ProblemListContainer extends React.Component {

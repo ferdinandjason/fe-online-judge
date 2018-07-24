@@ -17,6 +17,12 @@ export const routes = [
         to : '/competition',
         icon : 'crown',
     },
+    {
+        id : 'repository',
+        title : 'Repository',
+        to : '/repository',
+        icon : 'database',
+    },
 ];
 
 export const spesialRoutes = [
