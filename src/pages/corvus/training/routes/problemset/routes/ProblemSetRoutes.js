@@ -14,7 +14,7 @@ const ProblemSetRoutes = () => (
     <div>
         <Switch>
             <Route path="/training/problem/:problemId" component={LoadableSingleProblemRoutes}/>
-            <Route path="/training" component={ProblemListRoutes}/>
+            <Route path="/training/" component={ProblemListRoutes}/>
         </Switch>
     </div>
 );

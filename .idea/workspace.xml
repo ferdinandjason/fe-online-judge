@@ -3,22 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5d6d0d1-49a8-4c76-ac3f-20671cce20b1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardContainer/CardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardContainer/CardContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContentCard/ContentCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentCard/ContentCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContentWithSidebarContainer/ContentWithSidebarContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentWithSidebarContainer/ContentWithSidebarContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/problem/ProblemStatementCard/LoadingProblemStatementCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/problem/ProblemStatementCard/LoadingProblemStatementCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/TrainingRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/TrainingRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListContainer/ProblemListContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListContainer/ProblemListContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListTable/LoadingProblemListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListTable/LoadingProblemListTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/routes/ProblemListRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/routes/ProblemListRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemDataRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/rank/components/ProblemRankCard/LoadingProblemRankCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/rank/components/ProblemRankCard/LoadingProblemRankCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/rank/components/ProblemRankCard/ProblemRankCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/rank/components/ProblemRankCard/ProblemRankCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/rank/components/ProblemRankCard/ProblemRankCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/rank/components/ProblemRankCard/ProblemRankCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/rank/components/ProblemRankCardContainer/ProblemRankCardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/rank/components/ProblemRankCardContainer/ProblemRankCardContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -112,7 +98,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProblemListContainer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProblemListContainer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListContainer/ProblemListContainer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="118">
@@ -124,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainingRoutes.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrainingRoutes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/TrainingRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -140,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -231,9 +217,9 @@
         <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/routes/ProblemListRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListContainer/ProblemListContainer.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/TrainingRoutes.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemDataRoutes.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js" />
+        <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/TrainingRoutes.js" />
       </list>
     </option>
   </component>
@@ -253,7 +239,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="28" />
     <option name="width" value="1920" />
     <option name="height" value="1052" />
@@ -830,12 +816,12 @@
       <workItem from="1532246347690" duration="2450000" />
       <workItem from="1532331570483" duration="12237000" />
       <workItem from="1532351832022" duration="4224000" />
-      <workItem from="1532421233737" duration="755000" />
+      <workItem from="1532421233737" duration="929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238449000" />
+    <option name="totallyTimeSpent" value="238623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -856,8 +842,8 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49945235" visible="true" weight="0.329718" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.25026682" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49945235" visible="true" weight="0.329718" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.25026682" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32977587" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
@@ -1202,30 +1188,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/TrainingRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1246,6 +1212,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/TrainingRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

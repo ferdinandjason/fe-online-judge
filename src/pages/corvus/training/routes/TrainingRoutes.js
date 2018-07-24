@@ -6,8 +6,9 @@ import ProblemSetRoutes from "./problemset/routes/ProblemSetRoutes";
 
 const TrainingRoutes = () => (
     <div>
+        <Redirect to={"/training/problem"}/>
         <Switch>
-            <Route path={"/training/"} component={ProblemSetRoutes}/>
+            <Route path={"/training/problem"} component={ProblemSetRoutes}/>
         </Switch>
     </div>
 );
