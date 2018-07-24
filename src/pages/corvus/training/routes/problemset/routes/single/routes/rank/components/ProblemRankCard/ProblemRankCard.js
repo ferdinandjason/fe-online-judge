@@ -14,13 +14,13 @@ class ProblemRankCard extends React.Component {
                 <h2 className={Styles.PROBLEM_RANK__TITLE}>
                     Rank {problem.slug} - {problem.title}
                 </h2>
-                <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_BORDERED)}>
+                <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_BORDERED,Styles.PROBLEM_RANK__TABLE)}>
                     <thead>
                         <tr>
-                            <td>No</td>
-                            <td>Name</td>
-                            <td>Time</td>
-                            <td>Memory</td>
+                            <td className={Styles.PROBLEM_RANK__TITLE}>No</td>
+                            <td className={Styles.PROBLEM_RANK__TITLE}>Name</td>
+                            <td className={Styles.PROBLEM_RANK__TITLE}>Time</td>
+                            <td className={Styles.PROBLEM_RANK__TITLE}>Memory</td>
                         </tr>
                     </thead>
                     <tbody>

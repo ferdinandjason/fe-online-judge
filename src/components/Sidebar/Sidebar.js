@@ -14,7 +14,6 @@ class Sidebar extends React.Component {
         this.state = {
             isResponsivePopoverOpen : false,
         }
-        console.log(Styles);
     }
 
     render(){

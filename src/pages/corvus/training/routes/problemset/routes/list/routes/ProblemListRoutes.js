@@ -2,8 +2,8 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 import { DoublePageLayout } from "../../../../../../../../components/layouts";
-import {ContentWithSidebarContainer } from "../../../../../../../../components";
-import ProblemListDataRoutes from "./ProblemListDataRoutes";
+import {ContentWithSidebarContainer} from "../../../../../../../../components";
+import ProblemListContainer from "../components/ProblemListContainer/ProblemListContainer";
 
 export const ProblemListRoutes = () => {
     const sidebarItems = [
@@ -11,7 +11,7 @@ export const ProblemListRoutes = () => {
             id:'problem',
             titleIcon:'projects',
             title:'Problem Set',
-            component:ProblemListDataRoutes
+            component:ProblemListContainer,
         }
     ];
 
@@ -27,4 +27,4 @@ export const ProblemListRoutes = () => {
     )
 };
 
-export default withRouter(ProblemListRoutes)
+export default withRouter(ProblemListRoutes);

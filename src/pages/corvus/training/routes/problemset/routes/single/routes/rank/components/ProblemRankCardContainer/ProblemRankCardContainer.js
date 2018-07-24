@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import ProblemRankCard from "../ProblemRankCard/ProblemRankCard";
 import { problemActions } from "../../../../modules/problem";
+import LoadingProblemRankCard from "../ProblemRankCard/LoadingProblemRankCard";
 
 class ProblemRankCardContainer extends React.Component {
     constructor(props){
@@ -18,7 +19,11 @@ class ProblemRankCardContainer extends React.Component {
     }
 
     render(){
-        return (<ProblemRankCard problemRankList={this.state.problemRankList}/>)
+        if(this.state.problemRankList){
+            return (<ProblemRankCard problemRankList={this.state.problemRankList}/>)
+        } else {
+            return (<LoadingProblemRankCard/>)
+        }
     }
 }
 

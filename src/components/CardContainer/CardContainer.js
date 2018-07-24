@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 import Styles from './CardContainer.scss';
 
 const CardContainer = (props) => {
-    console.log(classNames(Styles.CARD_CONTAINER,props.className));
     return (
         <div className={classNames(Styles.CARD_CONTAINER,props.className)}>
             <div className={classNames(Classes.CARD,Styles.CARD_TITLE)}>
