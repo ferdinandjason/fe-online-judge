@@ -15,5 +15,7 @@ export * from './HorizontalDivider';
 export * from './LoadingState';
 export * from './Menubar';
 export * from './MenuItemLink';
+export * from './OmnibarContainer';
+export * from './OmnibarSearch';
 export * from './Sidebar';
 export * from './UserWidget';

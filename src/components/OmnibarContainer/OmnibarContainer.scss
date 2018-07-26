@@ -1,0 +1,11 @@
+.OMNIBAR_BREADCRUMB {
+  p {
+    font-size: 12px !important;
+  }
+}
+
+.OMNIBAR_BREADCRUMBS {
+  li::after {
+    margin-top: -10px !important;
+  }
+}

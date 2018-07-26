@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Alignment, InputGroup, Navbar, NavbarGroup, NavbarHeading } from '@blueprintjs/core';
+import { Alignment, Navbar, NavbarGroup, NavbarHeading } from '@blueprintjs/core';
 
 import { APP_CONFIG } from '../../config';
-import { UserWidget } from "..";
+import { UserWidget, OmnibarContainer } from "..";
 
 import Styles from './Header.scss';
 
@@ -19,12 +19,7 @@ class Header extends React.Component {
                             </Link>
                         </NavbarHeading>
                         <div className={Styles.HEADER_SEARCH}>
-                            <InputGroup
-                                type="search"
-                                leftIcon="search"
-                                placeholder="Search"
-                                className={Styles.HEADER_SEARCH_WRAPPER}
-                            />
+                            <OmnibarContainer/>
                         </div>
                     </NavbarGroup>
                     <NavbarGroup align={Alignment.RIGHT} className={Styles.HEADER_GROUP}>

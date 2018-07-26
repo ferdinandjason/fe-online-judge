@@ -1,0 +1,16 @@
+.OMNIBAR_SEARCH_WRAPPER {
+  > svg {
+    margin: 10px !important;
+  }
+  > span {
+    margin: 3px !important;
+  }
+}
+
+.OMNIBAR_WRAPPER {
+  position: relative !important;
+  width: 50%;
+  margin: 15% auto auto auto;
+  max-height: 525px;
+  overflow-y: scroll;
+}
