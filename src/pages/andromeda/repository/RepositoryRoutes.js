@@ -6,9 +6,8 @@ import {withBreadcrumb} from "../../../components";
 
 const RepositoryRoutes = () => (
     <div>
-        <Redirect to={"/repository/problem"}/>
         <Switch>
-            <Route path={"/repository/problem"} component={ProblemRepositoryRoutes}/>
+            <Route path={"/repository"} component={ProblemRepositoryRoutes}/>
         </Switch>
     </div>
 );

@@ -8,6 +8,7 @@ export * from './ContentWithMultipleSidebar';
 export * from './ContentWithMultipleSidebarContainer';
 export * from './ContentWithSidebar';
 export * from './ContentWithSidebarContainer';
+export * from './Editor/WYSIWYGEditor';
 export * from './Footer';
 export * from './Header';
 export * from './HorizontalDivider';

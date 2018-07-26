@@ -2,57 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d6d0d1-49a8-4c76-ac3f-20671cce20b1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ButtonLink/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithMultipleSidebar/ContentWithMultipleSidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithMultipleSidebar/ContentWithMultipleSidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithMultipleSidebar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithMultipleSidebarContainer/ContentWithMultipleSidebarContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentWithMultipleSidebarContainer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/ProblemRepositoryRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/components/ProblemRepositoryListContainer/ProblemRepositoryListContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/modules/problem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/routes/ProblemRepositoryListRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/modules/problem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/SingleProblemRepositoryRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/components/ProblemRepositoryGrading/ProblemRepositoryGrading.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/components/ProblemRepositoryGrading/ProblemRepositoryGradingConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/components/ProblemRepositoryGrading/ProblemRepositoryGradingTestcase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/components/ProblemRepositoryGrading/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/routes/ProblemRepositoryGradingRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatement.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementMedia.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/routes/ProblemRepositoryStatementRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Editor/WYSIWYGEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Editor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/create/components/ProblemRepositoryCreateProblem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContentWithSidebarContainer/ContentWithSidebarContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentWithSidebarContainer/ContentWithSidebarContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.config.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.config.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryConstant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/AndromedaRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/andromeda/AndromedaRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListPage/ProblemListPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListPage/ProblemListPage.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/LoadingProblemListTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/ProblemListTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/ProblemListTable/ProblemListTable.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/SingleProblemPage/statement/EditSingleProblemPage/EditSingleProblemPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/SingleProblemPage/statement/MediaSingleProblemPage/MediaSingleProblemPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/SingleProblemPage/statement/ViewSingleProblemPage/ViewSingleProblemPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/SingleProblemPage/statement/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/components/ProblemDescription/LoadingProblemDescription.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/components/ProblemDescription/ProblemDescription.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/components/ProblemDescription/ProblemDescription.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/components/ProblemDetail/LoadingProblemDetail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/components/ProblemDetail/ProblemDetail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/components/ProblemDetail/ProblemDetail.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/problem/components/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListContainer/ProblemListContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListContainer/ProblemListContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/routes/ProblemRepositoryListRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/routes/ProblemRepositoryListRoutes.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SingleProblemRoutes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemRoutes.js">
+      <file leaf-file-name="ProblemRepositoryCreateProblem.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/create/components/ProblemRepositoryCreateProblem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="54" selection-end-column="14" />
+            <state relative-caret-position="585">
+              <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -89,32 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProblemRepositoryStatementView.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="37" column="102" lean-forward="true" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProblemRepositoryGradingConfig.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/components/ProblemRepositoryGrading/ProblemRepositoryGradingConfig.js">
+      <file leaf-file-name="CorvusRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProblemRepositoryGradingRoutes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/routes/ProblemRepositoryGradingRoutes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -122,23 +62,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleProblemRepositoryRoutes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AndromedaRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/AndromedaRoutes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WYSIWYGEditor.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Editor/WYSIWYGEditor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.dev.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4020">
+              <caret line="268" column="1" selection-start-line="268" selection-start-column="1" selection-end-line="268" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleProblemRepositoryRoutes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/SingleProblemRepositoryRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="30" column="118" lean-forward="true" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ButtonLink.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <caret line="30" column="118" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -146,43 +107,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ButtonLink.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.scss">
+      <file leaf-file-name="ProblemRepositoryRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/ProblemRepositoryRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="75">
+              <caret line="5" column="86" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProblemRepositoryStatementRoutes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/routes/ProblemRepositoryStatementRoutes.js">
+      <file leaf-file-name="ProblemRepositoryListRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/routes/ProblemRepositoryListRoutes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProblemRepositoryListContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/components/ProblemRepositoryListContainer/ProblemRepositoryListContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepositoryRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProblemSetRoutes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="34" selection-end-line="21" selection-end-column="75" />
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProblemRepositoryGradingTestcase.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/components/ProblemRepositoryGrading/ProblemRepositoryGradingTestcase.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-              <folding>
-                <element signature="e#1#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -223,13 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/rank/components/ProblemRankCard/ProblemRankCard.scss" />
-        <option value="$PROJECT_DIR$/src/components/ContentCard/ContentCard.scss" />
-        <option value="$PROJECT_DIR$/src/components/problem/ProblemStatementCard/LoadingProblemStatementCard.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListTable/LoadingProblemListTable.js" />
-        <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/routes/ProblemListDataRoutes.js" />
-        <option value="$PROJECT_DIR$/src/components/CardContainer/CardContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/routes/ProblemListRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemDataRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js" />
@@ -248,14 +208,11 @@
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/index.js" />
         <option value="$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.js" />
         <option value="$PROJECT_DIR$/src/components/ButtonLink/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/routes/ProblemRepositoryListRoutes.js" />
         <option value="$PROJECT_DIR$/src/components/ContentWithSidebarContainer/ContentWithSidebarContainer.js" />
         <option value="$PROJECT_DIR$/src/components/ContentWithMultipleSidebar/ContentWithMultipleSidebar.scss" />
         <option value="$PROJECT_DIR$/src/components/ContentWithMultipleSidebar/index.js" />
-        <option value="$PROJECT_DIR$/src/components/index.js" />
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/routes/ProblemRepositoryStatementRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/components/ProblemRepositoryGrading/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/ProblemRepositoryRoutes.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/components/ProblemRepositoryListTable/LoadingProblemRepositoryListTable.js" />
         <option value="$PROJECT_DIR$/src/components/ContentWithMultipleSidebarContainer/index.js" />
@@ -264,7 +221,6 @@
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/components/ProblemRepositoryGrading/ProblemRepositoryGrading.scss" />
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatement.scss" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js" />
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementEdit.js" />
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementMedia.js" />
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementView.js" />
@@ -274,6 +230,17 @@
         <option value="$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemRoutes.js" />
         <option value="$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.scss" />
         <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/SingleProblemRepositoryRoutes.js" />
+        <option value="$PROJECT_DIR$/config/webpack.config.prod.js" />
+        <option value="$PROJECT_DIR$/src/components/Editor/Editor.js" />
+        <option value="$PROJECT_DIR$/src/components/Editor/index.js" />
+        <option value="$PROJECT_DIR$/src/components/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/ProblemRepositoryRoutes.js" />
+        <option value="$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js" />
+        <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/routes/ProblemRepositoryListRoutes.js" />
+        <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
+        <option value="$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/create/components/ProblemRepositoryCreateProblem.js" />
+        <option value="$PROJECT_DIR$/src/pages/andromeda/AndromedaRoutes.js" />
+        <option value="$PROJECT_DIR$/src/components/Editor/WYSIWYGEditor.js" />
       </list>
     </option>
   </component>
@@ -294,8 +261,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="961" />
     <option name="y" value="28" />
-    <option name="width" value="1920" />
+    <option name="width" value="959" />
     <option name="height" value="1052" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -404,6 +372,13 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ContentWithSidebarContainer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Editor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
@@ -573,6 +548,31 @@
               <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="create" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="andromeda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="create" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="andromeda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="list" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -587,6 +587,20 @@
               <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="list" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fe-online-judge" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="andromeda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="problem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="list" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ProblemRepositoryListContainer" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="fe-online-judge" type="b2602c69:ProjectViewProjectNode" />
@@ -1135,12 +1149,14 @@
       <workItem from="1532246347690" duration="2450000" />
       <workItem from="1532331570483" duration="12237000" />
       <workItem from="1532351832022" duration="4224000" />
-      <workItem from="1532421233737" duration="8473000" />
+      <workItem from="1532421233737" duration="8508000" />
+      <workItem from="1532496052554" duration="4031000" />
+      <workItem from="1532592079191" duration="322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246167000" />
+    <option name="totallyTimeSpent" value="250555000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1153,7 +1169,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3286334" />
@@ -1161,8 +1176,8 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49945235" visible="true" weight="0.329718" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.25026682" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49945235" visible="true" weight="0.329718" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.255603" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32977587" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
@@ -1189,75 +1204,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListTable/ProblemListTable.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/components/ProblemListContainer/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Editor/WYSIWYGEditor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="73" selection-start-column="73" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/components/ProblemRepositoryListTable/ProblemRepositoryListTable.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/components/ProblemRepositoryListTable/ProblemRepositoryListTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/list/modules/problem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="2" lean-forward="true" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/modules/problem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/components/ProblemRepositoryListTable/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="64" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/components/ProblemRepositoryListContainer/ProblemRepositoryListContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="87" lean-forward="true" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/statement/components/ProblemWorksheet/ProblemWorksheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="16" column="87" lean-forward="true" selection-end-line="36" selection-end-column="54" />
+        <state relative-caret-position="285">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1282,9 +1242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-347">
           <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,9 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="23" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1323,16 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="13" lean-forward="true" selection-end-line="91" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1347,19 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/routes/ProblemRepositoryListRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" lean-forward="true" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1367,9 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="2" lean-forward="true" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1377,9 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1387,9 +1312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1397,10 +1319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="77" lean-forward="true" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1532428139647" expanded="true" signature="711:768" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1408,9 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1420,9 +1335,6 @@
           <caret column="103" selection-start-column="103" selection-end-column="103" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ContentWithSidebarContainer/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ContentWithMultipleSidebar/ContentWithMultipleSidebar.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -1435,9 +1347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="71" lean-forward="true" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1476,15 +1385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1492,63 +1392,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/ProblemRepositoryRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementEdit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="108" column="102" lean-forward="true" selection-start-line="108" selection-start-column="102" selection-end-line="108" selection-end-column="102" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementMedia.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="40" column="72" lean-forward="true" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
-          <folding>
-            <element signature="e#1#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="37" column="102" lean-forward="true" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/components/ProblemRepositoryGrading/ProblemRepositoryGradingTestcase.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="240">
           <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#1#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1561,48 +1415,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/grading/routes/ProblemRepositoryGradingRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="90">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/ProblemSetRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="240">
           <caret line="21" column="34" selection-end-line="21" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/corvus/training/routes/problemset/routes/single/routes/SingleProblemRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="54" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="555">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="54" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="195">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ButtonLink/ButtonLink.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Editor/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="335" column="7" selection-start-line="335" selection-start-column="7" selection-end-line="335" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="64" column="14" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="64" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/statement/components/ProblemRepositoryStatement/ProblemRepositoryStatementView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1613,10 +1490,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/components/ProblemRepositoryListTable/ProblemRepositoryListTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-332" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/components/ProblemRepositoryListContainer/ProblemRepositoryListContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/single/routes/SingleProblemRepositoryRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="30" column="118" lean-forward="true" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
+        <state relative-caret-position="270">
+          <caret line="30" column="118" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/RepositoryRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/ProblemRepositoryRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="86" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/list/routes/ProblemRepositoryListRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4020">
+          <caret line="268" column="1" selection-start-line="268" selection-start-column="1" selection-end-line="268" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/repository/routes/problem/routes/create/components/ProblemRepositoryCreateProblem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/corvus/CorvusRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/andromeda/AndromedaRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Editor/WYSIWYGEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
