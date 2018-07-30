@@ -10,17 +10,28 @@ class ProblemRepositoryListContainer extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            problemList : null
+            problemRepoList : null,
+            page : 0,
+            limit : ProblemRepositoryListContainer.getProblemLimit(),
         }
     }
 
-    async componentDidMount(){
-        const problemRepoList = null ; // await this.props.onFetchProblemRepositoryList
-        this.setState({problemRepoList});
+    static getProblemLimit(){
+        return ((window.innerHeight - 376)/52);
     }
 
-    renderProblemList = (problemList) => {
-        if(!problemList || problemList.length === 0){
+    async componentDidMount(){
+        const { page, limit } = this.state;
+        this.props.onFetchProblemRepositoryList(page,limit)
+            .then((problemRepoList)=>{
+                console.log('asd',problemRepoList);
+                this.setState({problemRepoList});
+                return Promise.resolve();
+            });
+    }
+
+    renderProblemList = (problemRepoList) => {
+        if(!problemRepoList || problemRepoList.length === 0){
             return (
                 <CardContainer title={"Problem Repository"} strict={true}>
                     <LoadingProblemListTable/>
@@ -29,7 +40,7 @@ class ProblemRepositoryListContainer extends React.Component {
         }
         return (
             <CardContainer title={"Problem Repository"} strict={true}>
-                <ProblemListTable problemList={problemList}/>
+                <ProblemListTable problemList={problemRepoList}/>
             </CardContainer>
         )
     };
@@ -37,7 +48,7 @@ class ProblemRepositoryListContainer extends React.Component {
     render(){
         return (
             <div className="page__container">
-                {this.renderProblemList(this.state.problemList)}
+                {this.renderProblemList(this.state.problemRepoList)}
             </div>
         )
     }
@@ -45,7 +56,7 @@ class ProblemRepositoryListContainer extends React.Component {
 
 function createProblemRepositoryListContainer(problemRepositoryListActions) {
     const mapDispatchToProps = {
-        onFetchProblemRepositoryList : () => problemRepositoryListActions.fetchProblemRepositoryList(),
+        onFetchProblemRepositoryList : (page,limit) => problemRepositoryListActions.fetchProblemRepositoryList(page,limit),
     };
     return connect(undefined,mapDispatchToProps)(ProblemRepositoryListContainer);
 }

@@ -19,7 +19,7 @@ class LogoutPage extends React.Component{
     }
 
     async componentDidMount(){
-        API.session.logOut()
+        API.sessionAPI.logOut()
             .then(()=>{
                 this.setLogoutState();
                 return Promise.resolve();

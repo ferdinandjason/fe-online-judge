@@ -96,7 +96,7 @@ export class RegisterForm extends React.Component {
         event.preventDefault();
         const { name, email, password, password_valid } = this.state;
         if(password_valid){
-            API.user.register(name,email,password)
+            API.userAPI.register(name,email,password)
                 .then(()=>{
                     this.redirectToHome();
                 })

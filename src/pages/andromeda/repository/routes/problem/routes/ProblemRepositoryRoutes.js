@@ -19,4 +19,4 @@ const ProblemRepositoryRoutes = () => (
     </div>
 );
 
-export default withRouter(withBreadcrumb('Problems')(ProblemRepositoryRoutes));
+export default withRouter(withBreadcrumb('Problems','/repository/problems')(ProblemRepositoryRoutes));

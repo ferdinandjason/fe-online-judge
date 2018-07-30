@@ -28,8 +28,8 @@ const Breadcrumb = (props) => {
 
 Breadcrumb.propTypes = {
       breadcrumbs : PropTypes.arrayOf(PropTypes.shape({
-          link : PropTypes.string.isRequired,
-          title : PropTypes.string.isRequired,
+          link : PropTypes.string,
+          title : PropTypes.string,
       })).isRequired
 };
 

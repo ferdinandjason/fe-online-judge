@@ -4,11 +4,11 @@ import { withRouter } from 'react-router-dom';
 
 import { PopBreadcrumb, PushBreadcrumb } from "../../modules/redux/breadcrumb";
 
-export function withBreadcrumb(breadcrumbTitle) {
+export function withBreadcrumb(breadcrumbTitle,breadcrumbLink = null) {
     return InnerComponent => {
         class ContainerComponent extends React.Component {
             componentDidMount() {
-                this.props.onPushBreadcrumb(this.props.match.url, breadcrumbTitle);
+                this.props.onPushBreadcrumb(breadcrumbLink?breadcrumbLink:this.props.match.url, breadcrumbTitle);
             }
 
             render() {
@@ -16,7 +16,7 @@ export function withBreadcrumb(breadcrumbTitle) {
             }
 
             componentWillUnmount() {
-                this.props.onPopBreadcrumb(this.props.match.url);
+                this.props.onPopBreadcrumb(breadcrumbLink?breadcrumbLink:this.props.match.url);
             }
         }
 

@@ -7,8 +7,8 @@ import LatestContestList from "./LatestContest/LatestContestList/LatestContestLi
 import SubmissionList from "./Submissions/SubmissionList/SubmissionList";
 import TopUserList from "./TopUsers/TopUserList/TopUserList";
 
-import submission from "../../../../assets/images/submission.png"
-import rank from "../../../../assets/images/rank.png"
+import submission from "../../../../assets/images/submission.png";
+import rank from "../../../../assets/images/submission.png";
 
 
 import style from './WelcomePage.scss';

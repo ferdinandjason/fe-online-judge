@@ -51,6 +51,7 @@ class Menubar extends React.Component{
                 return itemId;
             }
         }
+        return 'home';
     };
 }
 

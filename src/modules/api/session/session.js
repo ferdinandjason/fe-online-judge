@@ -52,7 +52,12 @@ export function sessionAPI(){
         },
 
         refreshToken : (token)=> {
-            _post(`${baseURL}/refresh`,token);
+            return _post(`${baseURL}/refresh`,token)
+                .then((response) => {
+                    const token = response.data.access_token;
+                    store.dispatch(PutToken(token));
+                    return token;
+                })
         }
     }
 }

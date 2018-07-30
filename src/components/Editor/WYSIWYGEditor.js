@@ -14,7 +14,6 @@ class WYSIWYGEditor extends React.Component {
             model : props.text,
         };
         this.handleModelChange = this.handleModelChange.bind(this);
-        console.log(FroalaEditor);
     }
 
     handleModelChange = (model) => {
@@ -25,7 +24,8 @@ class WYSIWYGEditor extends React.Component {
         return (
             <FroalaEditor
                 model={this.state.model}
-                onModelChange={this.handleModelChange}
+                onModelChange={this.onChange}
+                onSubmit={this.props.handleSubmit}
             />
         )
     }

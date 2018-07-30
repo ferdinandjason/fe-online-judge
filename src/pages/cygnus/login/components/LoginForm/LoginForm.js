@@ -75,7 +75,7 @@ export class LoginForm extends React.Component {
         event.preventDefault();
         const { _ , email, password } = this.state;
         console.log(_);
-        API.session.logIn(email,password)
+        API.sessionAPI.logIn(email,password)
             .then((response)=>{
                 this.redirectToHome();
                 return Promise.resolve();

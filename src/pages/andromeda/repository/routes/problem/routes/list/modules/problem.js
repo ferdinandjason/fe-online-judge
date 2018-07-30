@@ -1,10 +1,14 @@
-import { selectToken } from '../../../../../../../../modules/redux/session';
+import {API} from "../../../../../../../../modules/api";
 
 export const problemRepositoryListActions = {
-    fetchProblemRepositoryList: () => {
-        return async ()=> {
-            const token = selectToken();
-            return false;
+    fetchProblemRepositoryList: (page,limit) => {
+        return async () => {
+            return API.problemAPI.list(page,limit)
+                .then((response) => {
+                    console.log(response);
+                    const problems = response.data.problems;
+                    return Promise.resolve(problems);
+                });
         }
     }
 };

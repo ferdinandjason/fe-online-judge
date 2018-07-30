@@ -23,13 +23,13 @@ class ProblemRepositoryListTable extends React.Component {
                 {
                     this.props.problemList.map( problem => {
                         return(
-                            <tr>
+                            <tr key={problem.id}>
                                 <td className={Styles.PROBLEM_REPO_LIST_TABLE_RESPONSIVE}>{problem.id}</td>
                                 <td>{problem.slug}</td>
                                 <td>{problem.title}</td>
                                 <td className={Styles.PROBLEM_REPO_LIST_TABLE_RESPONSIVE}>{problem.statistic}</td>
                                 <td>
-                                    <Link to={"/training/problem/test"}>
+                                    <Link to={`/repository/problem/${problem.id}`}>
                                         <Button icon={"arrow-right"} text={"Go!"}/>
                                     </Link>
                                 </td>
@@ -44,12 +44,12 @@ class ProblemRepositoryListTable extends React.Component {
 }
 
 ProblemRepositoryListTable.propTypes = {
-    problemList : PropTypes.arrayOf({
+    problemList : PropTypes.arrayOf(PropTypes.shape({
         title : PropTypes.string.isRequired,
-        statistic : PropTypes.string.isRequired,
-        id : PropTypes.string.isRequired,
+        statistic : PropTypes.string,
+        id : PropTypes.number.isRequired,
         slug : PropTypes.string.isRequired,
-    }).isRequired,
+    })).isRequired,
 };
 
 export default ProblemRepositoryListTable;

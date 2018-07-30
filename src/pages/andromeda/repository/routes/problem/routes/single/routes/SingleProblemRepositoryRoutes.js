@@ -10,12 +10,22 @@ import { ContentWithMultipleSidebarContainer, ButtonLink } from "../../../../../
 import {ProblemRepositoryStatementRoutes} from "./statement/routes/ProblemRepositoryStatementRoutes";
 import {ProblemRepositoryGradingRoutes} from "./grading/routes/ProblemRepositoryGradingRoutes";
 import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/redux/breadcrumb";
-import {problemActions} from "../../../../../../../corvus/training/routes/problemset/routes/single/modules/problem";
+import {problemRepositoryActions} from "../modules/problem";
 
 class SingleProblemRepositoryRoutes extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            problem : null,
+        }
+    }
+
     componentDidMount() {
-        const problem = {name:'123'}; // await this.props.onFetchProblem(this.props.match.params.problemId)
-        this.props.onPushBreadcrumb(this.props.match.url,problem.name);
+        this.props.onFetchProblem(this.props.match.params.problemId)
+            .then((problem) => {
+                this.setState({problem});
+                this.props.onPushBreadcrumb(this.props.match.url,problem.title);
+            });
     }
 
     componentWillUnmount() {
@@ -52,13 +62,13 @@ class SingleProblemRepositoryRoutes extends React.Component {
     };
 }
 
-function createSingleProblemRepositoryRoutes(problemActions){
+function createSingleProblemRepositoryRoutes(problemRepositoryActions){
     const mapDispatchToProps = {
-        onFetchProblem: (problemId) => problemActions.fetchProblem(problemId),
+        onFetchProblem: (problemId) => problemRepositoryActions.fetchProblem(problemId),
         onPushBreadcrumb: (link,title) => PushBreadcrumb({link,title}),
         onPopBreadcrumb: (link) => PopBreadcrumb({link}),
     };
     return withRouter(connect(undefined,mapDispatchToProps)(SingleProblemRepositoryRoutes))
 }
 
-export default createSingleProblemRepositoryRoutes(problemActions);
+export default createSingleProblemRepositoryRoutes(problemRepositoryActions);

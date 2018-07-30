@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { DoublePageLayout } from "../../../../../../../../components/layouts";
 import { ContentWithSidebarContainer, ButtonLink } from "../../../../../../../../components";
 import ProblemRepositoryListContainer from "../components/ProblemRepositoryListContainer/ProblemRepositoryListContainer";
-import ProblemRepositoryCreateProblem from "../../create/components/ProblemRepositoryCreateProblem";
+import ProblemRepositoryCreateProblem from "../../create/components/ProblemRepositoryCreateProblem/ProblemRepositoryCreateProblem";
 
 export const ProblemRepositoryListRoutes = () => {
     const sidebarItems = [
@@ -15,7 +15,7 @@ export const ProblemRepositoryListRoutes = () => {
             component:ProblemRepositoryListContainer,
         },
         {
-            id:'create',
+            id:'create-problem',
             titleIcon:'new-object',
             title:'Create Problem',
             component:ProblemRepositoryCreateProblem,
