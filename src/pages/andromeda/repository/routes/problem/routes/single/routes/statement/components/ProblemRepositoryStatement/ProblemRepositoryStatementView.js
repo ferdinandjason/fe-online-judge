@@ -14,9 +14,16 @@ class ProblemRepositoryStatementView extends React.Component {
         }
     }
 
+    getProblemIdFromURL(){
+        return this.props.match.url.split('/')[3];
+    }
+
     async componentDidMount(){
-        const problem = null ; // await this.props.onFetchProblem(this.props.problemId)
-        this.setState({problem});
+        console.log();
+        this.props.onFetchProblemRepo(this.getProblemIdFromURL())
+            .then((problem) => {
+                this.setState({problem});
+            });
     }
 
     render(){

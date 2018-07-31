@@ -2,6 +2,13 @@ import React from 'react';
 import classNames from 'classnames'
 import { Classes } from '@blueprintjs/core';
 
+import 'froala-editor/js/froala_editor.pkgd.min.js';
+import 'froala-editor/css/froala_style.min.css';
+import 'froala-editor/css/froala_editor.pkgd.min.css';
+import 'font-awesome/css/font-awesome.css';
+
+import FroalaEditorView from 'react-froala-wysiwyg/FroalaEditorView';
+
 import { ContentCard } from "../../ContentCard";
 
 import Styles from './ProblemStatementCard.scss';
@@ -18,11 +25,11 @@ class ProblemStatementCard extends React.Component {
                     <tbody>
                         <tr>
                             <td>Time Limit</td>
-                            <td>{this.getReadableTimeLimit(problem.timeLimit)}</td>
+                            <td>{this.getReadableTimeLimit(problem.time_limit)}</td>
                         </tr>
                         <tr>
                             <td>Memory Limit</td>
-                            <td>{this.getReadableMemoryLimit(problem.memoryLimit)}</td>
+                            <td>{this.getReadableMemoryLimit(problem.memory_limit)}</td>
                         </tr>
                         <tr>
                             <td>Setter</td>
@@ -30,7 +37,9 @@ class ProblemStatementCard extends React.Component {
                         </tr>
                     </tbody>
                 </table>
-                {problem.description}
+                <FroalaEditorView
+                    model={problem.description}
+                />
             </ContentCard>
         )
     }

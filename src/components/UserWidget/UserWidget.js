@@ -20,7 +20,7 @@ class UserWidget extends React.Component {
 
     renderAvatar = () => {
         return (
-            <img src={defaultUser} alt="user"/>
+            <img src={defaultUser} alt="user" className={Styles.USER_WIDGET_AVATAR}/>
         )
     };
 
@@ -87,7 +87,7 @@ class UserWidget extends React.Component {
         );
 
         return (
-            <div>
+            <div style={{display:'flex'}}>
                 {this.state.avatar}
                 {popover}
                 {responsivePopover}
