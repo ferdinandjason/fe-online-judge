@@ -5,6 +5,8 @@ import { ProblemStatementCard } from "../../../../../../../../../../../component
 import { problemRepositoryActions } from "../../../../modules/problem";
 import LoadingProblemStatementCard from "../../../../../../../../../../../components/problem/ProblemStatementCard/LoadingProblemStatementCard";
 import {withBreadcrumb} from "../../../../../../../../../../../components";
+import {API} from "../../../../../../../../../../../modules/api";
+import {selectToken} from "../../../../../../../../../../../modules/redux/session";
 
 class ProblemRepositoryStatementView extends React.Component {
     constructor(props){
@@ -23,7 +25,11 @@ class ProblemRepositoryStatementView extends React.Component {
         this.props.onFetchProblemRepo(this.getProblemIdFromURL())
             .then((problem) => {
                 this.setState({problem});
-            });
+                return Promise.resolve();
+            })
+            .then(()=>{
+                API.sessionAPI.refreshToken(selectToken());
+            })
     }
 
     render(){

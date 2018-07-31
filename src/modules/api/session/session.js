@@ -46,7 +46,7 @@ export function sessionAPI(){
                         return Promise.resolve(response);
                     }
                     store.dispatch(LogOut());
-                    store.dispatch(Toast.alert(response.data.message,'user'));
+                    store.dispatch(Toast.show_(response.data.message,'user'));
                     return Promise.resolve(response);
                 });
         },

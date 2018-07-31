@@ -5,6 +5,8 @@ import ProblemListTable from "../ProblemRepositoryListTable/ProblemRepositoryLis
 import LoadingProblemListTable from "../ProblemRepositoryListTable/LoadingProblemRepositoryListTable";
 import { CardContainer } from "../../../../../../../../../components";
 import { problemRepositoryListActions } from "../../modules/problem";
+import {API} from "../../../../../../../../../modules/api";
+import {selectToken} from "../../../../../../../../../modules/redux/session";
 
 class ProblemRepositoryListContainer extends React.Component {
     constructor(props){
@@ -27,6 +29,9 @@ class ProblemRepositoryListContainer extends React.Component {
                 console.log('asd',problemRepoList);
                 this.setState({problemRepoList});
                 return Promise.resolve();
+            })
+            .then(()=>{
+                API.sessionAPI.refreshToken(selectToken());
             });
     }
 
