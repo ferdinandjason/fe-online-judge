@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8000';
+let BASE_URL = 'http://localhost:8000';
 
 export const APP_CONFIG = {
     name : 'OJ',

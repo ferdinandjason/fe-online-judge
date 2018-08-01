@@ -1,5 +1,5 @@
-import {store} from '../../store';
 import {APP_CONFIG} from '../../../config';
+import {store} from '../../store';
 import {_get, _post} from '../request';
 import {AddUser, LogInSucces, LogOut, PutToken, selectToken} from "../../redux/session";
 import {Toast} from "../../redux/toast";
@@ -7,7 +7,7 @@ import {Toast} from "../../redux/toast";
 import {errorAPI} from "../error/error";
 
 export function sessionAPI() {
-    const baseURL = APP_CONFIG.apiURL.auth;
+    const baseURL = `${APP_CONFIG.apiURL.auth}`;
 
     return {
         logIn: (email, password) => {

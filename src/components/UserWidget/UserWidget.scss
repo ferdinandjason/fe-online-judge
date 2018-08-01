@@ -17,7 +17,7 @@ img {
 }
 
 .USER_WIDGET_AVATAR_MENU {
-    margin-top: 13px;
+    margin-top: 3px;
 }
 
 .USER_WIDGET_LINK {
@@ -27,11 +27,11 @@ img {
     
     a {
         text-decoration: none;
-        color: white;
+        color: black;
     }
     a:hover {
         text-decoration: none !important;
-        color: white !important;
+        color: black !important;
     }
 }
 
@@ -45,7 +45,19 @@ img {
 
 .USER_WIDGET_USERNAME {
     cursor: pointer;
-    color: white;
+    color: black;
+}
+
+.USER_WIDGET_PROFILE {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f4f5f6;
+    svg {
+        vertical-align: middle !important;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -56,7 +68,7 @@ img {
     .USER_WIDGET_BURGER, .USER_WIDGET_MENU_HELPER {
         display: block;
         cursor: pointer;
-        color: white;
+        color: black;
         svg {
             float: left;
         }

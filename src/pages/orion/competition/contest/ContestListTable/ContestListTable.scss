@@ -1,9 +1,14 @@
+.contest_list_container {
+  margin-bottom: 20px !important;
+}
+
 .contest_list_container > :first-child {
   margin-top: -20px;
 }
 
 .contest_list_container > :not(:last-child) {
   border-bottom: 1px solid rgba(16, 22, 26, 0.15);
+  margin-bottom: 20px;
 }
 .contest_list_container > :last-child {
   margin-bottom: -20px;

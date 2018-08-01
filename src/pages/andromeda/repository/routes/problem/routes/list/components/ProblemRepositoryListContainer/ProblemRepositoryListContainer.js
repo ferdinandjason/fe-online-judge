@@ -7,33 +7,42 @@ import { CardContainer } from "../../../../../../../../../components";
 import { problemRepositoryListActions } from "../../modules/problem";
 import {API} from "../../../../../../../../../modules/api";
 import {selectToken} from "../../../../../../../../../modules/redux/session";
+import {Pagination} from "../../../../../../../../../components/Pagination";
 
 class ProblemRepositoryListContainer extends React.Component {
     constructor(props){
         super(props);
         this.state = {
+            problemRepoPaginationProps : null,
             problemRepoList : null,
-            page : 0,
+            current_page : 0,
             limit : ProblemRepositoryListContainer.getProblemLimit(),
         }
     }
 
     static getProblemLimit(){
-        return ((window.innerHeight - 376)/52);
+        return Math.floor((window.innerHeight - 376)/52)-1;
     }
 
     async componentDidMount(){
-        const { page, limit } = this.state;
-        this.props.onFetchProblemRepositoryList(page,limit)
-            .then((problemRepoList)=>{
-                console.log('asd',problemRepoList);
+        let { current_page, limit } = this.state;
+        await this.props.onFetchProblemRepositoryList(current_page,limit)
+            .then((problemRepo)=>{
+                const problemRepoList = problemRepo.data;
+                const problemRepoPaginationProps = problemRepo.meta.pagination;
                 this.setState({problemRepoList});
+                this.setState({problemRepoPaginationProps});
                 return Promise.resolve();
-            })
-            .then(()=>{
-                API.sessionAPI.refreshToken(selectToken());
             });
     }
+
+    handleChangePage = async (next) => {
+        console.log(next.selected);
+        const current_page = next.selected;
+        await this.setState({current_page});
+        await this.componentDidMount();
+    };
+
 
     renderProblemList = (problemRepoList) => {
         if(!problemRepoList || problemRepoList.length === 0){
@@ -46,6 +55,7 @@ class ProblemRepositoryListContainer extends React.Component {
         return (
             <CardContainer title={"Problem Repository"} strict={true}>
                 <ProblemListTable problemList={problemRepoList}/>
+                <Pagination {...this.state.problemRepoPaginationProps} onChangePage={this.handleChangePage}/>
             </CardContainer>
         )
     };

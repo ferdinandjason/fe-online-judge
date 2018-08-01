@@ -51,10 +51,6 @@ class UserWidget extends React.Component {
         console.log(user);
         const menu = (
             <Menu className={Styles.USER_WIDGET_MENU}>
-                <MenuItem className={Styles.USER_WIDGET_MENU_HELPER}
-                          icon="user"
-                          text={user.name}
-                />
                 <MenuDivider className={Styles.USER_WIDGET_MENU_HELPER}/>
                 <MenuItemLink text="My account" to={`/profile/${user.id}`}/>
                 <MenuItemLink text="Log out" to="/logout"/>
@@ -67,11 +63,11 @@ class UserWidget extends React.Component {
                      position={Position.BOTTOM_RIGHT}
                      usePortal={false}
             >
-                <div>
+                <div className={Styles.USER_WIDGET_PROFILE}>
                     <span className={Styles.USER_WIDGET_USERNAME}>
                         {user.name}
                     </span>{' '}
-                    <Icon icon="chevron-down" style={{color:'white'}}/>
+                    <Icon icon="chevron-down"/>
                 </div>
             </Popover>
         );

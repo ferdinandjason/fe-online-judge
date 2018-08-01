@@ -23,12 +23,12 @@ class ProblemRepositoryListTable extends React.Component {
                 {
                     this.props.problemList.map( problem => {
                         return(
-                            <tr key={problem.id}>
-                                <td className={Styles.PROBLEM_REPO_LIST_TABLE_RESPONSIVE}>{problem.id}</td>
-                                <td>{problem.slug}</td>
-                                <td>{problem.title}</td>
-                                <td className={Styles.PROBLEM_REPO_LIST_TABLE_RESPONSIVE}>{problem.statistic}</td>
-                                <td>
+                            <tr key={problem.id} style={{textAlign:'center'}}>
+                                <td className={Styles.PROBLEM_REPO_LIST_TABLE_RESPONSIVE} style={{textAlign:'center'}}>{problem.id}</td>
+                                <td style={{textAlign:'center'}}>{problem.slug}</td>
+                                <td style={{textAlign:'center'}}>{problem.title}</td>
+                                <td className={Styles.PROBLEM_REPO_LIST_TABLE_RESPONSIVE} style={{textAlign:'center'}}>{problem.statistic}</td>
+                                <td style={{textAlign:'center'}}>
                                     <Link to={`/repository/problem/${problem.id}`}>
                                         <Button icon={"arrow-right"} text={"Go!"}/>
                                     </Link>
