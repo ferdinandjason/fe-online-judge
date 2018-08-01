@@ -1,14 +1,14 @@
-import { Intent } from '@blueprintjs/core';
+import {Intent} from '@blueprintjs/core';
 
 // Actions
 export const ADD_TOAST = 'toast/ADD_TOAST';
 
 const INITIAL_STATE = {
-    message : null,
+    message: null,
 };
 
 const INITIAL_ACTION = {
-    type : 'session',
+    type: 'session',
 };
 
 // Reducer
@@ -19,54 +19,55 @@ export function toastReducer(state = INITIAL_STATE, action = INITIAL_ACTION) {
                 {...state},
                 {...action.payload}
             );
-        default: return state;
+        default:
+            return state;
     }
 }
 
 // Action Creators
 export const Toast = {
-    success : (message , icon = 'tick') => {
+    success: (message, icon = 'tick') => {
         return {
-            type : ADD_TOAST,
-            payload : {
-                icon : icon,
-                message : message,
-                intent : Intent.SUCCESS,
-                timeout : 3000,
+            type: ADD_TOAST,
+            payload: {
+                icon: icon,
+                message: message,
+                intent: Intent.SUCCESS,
+                timeout: 3000,
             }
         }
     },
-    alert : (message , icon = 'envelope') => {
+    alert: (message, icon = 'envelope') => {
         return {
-            type : ADD_TOAST,
-            payload : {
-                icon : icon,
-                message : message,
-                intent : Intent.WARNING,
-                timeout : 3000,
+            type: ADD_TOAST,
+            payload: {
+                icon: icon,
+                message: message,
+                intent: Intent.WARNING,
+                timeout: 3000,
             }
         }
     },
-    error_ : (message, icon = 'warning-sign') => {
+    error_: (message, icon = 'warning-sign') => {
         return {
-            type : ADD_TOAST,
-            payload : {
-                icon : icon,
-                message : message,
-                intent : Intent.DANGER,
-                timeout : 3000,
+            type: ADD_TOAST,
+            payload: {
+                icon: icon,
+                message: message,
+                intent: Intent.DANGER,
+                timeout: 3000,
             }
         }
     },
-    show_ : (message , icon = '') => {
+    show_: (message, icon = '') => {
         console.log(message);
         return {
-            type : ADD_TOAST,
-            payload : {
-                icon : icon,
-                message : message,
-                intent : Intent.PRIMARY,
-                timeout : 3000,
+            type: ADD_TOAST,
+            payload: {
+                icon: icon,
+                message: message,
+                intent: Intent.PRIMARY,
+                timeout: 3000,
             }
         }
     }

@@ -1,25 +1,22 @@
 import {APP_CONFIG} from '../../../config';
-import { _post,_get } from '../request';
-import { selectToken } from "../../redux/session";
-import {API} from "../index";
+import {_get, _post} from '../request';
+import {selectToken} from "../../redux/session";
 
-export function problemAPI(){
+export function problemAPI() {
     const baseURL = APP_CONFIG.apiURL.problem;
 
     return {
-        list : (page,limit) => {
+        list: (page, limit) => {
             let token = selectToken();
-            return _get(`${baseURL}?page=${page}&limit=${limit}`,token);
+            return _get(`${baseURL}?page=${page}&limit=${limit}`, token);
         },
-        create : (data) => {
+        create: (data) => {
             let token = selectToken();
-            return _post(`${baseURL}`,token,data);
+            return _post(`${baseURL}`, token, data);
         },
-        show : (id) => {
+        show: (id) => {
             let token = selectToken();
-            console.log('asd',id);
-            console.log(token);
-            return _get(`${baseURL}/${id}`,token);
+            return _get(`${baseURL}/${id}`, token);
         }
     }
 }
