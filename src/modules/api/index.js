@@ -7,7 +7,6 @@ import {problemAPI} from "./problem/problem";
 export const API = {
     sessionAPI: sessionAPI(),
     userAPI: userAPI(),
-    errorAPI: errorAPI(),
     omnibarAPI: omnibarAPI(),
     problemAPI: problemAPI(),
 };

@@ -1,4 +1,5 @@
 import axios from 'axios';
+import {IdentifyError} from "./error/error";
 
 function request(method, url, token, header, data) {
     const authorization = token ? {Authorization: `Bearer ${token}`} : {};
@@ -12,8 +13,7 @@ function request(method, url, token, header, data) {
             data: data,
         })
         .catch((error) => {
-            // handle error
-            console.log(error);
+            IdentifyError(error.response).action();
         });
 
 

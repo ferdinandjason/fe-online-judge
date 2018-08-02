@@ -40,7 +40,7 @@ class Pagination extends React.Component {
             <ReactPaginate
                 initialPage={current_page}
                 pageCount={total_pages}
-                pageRangeDisplayed={3}
+                pageRangeDisplayed={4}
                 marginPagesDisplayed={2}
                 pageClassName={classNames(Styles.PAGINATION_ITEM,Classes.BUTTON)}
                 previousLabel="<"

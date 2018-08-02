@@ -26,7 +26,7 @@ export function toastReducer(state = INITIAL_STATE, action = INITIAL_ACTION) {
 
 // Action Creators
 export const Toast = {
-    success: (message, icon = 'tick') => {
+    success: (message, icon = 'tick', action = undefined) => {
         return {
             type: ADD_TOAST,
             payload: {
@@ -34,10 +34,11 @@ export const Toast = {
                 message: message,
                 intent: Intent.SUCCESS,
                 timeout: 3000,
+                action: action,
             }
         }
     },
-    alert: (message, icon = 'envelope') => {
+    alert: (message, icon = 'envelope', action = undefined) => {
         return {
             type: ADD_TOAST,
             payload: {
@@ -45,10 +46,11 @@ export const Toast = {
                 message: message,
                 intent: Intent.WARNING,
                 timeout: 3000,
+                action: action,
             }
         }
     },
-    error_: (message, icon = 'warning-sign') => {
+    error_: (message, icon = 'warning-sign', action = undefined) => {
         return {
             type: ADD_TOAST,
             payload: {
@@ -56,10 +58,11 @@ export const Toast = {
                 message: message,
                 intent: Intent.DANGER,
                 timeout: 3000,
+                action: action,
             }
         }
     },
-    show_: (message, icon = '') => {
+    show_: (message, icon = '', action = undefined) => {
         console.log(message);
         return {
             type: ADD_TOAST,
@@ -68,6 +71,7 @@ export const Toast = {
                 message: message,
                 intent: Intent.PRIMARY,
                 timeout: 3000,
+                action: action,
             }
         }
     }

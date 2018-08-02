@@ -7,7 +7,6 @@ import {breadcrumbReducer, platformReducer, sessionReducer, toastReducer} from "
 
 import {sessionAPI} from "./api/session/session";
 import {userAPI} from "./api/user/user";
-import {errorAPI} from "./api/error/error";
 import {omnibarAPI} from "./api/search/omnibar";
 import {problemAPI} from "./api/problem/problem";
 
@@ -26,7 +25,6 @@ export const store = createStore(
         applyMiddleware(thunk.withExtraArgument({
             sessionAPI: sessionAPI(),
             userAPI: userAPI(),
-            errorAPI: errorAPI(),
             omnibarAPI: omnibarAPI(),
             problemAPI: problemAPI(),
         }))

@@ -4,8 +4,6 @@ import {_get, _post} from '../request';
 import {AddUser, LogInSucces, LogOut, PutToken, selectToken} from "../../redux/session";
 import {Toast} from "../../redux/toast";
 
-import {errorAPI} from "../error/error";
-
 export function sessionAPI() {
     const baseURL = `${APP_CONFIG.apiURL.auth}`;
 
@@ -41,10 +39,6 @@ export function sessionAPI() {
             const token = selectToken();
             return _post(`${baseURL}/logout`, token)
                 .then((response) => {
-                    if (response.status !== 200) {
-                        errorAPI().showToast(response.status, response.data.message);
-                        return Promise.resolve(response);
-                    }
                     store.dispatch(LogOut());
                     store.dispatch(Toast.show_(response.data.message, 'user'));
                     return Promise.resolve(response);

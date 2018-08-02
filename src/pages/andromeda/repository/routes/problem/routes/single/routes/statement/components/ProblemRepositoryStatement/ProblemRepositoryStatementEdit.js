@@ -1,6 +1,12 @@
 import React from 'react';
-
 import { FormGroup, InputGroup, Intent, TextArea } from '@blueprintjs/core';
+import FroalaEditor from 'react-froala-wysiwyg';
+
+import 'froala-editor/js/froala_editor.pkgd.min';
+import 'froala-editor/css/froala_style.css';
+import 'froala-editor/css/froala_editor.pkgd.min.css';
+import 'font-awesome/css/font-awesome.css';
+
 import {CardContainer, withBreadcrumb} from "../../../../../../../../../../../components";
 import {connect} from "react-redux";
 import {problemRepositoryActions} from "../../../../modules/problem";
@@ -18,15 +24,21 @@ const LoadingEditSingleProblemRepo = () => {
                     >
                         <InputGroup id={"title"}/>
                     </FormGroup>
-
+                    <FormGroup
+                        label={"Slug"}
+                        labelFor={"slug"}
+                        labelInfo={"(required)"}
+                    >
+                        <InputGroup id={"slug"}/>
+                    </FormGroup>
                     <FormGroup
                         label={"Description"}
                         labelFor={"description"}
                         labelInfo={"(required)"}
                     >
-                        <TextArea
-                            large={true}
-                            intent={Intent.PRIMARY}
+                        <FroalaEditor
+                            model={undefined}
+                            onModelChange={undefined}
                         />
                     </FormGroup>
                 </div>
@@ -35,36 +47,65 @@ const LoadingEditSingleProblemRepo = () => {
     )
 };
 
-const EditSingleProblemRepo = (props) => {
-    const title = 'Edit';
-    return (
-        <div className={"page__container"}>
-            <CardContainer title={title}>
-                <div>
-                    <FormGroup
-                        label={"Title"}
-                        labelFor={"title"}
-                        labelInfo={"(required)"}
-                    >
-                        <InputGroup id={"title"}/>
-                    </FormGroup>
+class EditSingleProblemRepo extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            title : props.problem.title,
+            slug : props.problem.slug,
+            description : props.problem.description,
+        };
+        this.handleModelChange = this.handleModelChange.bind(this);
+    }
 
-                    <FormGroup
-                        label={"Description"}
-                        labelFor={"description"}
-                        labelInfo={"(required)"}
-                    >
-                    <TextArea
-                        large={true}
-                        intent={Intent.PRIMARY}
-                        value={this.state.value}
-                    />
-                    </FormGroup>
-                </div>
-            </CardContainer>
-        </div>
-    )
-};
+    handleChange(state){
+        return event => {
+            let changedState = Object();
+            changedState[state] = event.target.value;
+            this.setState(changedState);
+        }
+    }
+
+    handleModelChange = (model) => {
+        this.setState({description:model});
+    };
+
+    render(){
+        const title = 'Edit';
+        return (
+            <div className={"page__container"}>
+                <CardContainer title={title}>
+                    <div>
+                        <FormGroup
+                            label={"Title"}
+                            labelFor={"title"}
+                            labelInfo={"(required)"}
+                        >
+                            <InputGroup id={"title"} defaultValue={this.state.title} onChange={this.handleChange('title')}/>
+                        </FormGroup>
+                        <FormGroup
+                            label={"Slug"}
+                            labelFor={"slug"}
+                            labelInfo={"(required)"}
+                        >
+                            <InputGroup id={"slug"} defaultValue={this.state.slug} onChange={this.handleChange('slug')}/>
+                        </FormGroup>
+                        <FormGroup
+                            label={"Description"}
+                            labelFor={"description"}
+                            labelInfo={"(required)"}
+                        >
+                            <FroalaEditor
+                                model={this.state.description}
+                                onModelChange={this.handleModelChange}
+                            />
+                        </FormGroup>
+                    </div>
+                </CardContainer>
+            </div>
+        )
+    }
+}
 
 
 export class ProblemRepositoryStatementEdit extends React.Component {
@@ -87,7 +128,7 @@ export class ProblemRepositoryStatementEdit extends React.Component {
             )
         } else {
             return (
-                <EditSingleProblemRepo problem={problem}/>
+                <EditSingleProblemRepo problem={this.state.problem}/>
             )
         }
     };

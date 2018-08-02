@@ -61,7 +61,7 @@ class ProblemRepositoryCreateProblem extends React.Component {
                             labelInfo={"(required)"}
                         >
                             <FroalaEditor
-                                model={this.state.model}
+                                model={this.state.description}
                                 onModelChange={this.handleModelChange}
                             />
                         </FormGroup>
