@@ -33,7 +33,7 @@ class ProblemStatementCard extends React.Component {
                         </tr>
                         <tr>
                             <td>Setter</td>
-                            <td>{problem.setter}</td>
+                            <td>{problem.owner.name}</td>
                         </tr>
                     </tbody>
                 </table>

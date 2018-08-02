@@ -51,6 +51,10 @@ class UserWidget extends React.Component {
         console.log(user);
         const menu = (
             <Menu className={Styles.USER_WIDGET_MENU}>
+                <MenuItem className={Styles.USER_WIDGET_MENU_HELPER}
+                          icon="user"
+                          text={user.name}
+                />
                 <MenuDivider className={Styles.USER_WIDGET_MENU_HELPER}/>
                 <MenuItemLink text="My account" to={`/profile/${user.id}`}/>
                 <MenuItemLink text="Log out" to="/logout"/>

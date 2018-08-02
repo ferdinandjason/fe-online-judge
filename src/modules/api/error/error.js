@@ -1,4 +1,5 @@
 import React from 'react';
+import { push } from 'react-router-redux';
 
 import {isUserAuthenticated, LogOut} from "../../redux/session";
 import {store} from "../../store";
@@ -13,12 +14,10 @@ export class UnauthorizedError {
         if(isUserAuthenticated()){
             store.dispatch(LogOut());
             store.dispatch(Toast.error_('Your session has timeout, Please login again', 'user', {
-                href: "/login",
                 text: <strong>Login</strong>,
             }));
         } else {
             store.dispatch(Toast.show_('Please Login', 'user', {
-                href: "/login",
                 text: <strong>Login</strong>,
             }));
         }

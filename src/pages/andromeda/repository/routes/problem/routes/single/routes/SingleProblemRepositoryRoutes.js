@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from "classnames";
 import {connect} from "react-redux";
 import { withRouter } from 'react-router-dom';
-import {Classes} from "@blueprintjs/core";
+import {Classes,Intent} from "@blueprintjs/core";
 import {IconNames} from "@blueprintjs/icons";
 
 import { DoublePageLayout } from "../../../../../../../../components/layouts";
@@ -38,7 +38,7 @@ class SingleProblemRepositoryRoutes extends React.Component {
                 title:'Statement',
                 items:ProblemRepositoryStatementRoutes,
                 action: (
-                    <ButtonLink to="/repository/problem" className={classNames(Classes.SMALL,IconNames.CHEVRON_LEFT)}>
+                    <ButtonLink to="/repository/problem" className={classNames(Classes.SMALL,IconNames.CHEVRON_LEFT)} intent={Intent.PRIMARY}>
                         Back
                     </ButtonLink>
                 ),
@@ -46,11 +46,6 @@ class SingleProblemRepositoryRoutes extends React.Component {
             {
                 title:'Grading',
                 items:ProblemRepositoryGradingRoutes,
-                action: (
-                    <ButtonLink to="/repository/problem" className={classNames(Classes.SMALL,IconNames.CHEVRON_LEFT)}>
-                        Back
-                    </ButtonLink>
-                ),
             },
         ];
 

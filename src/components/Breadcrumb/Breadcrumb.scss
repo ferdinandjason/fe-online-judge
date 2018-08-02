@@ -18,3 +18,10 @@
     font-size: $font-size-small !important;
   }
 }
+
+@media only screen and (max-width: 750px){
+  .BREADCRUMBS{
+    height: 20px;
+    display: none;
+  }
+}

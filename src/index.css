@@ -93,7 +93,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     }
 
     .bp3-tab-indicator-wrapper .bp3-tab-indicator {
-        height: auto !important;
+        height: 3px !important;
     }
 
     .bp3-tab-list {
@@ -101,3 +101,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     }
 }
 
+/* Theme Color */
+.bp3-button.bp3-intent-primary {
+    background-color: #39424e !important;
+}

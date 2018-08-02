@@ -21,7 +21,7 @@ const CardContainer = (props) => {
 
 CardContainer.propTypes = {
     title : PropTypes.string.isRequired,
-    action : PropTypes.func,
+    action : PropTypes.object,
     className : PropTypes.string,
 };
 

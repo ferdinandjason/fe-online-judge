@@ -36,7 +36,7 @@ img {
 }
 
 .USER_WIDGET_BURGER , .USER_WIDGET_MENU_HELPER {
-    display: none;
+    display: none !important;
 }
 
 .USER_WIDGET_MENU a {
@@ -60,15 +60,15 @@ img {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .USER_WIDGET_AVATAR, .USER_WIDGET_AVATAR_MENU, .USER_WIDGET_LINK, .USER_WIDGET_NAVBAR_LINK {
         display: none;
     }
 
     .USER_WIDGET_BURGER, .USER_WIDGET_MENU_HELPER {
-        display: block;
+        display: block !important;
         cursor: pointer;
-        color: black;
+        color: white;
         svg {
             float: left;
         }

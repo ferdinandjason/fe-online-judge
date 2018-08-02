@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { Button, Classes } from '@blueprintjs/core';
+import { Button, Classes, Intent } from '@blueprintjs/core';
 
 import Styles from './ProblemRepositoryListTable.scss';
 
@@ -30,7 +30,7 @@ class ProblemRepositoryListTable extends React.Component {
                                 <td className={Styles.PROBLEM_REPO_LIST_TABLE_RESPONSIVE} style={{textAlign:'center'}}>{problem.statistic}</td>
                                 <td style={{textAlign:'center'}}>
                                     <Link to={`/repository/problem/${problem.id}`}>
-                                        <Button icon={"arrow-right"} text={"Go!"}/>
+                                        <Button icon={"arrow-right"} text={"Enter"} intent={Intent.PRIMARY}/>
                                     </Link>
                                 </td>
                             </tr>

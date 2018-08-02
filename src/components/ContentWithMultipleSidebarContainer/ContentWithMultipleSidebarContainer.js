@@ -36,6 +36,7 @@ class ContentWithMultipleSidebarContainer extends React.Component {
             );
             return (
                 <Sidebar
+                    key={sidebar.title}
                     title={sidebar.title}
                     action={sidebar.action}
                     activeItemId={this.getActiveItemId()}
