@@ -11,6 +11,7 @@ import {ProblemRepositoryStatementRoutes} from "./statement/routes/ProblemReposi
 import {ProblemRepositoryGradingRoutes} from "./grading/routes/ProblemRepositoryGradingRoutes";
 import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/redux/breadcrumb";
 import {problemRepositoryActions} from "../modules/problem";
+import {DeleteDocumentTitle, SetDocumentTitle} from "../../../../../../../../modules/redux/platform";
 
 class SingleProblemRepositoryRoutes extends React.Component {
     constructor(props){
@@ -21,15 +22,19 @@ class SingleProblemRepositoryRoutes extends React.Component {
     }
 
     componentDidMount() {
+        console.log(this.props.match);
         this.props.onFetchProblem(this.props.match.params.problemId)
             .then((problem) => {
                 this.setState({problem});
                 this.props.onPushBreadcrumb(this.props.match.url,problem.title);
+                this.props.onSetDocumentTitle(problem.title);
+                return Promise.resolve();
             });
     }
 
     componentWillUnmount() {
         this.props.onPopBreadcrumb(this.props.match.url.replace(/\/+$/, ''));
+        this.props.onDeleteDocumentTitle();
     }
 
     render(){
@@ -62,6 +67,8 @@ function createSingleProblemRepositoryRoutes(problemRepositoryActions){
         onFetchProblem: (problemId) => problemRepositoryActions.fetchProblem(problemId),
         onPushBreadcrumb: (link,title) => PushBreadcrumb({link,title}),
         onPopBreadcrumb: (link) => PopBreadcrumb({link}),
+        onSetDocumentTitle: (title) => SetDocumentTitle(title),
+        onDeleteDocumentTitle: () => DeleteDocumentTitle(),
     };
     return withRouter(connect(undefined,mapDispatchToProps)(SingleProblemRepositoryRoutes))
 }

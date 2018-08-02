@@ -1,5 +1,6 @@
 import React from 'react';
-import { FormGroup, InputGroup, Intent, TextArea } from '@blueprintjs/core';
+import { FormGroup, InputGroup, Intent, Button } from '@blueprintjs/core';
+import { IconNames } from '@blueprintjs/icons';
 import FroalaEditor from 'react-froala-wysiwyg';
 
 import 'froala-editor/js/froala_editor.pkgd.min';
@@ -41,6 +42,9 @@ const LoadingEditSingleProblemRepo = () => {
                             onModelChange={undefined}
                         />
                     </FormGroup>
+                    <Button icon={IconNames.PLUS} intent={Intent.PRIMARY} type='submit'>
+                        Create Problem
+                    </Button>
                 </div>
             </CardContainer>
         </div>

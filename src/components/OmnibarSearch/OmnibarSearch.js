@@ -1,7 +1,6 @@
 import React from 'react';
-import { Hotkey, Hotkeys, HotkeysTarget, InputGroup, Icon, Classes, MenuItem } from'@blueprintjs/core';
+import { Hotkey, Hotkeys, InputGroup, MenuItem } from'@blueprintjs/core';
 import { Omnibar } from '@blueprintjs/select';
-import { IconNames } from "@blueprintjs/icons";
 
 import Styles from './OmnibarSearch.scss';
 
@@ -35,11 +34,6 @@ export default class OmnibarSearch extends React.Component {
                     leftIcon="search"
                     placeholder="Search"
                     className={Styles.OMNIBAR_SEARCH_WRAPPER}
-                    rightElement={(
-                        <div style={{marginTop:'6px',marginRight:'4px'}}>
-                            <span className={Classes.KEY_COMBO}><Icon icon={IconNames.KEY_SHIFT}/>S</span>
-                        </div>
-                    )}
                     onClick={this.handleClick}
                 />
 

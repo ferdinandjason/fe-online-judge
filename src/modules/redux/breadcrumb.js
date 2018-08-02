@@ -1,4 +1,6 @@
 // Actions
+import {APP_CONFIG} from "../../config";
+
 export const PUSH_BREADCRUMB = 'breadcrumb/PUSH';
 export const POP_BREADCRUMB = 'breadcrumb/POP';
 
@@ -44,4 +46,19 @@ export function PopBreadcrumb(breadcrumb) {
 // Selector
 export function getBreadcrumbs(state) {
     return state.breadcrumb.values.slice().sort((a, b) => a.link.length - b.link.length)
+}
+
+export function getDocumentTitle(state) {
+    const additionalTitle = state.app.title;
+    let title = APP_CONFIG.name;
+    let breadcrumbTitle;
+    state.breadcrumb.values.forEach(breadcrumb => {
+        if(!breadcrumbTitle || breadcrumb.link.length > breadcrumbTitle.link.length){
+            breadcrumbTitle = breadcrumb;
+        }
+    });
+    if(breadcrumbTitle){
+        title = `${breadcrumbTitle.title} ${additionalTitle} | ${title}`
+    }
+    return title;
 }

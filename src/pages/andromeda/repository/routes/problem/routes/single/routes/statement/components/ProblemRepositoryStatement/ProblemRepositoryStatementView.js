@@ -21,7 +21,6 @@ class ProblemRepositoryStatementView extends React.Component {
     }
 
     async componentDidMount(){
-        console.log();
         this.props.onFetchProblemRepo(this.getProblemIdFromURL())
             .then((problem) => {
                 this.setState({problem});
