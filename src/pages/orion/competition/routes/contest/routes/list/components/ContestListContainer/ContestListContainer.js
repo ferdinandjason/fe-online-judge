@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { CardContainer } from "../../../../../components";
-
+import { CardContainer } from "../../../../../../../../../components";
 import ContestListTable from "../ContestListTable/ContestListTable";
 import LoadingContestListTable from "../ContestListTable/LoadingContestListTable";
 
-import style from './ContestListPage.scss';
 
-class ContestListPage extends React.Component {
+class ContestListContainer extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -41,11 +39,11 @@ class ContestListPage extends React.Component {
 
     render(){
         return (
-            <div className={style.contest__page__container}>
+            <div className={'page__container'}>
                 {this.renderContestList(this.state.contest)}
             </div>
         );
     }
 }
 
-export default ContestListPage;
+export default ContestListContainer;

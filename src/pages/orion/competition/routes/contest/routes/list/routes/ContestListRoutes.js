@@ -1,16 +1,17 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-import { DoublePageLayout } from "../../../components/layouts";
-import { ContentWithSidebarContainer } from "../../../components";
-import ContestRoutes from "./contest/ContestRoutes";
+import { DoublePageLayout } from "../../../../../../../../components/layouts";
+import { ContentWithSidebarContainer } from "../../../../../../../../components";
+import ContestListContainer from "../components/ContestListContainer/ContestListContainer";
 
-export const MainCompetitionRoutes = () => {
+export const ContestListRoutes = () => {
     const sidebarItems = [
         {
             id: 'contest',
             titleIcon: 'timeline-events',
             title:'Contest',
-            component:ContestRoutes,
+            component:ContestListContainer,
         }
     ];
 
@@ -25,3 +26,5 @@ export const MainCompetitionRoutes = () => {
         </DoublePageLayout>
     )
 };
+
+export default withRouter(ContestListRoutes);

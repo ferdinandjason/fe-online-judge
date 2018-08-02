@@ -19,4 +19,4 @@ const ProblemSetRoutes = () => (
     </div>
 );
 
-export default withRouter(withBreadcrumb('Problem Set')(ProblemSetRoutes));
+export default withRouter(withBreadcrumb('Problem Set','/training/problem')(ProblemSetRoutes));

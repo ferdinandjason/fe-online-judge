@@ -2,12 +2,12 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import { withBreadcrumb } from "../../../components";
-import { MainCompetitionRoutes } from "./MainCompetitionRoutes";
+import ContestRoutes from "./routes/contest/routes/ContestRoutes";
 
 const CompetitionRoutes = () => (
     <div>
         <Switch>
-            <Route path={"/competition"} component={MainCompetitionRoutes}/>
+            <Route path={"/competition"} component={ContestRoutes}/>
         </Switch>
     </div>
 );

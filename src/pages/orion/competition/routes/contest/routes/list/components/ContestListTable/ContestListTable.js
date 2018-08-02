@@ -4,30 +4,30 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { Card , Tag, Intent } from '@blueprintjs/core';
 
-import style from './ContestListTable.scss';
+import Styles from './ContestListTable.scss';
 
 class ContestListTable extends React.Component{
     render(){
         const list = this.props.contestList;
         const contestList = list.map(contest => (
-           <div key={contest.id} className={classNames(style.contest_list_container_container,style.contest_list_item_container)}>
+           <div key={contest.id} className={classNames(Styles.CONTEST_LIST_CONTAINER_CONTAINER,Styles.CONTEST_LIST_ITEM_CONTAINER)}>
                <div>
-                   <h4 className={style.contest_list_item_name}>{contest.name}</h4>
+                   <h4 className={Styles.CONTEST_LIST_ITEM_NAME}>{contest.name}</h4>
                </div>
                <p style={{display:'inline'}}>
                    {
                        contest.tags.map(tag=>{
                           return (
-                              <Tag intent={Intent.PRIMARY} className={style.contest_list_tag}>{tag}</Tag>
+                              <Tag intent={Intent.PRIMARY} className={Styles.CONTEST_LIST_TAG}>{tag}</Tag>
                           );
                        })
                    }
                </p>
-               <div className={style.contest_list_info_container}>
-                   <p className={style.contest_list_item_date}>
+               <div className={Styles.CONTEST_LIST_INFO_CONTAINER}>
+                   <p className={Styles.CONTEST_LIST_ITEM_DATE}>
                        <small>TIME</small>
                    </p>
-                   <div className={style.contest_list_button_container}>
+                   <div className={Styles.CONTEST_LIST_BUTTON_CONTAINER}>
                        <Link to={`/competition/contest/$(contest.id)`}>
                            View
                        </Link>
@@ -36,7 +36,7 @@ class ContestListTable extends React.Component{
            </div>
         ));
 
-        return <Card className={style.contest_list_container}>{contestList}</Card>;
+        return <Card className={Styles.CONTEST_LIST_CONTAINER}>{contestList}</Card>;
     }
 }
 
