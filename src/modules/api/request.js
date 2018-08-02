@@ -13,7 +13,8 @@ function request(method, url, token, header, data) {
             data: data,
         })
         .catch((error) => {
-            IdentifyError(error.response).action();
+            const Error = IdentifyError(error.response.data);
+            Error.action();
         });
 
 

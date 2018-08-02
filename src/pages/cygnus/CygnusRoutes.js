@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { LoginPage } from "./login/LoginPage/LoginPage";
-import { WelcomePage } from "./welcome/WelcomePage/WelcomePage";
-import LogoutPage from "./logout/LogoutPage/LogoutPage";
-import { RegisterPage } from "./register/RegisterPage/RegisterPage";
+import { LoginPage } from "./login/pages/LoginPage";
+import { WelcomePage } from "./welcome/pages/WelcomePage";
+import LogoutPage from "./logout/pages/LogoutPage";
+import { RegisterPage } from "./register/pages/RegisterPage";
 
 import { store } from "../../modules/store";
 import { ChangePlatform } from "../../modules/redux/platform";

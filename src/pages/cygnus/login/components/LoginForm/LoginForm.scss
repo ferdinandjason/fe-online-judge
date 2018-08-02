@@ -1,21 +1,21 @@
 @import '../../../../../styles/base';
 
-.form_login_wrapper {
+.FORM_LOGIN_WRAPPER {
   display: flex;
 }
 
-.form_login_register {
+.FORM_LOGIN_REGISTER {
   margin-top: auto;
   margin-left: auto;
   margin-bottom: auto;
   font-size: $font-size-small;
 }
 
-.form_login_forgot_password {
+.FORM_LOGIN_FORGOT_PASSWORD {
   font-size: $font-size-small;
 }
 
-.form_login_input {
+.FORM_LOGIN_INPUT {
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -24,6 +24,6 @@ input{
   height: 37px !important;
 }
 
-.form_login_button_lock {
+.FORM_LOGIN_BUTTON_LOCK {
   margin-top: 6px !important;
 }

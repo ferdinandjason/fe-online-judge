@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { HorizontalDivider } from '../../../../../components';
 
-import style from '../../../login/components/LoginForm/LoginForm.scss';
-import {API} from "../../../../../modules/api";
+import Styles from '../../../login/components/LoginForm/LoginForm.scss';
 
 export class RegisterForm extends React.Component {
     constructor(props){
@@ -14,8 +13,6 @@ export class RegisterForm extends React.Component {
             showPassword : false,
             showRetypePassword : false,
         };
-
-        this.redirectToHome = this.redirectToHome.bind(this);
     }
 
     handleLockClick = () => {
@@ -30,8 +27,12 @@ export class RegisterForm extends React.Component {
         });
     };
 
-    redirectToHome(){
-        this.props.history.push('/');
+    handleChange(state){
+        return event => {
+            let changedState = Object();
+            changedState[state] = event.target.value;
+            this.setState(changedState);
+        }
     }
 
     render(){
@@ -41,7 +42,7 @@ export class RegisterForm extends React.Component {
                 intent={Intent.WARNING}
                 minimal={true}
                 onClick={this.handleLockClick}
-                className={style.form_login_button_lock}
+                className={Styles.FORM_LOGIN_BUTTON_LOCK}
             />
         );
 
@@ -51,7 +52,7 @@ export class RegisterForm extends React.Component {
                 intent={Intent.WARNING}
                 minimal={true}
                 onClick={this.handleLockRequiredClick}
-                className={style.form_login_button_lock}
+                className={Styles.FORM_LOGIN_BUTTON_LOCK}
             />
         );
 
@@ -59,33 +60,33 @@ export class RegisterForm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <InputGroup
                     placeholder={"Name"}
-                    className={style.form_login_input}
-                    onChange={this.handleNameFieldChange}
+                    className={Styles.FORM_LOGIN_INPUT}
+                    onChange={this.handleChange('name')}
                     type={"text"}/>
                 <InputGroup
                     placeholder={"Email"}
-                    className={style.form_login_input}
-                    onChange={this.handleEmailFieldChange}
+                    className={Styles.FORM_LOGIN_INPUT}
+                    onChange={this.handleChange('email')}
                     type={"text"}/>
                 <InputGroup
                     placeholder={"Password"}
                     rightElement={lockButton}
-                    className={style.form_login_input}
-                    onChange={this.handlePasswordFieldChange}
+                    className={Styles.FORM_LOGIN_INPUT}
+                    onChange={this.handleChange('password')}
                     type={this.state.showPassword? "text":"password"}/>
                 <InputGroup
                     placeholder={"Retype - Password"}
                     rightElement={lockButton2}
-                    className={style.form_login_input}
+                    className={Styles.FORM_LOGIN_INPUT}
                     onChange={this.handleRequiredPasswordFieldChange}
                     type={this.state.showPassword? "text":"password"}/>
 
                 <HorizontalDivider />
 
-                <div className={style.form_login_wrapper}>
+                <div className={Styles.FORM_LOGIN_WRAPPER}>
                     <Button type="submit" text="Register" intent={Intent.PRIMARY} />
-                    <p className={style.form_login_register}>
-                        Don't have account? <Link to="/register">Register now</Link>
+                    <p className={Styles.FORM_LOGIN_REGISTER}>
+                        Already have a account? <Link to="/login">Login now</Link>
                     </p>
                 </div>
             </form>
@@ -96,28 +97,11 @@ export class RegisterForm extends React.Component {
         event.preventDefault();
         const { name, email, password, password_valid } = this.state;
         if(password_valid){
-            API.userAPI.register(name,email,password)
-                .then(()=>{
-                    this.redirectToHome();
-                })
+            this.props.onRegister(name,email,password);
         }
-    };
-
-    handleNameFieldChange = (event) => {
-        this.setState({name:event.target.value});
-    };
-
-    handleEmailFieldChange = (event) => {
-        this.setState({email:event.target.value});
-    };
-
-    handlePasswordFieldChange = (event) => {
-        this.setState({password:event.target.value});
     };
 
     handleRequiredPasswordFieldChange = (event) => {
         this.setState({password_valid:(this.state.password === event.target.value)});
     };
-
-
 }

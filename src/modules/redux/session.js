@@ -84,3 +84,7 @@ export function LogOut() {
 export function selectToken() {
     return store.getState().session.token;
 }
+
+export function isUserAuthenticated() {
+    return store.getState().session.isAuthenticated;
+}

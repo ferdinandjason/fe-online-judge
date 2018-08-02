@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { HorizontalDivider } from '../../../../../components';
 
-import style from './LoginForm.scss';
+import Styles from './LoginForm.scss';
 
 import {API} from "../../../../../modules/api";
 import {Toast} from "../../../../../modules/redux/toast";
@@ -16,8 +16,14 @@ export class LoginForm extends React.Component {
         this.state = {
             showPassword : false,
         };
+    }
 
-        this.redirectToHome = this.redirectToHome.bind(this);
+    handleChange(state){
+        return event => {
+            let changedState = Object();
+            changedState[state] = event.target.value;
+            this.setState(changedState);
+        }
     }
 
     handleLockClick = () => {
@@ -26,11 +32,6 @@ export class LoginForm extends React.Component {
         });
     };
 
-    redirectToHome(){
-        this.props.history.push('/');
-        store.dispatch(Toast.show_('Welcome aboard , '+store.getState().session.user.name+' !','user'));
-    }
-
     render(){
         const lockButton = (
             <Button
@@ -38,7 +39,7 @@ export class LoginForm extends React.Component {
                 intent={Intent.WARNING}
                 minimal={true}
                 onClick={this.handleLockClick}
-                className={style.form_login_button_lock}
+                className={Styles.FORM_LOGIN_BUTTON_LOCK}
             />
         );
 
@@ -46,24 +47,24 @@ export class LoginForm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <InputGroup
                     placeholder={"Email"}
-                    className={style.form_login_input}
-                    onChange={this.handleEmailFieldChange}
+                    className={Styles.FORM_LOGIN_INPUT}
+                    onChange={this.handleChange('email')}
                     type={"text"}/>
                 <InputGroup
                     placeholder={"Password"}
                     rightElement={lockButton}
-                    className={style.form_login_input}
-                    onChange={this.handlePasswordFieldChange}
+                    className={Styles.FORM_LOGIN_INPUT}
+                    onChange={this.handleChange('password')}
                     type={this.state.showPassword? "text":"password"}/>
-                <p className={style.form_login_forgot_password}>
+                <p className={Styles.FORM_LOGIN_FORGOT_PASSWORD}>
                     <Link to="/forgot-password">Forgot your password?</Link>
                 </p>
 
                 <HorizontalDivider />
 
-                <div className={style.form_login_wrapper}>
+                <div className={Styles.FORM_LOGIN_WRAPPER}>
                     <Button type="submit" text="Log in" intent={Intent.PRIMARY} />
-                    <p className={style.form_login_register}>
+                    <p className={Styles.FORM_LOGIN_REGISTER}>
                         Don't have account? <Link to="/register">Register now</Link>
                     </p>
                 </div>
@@ -73,21 +74,7 @@ export class LoginForm extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        const { _ , email, password } = this.state;
-        console.log(_);
-        API.sessionAPI.logIn(email,password)
-            .then((response)=>{
-                this.redirectToHome();
-                return Promise.resolve();
-            });
-
-    };
-
-    handleEmailFieldChange = (event) => {
-        this.setState({email:event.target.value});
-    };
-
-    handlePasswordFieldChange = (event) => {
-        this.setState({password:event.target.value});
-    };
+        const { email, password } = this.state;
+        this.props.onLogin(email,password);
+    }
 }

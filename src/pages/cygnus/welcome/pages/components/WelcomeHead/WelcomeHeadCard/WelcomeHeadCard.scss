@@ -1,0 +1,57 @@
+@import '../../../../../../../styles/base';
+
+.wh_card {
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+}
+
+.wh_card:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .wh_card {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 0 40px;
+  }
+
+  .wh_card:last-child {
+    border-right: none;
+  }
+}
+
+.wh_title {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.wh_desc {
+  color: #016FF9;
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.wh_button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.wh_button:hover,
+.wh_button:focus {
+  background-color: #e1f1ff;
+  text-decoration: none;
+}
