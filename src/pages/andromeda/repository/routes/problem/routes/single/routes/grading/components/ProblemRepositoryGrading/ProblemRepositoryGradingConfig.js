@@ -35,8 +35,8 @@ const ProblemRepositoryGradingConfig = (props) => (
                         labelFor={"testcase"}
                     >
                         <div className={Classes.CARD}>
-                            <table className={classNames(Classes.HTML_TABLE,Classes.INTERACTIVE,Classes.FILL)} style={{width:'100%'}}>
-                                <thead>
+                            <table className={classNames(Classes.HTML_TABLE,Classes.INTERACTIVE,Classes.FILL)} style={{width:'80%',margin:'auto'}}>
+                                <thead style={{fontWeight:'bold'}}>
                                 <tr>
                                     <td>Input</td>
                                     <td>Output</td>
@@ -52,8 +52,8 @@ const ProblemRepositoryGradingConfig = (props) => (
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><TagInput values={['a','b','c']}/></td>
-                                    <td><TagInput values={['a','b','c']}/></td>
+                                    <td><TagInput values={['2.in']}/></td>
+                                    <td><TagInput values={['2.out']}/></td>
                                     <td>
                                         <Button icon={IconNames.PLUS} intent={Intent.SUCCESS} minimal={true}/>
                                     </td>
@@ -62,7 +62,7 @@ const ProblemRepositoryGradingConfig = (props) => (
                             </table>
                         </div>
                     </FormGroup>
-                    <Button icon={IconNames.PLUS} intent={Intent.PRIMARY} type='submit'>
+                    <Button icon={IconNames.UPDATED} intent={Intent.PRIMARY} type='submit'>
                         Update Problem
                     </Button>
                 </form>

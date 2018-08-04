@@ -8,7 +8,7 @@ const INITIAL_STATE = {
 };
 
 const INITIAL_ACTION = {
-    type: 'session',
+    type: 'toast',
 };
 
 // Reducer

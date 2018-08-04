@@ -1,0 +1,53 @@
+@import "../../../styles/base";
+
+.DROPZONE {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-width: 2px;
+  border-color: rgb(102, 102, 102);
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+.DROPZONE_INSIDE {
+  margin: 40px auto 0;
+  width: 300px;
+}
+
+.DROPZONE_INSIDE_INFO {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 0;
+  color: $non-active-color;
+}
+
+.DROPZONE_INSIDE_INFO_SMALL {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0;
+  color: $primary-color;
+}
+
+.DROPZONE_FILES {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.DROPZONE_HIDE_FILES {
+  display: none;
+}
+
+.DROPZONE_FILES_ACCEPTED{
+  float: left;
+  width: 50%;
+}
+
+.DROPZONE_FILES_REJECTED{
+  float: left;
+  width: 50%;
+}

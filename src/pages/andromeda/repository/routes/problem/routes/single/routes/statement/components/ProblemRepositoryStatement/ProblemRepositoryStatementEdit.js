@@ -1,4 +1,5 @@
 import React from 'react';
+import { Field , reduxForm } from 'redux-form';
 import { FormGroup, InputGroup, Intent, Button } from '@blueprintjs/core';
 import { IconNames } from '@blueprintjs/icons';
 import FroalaEditor from 'react-froala-wysiwyg';
@@ -8,103 +9,89 @@ import 'froala-editor/css/froala_style.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
 import 'font-awesome/css/font-awesome.css';
 
+import {FormInputText} from "../../../../../../../../../../../components/forms";
 import {CardContainer, withBreadcrumb} from "../../../../../../../../../../../components";
 import {connect} from "react-redux";
 import {problemRepositoryActions} from "../../../../modules/problem";
 
-const LoadingEditSingleProblemRepo = () => {
-    const title = 'Edit';
-    return (
-        <div className={"page__container"}>
-            <CardContainer title={title}>
-                <div>
-                    <FormGroup
-                        label={"Title"}
-                        labelFor={"title"}
-                        labelInfo={"(required)"}
-                    >
-                        <InputGroup id={"title"}/>
-                    </FormGroup>
-                    <FormGroup
-                        label={"Slug"}
-                        labelFor={"slug"}
-                        labelInfo={"(required)"}
-                    >
-                        <InputGroup id={"slug"}/>
-                    </FormGroup>
-                    <FormGroup
-                        label={"Description"}
-                        labelFor={"description"}
-                        labelInfo={"(required)"}
-                    >
-                        <FroalaEditor
-                            model={undefined}
-                            onModelChange={undefined}
-                        />
-                    </FormGroup>
-                    <Button icon={IconNames.PLUS} intent={Intent.PRIMARY} type='submit'>
-                        Create Problem
-                    </Button>
-                </div>
-            </CardContainer>
-        </div>
-    )
+const titleField = {
+    name: 'title',
+    label: 'Title',
+    labelInfo: '(required)',
+    placeholder: 'Title',
 };
 
-class EditSingleProblemRepo extends React.Component {
+const slugField = {
+    name: 'slug',
+    label: 'Slug',
+    labelInfo: '(required)',
+    placeholder: 'Slug',
+};
+
+
+class RawEditSingleProblemForm extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            title : props.problem.title,
-            slug : props.problem.slug,
-            description : props.problem.description,
+            description : (props.problem)?props.problem.description:'',
+            loading : false,
         };
         this.handleModelChange = this.handleModelChange.bind(this);
-    }
-
-    handleChange(state){
-        return event => {
-            let changedState = Object();
-            changedState[state] = event.target.value;
-            this.setState(changedState);
-        }
     }
 
     handleModelChange = (model) => {
         this.setState({description:model});
     };
 
+    handleSubmit = (event) => {
+        this.setState({loading:true});
+        event.preventDefault();
+        this.props.handleSubmit()
+    };
+
+    render(){
+        return (
+            <form onSubmit={this.props.handleSubmit}>
+                <Field component={FormInputText} {...titleField}/>
+                <Field component={FormInputText} {...slugField}/>
+                <FormGroup
+                    label={"Description"}
+                    labelFor={"description"}
+                    labelInfo={"(required)"}
+                >
+                    <FroalaEditor
+                        model={this.state.description}
+                        onModelChange={this.handleModelChange}
+                    />
+                </FormGroup>
+                <Button icon={IconNames.UPDATED} intent={Intent.PRIMARY} type='submit' loading={this.state.loading}>
+                    Update Problem
+                </Button>
+            </form>
+        )
+    }
+}
+
+const EditSingleProblemForm = reduxForm({form: 'edit-single-problem-form'})(RawEditSingleProblemForm);
+
+const LoadingEditSingleProblemRepo = () => {
+    const title = 'Edit';
+    return (
+        <div className={"page__container"}>
+            <CardContainer title={title}>
+                <EditSingleProblemForm/>
+            </CardContainer>
+        </div>
+    )
+};
+
+class EditSingleProblemRepo extends React.Component {
     render(){
         const title = 'Edit';
         return (
             <div className={"page__container"}>
                 <CardContainer title={title}>
-                    <div>
-                        <FormGroup
-                            label={"Title"}
-                            labelFor={"title"}
-                            labelInfo={"(required)"}
-                        >
-                            <InputGroup id={"title"} defaultValue={this.state.title} onChange={this.handleChange('title')}/>
-                        </FormGroup>
-                        <FormGroup
-                            label={"Slug"}
-                            labelFor={"slug"}
-                            labelInfo={"(required)"}
-                        >
-                            <InputGroup id={"slug"} defaultValue={this.state.slug} onChange={this.handleChange('slug')}/>
-                        </FormGroup>
-                        <FormGroup
-                            label={"Description"}
-                            labelFor={"description"}
-                            labelInfo={"(required)"}
-                        >
-                            <FroalaEditor
-                                model={this.state.description}
-                                onModelChange={this.handleModelChange}
-                            />
-                        </FormGroup>
-                    </div>
+                    <EditSingleProblemForm/>
                 </CardContainer>
             </div>
         )

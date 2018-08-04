@@ -6,7 +6,7 @@ import LoadingProblemListTable from "../ProblemRepositoryListTable/LoadingProble
 import { CardContainer } from "../../../../../../../../../components";
 import { problemRepositoryListActions } from "../../modules/problem";
 import {API} from "../../../../../../../../../modules/api";
-import {selectToken} from "../../../../../../../../../modules/redux/session";
+import {getUser, selectToken} from "../../../../../../../../../modules/redux/session";
 import {Pagination} from "../../../../../../../../../components/Pagination";
 
 class ProblemRepositoryListContainer extends React.Component {
@@ -25,8 +25,9 @@ class ProblemRepositoryListContainer extends React.Component {
     }
 
     async componentDidMount(){
-        let { current_page, limit } = this.state;
-        await this.props.onFetchProblemRepositoryList(current_page,limit)
+        const { current_page, limit } = this.state;
+        const owner_id = getUser().owner_id;
+        await this.props.onFetchProblemRepositoryList(current_page,limit,owner_id)
             .then((problemRepo)=>{
                 const problemRepoList = problemRepo.data;
                 const problemRepoPaginationProps = problemRepo.meta.pagination;
@@ -71,7 +72,7 @@ class ProblemRepositoryListContainer extends React.Component {
 
 function createProblemRepositoryListContainer(problemRepositoryListActions) {
     const mapDispatchToProps = {
-        onFetchProblemRepositoryList : (page,limit) => problemRepositoryListActions.fetchProblemRepositoryList(page,limit),
+        onFetchProblemRepositoryList : (page,limit,owner_id) => problemRepositoryListActions.fetchProblemRepositoryList(page,limit,owner_id),
     };
     return connect(undefined,mapDispatchToProps)(ProblemRepositoryListContainer);
 }

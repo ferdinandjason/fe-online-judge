@@ -17,8 +17,8 @@ class LoginFormContainer extends React.Component {
         store.dispatch(Toast.show_('Welcome aboard , '+store.getState().session.user.name+' !','user'));
     }
 
-    handleLogin = (email,password) => {
-        console.log(email,password);
+    handleLogin = (data) => {
+        const { email, password } = data;
         API.sessionAPI.logIn(email,password)
             .then((response)=>{
                 this.redirectToHome();
@@ -27,7 +27,7 @@ class LoginFormContainer extends React.Component {
     };
 
     render(){
-        return (<LoginForm onLogin={this.handleLogin}/>);
+        return (<LoginForm onSubmit={this.handleLogin}/>);
     }
 }
 
