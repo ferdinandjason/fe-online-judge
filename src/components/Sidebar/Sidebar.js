@@ -21,7 +21,7 @@ class Sidebar extends React.Component {
 
         const tab = items.map(item => {
             const titleIcon = item.titleIcon && <Icon icon={item.titleIcon}/>;
-            const icon = item.id === activeItemId && (<Icon icon={IconNames.CHEVRON_RIGHT} className={Styles.CARD_SIDEBAR_ARROW}/>)
+            const icon = ((item.id === activeItemId) && (<Icon icon={IconNames.CHEVRON_RIGHT} className={Styles.CARD_SIDEBAR_ARROW}/>));
             return (
                 <Tab key={item.id} id={item.id}>
                     <span>

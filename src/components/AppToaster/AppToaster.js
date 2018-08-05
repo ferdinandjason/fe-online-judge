@@ -27,9 +27,6 @@ class AppToaster extends Component {
     }
 
     componentWillReceiveProps(nextProps){
-        console.log(nextProps.toast);
-        console.log(nextProps.toastFile);
-        this.toaster.show(nextProps.toast);
         if(nextProps.toastFile.filename !== null && nextProps.toastFile.key === null){
             const key = this.toaster.show(AppToaster.renderFileUploadProgress(0,nextProps.toastFile.filename));
             store.dispatch(AddKeyToastFile(key));
@@ -37,6 +34,8 @@ class AppToaster extends Component {
             const key = GetKeyToastFile();
             const percentage = GetPercentageToastFile();
             this.toaster.show(AppToaster.renderFileUploadProgress(percentage,nextProps.toastFile.filename),key);
+        } else {
+            this.toaster.show(nextProps.toast);
         }
     }
 

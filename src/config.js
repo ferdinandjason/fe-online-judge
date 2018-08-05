@@ -8,3 +8,23 @@ export const APP_CONFIG = {
         problem: `${BASE_URL}/api/problems`,
     }
 };
+
+export const MODE = [
+    {title:'C / C++ / C#',mode:'csharp'},
+    {title:'Java',mode:'java'},
+    {title:'Javascript',mode:'javascript'},
+    {title:'Python',mode:'python'},
+];
+
+export const THEME = [
+    {title:'Github',theme:'github'},
+    {title:'Monokai',theme:'monokai'},
+    {title:'Tomorrow',theme:'tomorrow'},
+    {title:'Kuroir',theme:'kuroir'},
+    {title:'Twilight',theme:'twilight'},
+    {title:'Xcode',theme:'xcode'},
+    {title:'Textmate',theme:'textmate'},
+    {title:'Terminal',theme:'terminal'},
+    {title:'Solarized Dark',theme:'solarized_dark'},
+    {title:'Solarized Light',theme:'solarized_light'},
+];

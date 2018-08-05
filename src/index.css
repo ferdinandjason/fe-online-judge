@@ -105,3 +105,14 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 .bp3-button.bp3-intent-primary {
     background-color: #39424e !important;
 }
+
+/* Toast */
+.bp3-toast-message {
+    /*margin-top: 5px;*/
+    min-width: 100px;
+}
+
+/* Form */
+.bp3-html-select::after {
+    line-height: 40px !important;
+}
