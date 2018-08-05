@@ -2,23 +2,19 @@ import React from 'react';
 import { Field , reduxForm } from 'redux-form';
 import { FormGroup, InputGroup, Intent, Button } from '@blueprintjs/core';
 import { IconNames } from '@blueprintjs/icons';
-import FroalaEditor from 'react-froala-wysiwyg';
 
-import 'froala-editor/js/froala_editor.pkgd.min';
-import 'froala-editor/css/froala_style.css';
-import 'froala-editor/css/froala_editor.pkgd.min.css';
-import 'font-awesome/css/font-awesome.css';
-
-import {FormInputText} from "../../../../../../../../../../../components/forms";
+import {FormInputText,FormInputEditor} from "../../../../../../../../../../../components/forms";
 import {CardContainer, withBreadcrumb} from "../../../../../../../../../../../components";
 import {connect} from "react-redux";
 import {problemRepositoryActions} from "../../../../modules/problem";
+import {Required, Slug} from "../../../../../../../../../../../components/forms/FormInputValidation/Validation";
 
 const titleField = {
     name: 'title',
     label: 'Title',
     labelInfo: '(required)',
     placeholder: 'Title',
+    validate: [Required],
 };
 
 const slugField = {
@@ -26,6 +22,14 @@ const slugField = {
     label: 'Slug',
     labelInfo: '(required)',
     placeholder: 'Slug',
+    validate: [Required,Slug],
+};
+
+const descriptionField = {
+    name: 'description',
+    label: 'Description',
+    labelInfo: '(required)',
+    validate: [Required],
 };
 
 
@@ -36,12 +40,7 @@ class RawEditSingleProblemForm extends React.Component {
             description : (props.problem)?props.problem.description:'',
             loading : false,
         };
-        this.handleModelChange = this.handleModelChange.bind(this);
     }
-
-    handleModelChange = (model) => {
-        this.setState({description:model});
-    };
 
     handleSubmit = (event) => {
         this.setState({loading:true});
@@ -51,19 +50,10 @@ class RawEditSingleProblemForm extends React.Component {
 
     render(){
         return (
-            <form onSubmit={this.props.handleSubmit}>
+            <form onSubmit={this.handleSubmit}>
                 <Field component={FormInputText} {...titleField}/>
                 <Field component={FormInputText} {...slugField}/>
-                <FormGroup
-                    label={"Description"}
-                    labelFor={"description"}
-                    labelInfo={"(required)"}
-                >
-                    <FroalaEditor
-                        model={this.state.description}
-                        onModelChange={this.handleModelChange}
-                    />
-                </FormGroup>
+                <Field component={FormInputEditor} {...descriptionField} />
                 <Button icon={IconNames.UPDATED} intent={Intent.PRIMARY} type='submit' loading={this.state.loading}>
                     Update Problem
                 </Button>
@@ -72,7 +62,7 @@ class RawEditSingleProblemForm extends React.Component {
     }
 }
 
-const EditSingleProblemForm = reduxForm({form: 'edit-single-problem-form'})(RawEditSingleProblemForm);
+const EditSingleProblemForm = reduxForm({form: 'edit-statement-single-problem-form'})(RawEditSingleProblemForm);
 
 const LoadingEditSingleProblemRepo = () => {
     const title = 'Edit';
@@ -91,7 +81,7 @@ class EditSingleProblemRepo extends React.Component {
         return (
             <div className={"page__container"}>
                 <CardContainer title={title}>
-                    <EditSingleProblemForm/>
+                    <EditSingleProblemForm />
                 </CardContainer>
             </div>
         )

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Field , reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { Button, FormGroup, InputGroup, Intent } from "@blueprintjs/core";
 import { IconNames } from '@blueprintjs/icons';
@@ -12,71 +13,80 @@ import 'font-awesome/css/font-awesome.css';
 
 import {CardContainer, withBreadcrumb} from "../../../../../../../../../components/index";
 import {problemRepositoryCreateActions} from "../../modules/problem";
+import {FormInputEditor, FormInputText} from "../../../../../../../../../components/forms";
+import {Toast} from "../../../../../../../../../modules/redux/toast";
+import {Required,Slug} from "../../../../../../../../../components/forms/FormInputValidation/Validation";
 
-class ProblemRepositoryCreateProblem extends React.Component {
+const titleField = {
+    name: 'title',
+    label: 'Title',
+    labelInfo: '(required)',
+    placeholder: 'Title',
+    validate: [Required],
+};
+
+const slugField = {
+    name: 'slug',
+    label: 'Slug',
+    labelInfo: '(required)',
+    placeholder: 'Slug',
+    validate: [Required,Slug],
+};
+
+const descriptionField = {
+    name: 'description',
+    label: 'Description',
+    labelInfo: '(required)',
+    validate: [Required],
+};
+
+class RawCreateProblemForm extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            title : null,
-            slug : null,
-            description : null,
+            loading : false,
         };
-        this.handleModelChange = this.handleModelChange.bind(this);
     }
 
-    handleModelChange = (model) => {
-        this.setState({description:model});
+    handleSubmit = (event) => {
+        this.setState({loading:!this.props.submitFailed && this.props.submitting});
+        event.preventDefault();
+        this.props.handleSubmit()
     };
 
-    handleChange(state){
-        return event => {
-            let changedState = Object();
-            changedState[state] = event.target.value;
-            this.setState(changedState);
-        }
+    render(){
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <Field component={FormInputText} {...titleField}/>
+                <Field component={FormInputText} {...slugField}/>
+                <Field component={FormInputEditor} {...descriptionField} />
+                <Button icon={IconNames.UPDATED} intent={Intent.PRIMARY} type='submit' loading={this.state.loading}>
+                    Create Problem
+                </Button>
+            </form>
+        )
     }
+}
 
+const CreateProblemForm = reduxForm({form: 'create-problem-form'})(RawCreateProblemForm);
+
+class ProblemRepositoryCreateProblem extends React.Component {
     render(){
         return (
             <div className="page__container">
                 <CardContainer title={'Create Problem'}>
-                    <form onSubmit={this.handleSubmit}>
-                        <FormGroup
-                            label={"Title"}
-                            labelFor={"title"}
-                            labelInfo={"(required)"}
-                        >
-                            <InputGroup id={"title"} onChange={this.handleChange('title')}/>
-                        </FormGroup>
-                        <FormGroup
-                            label={"Slug"}
-                            labelFor={"slug"}
-                            labelInfo={"(required)"}
-                        >
-                            <InputGroup id={"slug"} onChange={this.handleChange('slug')}/>
-                        </FormGroup>
-                        <FormGroup
-                            label={"Description"}
-                            labelFor={"description"}
-                            labelInfo={"(required)"}
-                        >
-                            <FroalaEditor
-                                model={this.state.description}
-                                onModelChange={this.handleModelChange}
-                            />
-                        </FormGroup>
-                        <Button icon={IconNames.PLUS} intent={Intent.PRIMARY} type='submit'>
-                            Create Problem
-                        </Button>
-                    </form>
+                    <CreateProblemForm onSubmit={this.handleSubmit}/>
                 </CardContainer>
             </div>
         )
     }
 
-    handleSubmit = (event) => {
-        event.preventDefault();
-        this.props.createProblem(this.state);
+    handleSubmit = (data) => {
+        console.log(data);
+        this.props.createProblem(data)
+            .then(()=>{
+                this.props.history.push('/repository');
+            });
     }
 }
 

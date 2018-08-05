@@ -26,7 +26,7 @@ class ProblemRepositoryListContainer extends React.Component {
 
     async componentDidMount(){
         const { current_page, limit } = this.state;
-        const owner_id = getUser().owner_id;
+        const owner_id = getUser().id;
         await this.props.onFetchProblemRepositoryList(current_page,limit,owner_id)
             .then((problemRepo)=>{
                 const problemRepoList = problemRepo.data;

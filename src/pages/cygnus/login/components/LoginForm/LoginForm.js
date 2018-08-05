@@ -7,12 +7,14 @@ import { HorizontalDivider } from '../../../../../components';
 import {FormInputText,FormInputPassword} from "../../../../../components/forms";
 
 import Styles from './LoginForm.scss';
+import {Required,EmailAddress} from "../../../../../components/forms/FormInputValidation/Validation";
 
 const emailField = {
     name: 'email',
     label: 'Email',
     labelInfo: '(required)',
     placeholder: 'Email',
+    validate: [Required, EmailAddress],
 };
 
 const passwordField = {
@@ -20,6 +22,7 @@ const passwordField = {
     label: 'Password',
     labelInfo: '(required)',
     placeholder: 'Password',
+    validate: [Required],
 };
 
 export class LoginForm extends React.Component {
@@ -42,7 +45,7 @@ export class LoginForm extends React.Component {
                 <HorizontalDivider />
 
                 <div className={Styles.FORM_LOGIN_WRAPPER}>
-                    <Button type="submit" text="Log in" intent={Intent.PRIMARY} loading={this.state.loading} />
+                    <Button type="submit" text="Log in" intent={Intent.PRIMARY} loading={!this.props.submitFailed && this.props.submitting} />
                     <p className={Styles.FORM_LOGIN_REGISTER}>
                         Don't have account? <Link to="/register">Register now</Link>
                     </p>

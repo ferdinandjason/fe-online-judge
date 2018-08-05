@@ -13,15 +13,18 @@ class RegisterFormContainer extends React.Component {
         this.props.history.push('/');
     }
 
-    handleRegister = (name,email,password) => {
-        API.userAPI.register(name,email,password)
-            .then(()=>{
-                this.redirectToHome();
-            });
+    handleRegister = (data) => {
+        const {name, email, password, retype_password} = data;
+        if(password === retype_password){
+            API.userAPI.register(name,email,password)
+                .then(()=>{
+                    this.redirectToHome();
+                });
+        }
     };
 
     render(){
-        return (<RegisterForm onRegister={this.handleRegister}/>)
+        return (<RegisterForm onSubmit={this.handleRegister}/>)
     }
 }
 

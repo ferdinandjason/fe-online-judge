@@ -63,7 +63,7 @@ const ProblemRepositoryGradingConfig = (props) => (
                         </div>
                     </FormGroup>
                     <Button icon={IconNames.UPDATED} intent={Intent.PRIMARY} type='submit'>
-                        Update Problem
+                        Update Configuration
                     </Button>
                 </form>
             </div>

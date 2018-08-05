@@ -45,11 +45,28 @@ export class InternalServerError {
     }
 }
 
+export class ValidationError {
+    constructor(error){
+        this.message = error.message;
+        this.errors = error.errors;
+        this.status_code = error.status_code;
+    }
+    action = () => {
+        for(let name in this.errors){
+            for(let error in this.errors[name]){
+                store.dispatch(Toast.error_(`${this.errors[name][error]}`));
+            }
+        }
+    }
+}
+
 export const IdentifyError = (error) => {
     if(error.status_code === 401) {
         return new UnauthorizedError(error);
     } else if(error.status_code === 403) {
         return new ForbiddenError(error);
+    } else if(error.status_code === 422) {
+        return new ValidationError(error);
     } else if(error.status_code === 500) {
         return new InternalServerError(error);
     }

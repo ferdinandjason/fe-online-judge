@@ -63,7 +63,6 @@ export const Toast = {
         }
     },
     show_: (message, icon = '', action = undefined) => {
-        console.log(message);
         return {
             type: ADD_TOAST,
             payload: {

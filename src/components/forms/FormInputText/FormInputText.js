@@ -2,12 +2,11 @@ import React from 'react';
 import classNames from 'classnames';
 import { FormGroup,Classes } from "@blueprintjs/core";
 
-import {getIntent, getIntentClassName} from "../FormInputValidation/FormInputValidation";
+import {getIntent, getIntentClassName, FormInputValidation} from "../FormInputValidation/FormInputValidation";
 
 import Styles from './FormInputText.scss';
 
 export const FormInputText = (props) => {
-    console.log(props);
     return (
         <FormGroup
             labelFor={props.input.name}
@@ -21,6 +20,7 @@ export const FormInputText = (props) => {
                 type='text'
                 className={classNames(Classes.INPUT,getIntentClassName(props.meta),Styles.FORM_INPUT_TEXT)}
             />
+            <FormInputValidation meta={props.meta}/>
         </FormGroup>
     )
 };

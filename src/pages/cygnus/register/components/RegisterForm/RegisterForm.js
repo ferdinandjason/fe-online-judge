@@ -7,12 +7,14 @@ import { HorizontalDivider } from '../../../../../components';
 
 import Styles from '../../../login/components/LoginForm/LoginForm.scss';
 import {FormInputPassword, FormInputText} from "../../../../../components/forms";
+import {Required, EmailAddress, Password, ConfirmPassword} from "../../../../../components/forms/FormInputValidation/Validation";
 
 const nameField = {
     name: 'name',
     label: 'Name',
     labelInfo: '(required)',
     placeholder: 'Name',
+    validate: [Required],
 };
 
 const emailField = {
@@ -20,6 +22,7 @@ const emailField = {
     label: 'Email',
     labelInfo: '(required)',
     placeholder: 'Email',
+    validate: [Required, EmailAddress],
 };
 
 const passwordField = {
@@ -27,13 +30,15 @@ const passwordField = {
     label: 'Password',
     labelInfo: '(required)',
     placeholder: 'Password',
+    validate: [Required , Password],
 };
 
 const retypePasswordField = {
-    name: 'retype-password',
+    name: 'retype_password',
     label: 'Retype Password',
     labelInfo: '(required)',
     placeholder: 'Password',
+    validate: [Required, Password, ConfirmPassword],
 };
 
 

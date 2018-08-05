@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { FormGroup,Classes,Button } from "@blueprintjs/core";
 
-import {getIntent, getIntentClassName} from "../FormInputValidation/FormInputValidation";
+import {getIntent, getIntentClassName, FormInputValidation} from "../FormInputValidation/FormInputValidation";
 
 import Styles from './FormInputPassword.scss';
 import {Intent} from "@blueprintjs/core/lib/esm/index";
@@ -45,8 +45,9 @@ export class FormInputPassword extends React.Component{
                         className={classNames(Classes.INPUT,getIntentClassName(this.props.meta),Styles.FORM_INPUT_PASSWORD)}
                     />
                     <span className={Classes.INPUT_ACTION}>
-                    {lockButton}
-                </span>
+                        {lockButton}
+                    </span>
+                    <FormInputValidation meta={this.props.meta}/>
                 </div>
             </FormGroup>
         )
