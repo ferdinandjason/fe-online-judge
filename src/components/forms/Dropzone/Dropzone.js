@@ -12,7 +12,7 @@ class Dropzone extends React.Component {
             show : false,
             files : [],
             rejected : [],
-        }
+        };
         this.handleDrop = this.handleDrop.bind(this);
     }
 
@@ -74,6 +74,6 @@ class Dropzone extends React.Component {
             </ReactDropzone>
         )
     }
-};
+}
 
 export default Dropzone;

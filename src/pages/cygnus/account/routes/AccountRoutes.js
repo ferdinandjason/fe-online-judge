@@ -3,17 +3,31 @@ import {withRouter} from "react-router-dom";
 
 import ProfileRoutes from "./profile/routes/ProfileRoutes";
 import {DoublePageLayout} from "../../../../components/layouts/DoublePageLayout";
-import ContentWithSidebar from "../../../../components/ContentWithSidebar/ContentWithSidebar";
+import { ContentWithSidebarContainer } from "../../../../components";
 import {withBreadcrumb} from "../../../../components";
+import {ChangeAvatar} from "./change/avatar/components/ChangeAvatar";
+import {ChangePassword} from "./change/password/components/ChangePassword";
 
 
 const AccountRoutes = () => {
     const sidebarItems = [
         {
             id:'profile',
-            titleIcon:'document',
+            titleIcon:'person',
             title:'Profile',
             component:ProfileRoutes,
+        },
+        {
+            id:'avatar',
+            titleIcon:'media',
+            title:'Change Avatar',
+            component:ChangeAvatar,
+        },
+        {
+            id:'password',
+            titleIcon:'lock',
+            title:'Change Password',
+            component:ChangePassword,
         },
     ];
 
@@ -24,7 +38,7 @@ const AccountRoutes = () => {
 
     return (
         <DoublePageLayout>
-            <ContentWithSidebar {...contentWithSidebarProps}/>
+            <ContentWithSidebarContainer {...contentWithSidebarProps}/>
         </DoublePageLayout>
     )
 };

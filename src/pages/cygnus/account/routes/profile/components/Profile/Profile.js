@@ -27,7 +27,7 @@ export class Profile extends React.Component{
 
         return (
             <CardContainer title={"Profile"} action={action} className={Styles.CARD_PROFILE}>
-                {this.renderContent}
+                {this.renderContent()}
             </CardContainer>
         )
     }

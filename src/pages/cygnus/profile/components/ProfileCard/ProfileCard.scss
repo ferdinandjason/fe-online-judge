@@ -1,0 +1,96 @@
+.PROFILE_CARD {
+  width: 260px;
+  margin: 1em 0;
+  max-width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 290px;
+  min-height: 0;
+  background: #fff;
+  padding: 0;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;
+  -webkit-transition: box-shadow .1s ease,-webkit-transform .1s ease;
+  transition: box-shadow .1s ease,transform .1s ease,-webkit-transform .1s ease;
+  > .IMAGE {
+    position: relative;
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding: 0;
+    background: rgba(0,0,0,.05);
+    > img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  > :first-child {
+    border-radius: .28571429rem .28571429rem 0 0 !important;
+    border-top: none !important;
+  }
+  > .CONTENT {
+    margin-top: 15px;
+    margin-left: 10px;
+    :after{
+      display: block;
+      content: ' ';
+      height: 0;
+      clear: both;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    .HEADER{
+      font-weight: 700;
+      font-size: 1.28571429em;
+      margin-top: -.21425em;
+      line-height: 1.28571429em;
+    }
+    .DESCRIPTION{
+      clear: both;
+      .ITEM {
+        display: list-item;
+        table-layout: fixed;
+        list-style-type: none;
+        list-style-position: outside;
+        padding: .21428571em 0;
+        padding-top: 0.214286em;
+        line-height: 1.14285714em;
+        .ITEM_TITLE {
+          text-align: center;
+          margin-bottom: 5px !important;
+        }
+        .CHILDREN {
+
+        }
+      }
+    }
+  }
+}
+
+.PROFILE_CARD_CONTENT {
+  margin-top: 4px;
+  width: 100%;
+  height: 600px;
+  span {
+    margin: 4px;
+  }
+}
+
+.PROFILE_CARD_SOLVED_LIST {
+  margin: auto;
+  text-align: center;
+}
+
+.PROFILE_CARD_SUBMISSION_LIST {
+  width: 100%;
+}

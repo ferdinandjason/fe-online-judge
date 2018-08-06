@@ -4,9 +4,11 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     margin-bottom: 0px;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 5px;
 }
 
 .page__container{
@@ -115,4 +117,25 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 /* Form */
 .bp3-html-select::after {
     line-height: 40px !important;
+}
+
+._253Tw .bp3-label {
+    margin-bottom: 0 !important;
+}
+
+.bp3-select::after {
+    top: 12px !important;
+}
+
+.bp3-input-group .bp3-input-action {
+    right: 0 !important;
+}
+
+/* Profile */
+._2CXvP ._qgrZw {
+    height: calc(100% - 44px);
+}
+
+._2CXvP ._1phqC {
+    height: 100%;
 }

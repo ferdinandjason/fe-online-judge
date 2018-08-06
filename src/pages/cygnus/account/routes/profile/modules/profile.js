@@ -1,8 +1,12 @@
 export const profileActions = {
     fetch : () => {
-        return false;
+        return async () => {
+            return false;
+        }
     },
     update : () => {
-        return false;
+        return async () => {
+            return false;
+        }
     }
 }

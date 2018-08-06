@@ -56,7 +56,8 @@ class UserWidget extends React.Component {
                           text={user.name}
                 />
                 <MenuDivider className={Styles.USER_WIDGET_MENU_HELPER}/>
-                <MenuItemLink text="My account" to={`/profile/${user.id}`}/>
+                <MenuItemLink text="My profile" to='/me'/>
+                <MenuItemLink text="My account" to='/account'/>
                 <MenuItemLink text="Log out" to="/logout"/>
             </Menu>
         );

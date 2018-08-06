@@ -8,6 +8,8 @@ import {FormTableTextInput,FormTableSelect,FormTableTextArea} from "../../../../
 import {HorizontalDivider} from "../../../../../../../components/HorizontalDivider";
 import {MODE,THEME} from "../../../../../../../config";
 
+import Styles from './ProfileForm.scss';
+
 const nameField = {
     name: 'name',
     label: 'Name',
@@ -25,7 +27,7 @@ const nationalityField = {
 
 const homeAddressField = {
     name: 'homeAddress',
-    label: 'Home address',
+    label: 'Home Address',
 };
 
 const themeDefaultField = {
@@ -61,7 +63,7 @@ const ProfileForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
             <h4>Personal Info</h4>
-            <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED)}>
+            <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED,Styles.PROFILE_FORM)}>
                 <tbody>
                     <Field component={FormTableTextInput} {...nameField}/>
                     <Field component={FormTableSelect} {...genderField}>
@@ -78,7 +80,7 @@ const ProfileForm = (props) => {
             </table>
             <HorizontalDivider/>
             <h4>Personal Configuration</h4>
-            <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED)}>
+            <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED,Styles.PROFILE_FORM)}>
                 <tbody>
                     <Field component={FormTableSelect} {...themeDefaultField}>
                         <option/>

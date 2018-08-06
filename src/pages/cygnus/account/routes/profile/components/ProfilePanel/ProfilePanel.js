@@ -7,14 +7,7 @@ import {HorizontalDivider} from "../../../../../../../components/HorizontalDivid
 
 export class ProfilePanel extends React.Component {
     componentDidMount(){
-        this.props.profile = {
-            name : null,
-            gender : null,
-            country : null,
-            homeAddress : null,
-            themeDefault : null,
-            languageDefault : null,
-        }
+
     }
 
     render(){
@@ -22,7 +15,7 @@ export class ProfilePanel extends React.Component {
         return (
             <div>
                 <h4>Personal Info</h4>
-                <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED)}>
+                <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED,Styles.PROFILE_PANEL)}>
                     <tbody>
                     <tr>
                         <td className={Styles.PROFILE_PANEL_TITLE}>Name</td>
@@ -44,7 +37,7 @@ export class ProfilePanel extends React.Component {
                 </table>
                 <HorizontalDivider/>
                 <h4>Personal Configuration</h4>
-                <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED)}>
+                <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED,Styles.PROFILE_PANEL)}>
                     <tbody>
                     <tr>
                         <td className={Styles.PROFILE_PANEL_TITLE}>Theme</td>
