@@ -1,10 +1,10 @@
 import React from 'react';
 
 import {SinglePageLayout} from "../../../../components/layouts/SinglePageLayout";
+import {SubmissionList} from "../../../../components/submission";
 import WelcomeHead from "./components/WelcomeHead/WelcomeHead";
 import NewProblemContainer from "./components/NewProblem/NewProblemContainer/NewProblemContainer";
 import LatestContestContainer from "./components/LatestContest/LatestContestContainer/LatestContestContainer";
-import SubmissionList from "./components/Submissions/SubmissionList/SubmissionList";
 import TopUserList from "./components/TopUsers/TopUserList/TopUserList";
 
 import submission from "../../../../assets/images/submission.png";

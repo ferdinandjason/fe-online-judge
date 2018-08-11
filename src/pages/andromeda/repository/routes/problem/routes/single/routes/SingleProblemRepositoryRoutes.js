@@ -12,6 +12,7 @@ import {ProblemRepositoryGradingRoutes} from "./grading/routes/ProblemRepository
 import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/redux/breadcrumb";
 import {problemRepositoryActions} from "../modules/problem";
 import {DeleteDocumentTitle, SetDocumentTitle} from "../../../../../../../../modules/redux/platform";
+import {ProblemRepositorySubmissionRoutes} from "./submission/routes/ProblemRepositorySubmissionRoutes";
 
 class SingleProblemRepositoryRoutes extends React.Component {
     constructor(props){
@@ -52,6 +53,10 @@ class SingleProblemRepositoryRoutes extends React.Component {
                 title:'Grading',
                 items:ProblemRepositoryGradingRoutes,
             },
+            {
+                title:'Submission',
+                items:ProblemRepositorySubmissionRoutes,
+            }
         ];
 
         return (

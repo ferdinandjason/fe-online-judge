@@ -8,6 +8,7 @@ import defaultUser from '../../../../../assets/images/user.png';
 import {HorizontalDivider} from "../../../../../components/HorizontalDivider";
 import {CardContainer} from "../../../../../components/CardContainer";
 import classNames from "classnames";
+import {withBreadcrumb} from "../../../../../components";
 
 class ProfileCard extends React.Component {
     constructor(props){
@@ -213,4 +214,4 @@ function createProfileCard(){
     return connect(mapStateToProps)(ProfileCard);
 }
 
-export default createProfileCard();
+export default withBreadcrumb('Profile Card')(createProfileCard());

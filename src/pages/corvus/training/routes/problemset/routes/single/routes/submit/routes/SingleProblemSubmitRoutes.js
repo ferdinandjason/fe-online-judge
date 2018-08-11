@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { ProblemSubmitCard } from "../components/ProblemSubmitCard";
+import {withBreadcrumb} from "../../../../../../../../../../components";
 
 const SingleProblemSubmitRoutes = () => (<ProblemSubmitCard/>);
 
-export default SingleProblemSubmitRoutes;
+export default withBreadcrumb('Submit')(SingleProblemSubmitRoutes);

@@ -10,6 +10,8 @@ import {ContentWithSidebarContainer,ButtonLink } from "../../../../../../../../c
 import SingleProblemStatementRoutes from "./statement/routes/SingleProblemStatementRoutes";
 import SingleProblemSubmitRoutes from "./submit/routes/SingleProblemSubmitRoutes";
 import SingleProblemRankRoutes from "./rank/routes/SingleProblemRankRoutes";
+import SingleProblemSubmissionRoutes from "./submission/routes/SingleProblemSubmissionRoutes";
+import SingleProblemStatisticRoutes from "./statistic/routes/SingleProblemStatisticRoutes";
 import {PushBreadcrumb,PopBreadcrumb} from "../../../../../../../../modules/redux/breadcrumb";
 import {problemActions} from "../modules/problem";
 
@@ -32,10 +34,10 @@ class SingleProblemRoutes extends React.Component {
                 component:SingleProblemStatementRoutes
             },
             {
-                id:'submit',
-                titleIcon:'document-open',
-                title:'Submit',
-                component:SingleProblemSubmitRoutes
+                id:'statistic',
+                titleIcon:'doughnut-chart',
+                title:'Statistic',
+                component:SingleProblemStatisticRoutes
             },
             {
                 id:'rank',
@@ -43,6 +45,18 @@ class SingleProblemRoutes extends React.Component {
                 title:'Rank',
                 component:SingleProblemRankRoutes
             },
+            {
+                id:'submit',
+                titleIcon:'document-open',
+                title:'Submit',
+                component:SingleProblemSubmitRoutes
+            },
+            {
+                id:'submission',
+                titleIcon:'manually-entered-data',
+                title:'My Submission',
+                component:SingleProblemSubmissionRoutes
+            }
         ];
 
         const contentWithSidebarContainerProps = {

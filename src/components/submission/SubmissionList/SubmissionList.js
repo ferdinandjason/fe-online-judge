@@ -1,10 +1,12 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 
 import SubmissionTable from "../SubmissionTable/SubmissionTable";
 import LoadingSubmissionTable from "../SubmissionTable/LoadingSubmissionTable";
-import {CardContainer} from "../../../../../../../components";
+import {CardContainer} from "../../index";
 
 import Styles from './SubmissionList.scss';
+import {SubmissionCard} from "../SubmissionCard";
 
 class SubmissionList extends React.Component {
     constructor(props){
@@ -29,14 +31,14 @@ class SubmissionList extends React.Component {
         }
         return (
             <CardContainer title={"Submission"} strict={true}>
-                <SubmissionTable submissionList={submissionList}/>
+                <SubmissionTable submissionList={submissionList} action={this.props.action}/>
             </CardContainer>
         )
     };
 
     render(){
         return (
-            <div className={Styles.submission_container}>
+            <div className={Styles.SUBMISSION_CONTAINER}>
                 {this.renderSubmissionList()}
             </div>
         )
