@@ -1,9 +1,8 @@
 import React from 'react';
-import { Field , reduxForm } from 'redux-form';
-import { connect } from 'react-redux';
-import { Button, FormGroup, InputGroup, Intent } from "@blueprintjs/core";
-import { IconNames } from '@blueprintjs/icons';
-import FroalaEditor from 'react-froala-wysiwyg';
+import {Field, reduxForm} from 'redux-form';
+import {connect} from 'react-redux';
+import {Button, Intent} from "@blueprintjs/core";
+import {IconNames} from '@blueprintjs/icons';
 
 import 'froala-editor/js/froala_editor.pkgd.min';
 import 'froala-editor/css/froala_style.css';
@@ -14,8 +13,7 @@ import 'font-awesome/css/font-awesome.css';
 import {CardContainer, withBreadcrumb} from "../../../../../../../../../components/index";
 import {problemRepositoryCreateActions} from "../../modules/problem";
 import {FormInputEditor, FormInputText} from "../../../../../../../../../components/forms";
-import {Toast} from "../../../../../../../../../modules/redux/toast";
-import {Required,Slug} from "../../../../../../../../../components/forms/FormInputValidation/Validation";
+import {Required, Slug} from "../../../../../../../../../components/forms/FormInputValidation/Validation";
 
 const titleField = {
     name: 'title',
@@ -30,7 +28,7 @@ const slugField = {
     label: 'Slug',
     labelInfo: '(required)',
     placeholder: 'Slug',
-    validate: [Required,Slug],
+    validate: [Required, Slug],
 };
 
 const descriptionField = {
@@ -41,20 +39,20 @@ const descriptionField = {
 };
 
 class RawCreateProblemForm extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            loading : false,
-        };
-    }
-
     handleSubmit = (event) => {
-        this.setState({loading:!this.props.submitFailed && this.props.submitting});
+        this.setState({loading: !this.props.submitFailed && this.props.submitting});
         event.preventDefault();
         this.props.handleSubmit()
     };
 
-    render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            loading: false,
+        };
+    }
+
+    render() {
         return (
             <form onSubmit={this.handleSubmit}>
                 <Field component={FormInputText} {...titleField}/>
@@ -71,7 +69,15 @@ class RawCreateProblemForm extends React.Component {
 const CreateProblemForm = reduxForm({form: 'create-problem-form'})(RawCreateProblemForm);
 
 class ProblemRepositoryCreateProblem extends React.Component {
-    render(){
+    handleSubmit = (data) => {
+        console.log(data);
+        this.props.createProblem(data)
+            .then(() => {
+                this.props.history.push('/repository');
+            });
+    }
+
+    render() {
         return (
             <div className="page__container">
                 <CardContainer title={'Create Problem'}>
@@ -80,21 +86,13 @@ class ProblemRepositoryCreateProblem extends React.Component {
             </div>
         )
     }
-
-    handleSubmit = (data) => {
-        console.log(data);
-        this.props.createProblem(data)
-            .then(()=>{
-                this.props.history.push('/repository');
-            });
-    }
 }
 
-function createProblemRepositoryCreateProblem(problemRepositoryCreateActions){
+function createProblemRepositoryCreateProblem(problemRepositoryCreateActions) {
     const mapDispatchToProps = {
-        createProblem : (data) => problemRepositoryCreateActions.createProblemRepository(data)
+        createProblem: (data) => problemRepositoryCreateActions.createProblemRepository(data)
     };
-    return connect(undefined,mapDispatchToProps)(ProblemRepositoryCreateProblem);
+    return connect(undefined, mapDispatchToProps)(ProblemRepositoryCreateProblem);
 }
 
 export default withBreadcrumb('Create Problem')(createProblemRepositoryCreateProblem(problemRepositoryCreateActions));

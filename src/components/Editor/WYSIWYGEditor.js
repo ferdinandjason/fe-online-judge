@@ -8,19 +8,19 @@ import 'froala-editor/css/froala_editor.pkgd.min.css';
 import 'font-awesome/css/font-awesome.css';
 
 class WYSIWYGEditor extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            model : props.text,
-        };
-        this.handleModelChange = this.handleModelChange.bind(this);
-    }
-
     handleModelChange = (model) => {
         this.setState({model});
     };
 
-    render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            model: props.text,
+        };
+        this.handleModelChange = this.handleModelChange.bind(this);
+    }
+
+    render() {
         return (
             <FroalaEditor
                 model={this.state.model}

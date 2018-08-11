@@ -1,38 +1,38 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import {API} from "../../../../modules/api";
 
-class LogoutPage extends React.Component{
-    constructor(props){
+class LogoutPage extends React.Component {
+    constructor(props) {
         super(props);
         this.state = {
-            logout : false,
+            logout: false,
         };
 
         this.setLogoutState = this.setLogoutState.bind(this);
     }
 
-    setLogoutState(){
+    setLogoutState() {
         this.setState({
-            logout : true,
+            logout: true,
         });
     }
 
-    async componentDidMount(){
+    async componentDidMount() {
         API.sessionAPI.logOut()
-            .then(()=>{
+            .then(() => {
                 this.setLogoutState();
                 return Promise.resolve();
             });
     }
 
-    render(){
-        if(this.state.logout){
+    render() {
+        if (this.state.logout) {
             return (
                 <Redirect to={"/"}/>
             );
         }
-        else{
+        else {
             return null;
         }
     }

@@ -1,1 +1,1 @@
-export { default as ProblemRankCard } from './ProblemRankCard';
+export {default as ProblemRankCard} from './ProblemRankCard';

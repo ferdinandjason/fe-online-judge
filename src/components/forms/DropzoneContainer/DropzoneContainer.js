@@ -8,32 +8,32 @@ import {selectToken} from "../../../modules/redux/session";
 import {Toast} from "../../../modules/redux/toast";
 
 class DropzoneContainer extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.handleDrop = this.handleDrop.bind(this);
     }
 
-    handleDrop(files){
+    handleDrop(files) {
         const uploadFiles = files.map(file => {
             const token = selectToken();
-            return this.props.uploadFile(this.props.url,token,file);
+            return this.props.uploadFile(this.props.url, token, file);
         });
 
-        axios.all(uploadFiles).then(()=>{
+        axios.all(uploadFiles).then(() => {
             Toast.success('Success uploaded all File!');
         })
     };
 
-    render(){
+    render() {
         return <Dropzone {...this.props} handleDrop={this.handleDrop}/>
     }
 }
 
-function createDropzoneContainer(){
+function createDropzoneContainer() {
     const mapDispatchToProps = {
-        uploadFile : (url,token,file) =>  FileUpload(url,token,file),
+        uploadFile: (url, token, file) => FileUpload(url, token, file),
     };
-    return connect(undefined,mapDispatchToProps)(DropzoneContainer);
+    return connect(undefined, mapDispatchToProps)(DropzoneContainer);
 }
 
 export default createDropzoneContainer();

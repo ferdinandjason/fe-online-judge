@@ -1,22 +1,22 @@
 import React from 'react';
 import Loadable from 'react-loadable';
 
-import { LoadingState } from "../../components";
+import {LoadingState} from "../../components";
 import {store} from "../../modules/store";
 import {ChangePlatform} from "../../modules/redux/platform";
 
 const LoadableRepositoryRoutes = Loadable({
-    loader : () => import('./repository/RepositoryRoutes'),
-    loading : () => <LoadingState/>
+    loader: () => import('./repository/RepositoryRoutes'),
+    loading: () => <LoadingState/>
 });
 
 
-class AndromedaRoutes extends React.Component{
-    componentDidMount(){
+class AndromedaRoutes extends React.Component {
+    componentDidMount() {
         store.dispatch(ChangePlatform('Andromeda'));
     }
 
-    render(){
+    render() {
         return (
             <div>
                 <LoadableRepositoryRoutes/>

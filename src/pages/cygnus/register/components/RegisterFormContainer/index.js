@@ -1,1 +1,1 @@
-export { default as RegisterFormContainer } from './RegisterFormContainer';
+export {default as RegisterFormContainer} from './RegisterFormContainer';

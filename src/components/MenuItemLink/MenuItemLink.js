@@ -1,13 +1,13 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { push } from 'react-router-redux';
-import { withRouter } from 'react-router-dom'
-import { MenuItem } from '@blueprintjs/core';
+import {connect} from 'react-redux';
+import {push} from 'react-router-redux';
+import {withRouter} from 'react-router-dom'
+import {MenuItem} from '@blueprintjs/core';
 
 const MenuItemLink = (props) => (<MenuItem text={props.text} onClick={props.onClick}/>);
 
 const mapDispatchToProps = (dispatch) => ({
-    onClick : (to) => dispatch(push(to)),
+    onClick: (to) => dispatch(push(to)),
 });
 
 const mergeProps = (stateProps, dispatchProps, ownProps) => ({
@@ -18,4 +18,4 @@ const mergeProps = (stateProps, dispatchProps, ownProps) => ({
     },
 });
 
-export default withRouter(connect(undefined,mapDispatchToProps,mergeProps)(MenuItemLink));
+export default withRouter(connect(undefined, mapDispatchToProps, mergeProps)(MenuItemLink));

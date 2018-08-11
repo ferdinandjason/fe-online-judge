@@ -2,18 +2,17 @@ import React from 'react';
 import {withRouter} from "react-router-dom";
 
 import {DoublePageLayout} from "../../../../components/layouts/DoublePageLayout";
-import { ContentWithSidebarContainer } from "../../../../components";
-import {withBreadcrumb} from "../../../../components";
+import {ContentWithSidebarContainer, withBreadcrumb} from "../../../../components";
 import {ProfileCard} from "../components/ProfileCard";
 
 
 const ProfileRoutes = () => {
     const sidebarItems = [
         {
-            id:'card',
-            titleIcon:'person',
-            title:'Profile',
-            component:ProfileCard,
+            id: 'card',
+            titleIcon: 'person',
+            title: 'Profile',
+            component: ProfileCard,
         },
     ];
 

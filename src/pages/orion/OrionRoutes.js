@@ -1,22 +1,22 @@
 import React from 'react';
 import Loadable from 'react-loadable';
 
-import { LoadingState } from "../../components";
+import {LoadingState} from "../../components";
 import {store} from "../../modules/store";
 import {ChangePlatform} from "../../modules/redux/platform";
 
 const LoadableCompetitionRoutes = Loadable({
-    loader : () => import('./competition/CompetitionRoutes'),
-    loading : () => <LoadingState/>
+    loader: () => import('./competition/CompetitionRoutes'),
+    loading: () => <LoadingState/>
 });
 
 
-class OrionRoutes extends React.Component{
-    componentDidMount(){
+class OrionRoutes extends React.Component {
+    componentDidMount() {
         store.dispatch(ChangePlatform('Orion'));
     }
 
-    render(){
+    render() {
         return (
             <div>
                 <LoadableCompetitionRoutes/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Intent, Classes } from '@blueprintjs/core';
+import {Button, Classes, Intent} from '@blueprintjs/core';
 
 import {CardContainer} from "../../../../../../../components";
 import {ProfilePanel} from "../ProfilePanel/ProfilePanel";
@@ -7,15 +7,34 @@ import ProfileForm from "../ProfileForm/ProfileForm";
 
 import Styles from './Profile.scss';
 
-export class Profile extends React.Component{
-    constructor(props){
+export class Profile extends React.Component {
+    renderContent = () => {
+        const {profile} = this.props;
+        if (this.state.edit) {
+            const onCancel = {onCancel: this.toggleEdit};
+            return <ProfileForm onSubmit={this.onSave} profile={profile} {...onCancel}/>
+        } else {
+            return <ProfilePanel profile={profile}/>
+        }
+    };
+    toggleEdit = () => {
+        this.setState({
+            edit: !this.state.edit,
+        })
+    };
+    onSave = async () => {
+        await this.props.onUpdateProfile();
+        this.setState({edit: false});
+    }
+
+    constructor(props) {
         super(props);
         this.state = {
             edit: false,
         }
     }
 
-    render(){
+    render() {
         const action = this.state.edit ? (undefined) : (
             <Button
                 text="Edit"
@@ -30,26 +49,5 @@ export class Profile extends React.Component{
                 {this.renderContent()}
             </CardContainer>
         )
-    }
-
-    renderContent = () => {
-        const { profile } = this.props;
-        if(this.state.edit){
-            const onCancel = { onCancel: this.toggleEdit };
-            return <ProfileForm onSubmit={this.onSave} profile={profile} {...onCancel}/>
-        } else {
-            return <ProfilePanel profile={profile}/>
-        }
-    };
-
-    toggleEdit = () => {
-        this.setState({
-            edit: !this.state.edit,
-        })
-    };
-
-    onSave = async () => {
-        await this.props.onUpdateProfile();
-        this.setState({edit:false});
     }
 }

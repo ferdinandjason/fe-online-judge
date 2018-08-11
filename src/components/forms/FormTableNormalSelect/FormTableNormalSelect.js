@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Classes } from '@blueprintjs/core';
+import {Classes} from '@blueprintjs/core';
 
-import { getIntentClassName } from "../FormInputValidation";
-import { FormTableInput } from "../FormTableInput/FormTableInput";
+import {getIntentClassName} from "../FormInputValidation";
+import {FormTableInput} from "../FormTableInput/FormTableInput";
 
 export const FormTableSelect = (props) => (
     <FormTableInput {...props}>

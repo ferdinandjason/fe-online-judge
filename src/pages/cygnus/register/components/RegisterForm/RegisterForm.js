@@ -1,13 +1,18 @@
 import React from 'react';
-import { Field, reduxForm } from 'redux-form';
-import { InputGroup, Intent, Button } from "@blueprintjs/core/lib/esm/index";
-import { Link } from 'react-router-dom';
+import {Field, reduxForm} from 'redux-form';
+import {Button, Intent} from "@blueprintjs/core/lib/esm/index";
+import {Link} from 'react-router-dom';
 
-import { HorizontalDivider } from '../../../../../components';
+import {HorizontalDivider} from '../../../../../components';
 
 import Styles from '../../../login/components/LoginForm/LoginForm.scss';
 import {FormInputPassword, FormInputText} from "../../../../../components/forms";
-import {Required, EmailAddress, Password, ConfirmPassword} from "../../../../../components/forms/FormInputValidation/Validation";
+import {
+    ConfirmPassword,
+    EmailAddress,
+    Password,
+    Required
+} from "../../../../../components/forms/FormInputValidation/Validation";
 
 const nameField = {
     name: 'name',
@@ -30,7 +35,7 @@ const passwordField = {
     label: 'Password',
     labelInfo: '(required)',
     placeholder: 'Password',
-    validate: [Required , Password],
+    validate: [Required, Password],
 };
 
 const retypePasswordField = {
@@ -42,23 +47,22 @@ const retypePasswordField = {
 };
 
 
-
 export class RegisterForm extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            loading : false,
+            loading: false,
         };
     }
 
-    render(){
+    render() {
         return (
             <form onSubmit={this.props.handleSubmit}>
                 <Field component={FormInputText} {...nameField}/>
                 <Field component={FormInputText} {...emailField}/>
                 <Field component={FormInputPassword} {...passwordField}/>
                 <Field component={FormInputPassword} {...retypePasswordField}/>
-                <HorizontalDivider />
+                <HorizontalDivider/>
                 <div className={Styles.FORM_LOGIN_WRAPPER}>
                     <Button type="submit" text="Register" intent={Intent.PRIMARY} loading={this.state.loading}/>
                     <p className={Styles.FORM_LOGIN_REGISTER}>

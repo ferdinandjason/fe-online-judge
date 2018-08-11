@@ -1,1 +1,1 @@
-export { default as DoublePageLayout } from './DoublePageLayout';
+export {default as DoublePageLayout} from './DoublePageLayout';

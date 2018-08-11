@@ -1,7 +1,7 @@
 import React from 'react';
-import { FormGroup } from '@blueprintjs/core';
+import {FormGroup} from '@blueprintjs/core';
 
-import { getIntent,FormInputValidation } from "../FormInputValidation";
+import {FormInputValidation, getIntent} from "../FormInputValidation";
 
 import Styles from './FormTableInput.scss';
 
@@ -12,11 +12,13 @@ export const FormTableInput = (props) => (
                 <span className={Styles.FORM_TABLE_INPUT_LABEL}>
                     {props.label}
                 </span>
-                {props.labelHelper && <span className={Styles.FORM_TABLE_INPUT_LABEL_HELPER}>({props.labelHelper})</span>}
+                {props.labelHelper &&
+                <span className={Styles.FORM_TABLE_INPUT_LABEL_HELPER}>({props.labelHelper})</span>}
             </div>
         </td>
         <td>
-            <FormGroup intent={getIntent(props.meta)} helperText={props.inputHelper} className={Styles.FORM_TABLE_INPUT_GROUP}>
+            <FormGroup intent={getIntent(props.meta)} helperText={props.inputHelper}
+                       className={Styles.FORM_TABLE_INPUT_GROUP}>
                 {props.children}
                 <FormInputValidation meta={props.meta}/>
             </FormGroup>

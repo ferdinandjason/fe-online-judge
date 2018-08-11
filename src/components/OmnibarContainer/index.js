@@ -1,1 +1,1 @@
-export { default as OmnibarContainer } from './OmnibarContainer';
+export {default as OmnibarContainer} from './OmnibarContainer';

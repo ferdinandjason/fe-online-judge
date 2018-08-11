@@ -1,9 +1,9 @@
 import React from 'react';
-import { Field , reduxForm } from 'redux-form';
-import { FormGroup, InputGroup, Intent, Button } from '@blueprintjs/core';
-import { IconNames } from '@blueprintjs/icons';
+import {Field, reduxForm} from 'redux-form';
+import {Button, Intent} from '@blueprintjs/core';
+import {IconNames} from '@blueprintjs/icons';
 
-import {FormInputText,FormInputEditor} from "../../../../../../../../../../../components/forms";
+import {FormInputEditor, FormInputText} from "../../../../../../../../../../../components/forms";
 import {CardContainer, withBreadcrumb} from "../../../../../../../../../../../components";
 import {connect} from "react-redux";
 import {problemRepositoryActions} from "../../../../modules/problem";
@@ -22,7 +22,7 @@ const slugField = {
     label: 'Slug',
     labelInfo: '(required)',
     placeholder: 'Slug',
-    validate: [Required,Slug],
+    validate: [Required, Slug],
 };
 
 const descriptionField = {
@@ -34,21 +34,21 @@ const descriptionField = {
 
 
 class RawEditSingleProblemForm extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            description : (props.problem)?props.problem.description:'',
-            loading : false,
-        };
-    }
-
     handleSubmit = (event) => {
-        this.setState({loading:true});
+        this.setState({loading: true});
         event.preventDefault();
         this.props.handleSubmit()
     };
 
-    render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            description: (props.problem) ? props.problem.description : '',
+            loading: false,
+        };
+    }
+
+    render() {
         return (
             <form onSubmit={this.handleSubmit}>
                 <Field component={FormInputText} {...titleField}/>
@@ -76,12 +76,12 @@ const LoadingEditSingleProblemRepo = () => {
 };
 
 class EditSingleProblemRepo extends React.Component {
-    render(){
+    render() {
         const title = 'Edit';
         return (
             <div className={"page__container"}>
                 <CardContainer title={title}>
-                    <EditSingleProblemForm />
+                    <EditSingleProblemForm/>
                 </CardContainer>
             </div>
         )
@@ -90,20 +90,8 @@ class EditSingleProblemRepo extends React.Component {
 
 
 export class ProblemRepositoryStatementEdit extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            problem : null,
-        };
-    }
-
-    async componentDidMount(){
-        const problem = null; // await this.props.onFetchProblemRepo(this.props.problemId)
-        this.setState({problem:problem});
-    };
-
     renderEditProblem = (problem) => {
-        if(!problem){
+        if (!problem) {
             return (
                 <LoadingEditSingleProblemRepo/>
             )
@@ -114,7 +102,19 @@ export class ProblemRepositoryStatementEdit extends React.Component {
         }
     };
 
-    render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            problem: null,
+        };
+    }
+
+    async componentDidMount() {
+        const problem = null; // await this.props.onFetchProblemRepo(this.props.problemId)
+        this.setState({problem: problem});
+    };
+
+    render() {
         return (
             this.renderEditProblem(this.state.problem)
         )
@@ -123,9 +123,9 @@ export class ProblemRepositoryStatementEdit extends React.Component {
 
 function createProblemRepositoryStatementEdit(problemRepositoryActions) {
     const mapDispatchToProps = {
-        onFetchProblemRepo : (problemId) => problemRepositoryActions.fetchProblem(problemId),
+        onFetchProblemRepo: (problemId) => problemRepositoryActions.fetchProblem(problemId),
     };
-    return connect(undefined,mapDispatchToProps)(ProblemRepositoryStatementEdit);
+    return connect(undefined, mapDispatchToProps)(ProblemRepositoryStatementEdit);
 }
 
 export default withBreadcrumb('Edit')(createProblemRepositoryStatementEdit(problemRepositoryActions));

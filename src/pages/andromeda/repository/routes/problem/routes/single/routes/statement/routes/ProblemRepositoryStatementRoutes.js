@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
     ProblemRepositoryStatementEdit,
     ProblemRepositoryStatementMedia,
@@ -8,21 +6,21 @@ import {
 
 export const ProblemRepositoryStatementRoutes = [
     {
-        id:'view',
-        titleIcon:'document',
-        title:'View',
-        component:ProblemRepositoryStatementView
+        id: 'view',
+        titleIcon: 'document',
+        title: 'View',
+        component: ProblemRepositoryStatementView
     },
     {
-        id:'edit',
-        titleIcon:'edit',
-        title:'Edit',
-        component:ProblemRepositoryStatementEdit
+        id: 'edit',
+        titleIcon: 'edit',
+        title: 'Edit',
+        component: ProblemRepositoryStatementEdit
     },
     {
-        id:'media',
-        titleIcon:'media',
-        title:'Media',
-        component:ProblemRepositoryStatementMedia
+        id: 'media',
+        titleIcon: 'media',
+        title: 'Media',
+        component: ProblemRepositoryStatementMedia
     },
 ];

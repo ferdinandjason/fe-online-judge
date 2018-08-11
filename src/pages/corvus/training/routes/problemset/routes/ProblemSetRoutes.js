@@ -1,13 +1,13 @@
 import React from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import {Route, Switch, withRouter} from 'react-router-dom';
 import Loadable from 'react-loadable';
 
 import {LoadingState, withBreadcrumb} from "../../../../../../components";
 import {ProblemListRoutes} from "./list/routes/ProblemListRoutes";
 
 const LoadableSingleProblemRoutes = Loadable({
-    loader : () => import("./single/routes/SingleProblemRoutes"),
-    loading : () => <LoadingState/>
+    loader: () => import("./single/routes/SingleProblemRoutes"),
+    loading: () => <LoadingState/>
 });
 
 const ProblemSetRoutes = () => (
@@ -19,4 +19,4 @@ const ProblemSetRoutes = () => (
     </div>
 );
 
-export default withRouter(withBreadcrumb('Problem Set','/training/problem')(ProblemSetRoutes));
+export default withRouter(withBreadcrumb('Problem Set', '/training/problem')(ProblemSetRoutes));

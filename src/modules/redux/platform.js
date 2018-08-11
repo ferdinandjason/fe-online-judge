@@ -41,14 +41,14 @@ export function ChangePlatform(platform) {
     }
 }
 
-export function SetDocumentTitle(title){
+export function SetDocumentTitle(title) {
     return {
         type: SET_DOCUMENT_TITLE,
         payload: title,
     }
 }
 
-export function DeleteDocumentTitle(){
+export function DeleteDocumentTitle() {
     return {
         type: DELETE_DOCUMENT_TITLE,
     }

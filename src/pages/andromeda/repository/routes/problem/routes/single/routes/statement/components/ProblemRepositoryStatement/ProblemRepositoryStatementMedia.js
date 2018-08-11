@@ -1,9 +1,8 @@
-
 import React from 'react';
 import classNames from 'classnames';
-import { FileInput, Classes, Button, Intent } from '@blueprintjs/core';
+import {Classes} from '@blueprintjs/core';
 
-import {CardContainer, withBreadcrumb, HorizontalDivider} from "../../../../../../../../../../../components";
+import {CardContainer, HorizontalDivider, withBreadcrumb} from "../../../../../../../../../../../components";
 import {DropzoneContainer} from "../../../../../../../../../../../components/forms/";
 
 import Styles from './ProblemRepositoryStatement.scss';
@@ -13,21 +12,22 @@ const ProblemRepositoryStatementMedia = (props) => (
         <CardContainer title={"Media"}>
             <h4> Upload New Media </h4>
             <DropzoneContainer url={'/'} accept={'image/*'}/>
-            <HorizontalDivider style={{marginRight:'-20px'}}/>
+            <HorizontalDivider style={{marginRight: '-20px'}}/>
             <h4> Media </h4>
-            <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_BORDERED,Classes.SMALL,Classes.INTERACTIVE,'.modifier',Styles.PROBLEM_REPO_STATEMENT_MEDIA_TABLE)}>
+            <table
+                className={classNames(Classes.HTML_TABLE, Classes.HTML_TABLE_BORDERED, Classes.SMALL, Classes.INTERACTIVE, '.modifier', Styles.PROBLEM_REPO_STATEMENT_MEDIA_TABLE)}>
                 <thead>
                 <tr>
-                    <th style={{textAlign:'center'}}>Filename</th>
-                    <th style={{textAlign:'center'}}>Uploaded</th>
-                    <th style={{textAlign:'center'}}>Size</th>
+                    <th style={{textAlign: 'center'}}>Filename</th>
+                    <th style={{textAlign: 'center'}}>Uploaded</th>
+                    <th style={{textAlign: 'center'}}>Size</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td style={{textAlign:'center'}}>gambar1.png</td>
-                    <td style={{textAlign:'center'}}>second ago</td>
-                    <td style={{textAlign:'center'}}>3 MB</td>
+                    <td style={{textAlign: 'center'}}>gambar1.png</td>
+                    <td style={{textAlign: 'center'}}>second ago</td>
+                    <td style={{textAlign: 'center'}}>3 MB</td>
                 </tr>
                 </tbody>
             </table>

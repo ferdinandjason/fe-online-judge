@@ -1,27 +1,28 @@
 import React from 'react';
 import classNames from 'classnames'
-import { Classes } from '@blueprintjs/core';
+import {Classes} from '@blueprintjs/core';
 
-import { ContentCard } from "../../../../../../../../../../../components";
+import {ContentCard} from "../../../../../../../../../../../components";
 
 import Styles from './ProblemRankCard.scss';
 
 class ProblemRankCard extends React.Component {
     render() {
-        const { problem } = this.props;
+        const {problem} = this.props;
         return (
             <ContentCard>
                 <h2 className={Styles.PROBLEM_RANK__TITLE}>
                     Rank {problem.slug} - {problem.title}
                 </h2>
-                <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_BORDERED,Styles.PROBLEM_RANK__TABLE)}>
+                <table
+                    className={classNames(Classes.HTML_TABLE, Classes.HTML_TABLE_BORDERED, Styles.PROBLEM_RANK__TABLE)}>
                     <thead>
-                        <tr>
-                            <td className={Styles.PROBLEM_RANK__TITLE}>No</td>
-                            <td className={Styles.PROBLEM_RANK__TITLE}>Name</td>
-                            <td className={Styles.PROBLEM_RANK__TITLE}>Time</td>
-                            <td className={Styles.PROBLEM_RANK__TITLE}>Memory</td>
-                        </tr>
+                    <tr>
+                        <td className={Styles.PROBLEM_RANK__TITLE}>No</td>
+                        <td className={Styles.PROBLEM_RANK__TITLE}>Name</td>
+                        <td className={Styles.PROBLEM_RANK__TITLE}>Time</td>
+                        <td className={Styles.PROBLEM_RANK__TITLE}>Memory</td>
+                    </tr>
                     </thead>
                     <tbody>
                     {

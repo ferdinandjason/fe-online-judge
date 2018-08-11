@@ -1,7 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Icon,Button, ButtonGroup, Intent, Classes, Tag } from '@blueprintjs/core';
-import { IconNames } from '@blueprintjs/icons';
+import {connect} from 'react-redux';
+import {Button, ButtonGroup, Classes, Icon, Intent, Tag} from '@blueprintjs/core';
+import {IconNames} from '@blueprintjs/icons';
 
 import Styles from './ProfileCard.scss';
 import defaultUser from '../../../../../assets/images/user.png';
@@ -11,16 +11,16 @@ import classNames from "classnames";
 import {withBreadcrumb} from "../../../../../components";
 
 class ProfileCard extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            content : 'detail',
+            content: 'detail',
         }
     }
 
-    render(){
+    render() {
         return (
-            <div style={{display:'flex'}}>
+            <div style={{display: 'flex'}}>
                 <div className={Styles.PROFILE_CARD}>
                     <div className={Styles.IMAGE}>
                         <img src={defaultUser} alt={'profile'}/>
@@ -34,40 +34,49 @@ class ProfileCard extends React.Component {
                         </div>
                         <HorizontalDivider/>
                         <div className={Styles.ITEM}>
-                            <div className={Styles.ITEM_TITLE} style={{textAlign:'center'}}>
+                            <div className={Styles.ITEM_TITLE} style={{textAlign: 'center'}}>
                                 <Icon icon={IconNames.THUMBS_UP}/>&nbsp;
                                 Detail
                             </div>
-                            <div className={Styles.CHILDREN} style={{textAlign:'center'}}>
+                            <div className={Styles.CHILDREN} style={{textAlign: 'center'}}>
                                 0
                             </div>
                         </div>
                         <HorizontalDivider/>
                         <div className={Styles.ITEM}>
-                            <div className={Styles.ITEM_TITLE} style={{textAlign:'center'}}>
+                            <div className={Styles.ITEM_TITLE} style={{textAlign: 'center'}}>
                                 <Icon icon={IconNames.DOCUMENT_SHARE}/>&nbsp;
                                 Submission
                             </div>
-                            <div className={Styles.CHILDREN} style={{textAlign:'center'}}>
+                            <div className={Styles.CHILDREN} style={{textAlign: 'center'}}>
                                 0
                             </div>
                         </div>
                         <HorizontalDivider/>
                         <div className={Styles.ITEM}>
-                            <div className={Styles.ITEM_TITLE} style={{textAlign:'center'}}>
+                            <div className={Styles.ITEM_TITLE} style={{textAlign: 'center'}}>
                                 <Icon icon={IconNames.TIME}/>&nbsp;
                                 Joined
                             </div>
-                            <div className={Styles.CHILDREN} style={{textAlign:'center'}}>
+                            <div className={Styles.CHILDREN} style={{textAlign: 'center'}}>
                                 One week ago
                             </div>
                         </div>
                     </div>
-                    <div style={{width:'inherit',marginTop:'15px'}}>
-                        <ButtonGroup  style={{width:'inherit',height:'40px'}}>
-                            <Button icon={IconNames.THUMBS_UP} text='Solved' intent={Intent.NONE}  style={{width:'33%'}} onClick={()=>{this.setState({content:'detail'})}}/>
-                            <Button icon={IconNames.DOCUMENT_SHARE} text='Submit' intent={Intent.PRIMARY}  style={{width:'33%'}} onClick={()=>{this.setState({content:'submission'})}}/>
-                            <Button icon={IconNames.TIME} text='Statistic' intent={Intent.SUCCESS}  style={{width:'35%'}} onClick={()=>{this.setState({content:'statistic'})}}/>
+                    <div style={{width: 'inherit', marginTop: '15px'}}>
+                        <ButtonGroup style={{width: 'inherit', height: '40px'}}>
+                            <Button icon={IconNames.THUMBS_UP} text='Solved' intent={Intent.NONE} style={{width: '33%'}}
+                                    onClick={() => {
+                                        this.setState({content: 'detail'})
+                                    }}/>
+                            <Button icon={IconNames.DOCUMENT_SHARE} text='Submit' intent={Intent.PRIMARY}
+                                    style={{width: '33%'}} onClick={() => {
+                                this.setState({content: 'submission'})
+                            }}/>
+                            <Button icon={IconNames.TIME} text='Statistic' intent={Intent.SUCCESS}
+                                    style={{width: '35%'}} onClick={() => {
+                                this.setState({content: 'statistic'})
+                            }}/>
                         </ButtonGroup>
                     </div>
                 </div>
@@ -78,13 +87,13 @@ class ProfileCard extends React.Component {
         )
     }
 
-    renderContent(){
-        if(this.state.content === 'detail') return this.renderDetail();
-        if(this.state.content === 'submission') return this.renderSubmission();
-        if(this.state.content === 'statistic') return this.renderStatistic();
+    renderContent() {
+        if (this.state.content === 'detail') return this.renderDetail();
+        if (this.state.content === 'submission') return this.renderSubmission();
+        if (this.state.content === 'statistic') return this.renderStatistic();
     }
 
-    renderDetail(){
+    renderDetail() {
         return (
             <CardContainer title={'Detail'}>
                 <h4>Problem</h4>
@@ -131,10 +140,11 @@ class ProfileCard extends React.Component {
         )
     }
 
-    renderSubmission(){
+    renderSubmission() {
         return (
             <CardContainer title={'Submission'} strict>
-                <table className={classNames(Classes.HTML_TABLE,Classes.INTERACTIVE,Classes.HTML_TABLE_STRIPED,Styles.PROFILE_CARD_SUBMISSION_LIST)}>
+                <table
+                    className={classNames(Classes.HTML_TABLE, Classes.INTERACTIVE, Classes.HTML_TABLE_STRIPED, Styles.PROFILE_CARD_SUBMISSION_LIST)}>
                     <tbody>
                     <tr>
                         <td>
@@ -198,7 +208,7 @@ class ProfileCard extends React.Component {
         )
     }
 
-    renderStatistic(){
+    renderStatistic() {
         return (
             <CardContainer title={'Statistic'}>
                 Nanti muncul PieChart atau SpiderChart ceritanya
@@ -207,9 +217,9 @@ class ProfileCard extends React.Component {
     }
 }
 
-function createProfileCard(){
+function createProfileCard() {
     const mapStateToProps = (state) => ({
-        profile : state.session.user,
+        profile: state.session.user,
     });
     return connect(mapStateToProps)(ProfileCard);
 }

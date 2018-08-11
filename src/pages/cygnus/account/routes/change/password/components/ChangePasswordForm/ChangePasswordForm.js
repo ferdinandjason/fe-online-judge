@@ -1,6 +1,6 @@
 import React from 'react';
-import { Field , reduxForm } from 'redux-form'
-import {Intent,Button} from "@blueprintjs/core";
+import {Field, reduxForm} from 'redux-form'
+import {Button, Intent} from "@blueprintjs/core";
 
 import {FormInputPassword} from "../../../../../../../../components/forms/FormInputPassword";
 import {Password, Required} from "../../../../../../../../components/forms/FormInputValidation/Validation";
@@ -27,9 +27,8 @@ const confirmPasswordField = {
     label: 'Confirm New Password',
     labelInfo: '(required)',
     placeholder: 'Confirm New Password',
-    validate: [Required,Password],
+    validate: [Required, Password],
 };
-
 
 
 const ChangePasswordForm = (props) => (
@@ -38,8 +37,9 @@ const ChangePasswordForm = (props) => (
         <Field component={FormInputPassword} {...newPasswordField}/>
         <Field component={FormInputPassword} {...confirmPasswordField}/>
         <HorizontalDivider/>
-        <Button type="submit" text="Change Password" intent={Intent.PRIMARY} loading={!props.submitFailed && props.submitting} />
+        <Button type="submit" text="Change Password" intent={Intent.PRIMARY}
+                loading={!props.submitFailed && props.submitting}/>
     </form>
 );
 
-export default reduxForm({form:'change-password-form'})(ChangePasswordForm);
+export default reduxForm({form: 'change-password-form'})(ChangePasswordForm);

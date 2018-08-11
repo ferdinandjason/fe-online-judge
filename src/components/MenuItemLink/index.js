@@ -1,1 +1,1 @@
-export { default as MenuItemLink } from './MenuItemLink';
+export {default as MenuItemLink} from './MenuItemLink';

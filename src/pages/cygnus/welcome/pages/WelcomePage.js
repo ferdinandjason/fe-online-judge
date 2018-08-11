@@ -14,8 +14,8 @@ import rank from "../../../../assets/images/submission.png";
 import Styles from './WelcomePage.scss';
 
 
-export class WelcomePage extends React.Component{
-    render(){
+export class WelcomePage extends React.Component {
+    render() {
         return (
             <SinglePageLayout>
                 <div className={Styles.wh_background}>
@@ -26,7 +26,7 @@ export class WelcomePage extends React.Component{
 
                 <div className={Styles.w_container_2}>
                     <div className={Styles.w_image}>
-                        <img src={submission} />
+                        <img src={submission} alt={'submission'}/>
                     </div>
                     <SubmissionList/>
                 </div>
@@ -34,7 +34,7 @@ export class WelcomePage extends React.Component{
                 <div className={Styles.w_container_3}>
                     <TopUserList/>
                     <div className={Styles.w_image}>
-                        <img src={rank} />
+                        <img src={rank} alt={'top'}/>
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@ export class WelcomePage extends React.Component{
                     <NewProblemContainer/>
                     <LatestContestContainer/>
                 </div>
-                
+
             </SinglePageLayout>
         )
     }

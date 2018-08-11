@@ -1,27 +1,27 @@
 import React from 'react';
 import classNames from 'classnames';
-import { FormGroup,Classes,Button } from "@blueprintjs/core";
+import {Button, Classes, FormGroup} from "@blueprintjs/core";
 
-import {getIntent, getIntentClassName, FormInputValidation} from "../FormInputValidation/FormInputValidation";
+import {FormInputValidation, getIntent, getIntentClassName} from "../FormInputValidation/FormInputValidation";
 
 import Styles from './FormInputPassword.scss';
 import {Intent} from "@blueprintjs/core/lib/esm/index";
 
-export class FormInputPassword extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            showPassword : false,
-        }
-    }
-
+export class FormInputPassword extends React.Component {
     handleLockClick = () => {
         this.setState({
-            showPassword : !this.state.showPassword
+            showPassword: !this.state.showPassword
         });
     };
 
-    render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            showPassword: false,
+        }
+    }
+
+    render() {
         const lockButton = (
             <Button
                 icon={this.state.showPassword ? "unlock" : "lock"}
@@ -41,8 +41,8 @@ export class FormInputPassword extends React.Component{
                     <input
                         {...this.props.input}
                         placeholder={this.props.placeholder}
-                        type={this.state.showPassword? "text":"password"}
-                        className={classNames(Classes.INPUT,getIntentClassName(this.props.meta),Styles.FORM_INPUT_PASSWORD)}
+                        type={this.state.showPassword ? "text" : "password"}
+                        className={classNames(Classes.INPUT, getIntentClassName(this.props.meta), Styles.FORM_INPUT_PASSWORD)}
                     />
                     <span className={Classes.INPUT_ACTION}>
                         {lockButton}

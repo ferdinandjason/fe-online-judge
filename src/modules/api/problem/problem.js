@@ -1,4 +1,4 @@
-import { stringify } from 'query-string';
+import {stringify} from 'query-string';
 
 import {APP_CONFIG} from '../../../config';
 import {_get, _post} from '../request';

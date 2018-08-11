@@ -1,9 +1,7 @@
 import React from 'react';
-import { Field , reduxForm } from 'redux-form';
-import classNames from 'classnames'
-import { Classes } from '@blueprintjs/core';
+import {Field, reduxForm} from 'redux-form';
 
-import { ContentCard } from "../../../../../../../../../../../components";
+import {ContentCard} from "../../../../../../../../../../../components";
 import {FormInputCode} from "../../../../../../../../../../../components/forms";
 import {Required} from "../../../../../../../../../../../components/forms/FormInputValidation/Validation";
 
@@ -15,21 +13,21 @@ const codeField = {
 }
 
 class RawProblemSubmitForm extends React.Component {
-    render(){
+    render() {
         return (
             <Field component={FormInputCode} {...codeField}/>
         )
     }
 }
 
-const ProblemSubmitForm = reduxForm({form:'problem-submit-form'})(RawProblemSubmitForm);
+const ProblemSubmitForm = reduxForm({form: 'problem-submit-form'})(RawProblemSubmitForm);
 
 class ProblemSubmitCard extends React.Component {
     render() {
-        const { problem } = this.props;
+        const {problem} = this.props;
         return (
             <ContentCard>
-                <ProblemSubmitForm/>
+                <ProblemSubmitForm problem={problem}/>
             </ContentCard>
         )
     }

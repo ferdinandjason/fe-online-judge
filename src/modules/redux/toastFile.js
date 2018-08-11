@@ -6,7 +6,7 @@ export const GIVE_KEY_FILE_TOAST = 'toast/GIVE_KEY_FILE_TOAST';
 export const PERCENTAGE_FILE_TOAST = 'toast/PERCENTAGE_FILE_TOAST';
 
 const INITIAL_STATE = {
-    filename : null,
+    filename: null,
     percentage: null,
     key: null,
 };
@@ -16,8 +16,8 @@ const INITIAL_ACTION = {
 };
 
 // Reducer
-export function toastFileReducer(state = INITIAL_STATE, action = INITIAL_ACTION){
-    switch(action.type) {
+export function toastFileReducer(state = INITIAL_STATE, action = INITIAL_ACTION) {
+    switch (action.type) {
         case ADD_FILE_TOAST :
             return Object.assign(
                 {...state},
@@ -37,10 +37,10 @@ export function toastFileReducer(state = INITIAL_STATE, action = INITIAL_ACTION)
 export const AddToastFile = (filename) => {
     return {
         type: ADD_FILE_TOAST,
-        payload : {
-            filename : filename,
-            percentage : 0,
-            key : undefined,
+        payload: {
+            filename: filename,
+            percentage: 0,
+            key: undefined,
         }
     }
 };
@@ -48,7 +48,7 @@ export const AddToastFile = (filename) => {
 export const AddKeyToastFile = (key) => {
     return {
         type: GIVE_KEY_FILE_TOAST,
-        payload : {
+        payload: {
             key: key,
         }
     }
@@ -57,7 +57,7 @@ export const AddKeyToastFile = (key) => {
 export const UpdatePercentageToastFile = (percentage) => {
     return {
         type: PERCENTAGE_FILE_TOAST,
-        payload : {
+        payload: {
             percentage: percentage,
         }
     }

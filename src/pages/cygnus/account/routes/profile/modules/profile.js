@@ -1,10 +1,10 @@
 export const profileActions = {
-    fetch : () => {
+    fetch: () => {
         return async () => {
             return false;
         }
     },
-    update : () => {
+    update: () => {
         return async () => {
             return false;
         }

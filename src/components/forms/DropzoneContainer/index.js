@@ -1,1 +1,1 @@
-export { default as DropzoneContainer } from './DropzoneContainer';
+export {default as DropzoneContainer} from './DropzoneContainer';

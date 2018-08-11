@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { CardContainer } from "../../../../components";
-import { RegisterFormContainer } from "../components/RegisterFormContainer";
-import { SinglePageLayout } from "../../../../components/layouts/SinglePageLayout";
+import {CardContainer} from "../../../../components";
+import {RegisterFormContainer} from "../components/RegisterFormContainer";
+import {SinglePageLayout} from "../../../../components/layouts/SinglePageLayout";
 
 import Styles from './RegisterPage.scss';
 

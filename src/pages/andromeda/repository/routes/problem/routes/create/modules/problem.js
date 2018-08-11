@@ -6,7 +6,7 @@ export const problemRepositoryCreateActions = {
         return async (dispatch, getState, {problemAPI}) => {
             problemAPI.create(data)
                 .then((response) => {
-                    if(response.status === 201){
+                    if (response.status === 201) {
                         store.dispatch(Toast.success(`Problem ${data.title} Created !`));
                     }
                 });

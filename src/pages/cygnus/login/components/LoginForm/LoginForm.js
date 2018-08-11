@@ -1,13 +1,13 @@
 import React from 'react';
-import { Field, reduxForm } from 'redux-form';
-import { Button, Intent } from '@blueprintjs/core';
-import { Link } from 'react-router-dom';
+import {Field, reduxForm} from 'redux-form';
+import {Button, Intent} from '@blueprintjs/core';
+import {Link} from 'react-router-dom';
 
-import { HorizontalDivider } from '../../../../../components';
-import {FormInputText,FormInputPassword} from "../../../../../components/forms";
+import {HorizontalDivider} from '../../../../../components';
+import {FormInputPassword, FormInputText} from "../../../../../components/forms";
 
 import Styles from './LoginForm.scss';
-import {Required,EmailAddress} from "../../../../../components/forms/FormInputValidation/Validation";
+import {EmailAddress, Required} from "../../../../../components/forms/FormInputValidation/Validation";
 
 const emailField = {
     name: 'email',
@@ -26,14 +26,14 @@ const passwordField = {
 };
 
 export class LoginForm extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            loading : false,
+            loading: false,
         };
     }
 
-    render(){
+    render() {
         return (
             <form onSubmit={this.props.handleSubmit}>
                 <Field component={FormInputText} {...emailField}/>
@@ -42,10 +42,11 @@ export class LoginForm extends React.Component {
                     <Link to="/forgot-password">Forgot your password?</Link>
                 </p>
 
-                <HorizontalDivider />
+                <HorizontalDivider/>
 
                 <div className={Styles.FORM_LOGIN_WRAPPER}>
-                    <Button type="submit" text="Log in" intent={Intent.PRIMARY} loading={!this.props.submitFailed && this.props.submitting} />
+                    <Button type="submit" text="Log in" intent={Intent.PRIMARY}
+                            loading={!this.props.submitFailed && this.props.submitting}/>
                     <p className={Styles.FORM_LOGIN_REGISTER}>
                         Don't have account? <Link to="/register">Register now</Link>
                     </p>

@@ -1,12 +1,12 @@
 import React from 'react';
 import classNames from "classnames";
 import {connect} from "react-redux";
-import { withRouter } from 'react-router-dom';
-import {Classes,Intent} from "@blueprintjs/core";
+import {withRouter} from 'react-router-dom';
+import {Classes, Intent} from "@blueprintjs/core";
 import {IconNames} from "@blueprintjs/icons";
 
-import { DoublePageLayout } from "../../../../../../../../components/layouts";
-import { ContentWithMultipleSidebarContainer, ButtonLink } from "../../../../../../../../components";
+import {DoublePageLayout} from "../../../../../../../../components/layouts";
+import {ButtonLink, ContentWithMultipleSidebarContainer} from "../../../../../../../../components";
 import {ProblemRepositoryStatementRoutes} from "./statement/routes/ProblemRepositoryStatementRoutes";
 import {ProblemRepositoryGradingRoutes} from "./grading/routes/ProblemRepositoryGradingRoutes";
 import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/redux/breadcrumb";
@@ -15,10 +15,10 @@ import {DeleteDocumentTitle, SetDocumentTitle} from "../../../../../../../../mod
 import {ProblemRepositorySubmissionRoutes} from "./submission/routes/ProblemRepositorySubmissionRoutes";
 
 class SingleProblemRepositoryRoutes extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            problem : null,
+            problem: null,
         }
     }
 
@@ -27,7 +27,7 @@ class SingleProblemRepositoryRoutes extends React.Component {
         this.props.onFetchProblem(this.props.match.params.problemId)
             .then((problem) => {
                 this.setState({problem});
-                this.props.onPushBreadcrumb(this.props.match.url,problem.title);
+                this.props.onPushBreadcrumb(this.props.match.url, problem.title);
                 this.props.onSetDocumentTitle(problem.title);
                 return Promise.resolve();
             });
@@ -38,24 +38,25 @@ class SingleProblemRepositoryRoutes extends React.Component {
         this.props.onDeleteDocumentTitle();
     }
 
-    render(){
+    render() {
         const contentWithSidebarContainerProps = [
             {
-                title:'Statement',
-                items:ProblemRepositoryStatementRoutes,
+                title: 'Statement',
+                items: ProblemRepositoryStatementRoutes,
                 action: (
-                    <ButtonLink to="/repository/problem" className={classNames(Classes.SMALL,IconNames.CHEVRON_LEFT)} intent={Intent.PRIMARY}>
+                    <ButtonLink to="/repository/problem" className={classNames(Classes.SMALL, IconNames.CHEVRON_LEFT)}
+                                intent={Intent.PRIMARY}>
                         Back
                     </ButtonLink>
                 ),
             },
             {
-                title:'Grading',
-                items:ProblemRepositoryGradingRoutes,
+                title: 'Grading',
+                items: ProblemRepositoryGradingRoutes,
             },
             {
-                title:'Submission',
-                items:ProblemRepositorySubmissionRoutes,
+                title: 'Submission',
+                items: ProblemRepositorySubmissionRoutes,
             }
         ];
 
@@ -67,15 +68,15 @@ class SingleProblemRepositoryRoutes extends React.Component {
     };
 }
 
-function createSingleProblemRepositoryRoutes(problemRepositoryActions){
+function createSingleProblemRepositoryRoutes(problemRepositoryActions) {
     const mapDispatchToProps = {
         onFetchProblem: (problemId) => problemRepositoryActions.fetchProblem(problemId),
-        onPushBreadcrumb: (link,title) => PushBreadcrumb({link,title}),
+        onPushBreadcrumb: (link, title) => PushBreadcrumb({link, title}),
         onPopBreadcrumb: (link) => PopBreadcrumb({link}),
         onSetDocumentTitle: (title) => SetDocumentTitle(title),
         onDeleteDocumentTitle: () => DeleteDocumentTitle(),
     };
-    return withRouter(connect(undefined,mapDispatchToProps)(SingleProblemRepositoryRoutes))
+    return withRouter(connect(undefined, mapDispatchToProps)(SingleProblemRepositoryRoutes))
 }
 
 export default createSingleProblemRepositoryRoutes(problemRepositoryActions);

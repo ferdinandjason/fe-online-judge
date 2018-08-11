@@ -1,9 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { Icon, Menu, MenuItem, MenuDivider, Popover, Position } from '@blueprintjs/core';
+import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
+import {Icon, Menu, MenuDivider, MenuItem, Popover, Position} from '@blueprintjs/core';
 
-import { MenuItemLink } from '..';
+import {MenuItemLink} from '..';
 
 import defaultUser from '../../assets/images/user.png';
 
@@ -11,42 +11,11 @@ import Styles from './UserWidget.scss';
 
 
 class UserWidget extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            avatar : undefined,
-        }
-    }
-
     renderAvatar = () => {
         return (
             <img src={defaultUser} alt="user" className={Styles.USER_WIDGET_AVATAR}/>
         )
     };
-
-    async componentDidMount(){
-        if(this.props.user) {
-            const avatar = await this.renderAvatar();
-            this.setState({avatar})
-        }
-    }
-
-    async componentDidUpdate(prevProps) {
-        if(this.props.user !== prevProps.user){
-            await this.componentDidMount();
-        }
-    }
-
-    render(){
-        if(this.props.user) {
-            return this.renderForUser(this.props.user);
-        } else {
-            return this.renderForGuest();
-        }
-    }
-
-
-
     renderForUser = (user) => {
         console.log(user);
         const menu = (
@@ -88,14 +57,13 @@ class UserWidget extends React.Component {
         );
 
         return (
-            <div style={{display:'flex'}}>
+            <div style={{display: 'flex'}}>
                 {this.state.avatar}
                 {popover}
                 {responsivePopover}
             </div>
         )
     };
-
     renderForGuest = () => {
         const menu = (
             <Menu className={Styles.USER_WIDGET_MENU}>
@@ -104,7 +72,7 @@ class UserWidget extends React.Component {
             </Menu>
         );
 
-        const responsivePopover =  (
+        const responsivePopover = (
             <Popover className={Styles.USER_WIDGET_BURGER}
                      content={menu}
                      position={Position.BOTTOM_RIGHT}
@@ -136,10 +104,38 @@ class UserWidget extends React.Component {
             </div>
         );
     };
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            avatar: undefined,
+        }
+    }
+
+    async componentDidMount() {
+        if (this.props.user) {
+            const avatar = await this.renderAvatar();
+            this.setState({avatar})
+        }
+    }
+
+    async componentDidUpdate(prevProps) {
+        if (this.props.user !== prevProps.user) {
+            await this.componentDidMount();
+        }
+    }
+
+    render() {
+        if (this.props.user) {
+            return this.renderForUser(this.props.user);
+        } else {
+            return this.renderForGuest();
+        }
+    }
 }
 
 const mapStateToProps = (state) => ({
-    user : state.session.user,
+    user: state.session.user,
 });
 
 export default connect(mapStateToProps)(UserWidget);

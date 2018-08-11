@@ -6,7 +6,9 @@ export function omnibarAPI() {
 
     return {
         fetch: (category) => {
+            console.log(baseURL);
             const token = selectToken();
+            console.log(token);
             return null;
         }
     }

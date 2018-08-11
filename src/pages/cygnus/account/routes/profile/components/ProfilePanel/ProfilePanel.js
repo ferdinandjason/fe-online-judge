@@ -1,21 +1,21 @@
 import React from 'react';
 import classNames from "classnames";
-import {Classes, Intent} from "@blueprintjs/core/";
+import {Classes} from "@blueprintjs/core/";
 
 import Styles from './ProfilePanel.scss';
 import {HorizontalDivider} from "../../../../../../../components/HorizontalDivider";
 
 export class ProfilePanel extends React.Component {
-    componentDidMount(){
+    componentDidMount() {
 
     }
 
-    render(){
-        const {name, gender,country,homeAddress,themeDefault,languageDefault} = this.props.profile;
+    render() {
+        const {name, gender, country, homeAddress, themeDefault, languageDefault} = this.props.profile;
         return (
             <div>
                 <h4>Personal Info</h4>
-                <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED,Styles.PROFILE_PANEL)}>
+                <table className={classNames(Classes.HTML_TABLE, Classes.HTML_TABLE_STRIPED, Styles.PROFILE_PANEL)}>
                     <tbody>
                     <tr>
                         <td className={Styles.PROFILE_PANEL_TITLE}>Name</td>
@@ -37,7 +37,7 @@ export class ProfilePanel extends React.Component {
                 </table>
                 <HorizontalDivider/>
                 <h4>Personal Configuration</h4>
-                <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED,Styles.PROFILE_PANEL)}>
+                <table className={classNames(Classes.HTML_TABLE, Classes.HTML_TABLE_STRIPED, Styles.PROFILE_PANEL)}>
                     <tbody>
                     <tr>
                         <td className={Styles.PROFILE_PANEL_TITLE}>Theme</td>

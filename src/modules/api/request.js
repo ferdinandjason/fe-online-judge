@@ -40,21 +40,21 @@ export function _put(url, token = null, data = null) {
     return request('PUT', url, token, {'Content-Type': 'application/json'}, JSON.stringify(data));
 }
 
-export function _file(url, token, parts ) {
+export function _file(url, token, parts) {
     const body = new FormData();
-    Object.keys(parts).forEach(part => body.append(part,parts[part]));
+    Object.keys(parts).forEach(part => body.append(part, parts[part]));
     store.dispatch(AddToastFile(parts.name));
     const onUploadProgress = (progressEvent) => {
-        const percentCompleted = Math.round((progressEvent.loaded * 100)/progressEvent.total)
+        const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total)
         store.dispatch(UpdatePercentageToastFile(percentCompleted))
     };
     return request('POST', url, token, {
-        'Content-Type' : 'multipart/form-data'
+        'Content-Type': 'multipart/form-data'
     }, body, onUploadProgress);
 }
 
-export function FileUpload(url,token,parts){
+export function FileUpload(url, token, parts) {
     return async () => {
-        return _file(url,token,parts);
+        return _file(url, token, parts);
     }
 }

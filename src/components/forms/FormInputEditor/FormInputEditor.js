@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup } from "@blueprintjs/core";
+import {FormGroup} from "@blueprintjs/core";
 import FroalaEditor from 'react-froala-wysiwyg';
 
 import 'froala-editor/js/froala_editor.pkgd.min';
@@ -12,14 +12,6 @@ import {FormInputValidation, getIntent} from "../FormInputValidation";
 
 
 export class FormInputEditor extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            model : '',
-        };
-        this.handleModelChange = this.handleModelChange.bind(this);
-    }
-
     handleModelChange = (model) => {
         this.setState({model});
         this.props.input.onChange(model);
@@ -28,7 +20,15 @@ export class FormInputEditor extends React.Component {
         console.log(store.getState().form);
     };
 
-    render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            model: '',
+        };
+        this.handleModelChange = this.handleModelChange.bind(this);
+    }
+
+    render() {
         return (
             <FormGroup
                 label={this.props.label}

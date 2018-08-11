@@ -1,1 +1,1 @@
-export { default as OmnibarSearch } from './OmnibarSearch';
+export {default as OmnibarSearch} from './OmnibarSearch';

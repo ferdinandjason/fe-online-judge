@@ -1,17 +1,15 @@
 import React from "react";
-import {Card,Classes,Code} from "@blueprintjs/core";
-import {ContentCard} from "../../ContentCard";
-import {HorizontalDivider,CardContainer} from "../../";
+import {Card, Classes, Code} from "@blueprintjs/core";
+import {CardContainer, HorizontalDivider} from "../../";
 import {withBreadcrumb} from "../..";
 
 class LoadingSubmissionCard extends React.Component {
-    render(){
-        const { submission } = this.props;
+    render() {
         return (
             <CardContainer title={'Submission #'}>
                 <h3>General Info</h3>
                 <Card>
-                    <table className={Classes.HTML_TABLE} style={{width:'100%'}}>
+                    <table className={Classes.HTML_TABLE} style={{width: '100%'}}>
                         <thead>
                         <tr>
                             <td>Info</td>
@@ -49,7 +47,7 @@ class LoadingSubmissionCard extends React.Component {
                 <HorizontalDivider/>
                 <h3>Sample Test Data Result</h3>
                 <Card>
-                    <table className={Classes.HTML_TABLE} style={{width:'100%'}}>
+                    <table className={Classes.HTML_TABLE} style={{width: '100%'}}>
                         <thead>
                         <tr>
                             <td>Id</td>
@@ -71,7 +69,7 @@ class LoadingSubmissionCard extends React.Component {
                 <HorizontalDivider/>
                 <h3>Test Data Result</h3>
                 <Card>
-                    <table className={Classes.HTML_TABLE} style={{width:'100%'}}>
+                    <table className={Classes.HTML_TABLE} style={{width: '100%'}}>
                         <thead>
                         <tr>
                             <td>Id</td>
@@ -95,8 +93,9 @@ class LoadingSubmissionCard extends React.Component {
                 <HorizontalDivider/>
                 <h3>Source Files</h3>
                 <CardContainer title={'source - source.cpp'}>
-                    <Code style={{display:'inline-block',width:'100%'}}>
-                        CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE
+                    <Code style={{display: 'inline-block', width: '100%'}}>
+                        CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE CODE
+                        CODE CODE CODE
                     </Code>
                     <p>Compilation Output</p>
                     <Code>

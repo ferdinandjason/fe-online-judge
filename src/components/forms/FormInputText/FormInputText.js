@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import { FormGroup,Classes } from "@blueprintjs/core";
+import {Classes, FormGroup} from "@blueprintjs/core";
 
-import {getIntent, getIntentClassName, FormInputValidation} from "../FormInputValidation/FormInputValidation";
+import {FormInputValidation, getIntent, getIntentClassName} from "../FormInputValidation/FormInputValidation";
 
 import Styles from './FormInputText.scss';
 
@@ -18,7 +18,7 @@ export const FormInputText = (props) => {
                 {...props.input}
                 placeholder={props.placeholder}
                 type='text'
-                className={classNames(Classes.INPUT,getIntentClassName(props.meta),Styles.FORM_INPUT_TEXT)}
+                className={classNames(Classes.INPUT, getIntentClassName(props.meta), Styles.FORM_INPUT_TEXT)}
             />
             <FormInputValidation meta={props.meta}/>
         </FormGroup>

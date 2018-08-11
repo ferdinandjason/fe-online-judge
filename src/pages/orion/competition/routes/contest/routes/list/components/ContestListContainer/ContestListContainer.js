@@ -1,25 +1,13 @@
 import React from 'react';
 
-import { CardContainer } from "../../../../../../../../../components";
+import {CardContainer} from "../../../../../../../../../components";
 import ContestListTable from "../ContestListTable/ContestListTable";
 import LoadingContestListTable from "../ContestListTable/LoadingContestListTable";
 
 
 class ContestListContainer extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            contest : null
-        }
-    }
-
-    async componentDidMount(){
-        const contestList = null; // await TODO: function to fetch ContestList
-        this.setState({contest:contestList});
-    }
-
     renderContestList = (contestList) => {
-        if(!contestList || contestList.length === 0 ){
+        if (!contestList || contestList.length === 0) {
             return (
                 <CardContainer title={"Contests"}>
                     <LoadingContestListTable/>
@@ -37,7 +25,19 @@ class ContestListContainer extends React.Component {
         );
     };
 
-    render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            contest: null
+        }
+    }
+
+    async componentDidMount() {
+        const contestList = null; // await TODO: function to fetch ContestList
+        this.setState({contest: contestList});
+    }
+
+    render() {
         return (
             <div className={'page__container'}>
                 {this.renderContestList(this.state.contest)}

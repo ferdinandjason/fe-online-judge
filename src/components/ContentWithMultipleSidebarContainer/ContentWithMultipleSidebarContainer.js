@@ -1,27 +1,16 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
-import { push } from 'react-router-redux';
+import {Redirect, Route, Switch, withRouter} from 'react-router-dom';
 
-import { Sidebar, ContentWithMultipleSidebar } from '..';
+import {ContentWithMultipleSidebar, Sidebar} from '..';
 
 const SLASH = '/';
 
-function resolveURL(parentPath,childPath) {
-    const actualChildPath = childPath === '~' ? '':childPath;
-    return (parentPath+SLASH+actualChildPath);
+function resolveURL(parentPath, childPath) {
+    const actualChildPath = childPath === '~' ? '' : childPath;
+    return (parentPath + SLASH + actualChildPath);
 }
 
 class ContentWithMultipleSidebarContainer extends React.Component {
-    render() {
-        return (
-            <ContentWithMultipleSidebar
-                multisidebar={this.renderSidebar()}
-                content={this.renderContent()}
-            />
-        )
-    }
-
     renderSidebar = () => {
         return this.props.sidebars.map(sidebar => {
             const sidebarItems = sidebar.items.map(
@@ -46,13 +35,12 @@ class ContentWithMultipleSidebarContainer extends React.Component {
             )
         });
     };
-
     renderContent = () => {
         const route = this.props.sidebars.map(sidebar => {
             return sidebar.items.map(item => {
                 const props = {
                     exact: item.id === '~',
-                    path: resolveURL(this.props.match.url,item.id),
+                    path: resolveURL(this.props.match.url, item.id),
                     component: item.component,
                 };
                 return <Route key={item.id} {...props} />
@@ -61,7 +49,8 @@ class ContentWithMultipleSidebarContainer extends React.Component {
         });
 
         const redirect = this.props.sidebars[0].items[0].id !== '~' && (
-            <Redirect exact from={this.props.match.url} to={resolveURL(this.props.match.url,this.props.sidebars[0].items[0].id)} />
+            <Redirect exact from={this.props.match.url}
+                      to={resolveURL(this.props.match.url, this.props.sidebars[0].items[0].id)}/>
         );
 
         return (
@@ -74,11 +63,9 @@ class ContentWithMultipleSidebarContainer extends React.Component {
             </div>
         )
     };
-
     onItemClick = (itemId) => {
         return this.props.history.push(resolveURL(this.props.match.url, itemId));
     };
-
     getActiveItemId = () => {
         if (this.props.location.pathname === this.props.match.url) {
             return '~';
@@ -88,6 +75,15 @@ class ContentWithMultipleSidebarContainer extends React.Component {
         const nextSlashPos = currentPath.indexOf(SLASH, this.props.match.url.length + 1);
         return currentPath.substring(this.props.match.url.length + 1, nextSlashPos);
     };
+
+    render() {
+        return (
+            <ContentWithMultipleSidebar
+                multisidebar={this.renderSidebar()}
+                content={this.renderContent()}
+            />
+        )
+    }
 }
 
 function createContentWithMultipleSidebarContainer() {

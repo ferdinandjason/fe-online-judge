@@ -1,1 +1,1 @@
-export { default as AppToaster } from './AppToaster';
+export {default as AppToaster} from './AppToaster';

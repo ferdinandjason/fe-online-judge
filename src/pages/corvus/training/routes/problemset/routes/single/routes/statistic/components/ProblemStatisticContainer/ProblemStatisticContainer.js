@@ -5,18 +5,18 @@ import {ProblemStatistic} from '../ProblemStatistic/ProblemStatistic';
 import {pieOptions} from './ProblemChartData';
 
 class ProblemStatisticContainer extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             problem: null,
             pie: {
-                option:pieOptions,
-                showLoading:true,
+                option: pieOptions,
+                showLoading: true,
             },
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         const problem = null; // await this.props.onFetchProblemRankList(this.props.problemId)
         this.setState({problem});
         let problemData = {
@@ -32,8 +32,8 @@ class ProblemStatisticContainer extends React.Component {
         let pieOptionData = pieOptions;
         let acNum = problemData.accepted_number;
         let data = [
-            {name:'WA',value:problemData.submission_number - acNum},
-            {name:'AC',value:acNum}
+            {name: 'WA', value: problemData.submission_number - acNum},
+            {name: 'AC', value: acNum}
         ];
         pieOptionData.series[0].data = data;
         let data2 = JSON.parse(JSON.stringify(data));
@@ -61,15 +61,15 @@ class ProblemStatisticContainer extends React.Component {
         pieOptionData.series[0].data = pieData;
         this.setState(
             {
-                pie:{
-                    option:pieOptionData,
+                pie: {
+                    option: pieOptionData,
                     showLoading: false,
                 }
             }
         )
     }
 
-    render(){
+    render() {
         return <ProblemStatistic problem={this.state.problem} pie={this.state.pie}/>
     }
 }

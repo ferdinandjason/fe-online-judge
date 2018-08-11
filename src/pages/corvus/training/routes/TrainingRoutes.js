@@ -1,7 +1,7 @@
 import React from 'react';
-import { Route, Redirect, Switch } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
-import { withBreadcrumb } from "../../../../components";
+import {withBreadcrumb} from "../../../../components";
 import ProblemSetRoutes from "./problemset/routes/ProblemSetRoutes";
 
 const TrainingRoutes = () => (

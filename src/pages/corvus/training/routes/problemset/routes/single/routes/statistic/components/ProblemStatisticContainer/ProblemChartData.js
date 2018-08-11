@@ -8,17 +8,17 @@ const pieColorMap = {
     'PAC': {color: '#2d8cf0'}
 };
 
-function getItemColor (obj) {
+function getItemColor(obj) {
     return pieColorMap[obj.name].color
 }
 
 export const pieOptions = {
     legend: {
-        left:'center',
-        top:'10',
-        orient:'horizontal',
-        itemGap:10,
-        data:['AC','RE','WA','TLE','PAC','MLE']
+        left: 'center',
+        top: '10',
+        orient: 'horizontal',
+        itemGap: 10,
+        data: ['AC', 'RE', 'WA', 'TLE', 'PAC', 'MLE']
     },
     series: [
         {

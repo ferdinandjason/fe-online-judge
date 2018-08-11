@@ -1,14 +1,14 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import{Classes} from '@blueprintjs/core';
+import {Classes} from '@blueprintjs/core';
 
 import Styles from './SubmissionTable.scss';
 
 class SubmissionTable extends React.Component {
-    render(){
+    render() {
         return (
-            <table className={classNames(Classes.HTML_TABLE,Classes.INTERACTIVE,Styles.SUBMISSION_LIST_WRAPPER)}>
+            <table className={classNames(Classes.HTML_TABLE, Classes.INTERACTIVE, Styles.SUBMISSION_LIST_WRAPPER)}>
                 <thead>
                 <tr>
                     <td>ID</td>
@@ -22,8 +22,8 @@ class SubmissionTable extends React.Component {
                 </thead>
                 <tbody>
                 {
-                    this.props.submissionList.map( submission => {
-                        return(
+                    this.props.submissionList.map(submission => {
+                        return (
                             <tr>
                                 <td>{submission.id}</td>
                                 <td>{submission.author.id}</td>
@@ -45,11 +45,11 @@ class SubmissionTable extends React.Component {
 }
 
 SubmissionTable.propTypes = {
-    submissionList : PropTypes.arrayOf({
-        username : PropTypes.string.isRequired,
-        time : PropTypes.string.isRequired,
-        problemtittle : PropTypes.string.isRequired,
-        status : PropTypes.string.isRequired,
+    submissionList: PropTypes.arrayOf({
+        username: PropTypes.string.isRequired,
+        time: PropTypes.string.isRequired,
+        problemtittle: PropTypes.string.isRequired,
+        status: PropTypes.string.isRequired,
     }).isRequired,
 };
 

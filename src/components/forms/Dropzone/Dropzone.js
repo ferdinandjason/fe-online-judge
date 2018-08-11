@@ -1,32 +1,32 @@
 import React from 'react';
 import classNames from 'classnames';
 import ReactDropzone from 'react-dropzone';
-import { Tag, Intent } from '@blueprintjs/core';
+import {Intent, Tag} from '@blueprintjs/core';
 
 import Styles from './Dropzone.scss';
 
 class Dropzone extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            show : false,
-            files : [],
-            rejected : [],
+            show: false,
+            files: [],
+            rejected: [],
         };
         this.handleDrop = this.handleDrop.bind(this);
     }
 
-    handleDrop(acceptedFiles,rejectedFiles){
+    handleDrop(acceptedFiles, rejectedFiles) {
         this.setState({
-            show : true,
-            files : acceptedFiles,
-            rejected : rejectedFiles,
+            show: true,
+            files: acceptedFiles,
+            rejected: rejectedFiles,
         });
         console.log(this.props);
         this.props.handleDrop(acceptedFiles);
     }
 
-    render(){
+    render() {
         return (
             <ReactDropzone
                 onDrop={this.handleDrop}
@@ -39,7 +39,8 @@ class Dropzone extends React.Component {
                     <p className={Styles.DROPZONE_INSIDE_INFO_SMALL}>or</p>
                     <p className={Styles.DROPZONE_INSIDE_INFO}>Click anywhere to select files</p>
                 </div>
-                <div className={classNames({[Styles.DROPZONE_FILES] : this.state.show},{[Styles.DROPZONE_HIDE_FILES] : !this.state.show})}>
+                <div
+                    className={classNames({[Styles.DROPZONE_FILES]: this.state.show}, {[Styles.DROPZONE_HIDE_FILES]: !this.state.show})}>
                     <div className={Styles.DROPZONE_FILES_ACCEPTED}>
                         <p className={Styles.DROPZONE_INSIDE_INFO_SMALL}>Uploading Files</p>
                         {
@@ -48,7 +49,7 @@ class Dropzone extends React.Component {
                                     interactive={true}
                                     intent={Intent.SUCCESS}
                                     key={file.name}
-                                    style={{margin:'2px'}}
+                                    style={{margin: '2px'}}
                                 >
                                     {file.name}
                                 </Tag>
@@ -63,7 +64,7 @@ class Dropzone extends React.Component {
                                     interactive={true}
                                     intent={Intent.WARNING}
                                     key={file.name}
-                                    style={{margin:'2px'}}
+                                    style={{margin: '2px'}}
                                 >
                                     {file.name}
                                 </Tag>

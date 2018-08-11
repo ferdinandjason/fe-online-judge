@@ -1,11 +1,28 @@
 import React from 'react';
-import { Hotkey, Hotkeys, InputGroup, MenuItem } from'@blueprintjs/core';
-import { Omnibar } from '@blueprintjs/select';
+import {Hotkey, Hotkeys, InputGroup, MenuItem} from '@blueprintjs/core';
+import {Omnibar} from '@blueprintjs/select';
 
 import Styles from './OmnibarSearch.scss';
 
 export default class OmnibarSearch extends React.Component {
-    constructor(props){
+    handleClick = (event) => {
+        event.preventDefault();
+        this.setState({isOpen: true});
+    };
+    handleItemSelect = (item) => {
+        console.log(item);
+        this.setState({isOpen: false});
+    };
+    handleClose = (event) => {
+        event.preventDefault();
+        this.setState({isOpen: false});
+    };
+    handleToggle = (event) => {
+        event.preventDefault();
+        this.setState({isOpen: !this.state.isOpen});
+    };
+
+    constructor(props) {
         super(props);
         this.state = {
             isOpen: false,
@@ -13,7 +30,7 @@ export default class OmnibarSearch extends React.Component {
         }
     }
 
-    renderHotkeys(){
+    renderHotkeys() {
         return (
             <Hotkeys>
                 <Hotkey
@@ -26,7 +43,7 @@ export default class OmnibarSearch extends React.Component {
         )
     }
 
-    render(){
+    render() {
         return (
             <div>
                 <InputGroup
@@ -40,7 +57,7 @@ export default class OmnibarSearch extends React.Component {
                 <Omnibar
                     {...this.props.omnibarProps}
                     {...this.state}
-                    noResults={<MenuItem disabled={true} text="No results." />}
+                    noResults={<MenuItem disabled={true} text="No results."/>}
                     onItemSelect={this.handleItemSelect}
                     onClose={this.handleClose}
                     className={Styles.OMNIBAR_WRAPPER}
@@ -49,24 +66,4 @@ export default class OmnibarSearch extends React.Component {
             </div>
         )
     }
-
-    handleClick = (event) => {
-        event.preventDefault();
-        this.setState({isOpen:true});
-    };
-
-    handleItemSelect = (item) => {
-        console.log(item);
-        this.setState({ isOpen: false });
-    };
-
-    handleClose = (event) => {
-        event.preventDefault();
-        this.setState({ isOpen: false });
-    };
-
-    handleToggle = (event) => {
-        event.preventDefault();
-        this.setState({ isOpen: !this.state.isOpen });
-    };
 }

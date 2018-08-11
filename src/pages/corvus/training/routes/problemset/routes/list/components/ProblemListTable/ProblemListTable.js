@@ -1,28 +1,29 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import { Button, Classes } from '@blueprintjs/core';
+import {Link} from 'react-router-dom';
+import {Button, Classes} from '@blueprintjs/core';
 
 import Styles from './ProblemListTable.scss';
 
 class ProblemListTable extends React.Component {
-    render(){
+    render() {
         return (
-            <table className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED,Classes.INTERACTIVE,Styles.PROBLEM_LIST_TABLE_WRAPPER)}>
+            <table
+                className={classNames(Classes.HTML_TABLE, Classes.HTML_TABLE_STRIPED, Classes.INTERACTIVE, Styles.PROBLEM_LIST_TABLE_WRAPPER)}>
                 <thead>
                 <tr>
-                    <th className={classNames(Styles.PROBLEM_LIST_TABLE_TITLE,Styles.PROBLEM_LIST_TABLE_RESPONSIVE)}>ID</th>
+                    <th className={classNames(Styles.PROBLEM_LIST_TABLE_TITLE, Styles.PROBLEM_LIST_TABLE_RESPONSIVE)}>ID</th>
                     <th className={Styles.PROBLEM_LIST_TABLE_TITLE}>Slug</th>
                     <th className={Styles.PROBLEM_LIST_TABLE_TITLE}>Problem</th>
-                    <th className={classNames(Styles.PROBLEM_LIST_TABLE_TITLE,Styles.PROBLEM_LIST_TABLE_RESPONSIVE)}>Statistic</th>
+                    <th className={classNames(Styles.PROBLEM_LIST_TABLE_TITLE, Styles.PROBLEM_LIST_TABLE_RESPONSIVE)}>Statistic</th>
                     <th className={Styles.PROBLEM_LIST_TABLE_TITLE}>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 {
-                    this.props.problemList.map( problem => {
-                        return(
+                    this.props.problemList.map(problem => {
+                        return (
                             <tr>
                                 <td className={Styles.PROBLEM_LIST_TABLE_RESPONSIVE}>{problem.id}</td>
                                 <td>{problem.slug}</td>
@@ -44,11 +45,11 @@ class ProblemListTable extends React.Component {
 }
 
 ProblemListTable.propTypes = {
-    problemList : PropTypes.arrayOf({
-        title : PropTypes.string.isRequired,
-        statistic : PropTypes.string.isRequired,
-        id : PropTypes.string.isRequired,
-        slug : PropTypes.string.isRequired,
+    problemList: PropTypes.arrayOf({
+        title: PropTypes.string.isRequired,
+        statistic: PropTypes.string.isRequired,
+        id: PropTypes.string.isRequired,
+        slug: PropTypes.string.isRequired,
     }).isRequired,
 };
 

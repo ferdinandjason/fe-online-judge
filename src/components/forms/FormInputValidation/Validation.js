@@ -1,4 +1,4 @@
-export const Required = (value) => (value? undefined : 'Required');
+export const Required = (value) => (value ? undefined : 'Required');
 
 export const EmailAddress = (value) => (
     /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/.test(value)
@@ -17,5 +17,5 @@ export const ConfirmPassword = (value, {password}) => (
 );
 
 export const Password = (value) => (
-    (value.length >= 6 && value.length <=255)? undefined : 'The password must be between 6 and 255 characters.'
+    (value.length >= 6 && value.length <= 255) ? undefined : 'The password must be between 6 and 255 characters.'
 );

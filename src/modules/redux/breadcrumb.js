@@ -53,11 +53,11 @@ export function getDocumentTitle(state) {
     let title = APP_CONFIG.name;
     let breadcrumbTitle;
     state.breadcrumb.values.forEach(breadcrumb => {
-        if(!breadcrumbTitle || breadcrumb.link.length > breadcrumbTitle.link.length){
+        if (!breadcrumbTitle || breadcrumb.link.length > breadcrumbTitle.link.length) {
             breadcrumbTitle = breadcrumb;
         }
     });
-    if(breadcrumbTitle){
+    if (breadcrumbTitle) {
         title = `${breadcrumbTitle.title} ${additionalTitle} | ${title}`
     }
     return title;

@@ -1,2 +1,2 @@
-export { default as ProblemRepositoryGradingConfig } from './ProblemRepositoryGradingConfig';
-export { default as ProblemRepositoryGradingTestcase } from './ProblemRepositoryGradingTestcase';
+export {default as ProblemRepositoryGradingConfig} from './ProblemRepositoryGradingConfig';
+export {default as ProblemRepositoryGradingTestcase} from './ProblemRepositoryGradingTestcase';

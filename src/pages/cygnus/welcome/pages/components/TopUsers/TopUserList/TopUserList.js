@@ -7,20 +7,8 @@ import {CardContainer} from "../../../../../../../components";
 import Styles from './TopUserList.scss';
 
 class TopUserList extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            user: null
-        }
-    }
-
-    async componentDidMount(){
-        const topuserList = null ; // await TODO: function to fetch ProblemList
-        this.setState({user:topuserList});
-    }
-
     renderTopUserList = (topuserList) => {
-        if(!topuserList || topuserList.length === 0){
+        if (!topuserList || topuserList.length === 0) {
             return (
                 <CardContainer title={"Top Users"} strict={true}>
                     <LoadingTopUserTable/>
@@ -34,7 +22,19 @@ class TopUserList extends React.Component {
         )
     };
 
-    render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            user: null
+        }
+    }
+
+    async componentDidMount() {
+        const topuserList = null; // await TODO: function to fetch ProblemList
+        this.setState({user: topuserList});
+    }
+
+    render() {
         return (
             <div className={Styles.topuser_container}>
                 {this.renderTopUserList()}

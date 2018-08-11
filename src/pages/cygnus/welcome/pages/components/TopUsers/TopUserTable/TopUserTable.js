@@ -1,18 +1,18 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import{Classes} from '@blueprintjs/core';
+import {Classes} from '@blueprintjs/core';
 
 import Styles from './TopUserTable.scss';
 
 class TopUserTable extends React.Component {
-    render(){
+    render() {
         return (
-            <table className={classNames(Classes.HTML_TABLE,Classes.INTERACTIVE,Styles.topuser_list_wrapper)}>
+            <table className={classNames(Classes.HTML_TABLE, Classes.INTERACTIVE, Styles.topuser_list_wrapper)}>
                 <tbody>
                 {
-                    this.props.topuserList.map( topuser => {
-                        return(
+                    this.props.topuserList.map(topuser => {
+                        return (
                             <tr>
                                 <td>{topuser.username}</td>
                                 <td>{topuser.points}</td>
@@ -27,9 +27,9 @@ class TopUserTable extends React.Component {
 }
 
 TopUserTable.propTypes = {
-    topuserList : PropTypes.arrayOf({
-        username : PropTypes.string.isRequired,
-        points : PropTypes.string.isRequired,
+    topuserList: PropTypes.arrayOf({
+        username: PropTypes.string.isRequired,
+        points: PropTypes.string.isRequired,
     }).isRequired,
 };
 

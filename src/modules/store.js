@@ -2,9 +2,9 @@ import {applyMiddleware, combineReducers, compose, createStore} from 'redux';
 import {persistReducer, persistStore} from 'redux-persist';
 import thunk from 'redux-thunk';
 import storage from 'redux-persist/es/storage';
-import { reducer as formReducer } from 'redux-form';
+import {reducer as formReducer} from 'redux-form';
 
-import {breadcrumbReducer, platformReducer, sessionReducer, toastReducer,toastFileReducer} from "./redux";
+import {breadcrumbReducer, platformReducer, sessionReducer, toastFileReducer, toastReducer} from "./redux";
 
 import {sessionAPI} from "./api/session/session";
 import {userAPI} from "./api/user/user";

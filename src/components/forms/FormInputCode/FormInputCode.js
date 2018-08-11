@@ -1,7 +1,7 @@
 import React from 'react';
-import { FormGroup, MenuItem, Button } from "@blueprintjs/core";
-import { Select } from '@blueprintjs/select';
-import { IconNames } from '@blueprintjs/icons';
+import {Button, FormGroup, MenuItem} from "@blueprintjs/core";
+import {Select} from '@blueprintjs/select';
+import {IconNames} from '@blueprintjs/icons';
 import AceEditor from 'react-ace';
 
 import 'brace/mode/java';
@@ -19,7 +19,7 @@ import 'brace/theme/terminal';
 import 'brace/theme/solarized_dark';
 import 'brace/theme/solarized_light';
 
-import {MODE,THEME} from "../../../config";
+import {MODE, THEME} from "../../../config";
 import {getIntent} from "../FormInputValidation";
 
 import Styles from './FormInputCode.scss';
@@ -28,7 +28,7 @@ const filterMode = (query, mode) => {
     return `${mode.title}`.indexOf(query.toLowerCase()) >= 0;
 };
 
-const renderMode =(mode, {handleClick,modifiers,query}) => {
+const renderMode = (mode, {handleClick, modifiers, query}) => {
     if (!modifiers.matchesPredicate) {
         return null;
     }
@@ -50,11 +50,11 @@ const modeSelectProps = {
     items: MODE,
 };
 
-const filterTheme = (query,theme) => {
+const filterTheme = (query, theme) => {
     return `${theme.title}`.indexOf(query.toLowerCase()) >= 0;
 };
 
-const renderTheme = (theme,{handleClick,modifiers,query}) => {
+const renderTheme = (theme, {handleClick, modifiers, query}) => {
     if (!modifiers.matchesPredicate) {
         return null;
     }
@@ -78,7 +78,7 @@ const themeSelectProps = {
 
 
 function escapeRegExpChars(text) {
-    return text.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+    return text.replace(/([.*+?^=!:${}()|\]\\])/g, "\\$1");
 }
 
 function highlightText(text, query) {
@@ -114,30 +114,27 @@ function highlightText(text, query) {
 
 export class FormInputCode extends React.Component {
     static DEFAULT = 0;
-
-    constructor(props){
-        super(props);
-        this.state = {
-            mode : MODE[FormInputCode.DEFAULT],
-            theme : THEME[FormInputCode.DEFAULT],
-        }
-    }
-
-    handleChange = (value,event) => {
+    handleChange = (value, event) => {
         console.log(event);
         this.props.input.onChange(value);
     };
-
-    handleModeValueChange = (mode) =>{
+    handleModeValueChange = (mode) => {
         this.setState({mode});
     };
-
     handleThemeValueChange = (theme) => {
         this.setState({theme});
     };
 
-    render(){
-        const { mode, theme } = this.state;
+    constructor(props) {
+        super(props);
+        this.state = {
+            mode: MODE[FormInputCode.DEFAULT],
+            theme: THEME[FormInputCode.DEFAULT],
+        }
+    }
+
+    render() {
+        const {mode, theme} = this.state;
 
         return (
             <FormGroup
@@ -149,9 +146,9 @@ export class FormInputCode extends React.Component {
                 <div className={Styles.FORM_INPUT_CODE_SELECTOR}>
                     <Select
                         {...modeSelectProps}
-                        noResults={<MenuItem disabled={true} text="No results." />}
+                        noResults={<MenuItem disabled={true} text="No results."/>}
                         onItemSelect={this.handleModeValueChange}
-                        popoverProps={{ minimal:true }}
+                        popoverProps={{minimal: true}}
                         className={Styles.FORM_INPUT_CODE_SELECT}
                     >
                         <Button
@@ -162,9 +159,9 @@ export class FormInputCode extends React.Component {
                     </Select>
                     <Select
                         {...themeSelectProps}
-                        noResults={<MenuItem disabled={true} text="No results." />}
+                        noResults={<MenuItem disabled={true} text="No results."/>}
                         onItemSelect={this.handleThemeValueChange}
-                        popoverProps={{ minimal:true }}
+                        popoverProps={{minimal: true}}
                         className={Styles.FORM_INPUT_CODE_SELECT}
                     >
                         <Button
@@ -192,7 +189,7 @@ export class FormInputCode extends React.Component {
                         tabSize: 4,
                     }}
                     style={{
-                        width:'100% !important',
+                        width: '100% !important',
                     }}
                 />
             </FormGroup>

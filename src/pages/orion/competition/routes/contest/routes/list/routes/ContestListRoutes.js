@@ -1,8 +1,8 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
-import { DoublePageLayout } from "../../../../../../../../components/layouts";
-import { ContentWithSidebarContainer } from "../../../../../../../../components";
+import {DoublePageLayout} from "../../../../../../../../components/layouts";
+import {ContentWithSidebarContainer} from "../../../../../../../../components";
 import ContestListContainer from "../components/ContestListContainer/ContestListContainer";
 
 export const ContestListRoutes = () => {
@@ -10,8 +10,8 @@ export const ContestListRoutes = () => {
         {
             id: 'contest',
             titleIcon: 'timeline-events',
-            title:'Contest',
-            component:ContestListContainer,
+            title: 'Contest',
+            component: ContestListContainer,
         }
     ];
 

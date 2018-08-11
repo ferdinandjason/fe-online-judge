@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
-import { Button, Classes } from '@blueprintjs/core';
+import {Link} from 'react-router-dom';
+import {Button, Classes} from '@blueprintjs/core';
 
 import Styles from './ProblemListTable.scss';
 
@@ -9,13 +9,13 @@ class LoadingProblemListTable extends React.Component {
     render() {
         return (
             <table
-                className={classNames(Classes.HTML_TABLE,Classes.HTML_TABLE_STRIPED,Classes.INTERACTIVE,Styles.PROBLEM_LIST_TABLE_WRAPPER)}>
+                className={classNames(Classes.HTML_TABLE, Classes.HTML_TABLE_STRIPED, Classes.INTERACTIVE, Styles.PROBLEM_LIST_TABLE_WRAPPER)}>
                 <thead>
                 <tr>
-                    <th className={classNames(Styles.PROBLEM_LIST_TABLE_TITLE,Styles.PROBLEM_LIST_TABLE_RESPONSIVE)}>ID</th>
+                    <th className={classNames(Styles.PROBLEM_LIST_TABLE_TITLE, Styles.PROBLEM_LIST_TABLE_RESPONSIVE)}>ID</th>
                     <th className={Styles.PROBLEM_LIST_TABLE_TITLE}>Slug</th>
                     <th className={Styles.PROBLEM_LIST_TABLE_TITLE}>Problem</th>
-                    <th className={classNames(Styles.PROBLEM_LIST_TABLE_TITLE,Styles.PROBLEM_LIST_TABLE_RESPONSIVE)}>Statistic</th>
+                    <th className={classNames(Styles.PROBLEM_LIST_TABLE_TITLE, Styles.PROBLEM_LIST_TABLE_RESPONSIVE)}>Statistic</th>
                     <th className={Styles.PROBLEM_LIST_TABLE_TITLE}>Ready</th>
                 </tr>
                 </thead>
