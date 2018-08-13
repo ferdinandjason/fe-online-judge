@@ -30,7 +30,7 @@ class LoadingSubmissionTable extends React.Component {
                     <td>ACCEPTED</td>
                     <td>0.0</td>
                     <td>
-                        <ButtonLink to={'/repository/problem/1/my-submission/1'}/>
+                        <ButtonLink to={'/repository/problem/1/submission/1'}/>
                     </td>
                 </tr>
                 <tr>

@@ -1,10 +1,25 @@
 import React from "react";
 import {Card, Classes, Code} from "@blueprintjs/core";
+
 import {CardContainer, HorizontalDivider} from "../../";
+import {LoadingSubmissionCard} from "./index";
 
 class SubmissionCard extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            submission : null,
+        }
+    }
+
+    componentDidMount(){
+        const submission = null; // await this.props.fetchSubmission()
+        this.setState({submission});
+    }
+
     render() {
-        const {submission} = this.props;
+        const {submission} = this.state;
+        if(submission === null) return (<LoadingSubmissionCard/>);
         return (
             <CardContainer title={'Submission #'}>
                 <h3>General Info</h3>

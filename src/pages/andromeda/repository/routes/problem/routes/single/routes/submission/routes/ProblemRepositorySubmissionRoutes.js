@@ -1,17 +1,9 @@
 import ProblemRepositorySingleContestantSubmission
     from '../components/ProblemRepositorySingleContestantSubmission/ProblemRepositorySingleContestantSubmission';
-import ProblemRepositorySingleMySubmission
-    from "../components/ProblemRepositorySingleMySubmission/ProblemRepositorySingleMySubmission";
 
 export const ProblemRepositorySubmissionRoutes = [
     {
-        id: 'my-submission',
-        titleIcon: 'manually-entered-data',
-        title: 'My Submission',
-        component: ProblemRepositorySingleMySubmission
-    },
-    {
-        id: 'contestant-submission',
+        id: 'submission',
         titleIcon: 'manually-entered-data',
         title: 'Contestant Submission',
         component: ProblemRepositorySingleContestantSubmission
