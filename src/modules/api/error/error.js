@@ -1,4 +1,6 @@
 import React from 'react';
+import {AnchorButton} from '@blueprintjs/core';
+import {IconNames} from '@blueprintjs/icons';
 
 import {isUserAuthenticated, LogOut} from "../../redux/session";
 import {store} from "../../store";
@@ -9,14 +11,14 @@ export class UnauthorizedError {
         if (isUserAuthenticated()) {
             store.dispatch(LogOut());
             store.dispatch(Toast.error_('Your session has timeout, Please login again', 'user', {
-                text: <strong>Login</strong>,
+                text: <AnchorButton icon={IconNames.LOG_IN} text='Login' href='/login'/>,
             }));
         } else {
             store.dispatch(Toast.show_('Please Login', 'user', {
-                text: <strong>Login</strong>,
+                text: <AnchorButton icon={IconNames.LOG_IN} text='Login' href='/login'/>,
             }));
         }
-    }
+    };
 
     constructor(error) {
         this.message = error.message;

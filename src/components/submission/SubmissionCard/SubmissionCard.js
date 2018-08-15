@@ -25,7 +25,7 @@ class SubmissionCard extends React.Component {
                 <h3>General Info</h3>
                 <Card>
                     <table className={Classes.HTML_TABLE} style={{width: '100%'}}>
-                        <thead>
+                        <thead>';alsd';lsa;'dla'sld';asld
                         <tr>
                             <td>Info</td>
                             <td>Value</td>

@@ -46,6 +46,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 270px !important;
 }
 
+.bp3-popover-content .bp3-tab-indicator-wrapper .bp3-tab-indicator{
+    height: 50px !important;
+}
+
 ._ru_4w .bp3-tab-indicator {
     background-color: #eef2fb !important;
     border-radius: 0 !important;

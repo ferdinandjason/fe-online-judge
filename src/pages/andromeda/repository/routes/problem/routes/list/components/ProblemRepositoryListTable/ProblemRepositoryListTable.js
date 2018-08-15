@@ -2,12 +2,31 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-import {Button, Classes, Intent} from '@blueprintjs/core';
+import {Button, Classes, Intent, Tooltip, Position, Alert} from '@blueprintjs/core';
+import {IconNames} from '@blueprintjs/icons';
+
+import {API} from "../../../../../../../../../modules/api";
+import {selectToken} from "../../../../../../../../../modules/redux/session";
 
 import Styles from './ProblemRepositoryListTable.scss';
 
 class ProblemRepositoryListTable extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            isOpen: false,
+            problem: {
+                slug:''
+            },
+            problemList : this.props.problemList,
+        };
+        this.handleAlert = this.handleAlert.bind(this);
+        this.handleCancel = this.handleCancel.bind(this);
+        this.handleConfirm = this.handleConfirm.bind(this);
+    }
+
     render() {
+        const {problemList} = this.state;
         return (
             <table
                 className={classNames(Classes.HTML_TABLE, Classes.HTML_TABLE_STRIPED, Classes.INTERACTIVE, Styles.PROBLEM_REPO_LIST_TABLE_WRAPPER)}>
@@ -22,7 +41,7 @@ class ProblemRepositoryListTable extends React.Component {
                 </thead>
                 <tbody>
                 {
-                    this.props.problemList.map(problem => {
+                    problemList.map(problem => {
                         return (
                             <tr key={problem.id} style={{textAlign: 'center'}}>
                                 <td className={Styles.PROBLEM_REPO_LIST_TABLE_RESPONSIVE}
@@ -33,16 +52,57 @@ class ProblemRepositoryListTable extends React.Component {
                                     style={{textAlign: 'center'}}>{problem.statistic}</td>
                                 <td style={{textAlign: 'center'}}>
                                     <Link to={`/repository/problem/${problem.id}`}>
-                                        <Button icon={"arrow-right"} text={"Enter"} intent={Intent.PRIMARY}/>
+                                        <Tooltip content="Enter" position={Position.TOP}>
+                                            <Button icon={IconNames.LOG_IN} intent={Intent.PRIMARY}/>
+                                        </Tooltip>
                                     </Link>
+                                    <Tooltip content="Delete" position={Position.TOP}>
+                                        <Button icon={IconNames.DELETE} intent={Intent.DANGER} onClick={()=> this.handleAlert(problem)}/>
+                                    </Tooltip>
                                 </td>
                             </tr>
                         )
                     })
                 }
                 </tbody>
+                <Alert
+                    canEscapeKeyCancel={true}
+                    canOutsideClickCancel={true}
+                    cancelButtonText="Cancel"
+                    confirmButtonText="Delete Problem"
+                    icon={IconNames.TRASH}
+                    intent={Intent.DANGER}
+                    isOpen={this.state.isOpen}
+                    onCancel={this.handleCancel}
+                    onConfirm={this.handleConfirm}
+                >
+                    <p>
+                        Are you sure you want to delete problem <b>{this.state.problem.slug}</b>? You will be able to restore it later.
+                    </p>
+                </Alert>
             </table>
         );
+    }
+
+    handleAlert(problem){
+        this.setState({isOpen:true});
+        this.setState({problem});
+    }
+
+    handleCancel = () => {
+        this.setState({isOpen:false});
+        this.setState({problem:{slug:''}});
+    };
+
+    handleConfirm = () => {
+        const {problem,problemList} = this.state;
+        this.props.onDeleteProblem(problem.id,problem.slug)
+            .then(()=>{
+                API.sessionAPI.refreshToken(selectToken());
+                this.setState({isOpen:false});
+                this.setState({problem:{slug:''}});
+                this.setState({problemList:problemList.filter((prob)=> (prob.id !== problem.id))})
+            });
     }
 }
 

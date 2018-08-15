@@ -70,12 +70,11 @@ const CreateProblemForm = reduxForm({form: 'create-problem-form'})(RawCreateProb
 
 class ProblemRepositoryCreateProblem extends React.Component {
     handleSubmit = (data) => {
-        console.log(data);
         this.props.createProblem(data)
             .then(() => {
                 this.props.history.push('/repository');
             });
-    }
+    };
 
     render() {
         return (

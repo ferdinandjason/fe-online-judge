@@ -15,6 +15,7 @@ class ProblemRepositoryListContainer extends React.Component {
         await this.setState({current_page});
         await this.componentDidMount();
     };
+
     renderProblemList = (problemRepoList) => {
         if (!problemRepoList || problemRepoList.length === 0) {
             return (
@@ -25,7 +26,7 @@ class ProblemRepositoryListContainer extends React.Component {
         }
         return (
             <CardContainer title={"Problem Repository"} strict={true}>
-                <ProblemListTable problemList={problemRepoList}/>
+                <ProblemListTable problemList={problemRepoList} onDeleteProblem={this.props.onDeleteProblem}/>
                 <Pagination {...this.state.problemRepoPaginationProps} onChangePage={this.handleChangePage}/>
             </CardContainer>
         )
@@ -38,7 +39,7 @@ class ProblemRepositoryListContainer extends React.Component {
             problemRepoList: null,
             current_page: 0,
             limit: ProblemRepositoryListContainer.getProblemLimit(),
-        }
+        };
     }
 
     static getProblemLimit() {
@@ -70,6 +71,7 @@ class ProblemRepositoryListContainer extends React.Component {
 function createProblemRepositoryListContainer(problemRepositoryListActions) {
     const mapDispatchToProps = {
         onFetchProblemRepositoryList: (page, limit, owner_id) => problemRepositoryListActions.fetchProblemRepositoryList(page, limit, owner_id),
+        onDeleteProblem: (id,slug) => problemRepositoryListActions.deleteProblem(id,slug),
     };
     return connect(undefined, mapDispatchToProps)(ProblemRepositoryListContainer);
 }

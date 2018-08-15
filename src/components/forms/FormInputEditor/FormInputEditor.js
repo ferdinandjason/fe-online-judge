@@ -7,16 +7,15 @@ import 'froala-editor/css/froala_style.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
 import 'font-awesome/css/font-awesome.css';
 
-import {store} from "../../../modules/store";
 import {FormInputValidation, getIntent} from "../FormInputValidation";
+import {store} from "../../../modules/store";
 
 
 export class FormInputEditor extends React.Component {
     handleModelChange = (model) => {
         this.setState({model});
         this.props.input.onChange(model);
-        this.props.input.value = this.state.model;
-        console.log(this.props);
+        this.props.input.value = model;
         console.log(store.getState().form);
     };
 
@@ -28,6 +27,21 @@ export class FormInputEditor extends React.Component {
         this.handleModelChange = this.handleModelChange.bind(this);
     }
 
+    componentWillUpdate(nextProps){
+        this.props.input.onChange(nextProps.initialValue);
+        this.props.input.value = nextProps.initialValue;
+    }
+
+    getModel(){
+        if(this.state.model === '' && this.props.init !== undefined){
+            console.log(this.props.init);
+            this.setState({
+                model: this.props.init,
+            });
+        }
+        return this.state.model;
+    }
+
     render() {
         return (
             <FormGroup
@@ -37,7 +51,7 @@ export class FormInputEditor extends React.Component {
                 intent={getIntent(this.props.meta)}
             >
                 <FroalaEditor
-                    model={this.state.model}
+                    model={this.getModel()}
                     onModelChange={this.handleModelChange}
                 />
                 <FormInputValidation meta={this.props.meta}/>

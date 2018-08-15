@@ -15,6 +15,7 @@ const INITIAL_ACTION = {
 export function toastReducer(state = INITIAL_STATE, action = INITIAL_ACTION) {
     switch (action.type) {
         case ADD_TOAST :
+            console.log(action);
             return Object.assign(
                 {...state},
                 {...action.payload}
@@ -26,7 +27,7 @@ export function toastReducer(state = INITIAL_STATE, action = INITIAL_ACTION) {
 
 // Action Creators
 export const Toast = {
-    success: (message, icon = 'tick', action = undefined) => {
+    success: (message, icon = 'tick', action = null) => {
         return {
             type: ADD_TOAST,
             payload: {
@@ -38,7 +39,7 @@ export const Toast = {
             }
         }
     },
-    alert: (message, icon = 'envelope', action = undefined) => {
+    alert: (message, icon = 'envelope', action = null) => {
         return {
             type: ADD_TOAST,
             payload: {
@@ -50,7 +51,7 @@ export const Toast = {
             }
         }
     },
-    error_: (message, icon = 'warning-sign', action = undefined) => {
+    error_: (message, icon = 'warning-sign', action = null) => {
         return {
             type: ADD_TOAST,
             payload: {
@@ -62,7 +63,7 @@ export const Toast = {
             }
         }
     },
-    show_: (message, icon = '', action = undefined) => {
+    show_: (message, icon = '', action = null) => {
         return {
             type: ADD_TOAST,
             payload: {

@@ -1,13 +1,15 @@
 import React from 'react';
+import {connect} from "react-redux";
 import {Field, reduxForm} from 'redux-form';
 import {Button, Intent} from '@blueprintjs/core';
 import {IconNames} from '@blueprintjs/icons';
 
 import {FormInputEditor, FormInputText} from "../../../../../../../../../../../components/forms";
 import {CardContainer, withBreadcrumb} from "../../../../../../../../../../../components";
-import {connect} from "react-redux";
 import {problemRepositoryActions} from "../../../../modules/problem";
 import {Required, Slug} from "../../../../../../../../../../../components/forms/FormInputValidation/Validation";
+import {API} from "../../../../../../../../../../../modules/api";
+import {selectToken} from "../../../../../../../../../../../modules/redux/session";
 
 const titleField = {
     name: 'title',
@@ -25,7 +27,7 @@ const slugField = {
     validate: [Required, Slug],
 };
 
-const descriptionField = {
+let descriptionField = {
     name: 'description',
     label: 'Description',
     labelInfo: '(required)',
@@ -35,15 +37,29 @@ const descriptionField = {
 
 class RawEditSingleProblemForm extends React.Component {
     handleSubmit = (event) => {
-        this.setState({loading: true});
+        this.setState({problem: null});
         event.preventDefault();
         this.props.handleSubmit()
     };
 
+    componentDidMount() {
+        this.props.onFetchProblemRepo(this.props.problemId)
+            .then((problem) => {
+                descriptionField.init = problem.description;
+                this.props.initialize(problem);
+                this.forceUpdate();
+                return Promise.resolve();
+            })
+            .then(() => {
+                API.sessionAPI.refreshToken(selectToken());
+                this.render();
+            });
+    }
+
     constructor(props) {
         super(props);
         this.state = {
-            description: (props.problem) ? props.problem.description : '',
+            description: '',
             loading: false,
         };
     }
@@ -62,61 +78,57 @@ class RawEditSingleProblemForm extends React.Component {
     }
 }
 
-const EditSingleProblemForm = reduxForm({form: 'edit-statement-single-problem-form'})(RawEditSingleProblemForm);
+function createEditSingleProblemForm(problemRepositoryActions){
+    const mapStateToProps = (state,ownProps) => ({
+        problemId: ownProps.problemId,
+    });
+    const mapDispatchToProps = {
+        onFetchProblemRepo: (problemId) => problemRepositoryActions.fetchProblem(problemId),
+    };
+    return connect(mapStateToProps,mapDispatchToProps)(reduxForm({form: 'edit-statement-single-problem-form'})(RawEditSingleProblemForm))
+}
 
-const LoadingEditSingleProblemRepo = () => {
-    const title = 'Edit';
-    return (
-        <div className={"page__container"}>
-            <CardContainer title={title}>
-                <EditSingleProblemForm/>
-            </CardContainer>
-        </div>
-    )
-};
+const EditSingleProblemForm = createEditSingleProblemForm(problemRepositoryActions)
 
 class EditSingleProblemRepo extends React.Component {
+    handleSubmit = (data) => {
+        console.log(data);
+        this.props.onUpdateProblem(this.props.problemId,data)
+            .then(() => {
+                this.props.history.push('/repository');
+            });
+    };
+
     render() {
         const title = 'Edit';
         return (
             <div className={"page__container"}>
                 <CardContainer title={title}>
-                    <EditSingleProblemForm/>
+                    <EditSingleProblemForm {...this.props} onSubmit={this.handleSubmit}/>
                 </CardContainer>
             </div>
         )
     }
 }
 
+function createEditSingleProblemRepo(problemRepositoryActions){
+    const mapDispatchToProps = {
+        onUpdateProblem: (problemId, data) => problemRepositoryActions.updateProblem(problemId,data),
+    };
+    return connect(undefined,mapDispatchToProps)(EditSingleProblemRepo)
+}
+
+EditSingleProblemRepo = createEditSingleProblemRepo(problemRepositoryActions);
+
 
 export class ProblemRepositoryStatementEdit extends React.Component {
-    renderEditProblem = (problem) => {
-        if (!problem) {
-            return (
-                <LoadingEditSingleProblemRepo/>
-            )
-        } else {
-            return (
-                <EditSingleProblemRepo problem={this.state.problem}/>
-            )
-        }
-    };
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            problem: null,
-        };
+    getProblemIdFromURL() {
+        return this.props.match.path.split('/')[3];
     }
-
-    async componentDidMount() {
-        const problem = null; // await this.props.onFetchProblemRepo(this.props.problemId)
-        this.setState({problem: problem});
-    };
 
     render() {
         return (
-            this.renderEditProblem(this.state.problem)
+            <EditSingleProblemRepo problemId={this.getProblemIdFromURL()} {...this.props}/>
         )
     };
 }

@@ -1,7 +1,7 @@
 import {stringify} from 'query-string';
 
 import {APP_CONFIG} from '../../../config';
-import {_get, _post} from '../request';
+import {_delete, _get, _post} from '../request';
 import {selectToken} from "../../redux/session";
 
 export function problemAPI() {
@@ -20,6 +20,14 @@ export function problemAPI() {
         show: (id) => {
             const token = selectToken();
             return _get(`${baseURL}/${id}`, token);
+        },
+        update: (id,data) => {
+            const token = selectToken();
+            return _post(`${baseURL}/${id}`, token, data);
+        },
+        delete: (id) => {
+            const token = selectToken();
+            return _delete(`${baseURL}/${id}`, token);
         }
     }
 }

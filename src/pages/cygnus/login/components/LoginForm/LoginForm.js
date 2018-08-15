@@ -46,7 +46,7 @@ export class LoginForm extends React.Component {
 
                 <div className={Styles.FORM_LOGIN_WRAPPER}>
                     <Button type="submit" text="Log in" intent={Intent.PRIMARY}
-                            loading={!this.props.submitFailed && this.props.submitting}/>
+                            loading={!this.props.submitFailed && (this.props.submitting || this.props.submitSucceeded)}/>
                     <p className={Styles.FORM_LOGIN_REGISTER}>
                         Don't have account? <Link to="/register">Register now</Link>
                     </p>

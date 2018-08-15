@@ -44,6 +44,7 @@ class AppToaster extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
+        console.log('toast',nextProps);
         if (nextProps.toastFile.filename !== null && nextProps.toastFile.key === null) {
             const key = this.toaster.show(AppToaster.renderFileUploadProgress(0, nextProps.toastFile.filename));
             store.dispatch(AddKeyToastFile(key));
