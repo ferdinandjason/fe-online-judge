@@ -45,7 +45,8 @@ export function sessionAPI() {
                 });
         },
 
-        refreshToken: (token) => {
+        refreshToken: () => {
+            const token = selectToken();
             return _post(`${baseURL}/refresh`, token)
                 .then((response) => {
                     const token = response.data.access_token;

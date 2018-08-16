@@ -8,8 +8,9 @@ export function problemAPI() {
     const baseURL = APP_CONFIG.apiURL.problem;
 
     return {
-        list: (page, limit, owner_id = null) => {
-            const params = stringify({page, limit, owner_id});
+        list: (page, limit, owner_id = null, is_public = null) => {
+            console.log(is_public);
+            const params = stringify({page, limit, owner_id, is_public});
             const token = selectToken();
             return _get(`${baseURL}?${params}`, token);
         },

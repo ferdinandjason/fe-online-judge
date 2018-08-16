@@ -6,8 +6,6 @@ import {problemRepositoryActions} from "../../../../modules/problem";
 import LoadingProblemStatementCard
     from "../../../../../../../../../../../components/problem/ProblemStatementCard/LoadingProblemStatementCard";
 import {withBreadcrumb} from "../../../../../../../../../../../components";
-import {API} from "../../../../../../../../../../../modules/api";
-import {selectToken} from "../../../../../../../../../../../modules/redux/session";
 
 class ProblemRepositoryStatementView extends React.Component {
     constructor(props) {
@@ -28,7 +26,7 @@ class ProblemRepositoryStatementView extends React.Component {
                 return Promise.resolve();
             })
             .then(() => {
-                API.sessionAPI.refreshToken(selectToken());
+                this.props.onRefreshToken();
             })
     }
 
@@ -44,6 +42,7 @@ class ProblemRepositoryStatementView extends React.Component {
 function createProblemRepositoryStatementView(problemRepositoryActions) {
     const mapDispatchToProps = {
         onFetchProblemRepo: (problemId) => problemRepositoryActions.fetchProblem(problemId),
+        onRefreshToken: () => problemRepositoryActions.refreshToken(),
     };
     return connect(undefined, mapDispatchToProps)(ProblemRepositoryStatementView);
 }

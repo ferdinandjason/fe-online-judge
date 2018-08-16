@@ -3,6 +3,7 @@ export * from './DropzoneContainer';
 export * from './FormInputCode';
 export * from './FormInputEditor';
 export * from './FormInputPassword';
+export * from './FormInputSwitch';
 export * from './FormInputText';
 export * from './FormInputValidation';
 export * from './FormTableInput';

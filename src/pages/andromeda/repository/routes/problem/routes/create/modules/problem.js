@@ -11,5 +11,10 @@ export const problemRepositoryCreateActions = {
                     }
                 });
         }
+    },
+    refreshToken : () => {
+        return async (dispatch, getState, {sessionAPI}) => {
+            return sessionAPI.refreshToken();
+        }
     }
 };

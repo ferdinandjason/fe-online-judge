@@ -38,11 +38,12 @@ class ContentWithMultipleSidebarContainer extends React.Component {
     renderContent = () => {
         const route = this.props.sidebars.map(sidebar => {
             return sidebar.items.map(item => {
-                const props = {
+                let props = {
                     exact: item.id === '~',
                     path: resolveURL(this.props.match.url, item.id),
-                    component: item.component,
                 };
+                if(item.component) props.component = item.component;
+                if(item.render) props.render = item.render;
                 return <Route key={item.id} {...props} />
             });
 

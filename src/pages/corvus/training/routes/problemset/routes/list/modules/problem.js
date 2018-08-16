@@ -1,11 +1,16 @@
-import {selectToken} from '../../../../../../../../modules/redux/session';
-
 export const problemListActions = {
-    fetchProblemList: () => {
-        return async () => {
-            const token = selectToken();
-            console.log(token);
-            return false;
+    fetchProblemList: (page, limit, is_public) => {
+        return async (dispatch, getState, {problemAPI}) => {
+            return problemAPI.list(page + 1, limit, null, is_public)
+                .then((response) => {
+                    const problems = response.data;
+                    return Promise.resolve(problems);
+                })
+        }
+    },
+    refreshToken : () => {
+        return async (dispatch, getState, {sessionAPI}) => {
+            return sessionAPI.refreshToken();
         }
     }
 };

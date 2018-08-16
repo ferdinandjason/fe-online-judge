@@ -5,8 +5,16 @@ import ProblemListTable from "../ProblemListTable/ProblemListTable";
 import LoadingProblemListTable from "../ProblemListTable/LoadingProblemListTable";
 import {CardContainer} from "../../../../../../../../../components";
 import {problemListActions} from "../../modules/problem";
+import {Pagination} from "../../../../../../../../../components/Pagination";
 
 class ProblemListContainer extends React.Component {
+    handleChangePage = async (next) => {
+        console.log(next.selected);
+        const current_page = next.selected;
+        await this.setState({current_page});
+        await this.componentDidMount();
+    };
+
     renderProblemList = (problemList) => {
         if (!problemList || problemList.length === 0) {
             return (
@@ -18,6 +26,7 @@ class ProblemListContainer extends React.Component {
         return (
             <CardContainer title={"Problem"} strict={true}>
                 <ProblemListTable problemList={problemList}/>
+                <Pagination {...this.state.problemPaginationProps} onChangePage={this.handleChangePage}/>
             </CardContainer>
         )
     };
@@ -25,13 +34,27 @@ class ProblemListContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            problemList: null
-        }
+            problemPaginationProps: null,
+            problemList: null,
+            current_page: 0,
+            limit: ProblemListContainer.getProblemLimit(),
+        };
+    }
+
+    static getProblemLimit() {
+        return Math.floor((window.innerHeight - 376) / 52) - 1;
     }
 
     async componentDidMount() {
-        const problemList = null; // await this.props.onFetchProblemList
-        this.setState({problemList});
+        const {current_page, limit} = this.state;
+        await this.props.onFetchProblemList(current_page, limit)
+            .then((problems) => {
+                const problemList = problems.data;
+                const problemPaginationProps = problems.meta.pagination;
+                this.setState({problemList});
+                this.setState({problemPaginationProps});
+                return Promise.resolve();
+            });
     }
 
     render() {
@@ -45,7 +68,7 @@ class ProblemListContainer extends React.Component {
 
 function createProblemListContainer(problemListActions) {
     const mapDispatchToProps = {
-        onFetchProblemList: (problemId) => problemListActions.fetchProblemList(problemId),
+        onFetchProblemList: (current_page, limit) => problemListActions.fetchProblemList(current_page, limit, true),
     };
     return connect(undefined, mapDispatchToProps)(ProblemListContainer);
 }

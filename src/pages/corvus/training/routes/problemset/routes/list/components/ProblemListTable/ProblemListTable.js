@@ -2,9 +2,11 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-import {Button, Classes} from '@blueprintjs/core';
+import {Button, Classes, Tooltip} from '@blueprintjs/core';
 
 import Styles from './ProblemListTable.scss';
+import {IconNames} from "@blueprintjs/icons/lib/esm/index";
+import {Intent, Position} from "@blueprintjs/core/lib/esm/index";
 
 class ProblemListTable extends React.Component {
     render() {
@@ -24,14 +26,18 @@ class ProblemListTable extends React.Component {
                 {
                     this.props.problemList.map(problem => {
                         return (
-                            <tr>
-                                <td className={Styles.PROBLEM_LIST_TABLE_RESPONSIVE}>{problem.id}</td>
-                                <td>{problem.slug}</td>
-                                <td>{problem.title}</td>
-                                <td className={Styles.PROBLEM_LIST_TABLE_RESPONSIVE}>{problem.statistic}</td>
-                                <td>
-                                    <Link to={"/training/problem/test"}>
-                                        <Button icon={"arrow-right"} text={"Go!"}/>
+                            <tr key={problem.id} style={{textAlign: 'center'}}>
+                                <td className={Styles.PROBLEM_LIST_TABLE_RESPONSIVE}
+                                    style={{textAlign: 'center'}}>{problem.id}</td>
+                                <td style={{textAlign: 'center'}}>{problem.slug}</td>
+                                <td style={{textAlign: 'center'}}>{problem.title}</td>
+                                <td className={Styles.PROBLEM_LIST_TABLE_RESPONSIVE}
+                                    style={{textAlign: 'center'}}>{problem.statistic}</td>
+                                <td style={{textAlign: 'center'}}>
+                                    <Link to={`/training/problem/${problem.id}`}>
+                                        <Tooltip content="Enter" position={Position.TOP}>
+                                            <Button icon={IconNames.LOG_IN} intent={Intent.PRIMARY}/>
+                                        </Tooltip>
                                     </Link>
                                 </td>
                             </tr>

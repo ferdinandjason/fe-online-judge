@@ -16,9 +16,23 @@ import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/red
 import {problemActions} from "../modules/problem";
 
 class SingleProblemRoutes extends React.Component {
-    componentDidMount() {
-        const problem = {name: '123'}; // await this.props.onFetchProblem(this.props.match.params.problemId)
-        this.props.onPushBreadcrumb(this.props.match.url, problem.name);
+    constructor(props){
+        super(props);
+        this.state = {
+            problem : null,
+        }
+    }
+
+    async componentDidMount() {
+        await this.props.onFetchProblem(this.props.match.params.problemId)
+            .then((problem) => {
+                this.setState({problem});
+                this.props.onPushBreadcrumb(this.props.match.url, problem.slug);
+                return Promise.resolve();
+            })
+            .then(()=>{
+                this.props.onRefreshToken();
+            })
     }
 
     componentWillUnmount() {
@@ -31,7 +45,9 @@ class SingleProblemRoutes extends React.Component {
                 id: 'statement',
                 titleIcon: 'document',
                 title: 'Statement',
-                component: SingleProblemStatementRoutes
+                render: () => (
+                    <SingleProblemStatementRoutes problem={this.state.problem}/>
+                )
             },
             {
                 id: 'statistic',
@@ -82,6 +98,7 @@ function createSingleProblemRoutes(problemActions) {
         onFetchProblem: (problemId) => problemActions.fetchProblem(problemId),
         onPushBreadcrumb: (link, title) => PushBreadcrumb({link, title}),
         onPopBreadcrumb: (link) => PopBreadcrumb({link}),
+        onRefreshToken: () => problemActions.refreshToken()
     };
     return withRouter(connect(undefined, mapDispatchToProps)(SingleProblemRoutes))
 }
