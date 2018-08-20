@@ -1,0 +1,19 @@
+.bp3-tab[aria-selected="true"] .icon8-active, .bp3-tab:not([aria-disabled="true"]):hover .icon8-active{
+    display: block;
+}
+
+.bp3-tab[aria-selected="true"] .icon8-nonactive, .bp3-tab:not([aria-disabled="true"]):hover .icon8-nonactive{
+    display: none;
+}
+
+.icon8-nonactive{
+    display: block;
+    height: inherit;
+    width: inherit;
+}
+
+.icon8-active{
+    display: none;
+    height: inherit;
+    width: inherit;
+}

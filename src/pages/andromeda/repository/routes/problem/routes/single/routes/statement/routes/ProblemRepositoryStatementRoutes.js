@@ -1,26 +1,27 @@
+import React from 'react';
 import {
     ProblemRepositoryStatementEdit,
     ProblemRepositoryStatementMedia,
     ProblemRepositoryStatementView
 } from "../components/ProblemRepositoryStatement";
 
-export const ProblemRepositoryStatementRoutes = [
+export const createProblemRepositoryStatementRoutes = (problem) => ([
     {
         id: 'view',
         titleIcon: 'document',
         title: 'View',
-        component: ProblemRepositoryStatementView
+        render: () => (<ProblemRepositoryStatementView problem={problem}/>)
     },
     {
         id: 'edit',
         titleIcon: 'edit',
         title: 'Edit',
-        component: ProblemRepositoryStatementEdit
+        render: () => (<ProblemRepositoryStatementEdit problem={problem}/>)
     },
     {
         id: 'media',
         titleIcon: 'media',
         title: 'Media',
-        component: ProblemRepositoryStatementMedia
+        render: () => (<ProblemRepositoryStatementMedia problem={problem}/>)
     },
-];
+]);

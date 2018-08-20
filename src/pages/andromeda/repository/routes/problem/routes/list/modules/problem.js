@@ -12,7 +12,7 @@ export const problemRepositoryListActions = {
     },
     deleteProblem: (id,slug) => {
         return async (dispatch, getState, {problemAPI}) => {
-            return problemAPI.delete(id)
+            return problemAPI.delete_(id)
                 .then((response) => {
                     if(response.status === 204){
                         dispatch(Toast.success(`Problem ${slug} deleted !`));

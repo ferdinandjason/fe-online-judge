@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ._1qh4O .bp3-tab-indicator-wrapper .bp3-tab-indicator {
   background-color: #39424e !important;
-  top: 50px;
+  top: 63px;
 }
 
 @media only screen and (max-width: 450px){
@@ -108,9 +108,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Theme Color */
-.bp3-button.bp3-intent-primary {
-    background-color: #39424e !important;
-}
+/*.bp3-button.bp3-intent-primary {*/
+    /*background-color: #39424e !important;*/
+/*}*/
 
 /* Toast */
 .bp3-toast-message {
@@ -138,8 +138,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Profile */
 ._2CXvP ._qgrZw {
     height: calc(100% - 44px);
+    overflow-y: scroll;
 }
 
 ._2CXvP ._1phqC {
     height: 100%;
+}
+
+/* Froala Editor */
+.bp3-card > .fr-view{
+    margin-top: 20px;
 }

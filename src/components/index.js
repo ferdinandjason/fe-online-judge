@@ -12,6 +12,7 @@ export * from './Editor/WYSIWYGEditor';
 export * from './Footer';
 export * from './Header';
 export * from './HorizontalDivider';
+export * from './Icon8';
 export * from './LoadingState';
 export * from './Menubar';
 export * from './MenuItemLink';

@@ -1,4 +1,5 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom';
 import {connect} from "react-redux";
 import {Field, reduxForm} from 'redux-form';
 import {Button, Intent} from '@blueprintjs/core';
@@ -8,8 +9,6 @@ import {FormInputEditor, FormInputSwitch, FormInputText} from "../../../../../..
 import {CardContainer, withBreadcrumb} from "../../../../../../../../../../../components";
 import {problemRepositoryActions} from "../../../../modules/problem";
 import {Required, Slug} from "../../../../../../../../../../../components/forms/FormInputValidation/Validation";
-import {API} from "../../../../../../../../../../../modules/api";
-import {selectToken} from "../../../../../../../../../../../modules/redux/session";
 
 const titleField = {
     name: 'title',
@@ -49,25 +48,11 @@ class RawEditSingleProblemForm extends React.Component {
     };
 
     componentDidMount() {
-        this.props.onFetchProblemRepo(this.props.problemId)
-            .then((problem) => {
-                descriptionField.init = problem.description;
-                this.props.initialize(problem);
-                this.forceUpdate();
-                return Promise.resolve();
-            })
-            .then(() => {
-                API.sessionAPI.refreshToken(selectToken());
-                this.render();
-            });
-    }
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            description: '',
-            loading: false,
-        };
+        if(this.props.problem){
+            descriptionField.init = this.props.problem.description;
+            this.props.initialize(this.props.problem);
+            this.forceUpdate();
+        }
     }
 
     render() {
@@ -77,7 +62,9 @@ class RawEditSingleProblemForm extends React.Component {
                 <Field component={FormInputText} {...slugField}/>
                 <Field component={FormInputEditor} {...descriptionField} />
                 <Field component={FormInputSwitch} {...publicField} />
-                <Button icon={IconNames.UPDATED} intent={Intent.PRIMARY} type='submit' loading={this.state.loading}>
+                <Button icon={IconNames.UPDATED} intent={Intent.PRIMARY} type='submit'
+                        loading={!this.props.submitFailed && (this.props.submitting || this.props.submitSucceeded)}
+                >
                     Update Problem
                 </Button>
             </form>
@@ -85,22 +72,19 @@ class RawEditSingleProblemForm extends React.Component {
     }
 }
 
-function createEditSingleProblemForm(problemRepositoryActions){
+function createEditSingleProblemForm(){
     const mapStateToProps = (state,ownProps) => ({
-        problemId: ownProps.problemId,
+        problem: ownProps.problem,
     });
-    const mapDispatchToProps = {
-        onFetchProblemRepo: (problemId) => problemRepositoryActions.fetchProblem(problemId),
-    };
-    return connect(mapStateToProps,mapDispatchToProps)(reduxForm({form: 'edit-statement-single-problem-form'})(RawEditSingleProblemForm))
+    return connect(mapStateToProps)(reduxForm({form: 'edit-statement-single-problem-form'})(RawEditSingleProblemForm))
 }
 
-const EditSingleProblemForm = createEditSingleProblemForm(problemRepositoryActions)
+const EditSingleProblemForm = createEditSingleProblemForm();
 
 class EditSingleProblemRepo extends React.Component {
     handleSubmit = (data) => {
         console.log(data);
-        this.props.onUpdateProblem(this.props.problemId,data)
+        this.props.onUpdateProblem(this.props.problem.id,data)
             .then(() => {
                 this.props.history.push('/repository');
             });
@@ -111,7 +95,7 @@ class EditSingleProblemRepo extends React.Component {
         return (
             <div className={"page__container"}>
                 <CardContainer title={title}>
-                    <EditSingleProblemForm {...this.props} onSubmit={this.handleSubmit}/>
+                    <EditSingleProblemForm problem={this.props.problem} onSubmit={this.handleSubmit}/>
                 </CardContainer>
             </div>
         )
@@ -122,29 +106,18 @@ function createEditSingleProblemRepo(problemRepositoryActions){
     const mapDispatchToProps = {
         onUpdateProblem: (problemId, data) => problemRepositoryActions.updateProblem(problemId,data),
     };
-    return connect(undefined,mapDispatchToProps)(EditSingleProblemRepo)
+    return connect(undefined,mapDispatchToProps)(withRouter(EditSingleProblemRepo))
 }
 
 EditSingleProblemRepo = createEditSingleProblemRepo(problemRepositoryActions);
 
 
 export class ProblemRepositoryStatementEdit extends React.Component {
-    getProblemIdFromURL() {
-        return this.props.match.path.split('/')[3];
-    }
-
     render() {
         return (
-            <EditSingleProblemRepo problemId={this.getProblemIdFromURL()} {...this.props}/>
+            <EditSingleProblemRepo problem={this.props.problem}/>
         )
     };
 }
 
-function createProblemRepositoryStatementEdit(problemRepositoryActions) {
-    const mapDispatchToProps = {
-        onFetchProblemRepo: (problemId) => problemRepositoryActions.fetchProblem(problemId),
-    };
-    return connect(undefined, mapDispatchToProps)(ProblemRepositoryStatementEdit);
-}
-
-export default withBreadcrumb('Edit')(createProblemRepositoryStatementEdit(problemRepositoryActions));
+export default withBreadcrumb('Edit')(ProblemRepositoryStatementEdit);

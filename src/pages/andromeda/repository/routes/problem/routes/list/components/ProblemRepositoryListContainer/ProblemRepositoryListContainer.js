@@ -14,6 +14,7 @@ class ProblemRepositoryListContainer extends React.Component {
         const current_page = next.selected;
         await this.setState({current_page});
         await this.componentDidMount();
+        this.forceUpdate();
     };
 
     renderProblemList = (problemRepoList) => {
@@ -55,7 +56,7 @@ class ProblemRepositoryListContainer extends React.Component {
                 const problemRepoPaginationProps = problemRepo.meta.pagination;
                 this.setState({problemRepoList});
                 this.setState({problemRepoPaginationProps});
-                return Promise.resolve();
+                console.log(this.state.problemRepoList);
             });
     }
 

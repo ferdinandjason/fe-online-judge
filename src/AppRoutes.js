@@ -9,19 +9,19 @@ export const routes = [
         id: 'training',
         title: 'Training',
         to: '/training',
-        icon: 'manual',
+        icon: 'e-learning',
     },
     {
         id: 'competition',
         title: 'Competition',
         to: '/competition',
-        icon: 'crown',
+        icon: 'prize',
     },
     {
         id: 'repository',
         title: 'Repository',
         to: '/repository',
-        icon: 'database',
+        icon: 'data-configuration',
     },
 ];
 

@@ -1,16 +1,17 @@
+import React from 'react';
 import {ProblemRepositoryGradingConfig, ProblemRepositoryGradingTestcase} from "../components/ProblemRepositoryGrading";
 
-export const ProblemRepositoryGradingRoutes = [
+export const createProblemRepositoryGradingRoutes = (problem) => ([
     {
         id: 'config',
         titleIcon: 'take-action',
         title: 'Configuration',
-        component: ProblemRepositoryGradingConfig
+        render: () => (<ProblemRepositoryGradingConfig problem={problem}/>)
     },
     {
         id: 'testcase',
         titleIcon: 'box',
         title: 'Testcase',
-        component: ProblemRepositoryGradingTestcase
+        render: () => (<ProblemRepositoryGradingTestcase problem={problem}/>)
     },
-];
+]);

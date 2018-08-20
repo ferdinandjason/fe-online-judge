@@ -2,8 +2,8 @@
 
 .DOUBLE_PAGE_LAYOUT {
   max-width: $base-width;
-  min-height: calc(100vh - 248px);
-  margin : -10px auto 10px auto;
+  min-height: calc(100vh - 250px);
+  margin : -10px auto -1px auto;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
-import {Icon, Tab, Tabs} from '@blueprintjs/core';
+import {Tab, Tabs} from '@blueprintjs/core';
 
-import {HorizontalDivider} from "..";
+import {HorizontalDivider, Icon8} from "..";
 
 import Styles from './Menubar.scss';
 
@@ -38,8 +38,8 @@ class Menubar extends React.Component {
                                 <Tab key={item.id} id={item.id} className={Styles.MENUBAR_TABS}>
                                     <Link to={item.to}>
                                         <div>
-                                            <div style={{height: '18px'}}>
-                                                <Icon icon={item.icon} iconSize={20}/>
+                                            <div style={{height: '32px'}}>
+                                                <Icon8 icon={item.icon} size={32}/>
                                             </div>
                                             {item.title}
                                         </div>

@@ -9,7 +9,6 @@ export function problemAPI() {
 
     return {
         list: (page, limit, owner_id = null, is_public = null) => {
-            console.log(is_public);
             const params = stringify({page, limit, owner_id, is_public});
             const token = selectToken();
             return _get(`${baseURL}?${params}`, token);
@@ -26,7 +25,7 @@ export function problemAPI() {
             const token = selectToken();
             return _post(`${baseURL}/${id}`, token, data);
         },
-        delete: (id) => {
+        delete_: (id) => {
             const token = selectToken();
             return _delete(`${baseURL}/${id}`, token);
         }

@@ -1,0 +1,1 @@
+export {default as Icon8} from './Icon8';

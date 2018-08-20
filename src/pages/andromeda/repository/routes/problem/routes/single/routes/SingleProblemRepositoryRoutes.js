@@ -7,8 +7,8 @@ import {IconNames} from "@blueprintjs/icons";
 
 import {DoublePageLayout} from "../../../../../../../../components/layouts";
 import {ButtonLink, ContentWithMultipleSidebarContainer} from "../../../../../../../../components";
-import {ProblemRepositoryStatementRoutes} from "./statement/routes/ProblemRepositoryStatementRoutes";
-import {ProblemRepositoryGradingRoutes} from "./grading/routes/ProblemRepositoryGradingRoutes";
+import {createProblemRepositoryStatementRoutes} from "./statement/routes/ProblemRepositoryStatementRoutes";
+import {createProblemRepositoryGradingRoutes} from "./grading/routes/ProblemRepositoryGradingRoutes";
 import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/redux/breadcrumb";
 import {problemRepositoryActions} from "../modules/problem";
 import {DeleteDocumentTitle, SetDocumentTitle} from "../../../../../../../../modules/redux/platform";
@@ -30,7 +30,10 @@ class SingleProblemRepositoryRoutes extends React.Component {
                 this.props.onPushBreadcrumb(this.props.match.url, problem.title);
                 this.props.onSetDocumentTitle(problem.title);
                 return Promise.resolve();
-            });
+            })
+            .then(()=>{
+                this.props.onRefreshToken();
+            })
     }
 
     componentWillUnmount() {
@@ -42,7 +45,7 @@ class SingleProblemRepositoryRoutes extends React.Component {
         const contentWithSidebarContainerProps = [
             {
                 title: 'Statement',
-                items: ProblemRepositoryStatementRoutes,
+                items: createProblemRepositoryStatementRoutes(this.state.problem),
                 action: (
                     <ButtonLink to="/repository/problem" className={classNames(Classes.SMALL, IconNames.CHEVRON_LEFT)}
                                 intent={Intent.PRIMARY}>
@@ -52,7 +55,7 @@ class SingleProblemRepositoryRoutes extends React.Component {
             },
             {
                 title: 'Grading',
-                items: ProblemRepositoryGradingRoutes,
+                items: createProblemRepositoryGradingRoutes(this.state.problem),
             },
             {
                 title: 'Submission',
@@ -75,6 +78,7 @@ function createSingleProblemRepositoryRoutes(problemRepositoryActions) {
         onPopBreadcrumb: (link) => PopBreadcrumb({link}),
         onSetDocumentTitle: (title) => SetDocumentTitle(title),
         onDeleteDocumentTitle: () => DeleteDocumentTitle(),
+        onRefreshToken : () => problemRepositoryActions.refreshToken(),
     };
     return withRouter(connect(undefined, mapDispatchToProps)(SingleProblemRepositoryRoutes))
 }

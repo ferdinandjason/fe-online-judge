@@ -18,7 +18,6 @@ class ProblemRepositoryListTable extends React.Component {
             problem: {
                 slug:''
             },
-            problemList : this.props.problemList,
         };
         this.handleAlert = this.handleAlert.bind(this);
         this.handleCancel = this.handleCancel.bind(this);
@@ -26,7 +25,7 @@ class ProblemRepositoryListTable extends React.Component {
     }
 
     render() {
-        const {problemList} = this.state;
+        const {problemList} = this.props;
         return (
             <table
                 className={classNames(Classes.HTML_TABLE, Classes.HTML_TABLE_STRIPED, Classes.INTERACTIVE, Styles.PROBLEM_REPO_LIST_TABLE_WRAPPER)}>
@@ -95,13 +94,12 @@ class ProblemRepositoryListTable extends React.Component {
     };
 
     handleConfirm = () => {
-        const {problem,problemList} = this.state;
+        const {problem} = this.state;
         this.props.onDeleteProblem(problem.id,problem.slug)
             .then(()=>{
                 API.sessionAPI.refreshToken(selectToken());
                 this.setState({isOpen:false});
                 this.setState({problem:{slug:''}});
-                this.setState({problemList:problemList.filter((prob)=> (prob.id !== problem.id))})
             });
     }
 }
