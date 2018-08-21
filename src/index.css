@@ -26,13 +26,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Menubar */
 
-._1qh4O .bp3-tab-indicator-wrapper .bp3-tab-indicator {
+.MENUBAR .bp3-tab-indicator-wrapper .bp3-tab-indicator {
   background-color: #39424e !important;
   top: 63px;
 }
 
+.bp3-tab-indicator-wrapper {
+    z-index: 10;
+}
+
+
 @media only screen and (max-width: 450px){
-  ._1qh4O .bp3-tab-indicator-wrapper .bp3-tab-indicator {
+  .MENUBAR .bp3-tab-indicator-wrapper .bp3-tab-indicator {
     background-color: #39424e !important;
     top: 61px;
     position: inherit !important;
@@ -41,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sidebar */
 
-._ru_4w .bp3-tab-list {
+.CARD_SIDEBAR .bp3-tab-list {
     left: -20px !important;
     width: 270px !important;
 }
@@ -50,43 +55,43 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px !important;
 }
 
-._ru_4w .bp3-tab-indicator {
+.CARD_SIDEBAR .bp3-tab-indicator {
     background-color: #eef2fb !important;
     border-radius: 0 !important;
     border-left: 3px solid #39424e !important;
 }
 
-._ru_4w .bp3-tab {
+.CARD_SIDEBAR .bp3-tab {
     padding-left: 20px !important;
     line-height: 50px;
     height: 50px;
 }
 
-._ru_4w .bp3-tab[aria-selected="true"] {
+.CARD_SIDEBAR .bp3-tab[aria-selected="true"] {
     font-weight: bold;
     color: #252527;
 }
 
-._ru_4w .bp3-tab[aria-selected="false"] {
+.CARD_SIDEBAR .bp3-tab[aria-selected="false"] {
     color: #39424e;
 }
 
-._ru_4w ._qgrZw {
+.CARD_SIDEBAR .CARD_CONTENT {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-._ru_4w ._24rUc {
+.CARD_SIDEBAR .CARD_TITLE {
     background-color: white !important;
 }
 
-._qgrZw .bp3-tab-indicator {
+.CARD_CONTENT .bp3-tab-indicator {
     height: auto !important;
     width: 260px;
 }
 
 @media only screen and (max-width: 750px) {
-    ._YrNmg .pt-tab-list {
+    .CARD_SIDEBAR_RESPONSIVE .pt-tab-list {
         left: 0;
     }
 
@@ -123,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 40px !important;
 }
 
-._253Tw .bp3-label {
+.FORM_TABLE_INPUT_GROUP .bp3-label {
     margin-bottom: 0 !important;
 }
 
@@ -136,12 +141,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Profile */
-._2CXvP ._qgrZw {
+.PROFILE_CARD_CONTENT .CARD_CONTENT {
     height: calc(100% - 44px);
     overflow-y: scroll;
 }
 
-._2CXvP ._1phqC {
+.PROFILE_CARD_CONTENT .CARD_CONTAINER {
     height: 100%;
 }
 
