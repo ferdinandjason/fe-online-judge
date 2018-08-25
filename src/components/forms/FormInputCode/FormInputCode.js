@@ -114,13 +114,15 @@ function highlightText(text, query) {
 
 export class FormInputCode extends React.Component {
     static DEFAULT = 0;
-    handleChange = (value, event) => {
-        console.log(event);
-        this.props.input.onChange(value);
+    aceOnBlur = (onBlur) => (_event, editor) => {
+        const value = editor.getValue();
+        onBlur(value);
     };
+
     handleModeValueChange = (mode) => {
         this.setState({mode});
     };
+
     handleThemeValueChange = (theme) => {
         this.setState({theme});
     };
@@ -176,11 +178,14 @@ export class FormInputCode extends React.Component {
                     {...this.props.input}
                     mode={this.state.mode.mode}
                     theme={this.state.theme.theme}
-                    onChange={this.handleChange}
+                    onChange={this.props.input.onChange}
+                    onFocus={this.props.input.onFocus}
+                    onBlur={this.aceOnBlur(this.props.input.onBlur)}
                     fontSize={14}
                     showPrintMargin={true}
                     showGutter={true}
                     highlightActiveLine={true}
+                    editorProps={{$blockScrolling: Infinity}}
                     setOptions={{
                         enableBasicAutocompletion: true,
                         enableLiveAutocompletion: true,

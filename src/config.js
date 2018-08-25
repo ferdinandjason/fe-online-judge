@@ -6,11 +6,13 @@ export const APP_CONFIG = {
     apiURL: {
         auth: `${BASE_URL}/api/auth`,
         problem: `${BASE_URL}/api/problems`,
+        submission: `${BASE_URL}/api/submissions`,
     }
 };
 
 export const MODE = [
-    {title: 'C / C++ / C#', mode: 'csharp'},
+    {title: 'C', mode: 'csharp'},
+    {title: 'C++', mode: 'csharp'},
     {title: 'Java', mode: 'java'},
     {title: 'Javascript', mode: 'javascript'},
     {title: 'Python', mode: 'python'},

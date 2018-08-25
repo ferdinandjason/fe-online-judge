@@ -65,7 +65,9 @@ class SingleProblemRoutes extends React.Component {
                 id: 'submit',
                 titleIcon: 'document-open',
                 title: 'Submit',
-                component: SingleProblemSubmitRoutes
+                render: () => (
+                    <SingleProblemSubmitRoutes problem={this.state.problem}/>
+                )
             },
             {
                 id: 'submission',
