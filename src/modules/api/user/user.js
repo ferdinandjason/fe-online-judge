@@ -1,14 +1,14 @@
-import {_post} from "../request";
+import {Post} from "../request";
 import {APP_CONFIG} from '../../../config';
 import {store} from "../../store";
-import {Toast} from "../../redux/toast";
+import {Toast} from "../../dispatcher/toast";
 
 export function userAPI() {
     const baseURL = APP_CONFIG.apiURL.auth;
 
     return {
         register: (name, email, password) => {
-            return _post(`${baseURL}/register`, undefined, {
+            return Post(`${baseURL}/register`, undefined, {
                 'name': name,
                 'email': email,
                 'password': password,

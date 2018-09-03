@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import {Button, Classes, Tooltip} from '@blueprintjs/core';
 
@@ -49,14 +48,5 @@ class ProblemListTable extends React.Component {
         );
     }
 }
-
-ProblemListTable.propTypes = {
-    problemList: PropTypes.arrayOf({
-        title: PropTypes.string.isRequired,
-        statistic: PropTypes.string.isRequired,
-        id: PropTypes.string.isRequired,
-        slug: PropTypes.string.isRequired,
-    }).isRequired,
-};
 
 export default ProblemListTable;

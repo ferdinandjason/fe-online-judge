@@ -1,4 +1,4 @@
-import {Toast} from "../../../../../../../../modules/redux/toast";
+import {Toast} from "../../../../../../../../modules/dispatcher/toast";
 import {store} from "../../../../../../../../modules/store";
 
 export const problemRepositoryCreateActions = {

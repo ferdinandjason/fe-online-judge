@@ -1,5 +1,5 @@
 import {APP_CONFIG} from '../../../config';
-import {selectToken} from "../../redux/session";
+import {selectToken} from "../../dispatcher/session";
 
 export function omnibarAPI() {
     const baseURL = APP_CONFIG.apiURL.auth;

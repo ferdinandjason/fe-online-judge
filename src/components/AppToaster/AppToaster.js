@@ -5,7 +5,7 @@ import {Classes, Intent, Position, ProgressBar, Toast, Toaster} from '@blueprint
 import {IconNames} from '@blueprintjs/icons';
 
 import {store} from "../../modules/store";
-import {AddKeyToastFile, GetKeyToastFile, GetPercentageToastFile} from "../../modules/redux/toastFile";
+import {AddKeyToastFile, GetKeyToastFile, GetPercentageToastFile} from "../../modules/dispatcher/toastFile";
 
 class AppToaster extends Component {
     constructor(props) {

@@ -4,8 +4,8 @@ import axios from 'axios';
 
 import Dropzone from "../Dropzone/Dropzone";
 import {FileUpload} from "../../../modules/api/request";
-import {selectToken} from "../../../modules/redux/session";
-import {Toast} from "../../../modules/redux/toast";
+import {selectToken} from "../../../modules/dispatcher/session";
+import {Toast} from "../../../modules/dispatcher/toast";
 
 class DropzoneContainer extends React.Component {
     constructor(props) {

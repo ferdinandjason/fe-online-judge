@@ -1,12 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import {Button, Classes, Intent, Tooltip, Position, Alert} from '@blueprintjs/core';
 import {IconNames} from '@blueprintjs/icons';
 
 import {API} from "../../../../../../../../../modules/api";
-import {selectToken} from "../../../../../../../../../modules/redux/session";
+import {selectToken} from "../../../../../../../../../modules/dispatcher/session";
 
 import Styles from './ProblemRepositoryListTable.scss';
 
@@ -103,14 +102,5 @@ class ProblemRepositoryListTable extends React.Component {
             });
     }
 }
-
-ProblemRepositoryListTable.propTypes = {
-    problemList: PropTypes.arrayOf(PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        statistic: PropTypes.string,
-        id: PropTypes.number.isRequired,
-        slug: PropTypes.string.isRequired,
-    })).isRequired,
-};
 
 export default ProblemRepositoryListTable;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Styles from './WelcomeHeadCard.scss';
 
@@ -11,14 +10,6 @@ export const WelcomeHeadCard = (props) => {
             <a href={"/" + props.link} className={Styles.wh_button}>{props.button}</a>
         </div>
     )
-};
-
-
-WelcomeHeadCard.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
-    button: PropTypes.string.isRequired,
 };
 
 export default WelcomeHeadCard;

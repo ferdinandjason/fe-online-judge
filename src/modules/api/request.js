@@ -2,11 +2,10 @@ import axios from 'axios';
 
 import {store} from '../store';
 import {IdentifyError} from "./error/error";
-import {AddToastFile, UpdatePercentageToastFile} from "../redux/toastFile";
+import {AddToastFile, UpdatePercentageToastFile} from "../dispatcher/toastFile";
 
 function request(method, url, token, header, data, onUploadProgress = null) {
     const authorization = token ? {Authorization: `Bearer ${token}`} : {};
-    console.log(method, url, token);
 
     return axios
         .request({
@@ -24,23 +23,23 @@ function request(method, url, token, header, data, onUploadProgress = null) {
 
 }
 
-export function _get(url, token = null) {
+export function Get(url, token = null) {
     return request('GET', url, token, null);
 }
 
-export function _post(url, token = null, data = null) {
+export function Post(url, token = null, data = null) {
     return request('POST', url, token, {'Content-Type': 'application/json'}, JSON.stringify(data));
 }
 
-export function _delete(url, token = null) {
+export function Delete(url, token = null) {
     return request('DELETE', url, token, null);
 }
 
-export function _put(url, token = null, data = null) {
+export function Put(url, token = null, data = null) {
     return request('PUT', url, token, {'Content-Type': 'application/json'}, JSON.stringify(data));
 }
 
-export function _file(url, token, parts) {
+export function MultipartData(url, token, parts) {
     const body = new FormData();
     Object.keys(parts).forEach(part => body.append(part, parts[part]));
     store.dispatch(AddToastFile(parts.name));
@@ -55,6 +54,6 @@ export function _file(url, token, parts) {
 
 export function FileUpload(url, token, parts) {
     return async () => {
-        return _file(url, token, parts);
+        return MultipartData(url, token, parts);
     }
 }

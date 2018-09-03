@@ -4,7 +4,7 @@ import thunk from 'redux-thunk';
 import storage from 'redux-persist/es/storage';
 import {reducer as formReducer} from 'redux-form';
 
-import {breadcrumbReducer, platformReducer, sessionReducer, toastFileReducer, toastReducer} from "./redux";
+import {breadcrumbReducer, platformReducer, sessionReducer, toastFileReducer, toastReducer} from "./dispatcher";
 
 import {sessionAPI} from "./api/session/session";
 import {userAPI} from "./api/user/user";

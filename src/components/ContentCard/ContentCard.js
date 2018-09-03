@@ -5,9 +5,7 @@ import {Classes} from '@blueprintjs/core';
 import Styles from './ContentCard.scss';
 
 export const ContentCard = (props) => (
-    <div>
-        <div className={classNames(Classes.CARD, Styles.CONTENT_CARD)}>
-            {props.children}
-        </div>
+    <div className={classNames(Classes.CARD, Styles.CONTENT_CARD)}>
+        {props.children}
     </div>
 );

@@ -1,8 +1,8 @@
 import {stringify} from 'query-string';
 
 import {APP_CONFIG} from '../../../config';
-import {_delete, _get, _post} from '../request';
-import {selectToken} from "../../redux/session";
+import {Delete, Get, Post} from '../request';
+import {selectToken} from "../../dispatcher/session";
 
 export function problemAPI() {
     const baseURL = APP_CONFIG.apiURL.problem;
@@ -11,23 +11,23 @@ export function problemAPI() {
         list: (page, limit, owner_id = null, is_public = null) => {
             const params = stringify({page, limit, owner_id, is_public});
             const token = selectToken();
-            return _get(`${baseURL}?${params}`, token);
+            return Get(`${baseURL}?${params}`, token);
         },
         create: (data) => {
             const token = selectToken();
-            return _post(`${baseURL}`, token, data);
+            return Post(`${baseURL}`, token, data);
         },
         show: (id) => {
             const token = selectToken();
-            return _get(`${baseURL}/${id}`, token);
+            return Get(`${baseURL}/${id}`, token);
         },
         update: (id,data) => {
             const token = selectToken();
-            return _post(`${baseURL}/${id}`, token, data);
+            return Post(`${baseURL}/${id}`, token, data);
         },
         delete_: (id) => {
             const token = selectToken();
-            return _delete(`${baseURL}/${id}`, token);
+            return Delete(`${baseURL}/${id}`, token);
         }
     }
 }

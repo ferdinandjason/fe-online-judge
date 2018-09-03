@@ -1,9 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import PropTypes from 'prop-types';
 import {Tab, Tabs} from '@blueprintjs/core';
 
-import {HorizontalDivider, Icon8} from "..";
+import {HorizontalInnerDivider, Icon8} from "..";
 
 import Styles from './Menubar.scss';
 
@@ -26,7 +25,7 @@ class Menubar extends React.Component {
         const selectedTabId = this.getActiveItemId();
         return (
             <div className={Styles.MENUBAR}>
-                <HorizontalDivider style={{marginTop: '0'}}/>
+                <HorizontalInnerDivider style={{marginTop: '0'}}/>
                 <Tabs id="menubar"
                       selectedTabId={selectedTabId}
                       className={Styles.MENUBAR_WRAPPER}
@@ -53,10 +52,5 @@ class Menubar extends React.Component {
         )
     }
 }
-
-Menubar.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.object),
-    specials: PropTypes.arrayOf(PropTypes.object),
-};
 
 export default Menubar;

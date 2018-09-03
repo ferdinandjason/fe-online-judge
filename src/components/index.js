@@ -1,7 +1,6 @@
 export * from "./AppToaster";
 export * from './Breadcrumb';
 export * from './BreadcrumbContainer/BreadcrumbContainer';
-export * from './ButtonLink';
 export * from './CardContainer';
 export * from './ContentCard';
 export * from './ContentWithMultipleSidebar';
@@ -12,6 +11,7 @@ export * from './Editor/WYSIWYGEditor';
 export * from './Footer';
 export * from './Header';
 export * from './HorizontalDivider';
+export * from './HorizontalInnerDivider';
 export * from './Icon8';
 export * from './LoadingState';
 export * from './Menubar';

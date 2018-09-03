@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Classes} from '@blueprintjs/core';
 import classNames from 'classnames';
 
-import {getBreadcrumbs} from "../../modules/redux/breadcrumb";
+import {getBreadcrumbs} from "../../modules/dispatcher/breadcrumb";
 
 import Styles from './Breadcrumb.scss';
 
@@ -25,13 +24,6 @@ const Breadcrumb = (props) => {
             </div>
         </div>
     );
-};
-
-Breadcrumb.propTypes = {
-    breadcrumbs: PropTypes.arrayOf(PropTypes.shape({
-        link: PropTypes.string,
-        title: PropTypes.string,
-    })).isRequired
 };
 
 function createBreadcrumb() {

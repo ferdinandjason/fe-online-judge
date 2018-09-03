@@ -12,7 +12,7 @@ import CygnusRoutes from './cygnus/CygnusRoutes';
 import AndromedaRoutes from "./andromeda/AndromedaRoutes";
 
 import {routes} from "../AppRoutes";
-import {getDocumentTitle} from "../modules/redux/breadcrumb";
+import {getDocumentTitle} from "../modules/dispatcher/breadcrumb";
 
 class App extends Component {
     render() {

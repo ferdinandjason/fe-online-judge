@@ -1,18 +1,15 @@
 import React from 'react';
-import classNames from 'classnames'
 import {connect} from "react-redux";
 import {withRouter} from 'react-router-dom';
-import {Classes} from '@blueprintjs/core';
-import {IconNames} from '@blueprintjs/icons';
 
 import {DoublePageLayout} from "../../../../../../../../components/layouts";
-import {ButtonLink, ContentWithSidebarContainer} from "../../../../../../../../components";
+import {ContentWithSidebarContainer} from "../../../../../../../../components";
 import SingleProblemStatementRoutes from "./statement/routes/SingleProblemStatementRoutes";
 import SingleProblemSubmitRoutes from "./submit/routes/SingleProblemSubmitRoutes";
 import SingleProblemRankRoutes from "./rank/routes/SingleProblemRankRoutes";
 import SingleProblemSubmissionRoutes from "./submission/routes/SingleProblemSubmissionRoutes";
 import SingleProblemStatisticRoutes from "./statistic/routes/SingleProblemStatisticRoutes";
-import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/redux/breadcrumb";
+import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/dispatcher/breadcrumb";
 import {problemActions} from "../modules/problem";
 
 class SingleProblemRoutes extends React.Component {
@@ -80,11 +77,6 @@ class SingleProblemRoutes extends React.Component {
         const contentWithSidebarContainerProps = {
             title: 'Problem',
             items: sidebarItems,
-            action: (
-                <ButtonLink to="/training/problem" className={classNames(Classes.SMALL, IconNames.CHEVRON_LEFT)}>
-                    Back
-                </ButtonLink>
-            ),
         };
 
         return (

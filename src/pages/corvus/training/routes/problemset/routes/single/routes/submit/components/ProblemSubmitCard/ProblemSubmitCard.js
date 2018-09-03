@@ -8,7 +8,7 @@ import {ContentCard} from "../../../../../../../../../../../components";
 import {FormInputCode} from "../../../../../../../../../../../components/forms";
 import {Required} from "../../../../../../../../../../../components/forms/FormInputValidation/Validation";
 import {submissionActions} from "../../../../modules/submission";
-import {getUser} from "../../../../../../../../../../../modules/redux/session";
+import {getUser} from "../../../../../../../../../../../modules/dispatcher/session";
 
 
 const codeField = {

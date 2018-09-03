@@ -1,9 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import {Classes} from '@blueprintjs/core';
+import {Classes, AnchorButton} from '@blueprintjs/core';
 
 import Styles from './SubmissionTable.scss';
-import {ButtonLink} from "../../ButtonLink";
 
 class LoadingSubmissionTable extends React.Component {
     render() {
@@ -30,7 +29,7 @@ class LoadingSubmissionTable extends React.Component {
                     <td>ACCEPTED</td>
                     <td>0.0</td>
                     <td>
-                        <ButtonLink to={'/repository/problem/1/submission/1'}/>
+                        <AnchorButton to={'/repository/problem/1/submission/1'}/>
                     </td>
                 </tr>
                 <tr>

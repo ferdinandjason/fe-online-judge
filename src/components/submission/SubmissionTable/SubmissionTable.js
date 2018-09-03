@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import {Classes} from '@blueprintjs/core';
 
 import Styles from './SubmissionTable.scss';
@@ -43,14 +42,5 @@ class SubmissionTable extends React.Component {
         );
     }
 }
-
-SubmissionTable.propTypes = {
-    submissionList: PropTypes.arrayOf({
-        username: PropTypes.string.isRequired,
-        time: PropTypes.string.isRequired,
-        problemtittle: PropTypes.string.isRequired,
-        status: PropTypes.string.isRequired,
-    }).isRequired,
-};
 
 export default SubmissionTable;

@@ -1,17 +1,14 @@
 import React from 'react';
-import classNames from "classnames";
 import {connect} from "react-redux";
 import {withRouter} from 'react-router-dom';
-import {Classes, Intent} from "@blueprintjs/core";
-import {IconNames} from "@blueprintjs/icons";
 
 import {DoublePageLayout} from "../../../../../../../../components/layouts";
-import {ButtonLink, ContentWithMultipleSidebarContainer} from "../../../../../../../../components";
+import {ContentWithMultipleSidebarContainer} from "../../../../../../../../components";
 import {createProblemRepositoryStatementRoutes} from "./statement/routes/ProblemRepositoryStatementRoutes";
 import {createProblemRepositoryGradingRoutes} from "./grading/routes/ProblemRepositoryGradingRoutes";
-import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/redux/breadcrumb";
+import {PopBreadcrumb, PushBreadcrumb} from "../../../../../../../../modules/dispatcher/breadcrumb";
 import {problemRepositoryActions} from "../modules/problem";
-import {DeleteDocumentTitle, SetDocumentTitle} from "../../../../../../../../modules/redux/platform";
+import {DeleteDocumentTitle, SetDocumentTitle} from "../../../../../../../../modules/dispatcher/platform";
 import {ProblemRepositorySubmissionRoutes} from "./submission/routes/ProblemRepositorySubmissionRoutes";
 
 class SingleProblemRepositoryRoutes extends React.Component {
@@ -46,12 +43,6 @@ class SingleProblemRepositoryRoutes extends React.Component {
             {
                 title: 'Statement',
                 items: createProblemRepositoryStatementRoutes(this.state.problem),
-                action: (
-                    <ButtonLink to="/repository/problem" className={classNames(Classes.SMALL, IconNames.CHEVRON_LEFT)}
-                                intent={Intent.PRIMARY}>
-                        Back
-                    </ButtonLink>
-                ),
             },
             {
                 title: 'Grading',

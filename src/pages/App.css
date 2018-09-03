@@ -47,3 +47,11 @@ body{
 .bp3-menu{
   min-width: 280px;
 }
+
+.bp3-toast-message {
+  margin-top: 5px;
+}
+
+.bp3-toast > .bp3-icon {
+  margin-top: 17px;
+}

@@ -90,6 +90,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 260px;
 }
 
+.CARD_TITLE_ACTION svg{
+    height: auto !important;
+}
+
 @media only screen and (max-width: 750px) {
     .CARD_SIDEBAR_RESPONSIVE .pt-tab-list {
         left: 0;

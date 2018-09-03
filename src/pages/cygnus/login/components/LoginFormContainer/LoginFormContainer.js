@@ -3,7 +3,7 @@ import {withRouter} from 'react-router-dom';
 
 import {LoginForm} from "../LoginForm/LoginForm";
 import {store} from "../../../../../modules/store";
-import {Toast} from "../../../../../modules/redux/toast";
+import {Toast} from "../../../../../modules/dispatcher/toast";
 import {API} from "../../../../../modules/api";
 
 class LoginFormContainer extends React.Component {

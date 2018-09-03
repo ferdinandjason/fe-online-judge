@@ -7,7 +7,7 @@ import LogoutPage from "./logout/pages/LogoutPage";
 import {RegisterPage} from "./register/pages/RegisterPage";
 
 import {store} from "../../modules/store";
-import {ChangePlatform} from "../../modules/redux/platform";
+import {ChangePlatform} from "../../modules/dispatcher/platform";
 import AccountRoutes from "./account/routes/AccountRoutes";
 import ProfileRoutes from "./profile/routes/ProfileRoutes";
 

@@ -1,4 +1,4 @@
-import {Toast} from "../../../../../../../../modules/redux/toast";
+import {Toast} from "../../../../../../../../modules/dispatcher/toast";
 
 export const problemRepositoryListActions = {
     fetchProblemRepositoryList: (page, limit, owner_id) => {

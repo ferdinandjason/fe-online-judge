@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import {Classes} from '@blueprintjs/core';
 
 import Styles from './TopUserTable.scss';
@@ -25,12 +24,5 @@ class TopUserTable extends React.Component {
         );
     }
 }
-
-TopUserTable.propTypes = {
-    topuserList: PropTypes.arrayOf({
-        username: PropTypes.string.isRequired,
-        points: PropTypes.string.isRequired,
-    }).isRequired,
-};
 
 export default TopUserTable;

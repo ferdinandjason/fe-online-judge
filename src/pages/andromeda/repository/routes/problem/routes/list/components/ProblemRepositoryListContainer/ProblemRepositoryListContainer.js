@@ -5,7 +5,7 @@ import ProblemListTable from "../ProblemRepositoryListTable/ProblemRepositoryLis
 import LoadingProblemListTable from "../ProblemRepositoryListTable/LoadingProblemRepositoryListTable";
 import {CardContainer} from "../../../../../../../../../components";
 import {problemRepositoryListActions} from "../../modules/problem";
-import {getUser} from "../../../../../../../../../modules/redux/session";
+import {getUser} from "../../../../../../../../../modules/dispatcher/session";
 import {Pagination} from "../../../../../../../../../components/Pagination";
 
 class ProblemRepositoryListContainer extends React.Component {

@@ -1,11 +1,10 @@
-import {Toast} from "../../../../../../../../modules/redux/toast";
+import {Toast} from "../../../../../../../../modules/dispatcher/toast";
 
 export const problemRepositoryActions = {
     fetchProblem: (problemId) => {
         return async (dispatch, getState, {problemAPI}) => {
             return problemAPI.show(problemId)
                 .then((response) => {
-                    console.log(response);
                     const problem = response.data.data;
                     return Promise.resolve(problem);
                 });

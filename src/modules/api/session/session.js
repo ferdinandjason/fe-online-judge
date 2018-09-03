@@ -1,15 +1,15 @@
 import {APP_CONFIG} from '../../../config';
 import {store} from '../../store';
-import {_get, _post} from '../request';
-import {AddUser, LogInSucces, LogOut, PutToken, selectToken} from "../../redux/session";
-import {Toast} from "../../redux/toast";
+import {Get, Post} from '../request';
+import {AddUser, LogInSucces, LogOut, PutToken, selectToken} from "../../dispatcher/session";
+import {Toast} from "../../dispatcher/toast";
 
 export function sessionAPI() {
     const baseURL = `${APP_CONFIG.apiURL.auth}`;
 
     return {
         logIn: (email, password) => {
-            return _post(`${baseURL}/login`, undefined, {
+            return Post(`${baseURL}/login`, undefined, {
                 'email': email,
                 'password': password,
             })
@@ -21,7 +21,7 @@ export function sessionAPI() {
                 })
                 .then((token) => {
                     // Get current User
-                    return _get(`${baseURL}/me`, token)
+                    return Get(`${baseURL}/me`, token)
                         .then((response) => {
                             store.dispatch(AddUser({
                                 id: response.data.data.id,
@@ -37,7 +37,7 @@ export function sessionAPI() {
 
         logOut: () => {
             const token = selectToken();
-            return _post(`${baseURL}/logout`, token)
+            return Post(`${baseURL}/logout`, token)
                 .then((response) => {
                     store.dispatch(LogOut());
                     store.dispatch(Toast.show_(response.data.message, 'user'));
@@ -47,7 +47,7 @@ export function sessionAPI() {
 
         refreshToken: () => {
             const token = selectToken();
-            return _post(`${baseURL}/refresh`, token)
+            return Post(`${baseURL}/refresh`, token)
                 .then((response) => {
                     const token = response.data.access_token;
                     store.dispatch(PutToken(token));

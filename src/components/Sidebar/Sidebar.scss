@@ -37,6 +37,22 @@
 
 }
 
+.CARD_SIDEBAR_DISMISS {
+  display: none;
+  height: 0;
+  transition-property: height, transform, width, -webkit-transform;;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 1, 0.75, 0.9);
+}
+
+.CARD_SIDEBAR_SHOW {
+  display: block;
+  height: auto;
+  transition-property: height, transform, width, -webkit-transform;;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 1, 0.75, 0.9);
+}
+
 @media only screen and (max-width: 750px) {
   .CARD_SIDEBAR_FULL {
     display: none;

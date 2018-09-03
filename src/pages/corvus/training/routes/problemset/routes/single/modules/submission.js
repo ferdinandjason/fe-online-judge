@@ -1,5 +1,5 @@
 import {store} from "../../../../../../../../modules/store";
-import {Toast} from "../../../../../../../../modules/redux/toast";
+import {Toast} from "../../../../../../../../modules/dispatcher/toast";
 
 export const submissionActions = {
     createSubmission: (data) => {
