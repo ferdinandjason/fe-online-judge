@@ -5,14 +5,14 @@ import {connect} from 'react-redux';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import DocumentTitle from 'react-document-title';
 
-import {AppToaster, Footer, Header, Menubar} from './components';
-import OrionRoutes from './pages/orion/OrionRoutes';
-import CorvusRoutes from "./pages/corvus/CorvusRoutes";
-import CygnusRoutes from './pages/cygnus/CygnusRoutes';
-import AndromedaRoutes from "./pages/andromeda/AndromedaRoutes";
+import {AppToaster, Footer, Header, Menubar} from '../components';
+import OrionRoutes from './orion/OrionRoutes';
+import CorvusRoutes from "./corvus/CorvusRoutes";
+import CygnusRoutes from './cygnus/CygnusRoutes';
+import AndromedaRoutes from "./andromeda/AndromedaRoutes";
 
-import {routes} from "./AppRoutes";
-import {getDocumentTitle} from "./modules/redux/breadcrumb";
+import {routes} from "../AppRoutes";
+import {getDocumentTitle} from "../modules/redux/breadcrumb";
 
 class App extends Component {
     render() {
